@@ -1,0 +1,85 @@
+{
+  "INTEGRATION_SETTINGS": {
+    "HEADER": "Integrasi",
+    "WEBHOOK": {
+      "TITLE": "Webhook",
+      "CONFIGURE": "Konfigurasi",
+      "HEADER": "Pengaturan Webhook",
+      "HEADER_BTN_TXT": "Tambah webhook baru",
+      "LOADING": "Mengambil webhook terlampir",
+      "SEARCH_404": "Tidak ada item yang cocok dengan kueri ini",
+      "SIDEBAR_TXT": "<p><b>Webhooks</b> </p> <p>Webhook adalah callback HTTP yang dapat ditentukan untuk setiap akun. Mereka dipicu oleh peristiwa seperti pembuatan pesan di CyberChat. Anda dapat menambah lebih dari satu webhook untuk akun ini. <br /><br /> Untuk menambahkan <b>webhook</b>, klik tombol <b>Tambahkan webhook baru</b>. Anda juga dapat menghapus webhook yang ada dengan mengklik tombol Hapus.</p>",
+      "LIST": {
+        "404": "Tidak ada webhook yang dikonfigurasi untuk akun ini.",
+        "TITLE": "Kelola webhook",
+        "TABLE_HEADER": [
+          "Endpoint webhook",
+          "Aksi"
+        ]
+      },
+      "EDIT": {
+        "BUTTON_TEXT": "Edit",
+        "TITLE": "Edit webhook",
+        "CANCEL": "Batalkan",
+        "DESC": "Acara Webhook memberi Anda informasi realtime tentang apa yang terjadi di akun CyberChat Anda. Harap masukkan URL yang valid untuk mengkonfigurasi callback.",
+        "FORM": {
+          "END_POINT": {
+            "LABEL": "URL Webhook",
+            "PLACEHOLDER": "Contoh: https://example/api/webhook",
+            "ERROR": "Harap masukkan URL yang valid"
+          },
+          "SUBMIT": "Edit webhook"
+        },
+        "API": {
+          "SUCCESS_MESSAGE": "Webhook URL updated successfully",
+          "ERROR_MESSAGE": "Tidak dapat terhubung ke Server Woot, Silahkan coba lagi nanti"
+        }
+      },
+      "ADD": {
+        "CANCEL": "Batalkan",
+        "TITLE": "Tambah webhook baru",
+        "DESC": "Acara Webhook memberi Anda informasi realtime tentang apa yang terjadi di akun CyberChat Anda. Harap masukkan URL yang valid untuk mengkonfigurasi callback.",
+        "FORM": {
+          "END_POINT": {
+            "LABEL": "URL Webhook",
+            "PLACEHOLDER": "Contoh: https://example/api/webhook",
+            "ERROR": "Harap masukkan URL yang valid"
+          },
+          "SUBMIT": "Tambah Webhook"
+        },
+        "API": {
+          "SUCCESS_MESSAGE": "Webhook berhasil ditambahkan",
+          "ERROR_MESSAGE": "Tidak dapat terhubung ke Server Woot, Silahkan coba lagi nanti"
+        }
+      },
+      "DELETE": {
+        "BUTTON_TEXT": "Hapus",
+        "API": {
+          "SUCCESS_MESSAGE": "Webhook berhasil dihapus",
+          "ERROR_MESSAGE": "Tidak dapat terhubung ke Server Woot, Silahkan coba lagi nanti"
+        },
+        "CONFIRM": {
+          "TITLE": "Konfirmasi Penghapusan",
+          "MESSAGE": "Apakah Anda yakin untuk menghapus ",
+          "YES": "Ya, Hapus ",
+          "NO": "Tidak, Simpan"
+        }
+      }
+    },
+    "SLACK": {
+      "HELP_TEXT": {
+        "TITLE": "Using Slack Integration",
+        "BODY": "<br/><p>CyberChat will now sync all the incoming conversations into the <b><i>customer-conversations</i></b> channel inside your slack workplace.</p><p>Replying to a conversation thread in <b><i>customer-conversations</i></b> slack channel will create a response back to the customer through cyber1schat.</p><p>Start the replies with <b><i>note:</i></b> to create private notes instead of replies.</p><p>If the replier on slack has an agent profile in cyber1schat under the same email, the replies will be associated accordingly.</p><p>When the replier doesn't have an associated agent profile, the replies will be made from the bot profile.</p>"
+      }
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Hapus",
+      "API": {
+        "SUCCESS_MESSAGE": "Integrasi berhasil dihapus"
+      }
+    },
+    "CONNECT": {
+      "BUTTON_TEXT": "Connect"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "REGISTER": {
+    "TRY_WOOT": "Registrovať účet",
+    "TITLE": "Registrovať",
+    "TERMS_ACCEPT": "Registráciou vyjadrujete súhlas s našimi <a href=\"https://www.chat.cyber1s.com/terms\">všeobecnými obchodnými podmienkami</a> a <a href=\"https://www.chat.cyber1s.com/privacy-policy\">zásadami ochrany osobných údajov</a>",
+    "ACCOUNT_NAME": {
+      "LABEL": "Názov účtu",
+      "PLACEHOLDER": "Zadajte názov účtu. napr: Wayne Enterprises",
+      "ERROR": "Názov účtu je príliš krátky"
+    },
+    "FULL_NAME": {
+      "LABEL": "Celé meno",
+      "PLACEHOLDER": "Zadajte svoje celé meno. Napr.: Bruce Wayne",
+      "ERROR": "Celé meno je príliš krátke"
+    },
+    "EMAIL": {
+      "LABEL": "Pracovný e-mail",
+      "PLACEHOLDER": "Zadajte svoju pracovnú e-mailovú adresu. Napr.: bruce@wayne.enterprises",
+      "ERROR": "E-mailová adresa je neplatná"
+    },
+    "PASSWORD": {
+      "LABEL": "Heslo",
+      "PLACEHOLDER": "Heslo",
+      "ERROR": "Heslo je príliš krátke"
+    },
+    "CONFIRM_PASSWORD": {
+      "LABEL": "Potvrďte heslo",
+      "PLACEHOLDER": "Potvrďte heslo",
+      "ERROR": "Heslá sa nezhodujú"
+    },
+    "API": {
+      "SUCCESS_MESSAGE": "Registrácia bola úspešná",
+      "ERROR_MESSAGE": "Nepodarilo sa pripojiť k serveru Woot, skúste to prosím neskôr"
+    },
+    "SUBMIT": "Odoslať",
+    "HAVE_AN_ACCOUNT": "Už máte účet?"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "ATTRIBUTES_MGMT": {
+    "HEADER": "Atributos personalizados",
+    "HEADER_BTN_TXT": "Adicionar Atributo Personalizado",
+    "LOADING": "Obtendo atributos personalizados",
+    "SIDEBAR_TXT": "<p><b>Custom Attributes</b> <p>A custom attribute tracks facts about your contacts/conversation — like the subscription plan, or when they ordered the first item etc. <br /><br />For creating a Custom Attribute, just click on the <b>Add Custom Attribute.</b> You can also edit or delete an existing  Custom Attribute by clicking on the Edit or Delete button.</p>",
+    "ADD": {
+      "TITLE": "Adicionar Atributo Personalizado",
+      "SUBMIT": "Criar",
+      "CANCEL_BUTTON_TEXT": "cancelar",
+      "FORM": {
+        "NAME": {
+          "LABEL": "Mostrar Nome",
+          "PLACEHOLDER": "Enter custom attribute display name",
+          "ERROR": "Nome é obrigatório"
+        },
+        "DESC": {
+          "LABEL": "Descrição",
+          "PLACEHOLDER": "Enter custom attribute description",
+          "ERROR": "Descrição é obrigatória"
+        },
+        "MODEL": {
+          "LABEL": "Aplica-se a",
+          "PLACEHOLDER": "Por favor selecione um",
+          "ERROR": "Modelo é obrigatório"
+        },
+        "TYPE": {
+          "LABEL": "Tipo",
+          "PLACEHOLDER": "Por favor, selecione um tipo",
+          "ERROR": "Tipo é obrigatório",
+          "LIST": {
+            "LABEL": "Listar Valores",
+            "PLACEHOLDER": "Por favor insira um valor e pressione Enter",
+            "ERROR": "Deve possuir pelo menos um valor"
+          }
+        },
+        "KEY": {
+          "LABEL": "Chave",
+          "PLACEHOLDER": "Introduzir chave de atributo personalizado",
+          "ERROR": "Chave é obrigatória",
+          "IN_VALID": "Chave inválida"
+        }
+      },
+      "API": {
+        "SUCCESS_MESSAGE": "Atributo Personalizado adicionado com sucesso",
+        "ERROR_MESSAGE": "Could not able to create a custom attribute, Please try again later"
+      }
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "excluir",
+      "API": {
+        "SUCCESS_MESSAGE": "Custom Attribute deleted successfully.",
+        "ERROR_MESSAGE": "Couldn't delete the custom attribute. Try again."
+      },
+      "CONFIRM": {
+        "TITLE": "Tem a certeza que quer apagar a equipa - %{attributeName}",
+        "PLACE_HOLDER": "Por favor, digite {attributeName} para confirmar",
+        "MESSAGE": "Deleting will remove the custom attribute",
+        "YES": "excluir ",
+        "NO": "cancelar"
+      }
+    },
+    "EDIT": {
+      "TITLE": "Editar Atributo Personalizado",
+      "UPDATE_BUTTON_TEXT": "Atualização",
+      "TYPE": {
+        "LIST": {
+          "LABEL": "Listar Valores",
+          "PLACEHOLDER": "Por favor insira valores e pressione Enter"
+        }
+      },
+      "API": {
+        "SUCCESS_MESSAGE": "Custom Attribute updated successfully",
+        "ERROR_MESSAGE": "There was an error updating custom attribute, please try again"
+      }
+    },
+    "TABS": {
+      "HEADER": "Atributos personalizados",
+      "CONVERSATION": "Conversa",
+      "CONTACT": "Contato"
+    },
+    "LIST": {
+      "TABLE_HEADER": [
+        "Nome:",
+        "Descrição",
+        "Tipo",
+        "Chave"
+      ],
+      "BUTTONS": {
+        "EDIT": "Alterar",
+        "DELETE": "excluir"
+      },
+      "EMPTY_RESULT": {
+        "404": "Não há atributos personalizados criados",
+        "NOT_FOUND": "Não há atributos personalizados configurados"
+      }
+    }
+  }
+}

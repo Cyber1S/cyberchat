@@ -1,0 +1,85 @@
+{
+  "INTEGRATION_SETTINGS": {
+    "HEADER": "Integrációk",
+    "WEBHOOK": {
+      "TITLE": "Webhook",
+      "CONFIGURE": "Beállítások",
+      "HEADER": "Webhook beállítások",
+      "HEADER_BTN_TXT": "Új webhook hozzáadása",
+      "LOADING": "Kapcsolódó Webhookok betöltése",
+      "SEARCH_404": "Nincs megfelelő elem",
+      "SIDEBAR_TXT": "<p><b>Webhook</b>-ok</p><p>A Webhook-ok HTTP visszahívások, melyek minden fiókhoz bállíthatóak. CyberChat események, például beérkező üzenetek aktiválhatják a webhookokat. Több webhookot is beállíthatsz a fiókodhoz. <br /><br /> Egy <b>webhook</b> létrehozásához kattints a <b>Webhook hozzáadása</b> gombra. Le is törölheted a létrejött webhookokat a Törlés gombra kattintva.</p>",
+      "LIST": {
+        "404": "Nincs a fiókhoz rendelt Webhook.",
+        "TITLE": "Webhook kezelés",
+        "TABLE_HEADER": [
+          "Webhook végpont",
+          "Műveletek"
+        ]
+      },
+      "EDIT": {
+        "BUTTON_TEXT": "Szerkesztés",
+        "TITLE": "Edit webhook",
+        "CANCEL": "Mégse",
+        "DESC": "Webhook események valós idejű információt adnak arról, hogy mi történik a CyberChat fiókodban. Kérünk a visszahívás beállításánál egy helyes URL-t adj meg.",
+        "FORM": {
+          "END_POINT": {
+            "LABEL": "Webhook URL",
+            "PLACEHOLDER": "Például: https://példa.com/api/webhook",
+            "ERROR": "Kérjük helyes URL-t adj meg"
+          },
+          "SUBMIT": "Edit webhook"
+        },
+        "API": {
+          "SUCCESS_MESSAGE": "Webhook URL updated successfully",
+          "ERROR_MESSAGE": "Nem sikerült csatlakozni a Woot szerverhez, kérjük próbáld később"
+        }
+      },
+      "ADD": {
+        "CANCEL": "Mégse",
+        "TITLE": "Új webhook hozzáadása",
+        "DESC": "Webhook események valós idejű információt adnak arról, hogy mi történik a CyberChat fiókodban. Kérünk a visszahívás beállításánál egy helyes URL-t adj meg.",
+        "FORM": {
+          "END_POINT": {
+            "LABEL": "Webhook URL",
+            "PLACEHOLDER": "Például: https://példa.com/api/webhook",
+            "ERROR": "Kérjük helyes URL-t adj meg"
+          },
+          "SUBMIT": "Webhook létrehozása"
+        },
+        "API": {
+          "SUCCESS_MESSAGE": "Webhook sikeresen hozzáadva",
+          "ERROR_MESSAGE": "Nem sikerült csatlakozni a Woot szerverhez, kérjük próbáld később"
+        }
+      },
+      "DELETE": {
+        "BUTTON_TEXT": "Törlés",
+        "API": {
+          "SUCCESS_MESSAGE": "Webhook sikeresen törölve",
+          "ERROR_MESSAGE": "Nem sikerült csatlakozni a Woot szerverhez, kérjük próbáld később"
+        },
+        "CONFIRM": {
+          "TITLE": "Törlés megerősítése",
+          "MESSAGE": "Biztos abban, hogy törli ",
+          "YES": "Igen, Törlés ",
+          "NO": "Nem, tartsa meg"
+        }
+      }
+    },
+    "SLACK": {
+      "HELP_TEXT": {
+        "TITLE": "Using Slack Integration",
+        "BODY": "<br/><p>CyberChat will now sync all the incoming conversations into the <b><i>customer-conversations</i></b> channel inside your slack workplace.</p><p>Replying to a conversation thread in <b><i>customer-conversations</i></b> slack channel will create a response back to the customer through cyber1schat.</p><p>Start the replies with <b><i>note:</i></b> to create private notes instead of replies.</p><p>If the replier on slack has an agent profile in cyber1schat under the same email, the replies will be associated accordingly.</p><p>When the replier doesn't have an associated agent profile, the replies will be made from the bot profile.</p>"
+      }
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Törlés",
+      "API": {
+        "SUCCESS_MESSAGE": "Integráció sikeresen törölve"
+      }
+    },
+    "CONNECT": {
+      "BUTTON_TEXT": "Kapcsolódás"
+    }
+  }
+}

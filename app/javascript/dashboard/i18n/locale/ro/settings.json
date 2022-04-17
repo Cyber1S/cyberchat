@@ -1,0 +1,230 @@
+{
+  "PROFILE_SETTINGS": {
+    "LINK": "Setări profil",
+    "TITLE": "Setări profil",
+    "BTN_TEXT": "Actualizeaza profil",
+    "DELETE_AVATAR": "Delete Avatar",
+    "AVATAR_DELETE_SUCCESS": "Avatar has been deleted successfully",
+    "AVATAR_DELETE_FAILED": "There is an error while deleting avatar, please try again",
+    "UPDATE_SUCCESS": "Your profile has been updated successfully",
+    "PASSWORD_UPDATE_SUCCESS": "Parola ta a fost schimbată cu succes",
+    "AFTER_EMAIL_CHANGED": "Profilul tău a fost actualizat cu succes, te rugăm să te autentifici din nou pentru că datele tale de autentificare au fost modificate",
+    "FORM": {
+      "AVATAR": "Imagine de profil",
+      "ERROR": "Vă rugăm să remediați erorile din formular",
+      "REMOVE_IMAGE": "Elimină",
+      "UPLOAD_IMAGE": "Încarcă imaginea",
+      "UPDATE_IMAGE": "Actualizare imagine",
+      "PROFILE_SECTION": {
+        "TITLE": "Profil",
+        "NOTE": "Adresa ta de email este identitatea ta și este folosită pentru a te autentifica."
+      },
+      "MESSAGE_SIGNATURE_SECTION": {
+        "TITLE": "Personal message signature",
+        "NOTE": "Create a personal message signature that would be added to all the messages you send from the platform. Use the rich content editor to create a highly personalised signature.",
+        "BTN_TEXT": "Save message signature",
+        "API_ERROR": "Couldn't save signature! Try again",
+        "API_SUCCESS": "Signature saved successfully"
+      },
+      "MESSAGE_SIGNATURE": {
+        "LABEL": "Message Signature",
+        "ERROR": "Message Signature cannot be empty",
+        "PLACEHOLDER": "Insert your personal message signature here."
+      },
+      "PASSWORD_SECTION": {
+        "TITLE": "Parola",
+        "NOTE": "Actualizarea parolei ar reseta autentificările pe mai multe dispozitive.",
+        "BTN_TEXT": "Change password"
+      },
+      "ACCESS_TOKEN": {
+        "TITLE": "Token acces",
+        "NOTE": "Acest token poate fi utilizat dacă construiți o integrare bazată pe API"
+      },
+      "AUDIO_NOTIFICATIONS_SECTION": {
+        "TITLE": "Audio Notifications",
+        "NOTE": "Enable audio notifications in dashboard for new messages and conversations.",
+        "NONE": "None",
+        "ASSIGNED": "Assigned Conversations",
+        "ALL_CONVERSATIONS": "All Conversations"
+      },
+      "EMAIL_NOTIFICATIONS_SECTION": {
+        "TITLE": "Notificări prin e-mail",
+        "NOTE": "Actualizați preferințele de notificare prin e-mail aici",
+        "CONVERSATION_ASSIGNMENT": "Trimite notificări prin e-mail atunci când o conversație îmi este atribuită",
+        "CONVERSATION_CREATION": "Trimite notificări prin e-mail atunci când o conversație nouă este creată",
+        "CONVERSATION_MENTION": "Send email notifications when you are mentioned in a conversation",
+        "ASSIGNED_CONVERSATION_NEW_MESSAGE": "Send email notifications when a new message is created in an assigned conversation"
+      },
+      "API": {
+        "UPDATE_SUCCESS": "Preferințele de notificare sunt actualizate cu succes",
+        "UPDATE_ERROR": "A apărut o eroare la actualizarea preferințelor, încercați din nou"
+      },
+      "PUSH_NOTIFICATIONS_SECTION": {
+        "TITLE": "Notificări push",
+        "NOTE": "Actualizați preferințele de notificare push aici",
+        "CONVERSATION_ASSIGNMENT": "Trimite notificări push atunci când o conversație îmi este atribuită",
+        "CONVERSATION_CREATION": "Trimite notificări push atunci când o conversație nouă este creată",
+        "CONVERSATION_MENTION": "Send push notifications when you are mentioned in a conversation",
+        "ASSIGNED_CONVERSATION_NEW_MESSAGE": "Send push notifications when a new message is created in an assigned conversation",
+        "HAS_ENABLED_PUSH": "Ați activat apăsarea pentru acest browser.",
+        "REQUEST_PUSH": "Activează notificările push"
+      },
+      "PROFILE_IMAGE": {
+        "LABEL": "Imagine de profil"
+      },
+      "NAME": {
+        "LABEL": "Numele tău complet",
+        "ERROR": "Te rugăm să introduci un nume valid",
+        "PLACEHOLDER": "Te rugăm să introduci un nume valid"
+      },
+      "DISPLAY_NAME": {
+        "LABEL": "Nume afişat",
+        "ERROR": "Te rugăm să introduci un nume valid",
+        "PLACEHOLDER": "Te rugăm să introduci numele tău, care va fi folosit în conversații"
+      },
+      "AVAILABILITY": {
+        "LABEL": "Disponibilitate",
+        "STATUSES_LIST": [
+          "Online",
+          "Ocupat",
+          "Deconectat"
+        ]
+      },
+      "EMAIL": {
+        "LABEL": "Adresa ta de email",
+        "ERROR": "Vă rugăm să introduceți o adresă de e-mail validă",
+        "PLACEHOLDER": "Te rugăm să introduci adresa ta de e-mail, aceasta va fi afișată în conversații"
+      },
+      "CURRENT_PASSWORD": {
+        "LABEL": "Current password",
+        "ERROR": "Please enter the current password",
+        "PLACEHOLDER": "Please enter the current password"
+      },
+      "PASSWORD": {
+        "LABEL": "New password",
+        "ERROR": "Te rugăm să introduci o parolă pentru lungimea de 6 caractere sau mai mult",
+        "PLACEHOLDER": "Te rog introdu o noua parola"
+      },
+      "PASSWORD_CONFIRMATION": {
+        "LABEL": "Confirmare parolă nouă",
+        "ERROR": "Confirmarea parolei trebuie să se potrivească cu parola",
+        "PLACEHOLDER": "Please re-enter your new password"
+      }
+    }
+  },
+  "SIDEBAR_ITEMS": {
+    "CHANGE_AVAILABILITY_STATUS": "Schimba",
+    "CHANGE_ACCOUNTS": "Comută contul",
+    "CONTACT_SUPPORT": "Contact Support",
+    "SELECTOR_SUBTITLE": "Selectaţi un cont din următoarea listă",
+    "PROFILE_SETTINGS": "Setări profil",
+    "KEYBOARD_SHORTCUTS": "Keyboard Shortcuts",
+    "LOGOUT": "Deconectare"
+  },
+  "APP_GLOBAL": {
+    "TRIAL_MESSAGE": "zile de încercare rămase.",
+    "TRAIL_BUTTON": "Cumpara acum",
+    "DELETED_USER": "Deleted User"
+  },
+  "COMPONENTS": {
+    "CODE": {
+      "BUTTON_TEXT": "Copiază",
+      "COPY_SUCCESSFUL": "Cod copiat în clipboard cu succes"
+    },
+    "FILE_BUBBLE": {
+      "DOWNLOAD": "Descărcare",
+      "UPLOADING": "Încărcare..."
+    },
+    "FORM_BUBBLE": {
+      "SUBMIT": "Trimite"
+    }
+  },
+  "CONFIRM_EMAIL": "Verificare...",
+  "SETTINGS": {
+    "INBOXES": {
+      "NEW_INBOX": "Adaugă Inbox"
+    }
+  },
+  "SIDEBAR": {
+    "CURRENTLY_VIEWING_ACCOUNT": "Currently viewing:",
+    "CONVERSATIONS": "Conversații",
+    "ALL_CONVERSATIONS": "All Conversations",
+    "MENTIONED_CONVERSATIONS": "Mentions",
+    "REPORTS": "Rapoarte",
+    "SETTINGS": "Setări",
+    "CONTACTS": "Contacte",
+    "HOME": "Acasa",
+    "AGENTS": "Agenți",
+    "INBOXES": "Căsuțe",
+    "NOTIFICATIONS": "Notifications",
+    "CANNED_RESPONSES": "Răspunsuri predefinite",
+    "INTEGRATIONS": "Integrări",
+    "PROFILE_SETTINGS": "Setări profil",
+    "ACCOUNT_SETTINGS": "Setările contului",
+    "APPLICATIONS": "Applications",
+    "LABELS": "Etichete",
+    "CUSTOM_ATTRIBUTES": "Editează atribut personalizat",
+    "AUTOMATION": "Automatizare",
+    "TEAMS": "Teams",
+    "CUSTOM_VIEWS_FOLDER": "Folders",
+    "CUSTOM_VIEWS_SEGMENTS": "Segments",
+    "ALL_CONTACTS": "All Contacts",
+    "TAGGED_WITH": "Tagged with",
+    "NEW_LABEL": "New label",
+    "NEW_TEAM": "New team",
+    "NEW_INBOX": "New inbox",
+    "REPORTS_OVERVIEW": "Overview",
+    "CSAT": "CSAT",
+    "CAMPAIGNS": "Campanii",
+    "ONGOING": "Ongoing",
+    "ONE_OFF": "One off",
+    "REPORTS_AGENT": "Agenți",
+    "REPORTS_LABEL": "Etichete",
+    "REPORTS_INBOX": "Inbox",
+    "REPORTS_TEAM": "Team",
+    "SET_AVAILABILITY_TITLE": "Set yourself as",
+    "BETA": "Beta"
+  },
+  "CREATE_ACCOUNT": {
+    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any CyberChat accounts. Please create a new account to continue.",
+    "NEW_ACCOUNT": "Cont Nou",
+    "SELECTOR_SUBTITLE": "Creează un cont nou",
+    "API": {
+      "SUCCESS_MESSAGE": "Agent actualizat cu succes",
+      "EXIST_MESSAGE": "Contul există deja",
+      "ERROR_MESSAGE": "Nu s-a putut conecta la Woot Server, încercați din nou mai târziu"
+    },
+    "FORM": {
+      "NAME": {
+        "LABEL": "Nume cont",
+        "PLACEHOLDER": "Wayne Enterprises"
+      },
+      "SUBMIT": "Trimite"
+    }
+  },
+  "KEYBOARD_SHORTCUTS": {
+    "TITLE": {
+      "OPEN_CONVERSATION": "Open conversation",
+      "RESOLVE_AND_NEXT": "Resolve and move to next",
+      "NAVIGATE_DROPDOWN": "Navigate dropdown items",
+      "RESOLVE_CONVERSATION": "Resolve Conversation",
+      "GO_TO_CONVERSATION_DASHBOARD": "Go to Conversation Dashboard",
+      "ADD_ATTACHMENT": "Add Attachment",
+      "GO_TO_CONTACTS_DASHBOARD": "Go to Contacts Dashboard",
+      "TOGGLE_SIDEBAR": "Toggle Sidebar",
+      "GO_TO_REPORTS_SIDEBAR": "Go to Reports sidebar",
+      "MOVE_TO_NEXT_TAB": "Move to next tab in conversation list",
+      "GO_TO_SETTINGS": "Go to Settings",
+      "SWITCH_CONVERSATION_STATUS": "Switch to the next conversation status",
+      "SWITCH_TO_PRIVATE_NOTE": "Switch to Private Note",
+      "TOGGLE_RICH_CONTENT_EDITOR": "Toggle Rich Content editor",
+      "SWITCH_TO_REPLY": "Switch to Reply",
+      "TOGGLE_SNOOZE_DROPDOWN": "Toggle snooze dropdown"
+    },
+    "KEYS": {
+      "WINDOWS_KEY_AND_COMMAND_KEY": "Win / ⌘",
+      "ALT_OR_OPTION_KEY": "Alt / ⌥",
+      "FORWARD_SLASH_KEY": "/"
+    }
+  }
+}

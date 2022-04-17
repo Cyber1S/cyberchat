@@ -1,0 +1,55 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+
+<%
+  user_id = 1
+  user_hash = OpenSSL::HMAC.hexdigest(
+    'sha256',
+    @web_widget.hmac_token,
+    user_id.to_s
+  )
+
+%>
+<script>
+
+window.cyber1schatSettings = {
+  hideMessageBubble: false,
+  position: '<%= @widget_position %>',
+  locale: 'en',
+  type: '<%= @widget_type %>',
+  showPopoutButton: true,
+  widgetStyle: '<%= @widget_style %>',
+  darkMode: '<%= @dark_mode %>',
+};
+
+(function(d,t) {
+  var BASE_URL = '';
+  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src= BASE_URL + "/packs/js/sdk.js";
+  g.defer = true;
+  g.async = true;
+  s.parentNode.insertBefore(g,s);
+  g.onload=function(){
+    window.cyber1schatSDK.run({
+      websiteToken: '<%= @web_widget.website_token %>',
+      baseUrl: BASE_URL
+    })
+  }
+})(document,"script");
+
+window.addEventListener('cyber1schat:ready', function() {
+  console.log('cyber1schat:ready', window.$cyber1schat);
+  if (window.location.search.includes('setUser')) {
+    window.$cyber1schat.setUser('<%= user_id %>', {
+      identifier_hash: '<%= user_hash %>',
+      email: 'jane@example.com',
+      name: 'Jane Doe',
+      phone_number: ''
+    });
+  }
+})
+
+window.addEventListener('cyber1schat:error', function(e) {
+  console.log('cyber1schat:error', e.detail)
+})
+</script>

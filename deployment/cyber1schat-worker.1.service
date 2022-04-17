@@ -1,0 +1,25 @@
+[Unit]
+Requires=network.target
+PartOf=cyber1schat.target
+
+[Service]
+Type=simple
+User=cyber1schat
+WorkingDirectory=/home/cyber1s/cyber1schat
+
+ExecStart=/bin/bash -lc 'bundle exec sidekiq -C config/sidekiq.yml'
+
+Restart=always
+RestartSec=1
+TimeoutStopSec=30
+KillMode=mixed
+StandardInput=null
+SyslogIdentifier=%p
+
+Environment="PATH=/home/cyber1schat/.rvm/gems/ruby-3.0.2/bin:/home/cyber1schat/.rvm/gems/ruby-3.0.2@global/bin:/home/cyber1schat/.rvm/rubies/ruby-3.0.2/bin:/home/cyber1schat/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/cyber1schat/.rvm/bin:/home/cyber1schat/.rvm/bin"
+Environment="PORT=3000"
+Environment="RAILS_ENV=production"
+Environment="NODE_ENV=production"
+Environment="RAILS_LOG_TO_STDOUT=true"
+Environment="GEM_HOME=/home/cyber1schat/.rvm/gems/ruby-3.0.2"
+Environment="GEM_PATH=/home/cyber1schat/.rvm/gems/ruby-3.0.2:/home/cyber1schat/.rvm/gems/ruby-3.0.2@global"

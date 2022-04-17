@@ -1,0 +1,78 @@
+{
+  "COMPONENTS": {
+    "FILE_BUBBLE": {
+      "DOWNLOAD": "Звантажити",
+      "UPLOADING": "Завантажується..."
+    },
+    "FORM_BUBBLE": {
+      "SUBMIT": "Додати"
+    },
+    "MESSAGE_BUBBLE": {
+      "RETRY": "Send message again",
+      "ERROR_MESSAGE": "Couldn't send, try again"
+    }
+  },
+  "TEAM_AVAILABILITY": {
+    "ONLINE": "Ми онлайн",
+    "OFFLINE": "Нас наразі немає"
+  },
+  "REPLY_TIME": {
+    "IN_A_FEW_MINUTES": "Зазвичай, відповідаємо за декілька хвилин",
+    "IN_A_FEW_HOURS": "Зазвичай, відповідаємо за декілька годин",
+    "IN_A_DAY": "Зазвичай, відповідаємо протягом доби"
+  },
+  "START_CONVERSATION": "Розпочати розмову",
+  "END_CONVERSATION": "End Conversation",
+  "CONTINUE_CONVERSATION": "Continue conversation",
+  "START_NEW_CONVERSATION": "Розпочати нову розмову",
+  "UNREAD_VIEW": {
+    "VIEW_MESSAGES_BUTTON": "Переглянути нові повідомлення",
+    "CLOSE_MESSAGES_BUTTON": "Закрити",
+    "COMPANY_FROM": "від",
+    "BOT": "Бот"
+  },
+  "BUBBLE": {
+    "LABEL": "Почніть розмову з нами"
+  },
+  "POWERED_BY": "Працює на CyberChat",
+  "EMAIL_PLACEHOLDER": "Введіть адресу електронної пошти",
+  "CHAT_PLACEHOLDER": "Введіть Ваше повідомлення",
+  "TODAY": "Сьогодні",
+  "YESTERDAY": "Вчора",
+  "PRE_CHAT_FORM": {
+    "FIELDS": {
+      "FULL_NAME": {
+        "LABEL": "Повне ім`я",
+        "PLACEHOLDER": "Будь ласка, введіть своє повне ім'я",
+        "ERROR": "Потрібне повне ім'я"
+      },
+      "EMAIL_ADDRESS": {
+        "LABEL": "Адреса електронної пошти",
+        "PLACEHOLDER": "Будь ласка, введіть адресу вашої електронної пошти",
+        "ERROR": "Некоректна адреса ел. пошти"
+      },
+      "MESSAGE": {
+        "LABEL": "Текст повідомлення",
+        "PLACEHOLDER": "Будь ласка, введіть ваше повідомлення",
+        "ERROR": "Занадто коротке повідомлення"
+      }
+    },
+    "CAMPAIGN_HEADER": "Please provide your name and email before starting the conversation"
+  },
+  "FILE_SIZE_LIMIT": "Файл перевищує ліміт вкладення {MAXIMUM_FILE_UPLOAD_SIZE}",
+  "CHAT_FORM": {
+    "INVALID": {
+      "FIELD": "Невірно заповнене поле"
+    }
+  },
+  "CSAT": {
+    "TITLE": "Оцініть вашу бесіду",
+    "SUBMITTED_TITLE": "Дякуємо за оцінку",
+    "PLACEHOLDER": "Розкажіть докладніше..."
+  },
+  "EMAIL_TRANSCRIPT": {
+    "BUTTON_TEXT": "Запит на текст розмови",
+    "SEND_EMAIL_SUCCESS": "Текст розмови надісланий",
+    "SEND_EMAIL_ERROR": "Сталася помилка, будь ласка, спробуйте ще раз"
+  }
+}

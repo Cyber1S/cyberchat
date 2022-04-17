@@ -1,0 +1,14 @@
+shared: &shared
+  version: '2.3.2'
+
+development:
+  <<: *shared
+
+production:
+  <<: *shared
+
+staging:
+  <<: *shared
+
+test:
+  <<: *shared

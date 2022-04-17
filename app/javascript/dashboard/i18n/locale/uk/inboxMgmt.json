@@ -1,0 +1,532 @@
+{
+  "INBOX_MGMT": {
+    "HEADER": "Вхідні",
+    "SIDEBAR_TXT": "<p><b>Inbox</b></p> <p> When you connect a website or a facebook Page to CyberChat, it is called an <b>Inbox</b>. You can have unlimited inboxes in your CyberChat account. </p><p> Click on <b>Add Inbox</b> to connect a website or a Facebook Page. </p><p> In the Dashboard, you can see all the conversations from all your inboxes in a single place and respond to them under the `Conversations` tab. </p><p> You can also see conversations specific to an inbox by clicking on the inbox name on the left pane of the dashboard. </p>",
+    "LIST": {
+      "404": "В цього облікового запису немає скриньк."
+    },
+    "CREATE_FLOW": [
+      {
+        "title": "Оберіть канал",
+        "route": "settings_inbox_new",
+        "body": "Choose the provider you want to integrate with CyberChat."
+      },
+      {
+        "title": "Створити вхідну скриньку",
+        "route": "settings_inboxes_page_channel",
+        "body": "Authenticate your account and create an inbox."
+      },
+      {
+        "title": "Додати агентів",
+        "route": "settings_inboxes_add_agents",
+        "body": "Add agents to the created inbox."
+      },
+      {
+        "title": "Вуаля!",
+        "route": "settings_inbox_finish",
+        "body": "Все готово!"
+      }
+    ],
+    "ADD": {
+      "CHANNEL_NAME": {
+        "LABEL": "Inbox Name",
+        "PLACEHOLDER": "Enter your inbox name (eg: Acme Inc)"
+      },
+      "WEBSITE_NAME": {
+        "LABEL": "Назва сайту",
+        "PLACEHOLDER": "Введіть назву свого сайту (наприклад: Acme Inc)"
+      },
+      "FB": {
+        "HELP": "PS: By signing in, we only get access to your Page's messages. Your private messages can never be accessed by CyberChat.",
+        "CHOOSE_PAGE": "Choose Page",
+        "CHOOSE_PLACEHOLDER": "Select a page from the list",
+        "INBOX_NAME": "Inbox Name",
+        "ADD_NAME": "Add a name for your inbox",
+        "PICK_NAME": "Pick A Name Your Inbox",
+        "PICK_A_VALUE": "Pick a value"
+      },
+      "TWITTER": {
+        "HELP": "Щоб додати свій профіль у Twitter як канал, вам потрібно авторизувати свій профіль у Twitter, натиснувши кнопку \"Увійти через Twitter\" ",
+        "ERROR_MESSAGE": "Помилка підключення до Twitter, будь ласка, спробуйте ще раз",
+        "TWEETS": {
+          "ENABLE": "Create conversations from mentioned Tweets"
+        }
+      },
+      "WEBSITE_CHANNEL": {
+        "TITLE": "Канал Веб-сайт",
+        "DESC": "Створіть канал для свого сайту та почніть підтримувати своїх клієнтів за допомогою нашого віджету.",
+        "LOADING_MESSAGE": "Створення каналу підтримки веб-сайту",
+        "CHANNEL_AVATAR": {
+          "LABEL": "Аватар каналу"
+        },
+        "CHANNEL_WEBHOOK_URL": {
+          "LABEL": "URL вебхука",
+          "PLACEHOLDER": "Введіть URL вашого вебхука",
+          "ERROR": "Будь ласка, введіть правильний URL"
+        },
+        "CHANNEL_DOMAIN": {
+          "LABEL": "Домен сайту",
+          "PLACEHOLDER": "Введіть домен вашого сайту (наприклад: acme.com)"
+        },
+        "CHANNEL_WELCOME_TITLE": {
+          "LABEL": "Заголовок",
+          "PLACEHOLDER": "Привіт!"
+        },
+        "CHANNEL_WELCOME_TAGLINE": {
+          "LABEL": "Талін привітання",
+          "PLACEHOLDER": "Ми робимо це простим — запитуємо що-небудь чи поділіться своїми відгуками."
+        },
+        "CHANNEL_GREETING_MESSAGE": {
+          "LABEL": "Вітання каналу",
+          "PLACEHOLDER": "Acme Inc зазвичай відповідає за кілька годин."
+        },
+        "CHANNEL_GREETING_TOGGLE": {
+          "LABEL": "Увімкнути вітання каналу",
+          "HELP_TEXT": "Send a greeting message to the users when they starts the conversation.",
+          "ENABLED": "Увімкнено",
+          "DISABLED": "Вимкнено"
+        },
+        "REPLY_TIME": {
+          "TITLE": "Встановити час відповіді",
+          "IN_A_FEW_MINUTES": "За кілька хвилин",
+          "IN_A_FEW_HOURS": "За кілька годин",
+          "IN_A_DAY": "Протягом дня",
+          "HELP_TEXT": "Цей час відповіді буде показуватися на віджеті онлайн чату"
+        },
+        "WIDGET_COLOR": {
+          "LABEL": "Колір віджета",
+          "PLACEHOLDER": "Оновити колір віджета"
+        },
+        "SUBMIT_BUTTON": "Створити скриньку \"Вхідні\""
+      },
+      "TWILIO": {
+        "TITLE": "Twilio SMS/WhatsApp канал",
+        "DESC": "Інтегруйте Twilio та починайте підтримувати своїх клієнтів через SMS чи WhatsApp.",
+        "ACCOUNT_SID": {
+          "LABEL": "SID облікового запису",
+          "PLACEHOLDER": "Будь ласка, введіть SID облікового запису Twilio",
+          "ERROR": "Це поле є обов'язковим"
+        },
+        "CHANNEL_TYPE": {
+          "LABEL": "Тип каналу",
+          "ERROR": "Будь ласка, оберіть тип вашого каналу"
+        },
+        "AUTH_TOKEN": {
+          "LABEL": "Токен автентифікації",
+          "PLACEHOLDER": "Введіть ваш Twilio Auth токен",
+          "ERROR": "Це поле є обов'язковим"
+        },
+        "CHANNEL_NAME": {
+          "LABEL": "Назва каналу",
+          "PLACEHOLDER": "Будь ласка, введіть назву каналу",
+          "ERROR": "Це поле є обов'язковим"
+        },
+        "PHONE_NUMBER": {
+          "LABEL": "Номер телефону",
+          "PLACEHOLDER": "Будь ласка, введіть номер телефону, з якого будуть надсилатися повідомлення.",
+          "ERROR": "Номер телефону повинен починатися з символу `+'."
+        },
+        "API_CALLBACK": {
+          "TITLE": "Callback URL",
+          "SUBTITLE": "Ви повинні налаштувати URL зворотнього виклику у Twilio з URL-адресою, згаданим тут."
+        },
+        "SUBMIT_BUTTON": "Створити Twilio канал",
+        "API": {
+          "ERROR_MESSAGE": "Автентифікація у Twilio не вдалася, будь ласка, спробуйте знову"
+        }
+      },
+      "SMS": {
+        "TITLE": "SMS Channel",
+        "DESC": "Start supporting your customers via SMS.",
+        "PROVIDERS": {
+          "LABEL": "API Provider",
+          "TWILIO": "Twilio",
+          "BANDWIDTH": "Bandwidth"
+        },
+        "API": {
+          "ERROR_MESSAGE": "We were not able to save the SMS channel"
+        },
+        "BANDWIDTH": {
+          "ACCOUNT_ID": {
+            "LABEL": "Account ID",
+            "PLACEHOLDER": "Please enter your Bandwidth Account ID",
+            "ERROR": "Це поле є обов'язковим"
+          },
+          "API_KEY": {
+            "LABEL": "API Key",
+            "PLACEHOLDER": "Please enter your Bandwith API Key",
+            "ERROR": "Це поле є обов'язковим"
+          },
+          "API_SECRET": {
+            "LABEL": "API Secret",
+            "PLACEHOLDER": "Please enter your Bandwith API Secret",
+            "ERROR": "Це поле є обов'язковим"
+          },
+          "APPLICATION_ID": {
+            "LABEL": "Application ID",
+            "PLACEHOLDER": "Please enter your Bandwidth Application ID",
+            "ERROR": "Це поле є обов'язковим"
+          },
+          "INBOX_NAME": {
+            "LABEL": "Назва каналу",
+            "PLACEHOLDER": "Будь ласка, введіть назву каналу",
+            "ERROR": "Це поле є обов'язковим"
+          },
+          "PHONE_NUMBER": {
+            "LABEL": "Номер телефону",
+            "PLACEHOLDER": "Будь ласка, введіть номер телефону, з якого будуть надсилатися повідомлення.",
+            "ERROR": "Номер телефону повинен починатися з символу `+'."
+          },
+          "SUBMIT_BUTTON": "Create Bandwidth Channel",
+          "API": {
+            "ERROR_MESSAGE": "We were not able to authenticate Bandwidth credentials, please try again"
+          },
+          "API_CALLBACK": {
+            "TITLE": "Callback URL",
+            "SUBTITLE": "You have to configure the message callback URL in Bandwidth with the URL mentioned here."
+          }
+        }
+      },
+      "WHATSAPP": {
+        "TITLE": "Канал WhatsApp",
+        "DESC": "Розпочніть підтримувати своїх клієнтів через WhatsApp.",
+        "PROVIDERS": {
+          "LABEL": "API Provider",
+          "TWILIO": "Twilio",
+          "360_DIALOG": "360Dialog"
+        },
+        "INBOX_NAME": {
+          "LABEL": "Назва каналу",
+          "PLACEHOLDER": "Будь ласка, введіть назву каналу",
+          "ERROR": "Це поле є обов'язковим"
+        },
+        "PHONE_NUMBER": {
+          "LABEL": "Номер телефону",
+          "PLACEHOLDER": "Будь ласка, введіть номер телефону, з якого будуть надсилатися повідомлення.",
+          "ERROR": "Номер телефону повинен починатися з символу `+'."
+        },
+        "API_KEY": {
+          "LABEL": "API ключ",
+          "SUBTITLE": "Налаштуйте ключ WhatsApp API.",
+          "PLACEHOLDER": "API ключ",
+          "APPLY_FOR_ACCESS": "У вас немає жодного ключа API? Він потрібен для доступу",
+          "ERROR": "Будь ласка введіть правильне значення."
+        },
+        "SUBMIT_BUTTON": "Створити канал WhatsApp",
+        "API": {
+          "ERROR_MESSAGE": "Ми не змогли зберегти канал WhatsApp"
+        }
+      },
+      "API_CHANNEL": {
+        "TITLE": "API канал",
+        "DESC": "Інтегруйте з API каналом і почніть підтримувати клієнтів.",
+        "CHANNEL_NAME": {
+          "LABEL": "Назва каналу",
+          "PLACEHOLDER": "Будь ласка, введіть назву каналу",
+          "ERROR": "Це поле є обов'язковим"
+        },
+        "WEBHOOK_URL": {
+          "LABEL": "URL вебхука",
+          "SUBTITLE": "Налаштуйте URL, де бажаєте відкликати події та приймати виклики.",
+          "PLACEHOLDER": "URL вебхука"
+        },
+        "SUBMIT_BUTTON": "Створити API канал",
+        "API": {
+          "ERROR_MESSAGE": "Ми не змогли зберегти канал api"
+        }
+      },
+      "EMAIL_CHANNEL": {
+        "TITLE": "Email канал",
+        "DESC": "Інтегруйте поштову скриньку.",
+        "CHANNEL_NAME": {
+          "LABEL": "Назва каналу",
+          "PLACEHOLDER": "Будь ласка, введіть назву каналу",
+          "ERROR": "Це поле є обов'язковим"
+        },
+        "EMAIL": {
+          "LABEL": "Email",
+          "SUBTITLE": "Пишіть куди клієнти відправляють вам квитки підтримки",
+          "PLACEHOLDER": "Email"
+        },
+        "SUBMIT_BUTTON": "Створити Канал E-mail",
+        "API": {
+          "ERROR_MESSAGE": "We were not able to save the email channel"
+        },
+        "FINISH_MESSAGE": "Start forwarding your emails to the following email address."
+      },
+      "LINE_CHANNEL": {
+        "TITLE": "LINE Channel",
+        "DESC": "Integrate with LINE channel and start supporting your customers.",
+        "CHANNEL_NAME": {
+          "LABEL": "Назва каналу",
+          "PLACEHOLDER": "Будь ласка, введіть назву каналу",
+          "ERROR": "Це поле є обов'язковим"
+        },
+        "LINE_CHANNEL_ID": {
+          "LABEL": "LINE Channel ID",
+          "PLACEHOLDER": "LINE Channel ID"
+        },
+        "LINE_CHANNEL_SECRET": {
+          "LABEL": "LINE Channel Secret",
+          "PLACEHOLDER": "LINE Channel Secret"
+        },
+        "LINE_CHANNEL_TOKEN": {
+          "LABEL": "LINE Channel Token",
+          "PLACEHOLDER": "LINE Channel Token"
+        },
+        "SUBMIT_BUTTON": "Create LINE Channel",
+        "API": {
+          "ERROR_MESSAGE": "We were not able to save the LINE channel"
+        },
+        "API_CALLBACK": {
+          "TITLE": "Callback URL",
+          "SUBTITLE": "You have to configure the webhook URL in LINE application with the URL mentioned here."
+        }
+      },
+      "TELEGRAM_CHANNEL": {
+        "TITLE": "Telegram Channel",
+        "DESC": "Integrate with Telegram channel and start supporting your customers.",
+        "BOT_TOKEN": {
+          "LABEL": "Bot Token",
+          "SUBTITLE": "Configure the bot token you have obtained from Telegram BotFather.",
+          "PLACEHOLDER": "Bot Token"
+        },
+        "SUBMIT_BUTTON": "Create Telegram Channel",
+        "API": {
+          "ERROR_MESSAGE": "We were not able to save the telegram channel"
+        }
+      },
+      "AUTH": {
+        "TITLE": "Choose a channel",
+        "DESC": "CyberChat supports live-chat widget, Facebook page, Twitter profile, WhatsApp, Email etc., as channels. If you want to build a custom channel, you can create it using the API channel. Select one channel from the options below to proceed."
+      },
+      "AGENTS": {
+        "TITLE": "Агенти",
+        "DESC": "Here you can add agents to manage your newly created inbox. Only these selected agents will have access to your inbox. Agents which are not part of this inbox will not be able to see or respond to messages in this inbox when they login. <br> <b>PS:</b> As an administrator, if you need access to all inboxes, you should add yourself as agent to all inboxes that you create.",
+        "VALIDATION_ERROR": "Add atleast one agent to your new Inbox",
+        "PICK_AGENTS": "Pick agents for the inbox"
+      },
+      "DETAILS": {
+        "TITLE": "Деталі скриньки Вхідні",
+        "DESC": "From the dropdown below, select the Facebook Page you want to connect to CyberChat. You can also give a custom name to your inbox for better identification."
+      },
+      "FINISH": {
+        "TITLE": "Успіх!",
+        "DESC": "You have successfully finished integrating your Facebook Page with CyberChat. Next time a customer messages your Page, the conversation will automatically appear on your inbox.<br>We are also providing you with a widget script that you can easily add to your website. Once this is live on your website, customers can message you right from your website without the help of any external tool and the conversation will appear right here, on CyberChat.<br>Cool, huh? Well, we sure try to be :)"
+      }
+    },
+    "DETAILS": {
+      "LOADING_FB": "Автентифікація через Facebook...",
+      "ERROR_FB_AUTH": "Something went wrong, Please refresh page...",
+      "CREATING_CHANNEL": "Створення скриньки Вхідні...",
+      "TITLE": "Configure Inbox Details",
+      "DESC": ""
+    },
+    "AGENTS": {
+      "BUTTON_TEXT": "Додати агентів",
+      "ADD_AGENTS": "Додавання агентів до таки Вхідні..."
+    },
+    "FINISH": {
+      "TITLE": "Ваша поштова скринька готова!",
+      "MESSAGE": "You can now engage with your customers through your new Channel. Happy supporting ",
+      "BUTTON_TEXT": "Давай туди",
+      "MORE_SETTINGS": "More settings",
+      "WEBSITE_SUCCESS": "Ви успішно завершили створення каналу Веб-сайт. Скопіюйте наведений нижче код і вставте його на ваш сайт. Наступного разу коли клієнт скористається онлайн чатом, розмова автоматично з'явиться в вашій скриньці Вхідні."
+    },
+    "REAUTH": "Повторна авторизація",
+    "VIEW": "Вигляд",
+    "EDIT": {
+      "API": {
+        "SUCCESS_MESSAGE": "Inbox settings updated successfully",
+        "AUTO_ASSIGNMENT_SUCCESS_MESSAGE": "Автопризначення успішно оновлено",
+        "ERROR_MESSAGE": "Не вдалося оновити колір віджету. Будь ласка, спробуйте ще раз."
+      },
+      "AUTO_ASSIGNMENT": {
+        "ENABLED": "Увімкнено",
+        "DISABLED": "Вимкнено"
+      },
+      "EMAIL_COLLECT_BOX": {
+        "ENABLED": "Увімкнено",
+        "DISABLED": "Вимкнено"
+      },
+      "ENABLE_CSAT": {
+        "ENABLED": "Увімкнено",
+        "DISABLED": "Вимкнено"
+      },
+      "ALLOW_MESSAGES_AFTER_RESOLVED": {
+        "ENABLED": "Увімкнено",
+        "DISABLED": "Вимкнено"
+      },
+      "ENABLE_CONTINUITY_VIA_EMAIL": {
+        "ENABLED": "Увімкнено",
+        "DISABLED": "Вимкнено"
+      },
+      "ENABLE_HMAC": {
+        "LABEL": "Enable"
+      }
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Видалити",
+      "AVATAR_DELETE_BUTTON_TEXT": "Delete Avatar",
+      "CONFIRM": {
+        "TITLE": "Підтвердження видалення",
+        "MESSAGE": "Справді бажаєте видалити ",
+        "PLACE_HOLDER": "Please type {inboxName} to confirm",
+        "YES": "Так, видалити ",
+        "NO": "No, Keep "
+      },
+      "API": {
+        "SUCCESS_MESSAGE": "Скриньку успішно видалено",
+        "ERROR_MESSAGE": "Не вдалося видалити скриньку \"Вхідні\". Будь ласка, спробуйте ще раз.",
+        "AVATAR_SUCCESS_MESSAGE": "Inbox avatar deleted successfully",
+        "AVATAR_ERROR_MESSAGE": "Could not delete the inbox avatar. Please try again later."
+      }
+    },
+    "TABS": {
+      "SETTINGS": "Налаштування",
+      "COLLABORATORS": "Collaborators",
+      "CONFIGURATION": "Configuration",
+      "CAMPAIGN": "Campaigns",
+      "PRE_CHAT_FORM": "Pre Chat Form",
+      "BUSINESS_HOURS": "Business Hours"
+    },
+    "SETTINGS": "Налаштування",
+    "FEATURES": {
+      "LABEL": "Features",
+      "DISPLAY_FILE_PICKER": "Display file picker on the widget",
+      "DISPLAY_EMOJI_PICKER": "Display emoji picker on the widget"
+    },
+    "SETTINGS_POPUP": {
+      "MESSENGER_HEADING": "Messenger Script",
+      "MESSENGER_SUB_HEAD": "Добавте кнопку на сторінки вашого сайту",
+      "INBOX_AGENTS": "Агенти",
+      "INBOX_AGENTS_SUB_TEXT": "Додати або вилучити агентів з скриньки Вхідні",
+      "UPDATE": "Оновити",
+      "ENABLE_EMAIL_COLLECT_BOX": "Enable email collect box",
+      "ENABLE_EMAIL_COLLECT_BOX_SUB_TEXT": "Enable or disable email collect box on new conversation",
+      "AUTO_ASSIGNMENT": "Увімкнути автопризначення",
+      "ENABLE_CSAT": "Enable CSAT",
+      "ENABLE_CSAT_SUB_TEXT": "Увімкнути/Вимкнути опитування CSAT(Задоволення клієнтів) після вирішення розмови",
+      "ENABLE_CONTINUITY_VIA_EMAIL": "Enable conversation continuity via email",
+      "ENABLE_CONTINUITY_VIA_EMAIL_SUB_TEXT": "Conversations will continue over email if the contact email address is available.",
+      "INBOX_UPDATE_TITLE": "Налаштування каналу",
+      "INBOX_UPDATE_SUB_TEXT": "Оновіть параметри каналу",
+      "AUTO_ASSIGNMENT_SUB_TEXT": "Увімкнення або вимкнення автоматичного призначення нових розмов до агентів, доданих до цього каналу.",
+      "HMAC_VERIFICATION": "Перевірка ідентифікації користувача",
+      "HMAC_DESCRIPTION": "Щоб підтвердити ідентифікацію користувача, SDK дозволяє вам передати `identifier_hash` для кожного користувача. Тут можна згенерувати HMAC за допомогою 'sha256'.",
+      "HMAC_MANDATORY_VERIFICATION": "Застосувати примусову перевірку особистості користувача",
+      "HMAC_MANDATORY_DESCRIPTION": "Якщо увімкнено, метод CyberChat SDKs setUser не буде працювати, якщо тільки для кожного користувача не надається `identifier_hash'.",
+      "INBOX_IDENTIFIER": "Ідентифікатор каналу",
+      "INBOX_IDENTIFIER_SUB_TEXT": "Використовуйте токен `inbox_identifier`, показаний тут для аутентифікації ваших API клієнтів.",
+      "FORWARD_EMAIL_TITLE": "Переслати на ел. пошту",
+      "FORWARD_EMAIL_SUB_TEXT": "Почніть перенаправляти листи до наступної адреси електронної пошти.",
+      "ALLOW_MESSAGES_AFTER_RESOLVED": "Allow messages after conversation resolved",
+      "ALLOW_MESSAGES_AFTER_RESOLVED_SUB_TEXT": "Allow the end-users to send messages even after the conversation is resolved."
+    },
+    "FACEBOOK_REAUTHORIZE": {
+      "TITLE": "Повторна авторизація",
+      "SUBTITLE": "Підключення до Facebook закінчилося, будь ласка, поновіть сторінку Facebook, щоб продовжити роботу служб",
+      "MESSAGE_SUCCESS": "З'єднання пройшло успішно",
+      "MESSAGE_ERROR": "Сталася помилка, будь ласка, спробуйте ще раз"
+    },
+    "PRE_CHAT_FORM": {
+      "DESCRIPTION": "Попередні форми чату дозволяють зберегти інформацію про користувача, перш ніж вони почнуть розмову з вами.",
+      "ENABLE": {
+        "LABEL": "Увімкнути форму попереднього чату",
+        "OPTIONS": {
+          "ENABLED": "Так",
+          "DISABLED": "Ні"
+        }
+      },
+      "PRE_CHAT_MESSAGE": {
+        "LABEL": "Попереднє повідомлення чату",
+        "PLACEHOLDER": "Це повідомлення буде видимим для користувачів разом з формою"
+      },
+      "REQUIRE_EMAIL": {
+        "LABEL": "Відвідувачі повинні надати своє ім'я та адресу електронної пошти перед початком чату"
+      }
+    },
+    "BUSINESS_HOURS": {
+      "TITLE": "Встановіть доступність",
+      "SUBTITLE": "Встановіть доступність на вашому віджеті",
+      "WEEKLY_TITLE": "Встановіть робочі години",
+      "TIMEZONE_LABEL": "Обрати часовий пояс",
+      "UPDATE": "Оновити налаштування робочих годин",
+      "TOGGLE_AVAILABILITY": "Увімкнути робочі години для цього каналу",
+      "UNAVAILABLE_MESSAGE_LABEL": "Повідомлення для відвідувачів у неробочі години",
+      "UNAVAILABLE_MESSAGE_DEFAULT": "На даний момент ми недоступні. Залиште повідомлення, що ми відповімо, щойно повернемося.",
+      "TOGGLE_HELP": "Включення покаже робочі години на віджеті в чаті, навіть якщо всі агенти перебувають у автономному режимі. У неробочі години відвідувачі можуть бути попереджені повідомленням і формою попереднього чату.",
+      "DAY": {
+        "ENABLE": "Увімкнути доступність для цього дня",
+        "UNAVAILABLE": "Неприсутній",
+        "HOURS": "години",
+        "VALIDATION_ERROR": "Час початку має бути менше часу закриття.",
+        "CHOOSE": "Обрати"
+      },
+      "ALL_DAY": "All-Day"
+    },
+    "IMAP": {
+      "TITLE": "IMAP",
+      "SUBTITLE": "Set your IMAP details",
+      "UPDATE": "Update IMAP settings",
+      "TOGGLE_AVAILABILITY": "Enable IMAP configuration for this inbox",
+      "TOGGLE_HELP": "Enabling IMAP will help the user to recieve email",
+      "EDIT": {
+        "SUCCESS_MESSAGE": "IMAP settings updated successfully",
+        "ERROR_MESSAGE": "Unable to update IMAP settings"
+      },
+      "ADDRESS": {
+        "LABEL": "Address",
+        "PLACE_HOLDER": "Address (Eg: imap.gmail.com)"
+      },
+      "PORT": {
+        "LABEL": "Port",
+        "PLACE_HOLDER": "Port"
+      },
+      "EMAIL": {
+        "LABEL": "Email",
+        "PLACE_HOLDER": "Email"
+      },
+      "PASSWORD": {
+        "LABEL": "Пароль",
+        "PLACE_HOLDER": "Пароль"
+      },
+      "ENABLE_SSL": "Enable SSL"
+    },
+    "SMTP": {
+      "TITLE": "SMTP",
+      "SUBTITLE": "Set your SMTP details",
+      "UPDATE": "Update SMTP settings",
+      "TOGGLE_AVAILABILITY": "Enable SMTP configuration for this inbox",
+      "TOGGLE_HELP": "Enabling SMTP will help the user to send email",
+      "EDIT": {
+        "SUCCESS_MESSAGE": "SMTP settings updated successfully",
+        "ERROR_MESSAGE": "Unable to update SMTP settings"
+      },
+      "ADDRESS": {
+        "LABEL": "Address",
+        "PLACE_HOLDER": "Address (Eg: smtp.gmail.com)"
+      },
+      "PORT": {
+        "LABEL": "Port",
+        "PLACE_HOLDER": "Port"
+      },
+      "EMAIL": {
+        "LABEL": "Email",
+        "PLACE_HOLDER": "Email"
+      },
+      "PASSWORD": {
+        "LABEL": "Пароль",
+        "PLACE_HOLDER": "Пароль"
+      },
+      "DOMAIN": {
+        "LABEL": "Domain",
+        "PLACE_HOLDER": "Domain"
+      },
+      "ENCRYPTION": "Encryption",
+      "SSL_TLS": "SSL/TLS",
+      "START_TLS": "STARTTLS",
+      "OPEN_SSL_VERIFY_MODE": "Open SSL Verify Mode"
+    }
+  }
+}

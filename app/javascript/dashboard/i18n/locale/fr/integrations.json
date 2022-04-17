@@ -1,0 +1,85 @@
+{
+  "INTEGRATION_SETTINGS": {
+    "HEADER": "Intégrations",
+    "WEBHOOK": {
+      "TITLE": "Webhook",
+      "CONFIGURE": "Configurer",
+      "HEADER": "Paramètres de Webhook",
+      "HEADER_BTN_TXT": "Ajouter un nouveau Webhook",
+      "LOADING": "Récupération des Webhooks connectés",
+      "SEARCH_404": "Il n'y a aucun élément correspondant à cette requête",
+      "SIDEBAR_TXT": "<p><b>Webhooks</b> </p> <p>Les Webhooks sont des fonctions de rappel HTTP qui peuvent être définis pour chaque compte. Ils sont déclenchés par des événements comme la création de messages dans CyberChat. Vous pouvez créer plusieurs Webhook pour ce compte. <br /><br /> Pour créer un <b>Webhook</b>, cliquez sur le bouton <b>Ajouter un nouveau webhook</b> . Vous pouvez également supprimer n'importe quel Webhook existant en cliquant sur le bouton Supprimer.</p>",
+      "LIST": {
+        "404": "Il n'y a aucun Webhook configuré pour ce compte.",
+        "TITLE": "Gérer les webhooks",
+        "TABLE_HEADER": [
+          "Point de terminaison du Webhook",
+          "Actions"
+        ]
+      },
+      "EDIT": {
+        "BUTTON_TEXT": "Modifier",
+        "TITLE": "Modifier le webhook",
+        "CANCEL": "Annuler",
+        "DESC": "Les événements Webhook vous fournissent des informations en temps réel sur ce qui se passe dans votre compte CyberChat. Veuillez entrer une URL valide pour configurer un callback.",
+        "FORM": {
+          "END_POINT": {
+            "LABEL": "URL du Webhook",
+            "PLACEHOLDER": "Exemple : https://exemple/api/webhook",
+            "ERROR": "Veuillez entrer une URL valide"
+          },
+          "SUBMIT": "Modifier le webhook"
+        },
+        "API": {
+          "SUCCESS_MESSAGE": "URL du webhook mise à jour avec succès",
+          "ERROR_MESSAGE": "Impossible de se connecter au serveur Woot, veuillez réessayer plus tard"
+        }
+      },
+      "ADD": {
+        "CANCEL": "Annuler",
+        "TITLE": "Ajouter un nouveau webhook",
+        "DESC": "Les événements Webhook vous fournissent des informations en temps réel sur ce qui se passe dans votre compte CyberChat. Veuillez entrer une URL valide pour configurer un callback.",
+        "FORM": {
+          "END_POINT": {
+            "LABEL": "URL du Webhook",
+            "PLACEHOLDER": "Exemple : https://exemple/api/webhook",
+            "ERROR": "Veuillez entrer une URL valide"
+          },
+          "SUBMIT": "Créer le webhook"
+        },
+        "API": {
+          "SUCCESS_MESSAGE": "Webhook ajouté avec succès",
+          "ERROR_MESSAGE": "Impossible de se connecter au serveur Woot, veuillez réessayer plus tard"
+        }
+      },
+      "DELETE": {
+        "BUTTON_TEXT": "Supprimer",
+        "API": {
+          "SUCCESS_MESSAGE": "Webhook supprimé avec succès",
+          "ERROR_MESSAGE": "Impossible de se connecter au serveur Woot, veuillez réessayer plus tard"
+        },
+        "CONFIRM": {
+          "TITLE": "Confirmer la suppression",
+          "MESSAGE": "Êtes-vous sûr de vouloir supprimer ",
+          "YES": "Oui, supprimer ",
+          "NO": "Non, conservez-le"
+        }
+      }
+    },
+    "SLACK": {
+      "HELP_TEXT": {
+        "TITLE": "Utilisation de l'intégration Slack",
+        "BODY": "<br/><p>CyberChat va maintenant synchroniser toutes les conversations entrantes dans le canal <b><i>customer-conversations</i></b> à l'intérieur de Workspace Sack.</p><p>Répondre à un fil de conversation dans le canal Slack <b><i>customer-conversations</i></b> créera une réponse au client via cyber1schat.</p><p>Commencez les réponses avec <b><i>note :</i></b> pour créer des notes privées au lieu de réponses.</p><p>Si le répondant sur Slack a un profil d'agent dans le chat avec la même adresse email, les réponses seront associées en conséquence.</p><p>Lorsque le répondant n'a pas de profil d'agent associé, les réponses seront faites avec le profil du bot.</p>"
+      }
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Supprimer",
+      "API": {
+        "SUCCESS_MESSAGE": "Intégration supprimée avec succès"
+      }
+    },
+    "CONNECT": {
+      "BUTTON_TEXT": "Connecter"
+    }
+  }
+}

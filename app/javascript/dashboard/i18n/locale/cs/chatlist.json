@@ -1,0 +1,86 @@
+{
+  "CHAT_LIST": {
+    "LOADING": "Načítání konverzací",
+    "LOAD_MORE_CONVERSATIONS": "Načíst více konverzací",
+    "EOF": "Všechny konverzace načteny 🎉",
+    "LIST": {
+      "404": "V této skupině nejsou žádné aktivní konverzace."
+    },
+    "TAB_HEADING": "Konverzace",
+    "MENTION_HEADING": "Mentions",
+    "SEARCH": {
+      "INPUT": "Hledat lidi, chaty, Uložené odpovědi .."
+    },
+    "FILTER_ALL": "Vše",
+    "STATUS_TABS": [
+      {
+        "NAME": "Otevřít",
+        "KEY": "openCount"
+      },
+      {
+        "NAME": "Vyřešeno",
+        "KEY": "allConvCount"
+      }
+    ],
+    "ASSIGNEE_TYPE_TABS": [
+      {
+        "NAME": "Důl",
+        "KEY": "me",
+        "COUNT_KEY": "mineCount"
+      },
+      {
+        "NAME": "Nepřiřazeno",
+        "KEY": "unassigned",
+        "COUNT_KEY": "unAssignedCount"
+      },
+      {
+        "NAME": "Vše",
+        "KEY": "all",
+        "COUNT_KEY": "allCount"
+      }
+    ],
+    "CHAT_STATUS_FILTER_ITEMS": {
+      "open": {
+        "TEXT": "Otevřít"
+      },
+      "resolved": {
+        "TEXT": "Vyřešeno"
+      },
+      "pending": {
+        "TEXT": "Čekající"
+      },
+      "snoozed": {
+        "TEXT": "Odložené"
+      }
+    },
+    "ATTACHMENTS": {
+      "image": {
+        "CONTENT": "Zpráva obrázku"
+      },
+      "audio": {
+        "CONTENT": "Zvuková zpráva"
+      },
+      "video": {
+        "CONTENT": "Video zpráva"
+      },
+      "file": {
+        "CONTENT": "Přílohu souboru"
+      },
+      "location": {
+        "CONTENT": "Poloha"
+      },
+      "fallback": {
+        "CONTENT": "sdílel URL"
+      }
+    },
+    "RECEIVED_VIA_EMAIL": "Obdrženo e-mailem",
+    "VIEW_TWEET_IN_TWITTER": "Zobrazit tweet na Twitteru",
+    "REPLY_TO_TWEET": "Odpovědět na tento tweet",
+    "LINK_TO_STORY": "Go to instagram story",
+    "SENT": "Sent successfully",
+    "NO_MESSAGES": "Žádné zprávy",
+    "NO_CONTENT": "Žádný obsah k dispozici",
+    "HIDE_QUOTED_TEXT": "Hide Quoted Text",
+    "SHOW_QUOTED_TEXT": "Show Quoted Text"
+  }
+}

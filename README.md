@@ -1,77 +1,121 @@
 <p align="center">
-  <img src="https://s3.us-west-2.amazonaws.com/gh-assets.chatwoot.com/brand.svg" alt="Woot-logo" width="240">
+  <img src="https://s3.us-west-2.amazonaws.com/gh-assets.chat.cyber1s.com/brand.svg" alt="Woot-logo" width="240" />
 
-  <div align="center">Mobile app for chatwoot platform. Built with React Native</div>
-  <div align="center">Chatwoot is an opensource alternative to Intercom, Zendesk, Drift, Crisp etc.</div>
+  <p align="center">Customer engagement suite, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.</p>
 </p>
-
----
 
 <p align="center">
-   <a href="https://github.com/react-native-community/releases/blob/master/CHANGELOG.md"><img src="https://img.shields.io/github/package-json/dependency-version/chatwoot/chatwoot-mobile-app/react-native?color=%2361dafb" alt="Project Dependencies"></a>
-   <a href="https://github.com/akveo/react-native-ui-kitten/releases"><img src="https://img.shields.io/github/package-json/dependency-version/chatwoot/chatwoot-mobile-app/@ui-kitten/components?color=orange" alt="UI Kitten"></a>
-  <img src="https://img.shields.io/discord/647412545203994635" alt="Discord">
-  <a href="https://discord.gg/cJXdrwS"><img src="https://img.shields.io/badge/chat-Discord-violet?logo=discord" alt="Chat on Discord"></a>
-   <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="Chat on Discord"></a>
- <img src="https://img.shields.io/github/license/chatwoot/chatwoot" alt="License">
+  <a href="https://heroku.com/deploy?template=https://github.com/cyber1s/cyber1schat/tree/master" alt="Deploy to Heroku">
+     <img width="150" alt="Deploy" src="https://www.herokucdn.com/deploy/button.svg"/>
+  </a>
+  <a href="https://marketplace.digitalocean.com/apps/cyber1schat?refcode=f2238426a2a8" alt="Deploy to DigitalOcean">
+     <img width="200" alt="Deploy to DO" src="https://www.deploytodo.com/do-btn-blue.svg"/>
+  </a>
 </p>
 
-- **Supported Chatwoot version:** 2.0.0+
-- **Supported iOS versions**: 11+ 
-- **Supported Android versions**: 5.0+
+___
+
+<p align="center">
+  <a href="https://codeclimate.com/github/cyber1s/cyber1schat/maintainability"><img src="https://api.codeclimate.com/v1/badges/80f9e1a7c72d186289ad/maintainability" alt="Maintainability"></a>
+  <img src="https://img.shields.io/circleci/build/github/cyber1s/cyber1schat" alt="CircleCI Badge">
+    <a href="https://hub.docker.com/r/cyber1s/cyber1schat/"><img src="https://img.shields.io/docker/pulls/cyber1s/cyber1schat" alt="Docker Pull Badge"></a>
+  <a href="https://hub.docker.com/r/cyber1s/cyber1schat/"><img src="https://img.shields.io/docker/cloud/build/cyber1s/cyber1schat" alt="Docker Build Badge"></a>
+  <img src="https://img.shields.io/github/commit-activity/m/cyber1s/cyber1schat" alt="Commits-per-month">
+  <a title="Crowdin" target="_self" href="https://cyber1schat.crowdin.com/cyber1schat"><img src="https://badges.crowdin.net/e/37ced7eba411064bd792feb3b7a28b16/localized.svg"></a>
+  <a href="https://discord.gg/cJXdrwS"><img src="https://img.shields.io/discord/647412545203994635" alt="Discord"></a>
+  <a href="https://huntr.dev/bounties/disclose"><img src="https://cdn.huntr.dev/huntr_security_badge_mono.svg" alt="Huntr"></a>
+  <a href="https://status.chat.cyber1s.com"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcyber1schat%2Fstatus%2Fmaster%2Fapi%2Fcyber1schat%2Fuptime.json" alt="uptime"></a>
+  <a href="https://status.chat.cyber1s.com"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcyber1schat%2Fstatus%2Fmaster%2Fapi%2Fcyber1schat%2Fresponse-time.json" alt="response time"></a>
+</p>
+
+<img src="https://cyber1schat-public-assets.s3.amazonaws.com/github/screenshot.png" width="100%" alt="Chat dashboard"/>
+
+
+
+CyberChat is an open-source, self-hosted customer engagement suite. CyberChat lets you view and manage your customer data, communicate with them irrespective of which medium they use, and re-engage them based on their profile.
 
 ## Features
 
-- Do not miss out on the new customers
-- Follow up on customer conversations on go
-- Reply easily with canned responses
-- Receive realtime notifications about system activities
-- Communicate with other team members via private notes
-- Assign statuses to your conversations
-  ... and more to come!
+CyberChat supports the following conversation channels:
 
-<p float="left">
-  <img src=".github/conversation.png" alt="conversations" width="250">
-  <img src=".github/chat.png" alt="chat" width="250">
-  <img src=".github/details.png" alt="details"width="250">
-  <img src=".github/filter.png" alt="filter" width="250">
-  <img src=".github/notification.png" alt="notification"width="250">
-  <img src=".github/settings.png" alt="settings"width="250">
-</p>
+ - **Website**: Talk to your customers using our live chat widget and make use of our SDK to identify a user and provide contextual support.
+ - **Facebook**: Connect your Facebook pages and start replying to the direct messages to your page.
+ - **Instagram**: Connect your Instagram profile and start replying to the direct messages.
+ - **Twitter**: Connect your Twitter profiles and reply to direct messages or the tweets where you are mentioned.
+ - **Telegram**: Connect your Telegram bot and reply to your customers right from a single dashboard.
+ - **WhatsApp**: Connect your WhatsApp business account and manage the conversation in CyberChat.
+ - **Line**: Connect your Line account and manage the conversations in CyberChat.
+ - **SMS**: Connect your Twilio SMS account and reply to the SMS queries in CyberChat.
+ - **API Channel**: Build custom communication channels using our API channel.
+ - **Email**: Forward all your email queries to CyberChat and view it in our integrated dashboard.
 
-## Download Android/iOS application
+And more.
 
-<p >
-  <a href="https://apps.apple.com/app/id1495796682">
-    <img alt="Download on the App Store" title="App Store" src="http://i.imgur.com/0n2zqHD.png" width="140">
-  </a>
+Other features include:
 
-  <a href="https://play.google.com/store/apps/details?id=com.chatwoot.app&hl=en">
-    <img alt="Get it on Google Play" title="Google Play" src="http://i.imgur.com/mtGRPuM.png" width="140">
-  </a>
-</p>
+- **CRM**: Save all your customer information right inside CyberChat, use contact notes to log emails, phone calls, or meeting notes.
+- **Custom Attributes**: Define custom attribute attributes to store information about a contact or a conversation and extend the product to match your workflow.
+- **Shared multi-brand inboxes**: Manage multiple brands or pages using a shared inbox.
+- **Private notes**: Use @mentions and private notes to communicate internally about a conversation.
+- **Canned responses (Saved replies)**: Improve the response rate by adding saved replies for frequently asked questions.
+- **Conversation Labels**: Use conversation labels to create custom workflows.
+- **Auto assignment**: CyberChat intelligently assigns a ticket to the agents who have access to the inbox depending on their availability and load.
+- **Conversation continuity**: If the user has provided an email address through the chat widget, CyberChat will send an email to the customer under the agent name so that the user can continue the conversation over the email.
+- **Multi-lingual support**: CyberChat supports 10+ languages.
+- **Powerful API & Webhooks**: Extend the capability of the software using CyberChat’s webhooks and APIs.
+- **Integrations**: CyberChat natively integrates with Slack right now. Manage your conversations in Slack without logging into the dashboard.
 
-## Testing
+## Documentation
 
-To help with testing app updates before they're released, you can:
+Detailed documentation is available at [chat.cyber1s.com/help-center](https://www.chat.cyber1s.com/help-center).
 
-Sign up to be a beta tester
+## Translation process
 
-   - [Android](https://play.google.com/apps/testing/com.chatwoot.app) -  Open this link from your Android device
-   - [iOS](https://testflight.apple.com/join/ji5H8iSJ) - Open this link from your iOS device
-   
-You can leave the Beta testing program at any time:
-- On Android, [click this link](https://play.google.com/apps/testing/com.chatwoot.app) while logged in with your Google Play email address used to opt-in for the Beta program, then click **Leave the program**. 
-- On iOS, access the `Chatwoot` app page in TestFlight and click **Stop Testing**.
+The translation process for CyberChat web and mobile app is managed at [https://translate.chat.cyber1s.com](https://translate.chat.cyber1s.com) using Crowdin. Please read the [translation guide](https://www.chat.cyber1s.com/docs/contributing/translating-cyber1schat-to-your-language) for contributing to CyberChat.
 
-## Feedback & Contributing
+## Branching model
 
-Feel free to send us feedback on [Twitter](https://twitter.com/chatwootapp) or [file an issue](https://github.com/chatwoot/chatwoot-mobile-app/issues).
+We use the [git-flow](https://nvie.com/posts/a-successful-git-branching-model/) branching model. The base branch is `develop`.
+If you are looking for a stable version, please use the `master` or tags labelled as `v1.x.x`.
 
-If you wish to contribute, please take a quick look at the [CONTRIBUTING.md](https://www.chatwoot.com/docs/contributing-guide) and [SETUP_GUIDE.md](https://www.chatwoot.com/docs/contributing-guide/mobile-app/setup-guide).
- 
-If you want to self deploy the Chatwoot mobile app, please take a look at the [CUSTOM_RELEASE_GUIDE.md](https://www.chatwoot.com/docs/contributing-guide/mobile-app/custom-release-guide) guide.
+## Deployment
 
-If there's anything you'd like to chat about, please feel free to join our [Discord](https://discord.gg/cJXdrwS) chat!
+### Heroku one-click deploy
 
-_Chatwoot_ &copy; 2017-2022, Chatwoot Inc - Released under the MIT License.
+Deploying CyberChat to Heroku is a breeze. It's as simple as clicking this button:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cyber1s/cyber1schat/tree/master)
+
+Follow this [link](https://www.chat.cyber1s.com/docs/environment-variables) to understand setting the correct environment variables for the app to work with all the features. There might be breakages if you do not set the relevant environment variables.
+
+
+### DigitalOcean 1-Click Kubernetes deployment
+
+CyberChat now supports 1-Click deployment to DigitalOcean as a kubernetes app.
+
+<a href="https://marketplace.digitalocean.com/apps/cyber1schat?refcode=f2238426a2a8" alt="Deploy to DigitalOcean">
+  <img width="200" alt="Deploy to DO" src="https://www.deploytodo.com/do-btn-blue.svg"/>
+</a>
+
+### Other deployment options
+
+For other supported options, checkout our [deployment page](https://chat.cyber1s.com/deploy).
+
+## Security
+
+Looking to report a vulnerability? Please refer our [SECURITY.md](./SECURITY.md) file.
+
+
+## Community? Questions? Support ?
+
+If you need help or just want to hang out, come, say hi on our [Discord](https://discord.gg/cJXdrwS) server.
+
+
+## Contributors ✨
+
+Thanks goes to all these [wonderful people](https://www.chat.cyber1s.com/docs/contributors):
+
+<a href="https://github.com/cyber1s/cyber1schat/graphs/contributors"><img src="https://opencollective.com/cyber1schat/contributors.svg?width=890&button=false" /></a>
+
+
+*CyberChat* &copy; 2017-2022, CyberChat Inc - Released under the MIT License.
