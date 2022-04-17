@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Description: Cyber1SChat installation script
+# Description: CYBER1SChat installation script
 # OS: Ubuntu 18.04 LTS
 # Script Version: 0.2
 
@@ -77,7 +77,7 @@ cp /home/cyber1schat/cyber1schat/deployment/cyber1schat.target /etc/systemd/syst
 systemctl enable cyber1schat.target
 systemctl start cyber1schat.target
 
-echo "Wooh! Wooh!! Cyber1SChat server installation is complete"
+echo "Wooh! Wooh!! CYBER1SChat server installation is complete"
 echo "The server will be accessible at http://<server-ip>:3000"
 echo "To configure a domain and SSL certificate, follow the guide at https://chat.cyber1s.com/docs/deployment/deploy-cyber1schat-in-linux-vm"
 

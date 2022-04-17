@@ -32,7 +32,7 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Kunde inte ansluta till Cyber1SChat Server, försök igen senare"
+          "ERROR_MESSAGE": "Kunde inte ansluta till CYBER1SChat Server, försök igen senare"
         }
       },
       "ADD": {
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook har lagts till",
-          "ERROR_MESSAGE": "Kunde inte ansluta till Cyber1SChat Server, försök igen senare"
+          "ERROR_MESSAGE": "Kunde inte ansluta till CYBER1SChat Server, försök igen senare"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Radera",
         "API": {
           "SUCCESS_MESSAGE": "Webhook har tagits bort",
-          "ERROR_MESSAGE": "Kunde inte ansluta till Cyber1SChat Server, försök igen senare"
+          "ERROR_MESSAGE": "Kunde inte ansluta till CYBER1SChat Server, försök igen senare"
         },
         "CONFIRM": {
           "TITLE": "Bekräfta borttagning",

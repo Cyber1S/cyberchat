@@ -26,7 +26,7 @@
       "value": "production"
     },
     "FRONTEND_URL": {
-      "description": "Public root URL of the Cyber1SChat installation. This will be used in the emails.",
+      "description": "Public root URL of the CYBER1SChat installation. This will be used in the emails.",
       "value": "https://CHANGE.herokuapp.com"
     },
     "INSTALLATION_ENV": {

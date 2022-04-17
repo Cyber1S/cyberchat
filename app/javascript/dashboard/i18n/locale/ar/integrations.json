@@ -21,7 +21,7 @@
         "BUTTON_TEXT": "تعديل",
         "TITLE": "تعديل webhook",
         "CANCEL": "إلغاء",
-        "DESC": "أحداث Webhook توفر لك معلومات في الوقت الحقيقي حول ما يحدث في حساب Cyber1SChat الخاص بك. الرجاء إدخال عنوان URL صالح لتكوين callback.",
+        "DESC": "أحداث Webhook توفر لك معلومات في الوقت الحقيقي حول ما يحدث في حساب CYBER1SChat الخاص بك. الرجاء إدخال عنوان URL صالح لتكوين callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "رابط Webhook",
@@ -38,7 +38,7 @@
       "ADD": {
         "CANCEL": "إلغاء",
         "TITLE": "إضافة webhook جديد",
-        "DESC": "أحداث Webhook توفر لك معلومات في الوقت الحقيقي حول ما يحدث في حساب Cyber1SChat الخاص بك. الرجاء إدخال عنوان URL صالح لتكوين callback.",
+        "DESC": "أحداث Webhook توفر لك معلومات في الوقت الحقيقي حول ما يحدث في حساب CYBER1SChat الخاص بك. الرجاء إدخال عنوان URL صالح لتكوين callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "رابط Webhook",

@@ -21,7 +21,7 @@
         "BUTTON_TEXT": "Редактирай",
         "TITLE": "Edit webhook",
         "CANCEL": "Отмени",
-        "DESC": "Webhook events provide you the realtime information about what's happening in your Cyber1SChat account. Please enter a valid URL to configure a callback.",
+        "DESC": "Webhook events provide you the realtime information about what's happening in your CYBER1SChat account. Please enter a valid URL to configure a callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook URL",
@@ -32,13 +32,13 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Не можа да се свърже с Cyber1SChat сървър. Моля, опитайте отново по-късно"
+          "ERROR_MESSAGE": "Не можа да се свърже с CYBER1SChat сървър. Моля, опитайте отново по-късно"
         }
       },
       "ADD": {
         "CANCEL": "Отмени",
         "TITLE": "Add new webhook",
-        "DESC": "Webhook events provide you the realtime information about what's happening in your Cyber1SChat account. Please enter a valid URL to configure a callback.",
+        "DESC": "Webhook events provide you the realtime information about what's happening in your CYBER1SChat account. Please enter a valid URL to configure a callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook URL",
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook added successfully",
-          "ERROR_MESSAGE": "Не можа да се свърже с Cyber1SChat сървър. Моля, опитайте отново по-късно"
+          "ERROR_MESSAGE": "Не можа да се свърже с CYBER1SChat сървър. Моля, опитайте отново по-късно"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Изтрий",
         "API": {
           "SUCCESS_MESSAGE": "Webhook deleted successfully",
-          "ERROR_MESSAGE": "Не можа да се свърже с Cyber1SChat сървър. Моля, опитайте отново по-късно"
+          "ERROR_MESSAGE": "Не можа да се свърже с CYBER1SChat сървър. Моля, опитайте отново по-късно"
         },
         "CONFIRM": {
           "TITLE": "Потвърди изтриването",

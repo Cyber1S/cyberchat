@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Sie können jetzt E-Mails in Ihrer benutzerdefinierten Domäne empfangen."
       }
     },
-    "UPDATE_CYBER1SCHAT": "Ein Update %{latestCyber1SChatVersion} für Cyber1SChat ist verfügbar. Bitte aktualisieren Sie Ihre Instanz.",
+    "UPDATE_CYBER1SCHAT": "Ein Update %{latestCyber1SChatVersion} für CYBER1SChat ist verfügbar. Bitte aktualisieren Sie Ihre Instanz.",
     "LEARN_MORE": "Mehr erfahren"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Verbindung zu Cyber1SChat getrennt"
+      "TEXT": "Verbindung zu CYBER1SChat getrennt"
     },
     "BUTTON": {
       "REFRESH": "Neu laden"

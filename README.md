@@ -32,7 +32,7 @@ ___
 
 
 
-Cyber1SChat is an open-source, self-hosted customer engagement suite. Cyber1SChat lets you view and manage your customer data, communicate with them irrespective of which medium they use, and re-engage them based on their profile.
+Cyber1SChat is an open-source, self-hosted customer engagement suite. CYBER1SChat lets you view and manage your customer data, communicate with them irrespective of which medium they use, and re-engage them based on their profile.
 
 ## Features
 
@@ -47,7 +47,7 @@ Cyber1SChat supports the following conversation channels:
  - **Line**: Connect your Line account and manage the conversations in Cyber1SChat.
  - **SMS**: Connect your Twilio SMS account and reply to the SMS queries in Cyber1SChat.
  - **API Channel**: Build custom communication channels using our API channel.
- - **Email**: Forward all your email queries to Cyber1SChat and view it in our integrated dashboard.
+ - **Email**: Forward all your email queries to CYBER1SChat and view it in our integrated dashboard.
 
 And more.
 
@@ -59,11 +59,11 @@ Other features include:
 - **Private notes**: Use @mentions and private notes to communicate internally about a conversation.
 - **Canned responses (Saved replies)**: Improve the response rate by adding saved replies for frequently asked questions.
 - **Conversation Labels**: Use conversation labels to create custom workflows.
-- **Auto assignment**: Cyber1SChat intelligently assigns a ticket to the agents who have access to the inbox depending on their availability and load.
-- **Conversation continuity**: If the user has provided an email address through the chat widget, Cyber1SChat will send an email to the customer under the agent name so that the user can continue the conversation over the email.
-- **Multi-lingual support**: Cyber1SChat supports 10+ languages.
+- **Auto assignment**: CYBER1SChat intelligently assigns a ticket to the agents who have access to the inbox depending on their availability and load.
+- **Conversation continuity**: If the user has provided an email address through the chat widget, CYBER1SChat will send an email to the customer under the agent name so that the user can continue the conversation over the email.
+- **Multi-lingual support**: CYBER1SChat supports 10+ languages.
 - **Powerful API & Webhooks**: Extend the capability of the software using Cyber1SChat’s webhooks and APIs.
-- **Integrations**: Cyber1SChat natively integrates with Slack right now. Manage your conversations in Slack without logging into the dashboard.
+- **Integrations**: CYBER1SChat natively integrates with Slack right now. Manage your conversations in Slack without logging into the dashboard.
 
 ## Documentation
 
@@ -71,7 +71,7 @@ Detailed documentation is available at [chat.cyber1s.com/help-center](https://ch
 
 ## Translation process
 
-The translation process for Cyber1SChat web and mobile app is managed at [https://translate.chat.cyber1s.com](https://translate.chat.cyber1s.com) using Crowdin. Please read the [translation guide](https://chat.cyber1s.com/docs/contributing/translating-cyber1schat-to-your-language) for contributing to Cyber1SChat.
+The translation process for CYBER1SChat web and mobile app is managed at [https://translate.chat.cyber1s.com](https://translate.chat.cyber1s.com) using Crowdin. Please read the [translation guide](https://chat.cyber1s.com/docs/contributing/translating-cyber1schat-to-your-language) for contributing to Cyber1SChat.
 
 ## Branching model
 
@@ -82,7 +82,7 @@ If you are looking for a stable version, please use the `master` or tags labelle
 
 ### Heroku one-click deploy
 
-Deploying Cyber1SChat to Heroku is a breeze. It's as simple as clicking this button:
+Deploying CYBER1SChat to Heroku is a breeze. It's as simple as clicking this button:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cyber1s/cyber1schat/tree/master)
 
@@ -118,4 +118,4 @@ Thanks goes to all these [wonderful people](https://chat.cyber1s.com/docs/contri
 <a href="https://github.com/cyber1s/cyber1schat/graphs/contributors"><img src="https://opencollective.com/cyber1schat/contributors.svg?width=890&button=false" /></a>
 
 
-*Cyber1SChat* &copy; 2017-2022, Cyber1SChat Inc - Released under the MIT License.
+*Cyber1SChat* &copy; 2017-2022, CYBER1SChat Inc - Released under the MIT License.

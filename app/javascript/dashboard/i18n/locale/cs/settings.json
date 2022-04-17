@@ -186,13 +186,13 @@
     "BETA": "Beta"
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any Cyber1SChat accounts. Please create a new account to continue.",
+    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any CYBER1SChat accounts. Please create a new account to continue.",
     "NEW_ACCOUNT": "Nový účet",
     "SELECTOR_SUBTITLE": "Vytvořit nový účet",
     "API": {
       "SUCCESS_MESSAGE": "Účet byl úspěšně vytvořen",
       "EXIST_MESSAGE": "Účet již existuje",
-      "ERROR_MESSAGE": "Nelze se připojit k Cyber1SChat serveru, opakujte akci později"
+      "ERROR_MESSAGE": "Nelze se připojit k CYBER1SChat serveru, opakujte akci později"
     },
     "FORM": {
       "NAME": {

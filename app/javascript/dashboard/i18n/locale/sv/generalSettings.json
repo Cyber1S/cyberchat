@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Du kan nu ta emot e-postmeddelanden i din egna domän."
       }
     },
-    "UPDATE_CYBER1SCHAT": "En uppdatering %{latestCyber1SChatVersion} för Cyber1SChat är tillgänglig. Vänligen uppdatera din instans.",
+    "UPDATE_CYBER1SCHAT": "En uppdatering %{latestCyber1SChatVersion} för CYBER1SChat är tillgänglig. Vänligen uppdatera din instans.",
     "LEARN_MORE": "Learn more"
   },
   "FORMS": {

@@ -21,7 +21,7 @@
         "BUTTON_TEXT": "수정",
         "TITLE": "Edit webhook",
         "CANCEL": "취소",
-        "DESC": "웹훅 이벤트는 Cyber1SChat 계정에서 일어나는 일에 대한 실시간 정보를 제공합니다. 콜백을 구성하려면 유효한 URL을 입력하십시오.",
+        "DESC": "웹훅 이벤트는 CYBER1SChat 계정에서 일어나는 일에 대한 실시간 정보를 제공합니다. 콜백을 구성하려면 유효한 URL을 입력하십시오.",
         "FORM": {
           "END_POINT": {
             "LABEL": "웹훅 URL",
@@ -38,7 +38,7 @@
       "ADD": {
         "CANCEL": "취소",
         "TITLE": "새 웹훅 추가",
-        "DESC": "웹훅 이벤트는 Cyber1SChat 계정에서 일어나는 일에 대한 실시간 정보를 제공합니다. 콜백을 구성하려면 유효한 URL을 입력하십시오.",
+        "DESC": "웹훅 이벤트는 CYBER1SChat 계정에서 일어나는 일에 대한 실시간 정보를 제공합니다. 콜백을 구성하려면 유효한 URL을 입력하십시오.",
         "FORM": {
           "END_POINT": {
             "LABEL": "웹훅 URL",

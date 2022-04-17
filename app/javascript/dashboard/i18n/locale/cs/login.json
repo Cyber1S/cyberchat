@@ -11,7 +11,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Přihlášení úspěšné",
-      "ERROR_MESSAGE": "Nelze se připojit k Cyber1SChat serveru, opakujte akci později",
+      "ERROR_MESSAGE": "Nelze se připojit k CYBER1SChat serveru, opakujte akci později",
       "UNAUTH": "Nesprávné uživatelské jméno / heslo. Zkuste to prosím znovu"
     },
     "FORGOT_PASSWORD": "Zapomněli jste heslo?",

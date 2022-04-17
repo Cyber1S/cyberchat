@@ -21,7 +21,7 @@
         "BUTTON_TEXT": "Upravit",
         "TITLE": "Edit webhook",
         "CANCEL": "Zrušit",
-        "DESC": "Události webhooku vám poskytují reálné informace o tom, co se děje ve vašem Cyber1SChat účtu. Zadejte prosím platnou URL pro nastavení hovoru.",
+        "DESC": "Události webhooku vám poskytují reálné informace o tom, co se děje ve vašem CYBER1SChat účtu. Zadejte prosím platnou URL pro nastavení hovoru.",
         "FORM": {
           "END_POINT": {
             "LABEL": "URL webového háčku",
@@ -32,13 +32,13 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Nelze se připojit k Cyber1SChat serveru, opakujte akci později"
+          "ERROR_MESSAGE": "Nelze se připojit k CYBER1SChat serveru, opakujte akci později"
         }
       },
       "ADD": {
         "CANCEL": "Zrušit",
         "TITLE": "Přidat nový webový háček",
-        "DESC": "Události webhooku vám poskytují reálné informace o tom, co se děje ve vašem Cyber1SChat účtu. Zadejte prosím platnou URL pro nastavení hovoru.",
+        "DESC": "Události webhooku vám poskytují reálné informace o tom, co se děje ve vašem CYBER1SChat účtu. Zadejte prosím platnou URL pro nastavení hovoru.",
         "FORM": {
           "END_POINT": {
             "LABEL": "URL webového háčku",
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webový háček byl úspěšně přidán",
-          "ERROR_MESSAGE": "Nelze se připojit k Cyber1SChat serveru, opakujte akci později"
+          "ERROR_MESSAGE": "Nelze se připojit k CYBER1SChat serveru, opakujte akci později"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Vymazat",
         "API": {
           "SUCCESS_MESSAGE": "Webový háček byl úspěšně odstraněn",
-          "ERROR_MESSAGE": "Nelze se připojit k Cyber1SChat serveru, opakujte akci později"
+          "ERROR_MESSAGE": "Nelze se připojit k CYBER1SChat serveru, opakujte akci později"
         },
         "CONFIRM": {
           "TITLE": "Potvrdit odstranění",

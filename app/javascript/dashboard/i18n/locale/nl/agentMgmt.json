@@ -3,7 +3,7 @@
     "HEADER": "Medewerkers",
     "HEADER_BTN_TXT": "Medewerker toevoegen",
     "LOADING": "Ophalen van medewerkerslijst",
-    "SIDEBAR_TXT": "<p><b>Agenten</b></p> <p> Een <b>Agent</b> is lid van uw klantenservice. </p><p> De agenten kunnen berichten van uw gebruikers bekijken en beantwoorden. De lijst toont alle agenten die momenteel in uw account staan. </p><p> Klik op <b>Voeg agent toe</b> om een nieuwe agent toe te voegen. De agent die je toevoegt ontvangt een e-mail met een bevestigingslink om zijn account te activeren, waarna hij Cyber1SChat kan bezoeken en op berichten kan reageren. </p><p> Toegang tot Cyber1SChat's functies zijn gebaseerd op de volgende rollen. </p><p> <b>Agent</b> - Agenten met deze rol kunnen alleen inboxen, rapporten en gesprekken gebruiken. Ze kunnen gesprekken toewijzen aan andere agenten of zichzelf en gesprekken oplossen.</p><p> <b>Beheerder</b> - Beheerder heeft toegang tot alle Cyber1SChat functies ingeschakeld voor uw account, inclusief instellingen, samen met alle normale agents' privileges.</p>",
+    "SIDEBAR_TXT": "<p><b>Agenten</b></p> <p> Een <b>Agent</b> is lid van uw klantenservice. </p><p> De agenten kunnen berichten van uw gebruikers bekijken en beantwoorden. De lijst toont alle agenten die momenteel in uw account staan. </p><p> Klik op <b>Voeg agent toe</b> om een nieuwe agent toe te voegen. De agent die je toevoegt ontvangt een e-mail met een bevestigingslink om zijn account te activeren, waarna hij CYBER1SChat kan bezoeken en op berichten kan reageren. </p><p> Toegang tot Cyber1SChat's functies zijn gebaseerd op de volgende rollen. </p><p> <b>Agent</b> - Agenten met deze rol kunnen alleen inboxen, rapporten en gesprekken gebruiken. Ze kunnen gesprekken toewijzen aan andere agenten of zichzelf en gesprekken oplossen.</p><p> <b>Beheerder</b> - Beheerder heeft toegang tot alle CYBER1SChat functies ingeschakeld voor uw account, inclusief instellingen, samen met alle normale agents' privileges.</p>",
     "AGENT_TYPES": {
       "ADMINISTRATOR": "Beheerder",
       "AGENT": "Medewerker"
@@ -42,14 +42,14 @@
       "API": {
         "SUCCESS_MESSAGE": "Medewerker succesvol toegevoegd",
         "EXIST_MESSAGE": "E-mailadres van de medewerker is al in gebruik, probeer een ander e-mailadres",
-        "ERROR_MESSAGE": "Kan geen verbinding maken met Cyber1SChat Server, probeer het later opnieuw"
+        "ERROR_MESSAGE": "Kan geen verbinding maken met CYBER1SChat Server, probeer het later opnieuw"
       }
     },
     "DELETE": {
       "BUTTON_TEXT": "Verwijderen",
       "API": {
         "SUCCESS_MESSAGE": "Medewerker succesvol verwijderd",
-        "ERROR_MESSAGE": "Kan geen verbinding maken met Cyber1SChat Server, probeer het later opnieuw"
+        "ERROR_MESSAGE": "Kan geen verbinding maken met CYBER1SChat Server, probeer het later opnieuw"
       },
       "CONFIRM": {
         "TITLE": "Verwijderen bevestigen",
@@ -80,13 +80,13 @@
       "CANCEL_BUTTON_TEXT": "Annuleren",
       "API": {
         "SUCCESS_MESSAGE": "Medewerker succesvol bijgewerkt",
-        "ERROR_MESSAGE": "Kan geen verbinding maken met Cyber1SChat Server, probeer het later opnieuw"
+        "ERROR_MESSAGE": "Kan geen verbinding maken met CYBER1SChat Server, probeer het later opnieuw"
       },
       "PASSWORD_RESET": {
         "ADMIN_RESET_BUTTON": "Wachtwoord opnieuw instellen",
         "ADMIN_SUCCESS_MESSAGE": "Een e-mail met instructies om het wachtwoord te resetten is verstuurd naar de medewerker",
         "SUCCESS_MESSAGE": "Wachtwoord medewerker opnieuw instellen is geslaagd",
-        "ERROR_MESSAGE": "Kan geen verbinding maken met Cyber1SChat Server, probeer het later opnieuw"
+        "ERROR_MESSAGE": "Kan geen verbinding maken met CYBER1SChat Server, probeer het later opnieuw"
       }
     },
     "SEARCH": {

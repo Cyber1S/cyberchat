@@ -12,7 +12,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Survey updated successfully",
-      "ERROR_MESSAGE": "Kunne ikke koble til Cyber1SChat Server, vennligst prøv igjen senere"
+      "ERROR_MESSAGE": "Kunne ikke koble til CYBER1SChat Server, vennligst prøv igjen senere"
     }
   },
   "POWERED_BY": "Drevet av Cyber1SChat"

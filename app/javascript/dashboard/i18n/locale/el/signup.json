@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Επιτυχής καταχώρηση",
-      "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον Cyber1SChat Server, Παρακαλώ προσπαθήστε αργότερα"
+      "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον CYBER1SChat Server, Παρακαλώ προσπαθήστε αργότερα"
     },
     "SUBMIT": "Καταχώρηση",
     "HAVE_AN_ACCOUNT": "Έχετε ήδη ένα λογαριασμό?"

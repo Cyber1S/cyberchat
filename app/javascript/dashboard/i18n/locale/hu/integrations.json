@@ -8,7 +8,7 @@
       "HEADER_BTN_TXT": "Új webhook hozzáadása",
       "LOADING": "Kapcsolódó Webhookok betöltése",
       "SEARCH_404": "Nincs megfelelő elem",
-      "SIDEBAR_TXT": "<p><b>Webhook</b>-ok</p><p>A Webhook-ok HTTP visszahívások, melyek minden fiókhoz bállíthatóak. Cyber1SChat események, például beérkező üzenetek aktiválhatják a webhookokat. Több webhookot is beállíthatsz a fiókodhoz. <br /><br /> Egy <b>webhook</b> létrehozásához kattints a <b>Webhook hozzáadása</b> gombra. Le is törölheted a létrejött webhookokat a Törlés gombra kattintva.</p>",
+      "SIDEBAR_TXT": "<p><b>Webhook</b>-ok</p><p>A Webhook-ok HTTP visszahívások, melyek minden fiókhoz bállíthatóak. CYBER1SChat események, például beérkező üzenetek aktiválhatják a webhookokat. Több webhookot is beállíthatsz a fiókodhoz. <br /><br /> Egy <b>webhook</b> létrehozásához kattints a <b>Webhook hozzáadása</b> gombra. Le is törölheted a létrejött webhookokat a Törlés gombra kattintva.</p>",
       "LIST": {
         "404": "Nincs a fiókhoz rendelt Webhook.",
         "TITLE": "Webhook kezelés",
@@ -21,7 +21,7 @@
         "BUTTON_TEXT": "Szerkesztés",
         "TITLE": "Edit webhook",
         "CANCEL": "Mégse",
-        "DESC": "Webhook események valós idejű információt adnak arról, hogy mi történik a Cyber1SChat fiókodban. Kérünk a visszahívás beállításánál egy helyes URL-t adj meg.",
+        "DESC": "Webhook események valós idejű információt adnak arról, hogy mi történik a CYBER1SChat fiókodban. Kérünk a visszahívás beállításánál egy helyes URL-t adj meg.",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook URL",
@@ -32,13 +32,13 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Nem sikerült csatlakozni a Cyber1SChat szerverhez, kérjük próbáld később"
+          "ERROR_MESSAGE": "Nem sikerült csatlakozni a CYBER1SChat szerverhez, kérjük próbáld később"
         }
       },
       "ADD": {
         "CANCEL": "Mégse",
         "TITLE": "Új webhook hozzáadása",
-        "DESC": "Webhook események valós idejű információt adnak arról, hogy mi történik a Cyber1SChat fiókodban. Kérünk a visszahívás beállításánál egy helyes URL-t adj meg.",
+        "DESC": "Webhook események valós idejű információt adnak arról, hogy mi történik a CYBER1SChat fiókodban. Kérünk a visszahívás beállításánál egy helyes URL-t adj meg.",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook URL",
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook sikeresen hozzáadva",
-          "ERROR_MESSAGE": "Nem sikerült csatlakozni a Cyber1SChat szerverhez, kérjük próbáld később"
+          "ERROR_MESSAGE": "Nem sikerült csatlakozni a CYBER1SChat szerverhez, kérjük próbáld később"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Törlés",
         "API": {
           "SUCCESS_MESSAGE": "Webhook sikeresen törölve",
-          "ERROR_MESSAGE": "Nem sikerült csatlakozni a Cyber1SChat szerverhez, kérjük próbáld később"
+          "ERROR_MESSAGE": "Nem sikerült csatlakozni a CYBER1SChat szerverhez, kérjük próbáld később"
         },
         "CONFIRM": {
           "TITLE": "Törlés megerősítése",

@@ -36,7 +36,7 @@ Share the server logs to debug the issue further
 
 **Environment**
 
-Describe whether you are using Cyber1SChat Cloud (chat.cyber1s.com) or a self hosted installation of Cyber1SChat. If you are using a self hosted installation of Cyber1SChat describe the type of deployment (Docker/Linux VM installation/Heroku)
+Describe whether you are using CYBER1SChat Cloud (chat.cyber1s.com) or a self hosted installation of Cyber1SChat. If you are using a self hosted installation of CYBER1SChat describe the type of deployment (Docker/Linux VM installation/Heroku)
 
 **Desktop (please complete the following information):**
  - OS: [e.g. iOS]

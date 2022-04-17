@@ -192,7 +192,7 @@
     "API": {
       "SUCCESS_MESSAGE": "Ο Λογαριασμός δημιουργήθηκε επιτυχώς",
       "EXIST_MESSAGE": "Ο Λογαριασμός υπάρχει ήδη",
-      "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον Cyber1SChat Server, Παρακαλώ προσπαθήστε αργότερα"
+      "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον CYBER1SChat Server, Παρακαλώ προσπαθήστε αργότερα"
     },
     "FORM": {
       "NAME": {

@@ -186,13 +186,13 @@
     "BETA": "Beta"
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any Cyber1SChat accounts. Please create a new account to continue.",
+    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any CYBER1SChat accounts. Please create a new account to continue.",
     "NEW_ACCOUNT": "Cont Nou",
     "SELECTOR_SUBTITLE": "Creează un cont nou",
     "API": {
       "SUCCESS_MESSAGE": "Agent actualizat cu succes",
       "EXIST_MESSAGE": "Contul există deja",
-      "ERROR_MESSAGE": "Nu s-a putut conecta la Cyber1SChat Server, încercați din nou mai târziu"
+      "ERROR_MESSAGE": "Nu s-a putut conecta la CYBER1SChat Server, încercați din nou mai târziu"
     },
     "FORM": {
       "NAME": {

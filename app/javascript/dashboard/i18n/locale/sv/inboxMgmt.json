@@ -415,7 +415,7 @@
       "HMAC_VERIFICATION": "Validering av användaridentitet",
       "HMAC_DESCRIPTION": "För att validera användarens identitet låter SDKn dig att skicka en `identity_hash` för varje användare. Du kan generera HMAC med 'sha256' med nyckeln som visas här.",
       "HMAC_MANDATORY_VERIFICATION": "Validering av användaridentitet",
-      "HMAC_MANDATORY_DESCRIPTION": "Om aktiverad, kommer Cyber1SChat SDKs setUser metod inte att fungera om inte `identifier_hash` tillhandahålls för varje användare.",
+      "HMAC_MANDATORY_DESCRIPTION": "Om aktiverad, kommer CYBER1SChat SDKs setUser metod inte att fungera om inte `identifier_hash` tillhandahålls för varje användare.",
       "INBOX_IDENTIFIER": "Identifierare för inkorgen",
       "INBOX_IDENTIFIER_SUB_TEXT": "Använd `inbox_identifier`-token som visas här för att autentisera dina API-klienter.",
       "FORWARD_EMAIL_TITLE": "Vidarebefordra till e-post",

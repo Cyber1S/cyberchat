@@ -37,7 +37,7 @@
         "PLACEHOLDER": "Wprowadź nazwę swojej strony (np. Acme Inc)"
       },
       "FB": {
-        "HELP": "PS: Logując się, uzyskujemy dostęp tylko do wiadomości Twojej strony. Cyber1SChat nigdy nie może uzyskać dostępu do prywatnych wiadomości.",
+        "HELP": "PS: Logując się, uzyskujemy dostęp tylko do wiadomości Twojej strony. CYBER1SChat nigdy nie może uzyskać dostępu do prywatnych wiadomości.",
         "CHOOSE_PAGE": "Wybierz stronę",
         "CHOOSE_PLACEHOLDER": "Wybierz stronę z listy",
         "INBOX_NAME": "Nazwa skrzynki odbiorczej",

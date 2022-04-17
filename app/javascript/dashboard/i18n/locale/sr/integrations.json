@@ -21,7 +21,7 @@
         "BUTTON_TEXT": "Uredi",
         "TITLE": "Edit webhook",
         "CANCEL": "Otkaži",
-        "DESC": "Webhook events provide you the realtime information about what's happening in your Cyber1SChat account. Please enter a valid URL to configure a callback.",
+        "DESC": "Webhook events provide you the realtime information about what's happening in your CYBER1SChat account. Please enter a valid URL to configure a callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook URL",
@@ -32,13 +32,13 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Nije moguće se povezati sa Cyber1SChat serverom, pokušajte ponovo kasnije"
+          "ERROR_MESSAGE": "Nije moguće se povezati sa CYBER1SChat serverom, pokušajte ponovo kasnije"
         }
       },
       "ADD": {
         "CANCEL": "Otkaži",
         "TITLE": "Add new webhook",
-        "DESC": "Webhook events provide you the realtime information about what's happening in your Cyber1SChat account. Please enter a valid URL to configure a callback.",
+        "DESC": "Webhook events provide you the realtime information about what's happening in your CYBER1SChat account. Please enter a valid URL to configure a callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook URL",
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook added successfully",
-          "ERROR_MESSAGE": "Nije moguće se povezati sa Cyber1SChat serverom, pokušajte ponovo kasnije"
+          "ERROR_MESSAGE": "Nije moguće se povezati sa CYBER1SChat serverom, pokušajte ponovo kasnije"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Izbriši",
         "API": {
           "SUCCESS_MESSAGE": "Webhook deleted successfully",
-          "ERROR_MESSAGE": "Nije moguće se povezati sa Cyber1SChat serverom, pokušajte ponovo kasnije"
+          "ERROR_MESSAGE": "Nije moguće se povezati sa CYBER1SChat serverom, pokušajte ponovo kasnije"
         },
         "CONFIRM": {
           "TITLE": "Potvrdite brisanje",

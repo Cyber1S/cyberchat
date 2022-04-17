@@ -415,7 +415,7 @@
       "HMAC_VERIFICATION": "Validación de identidad de usuario",
       "HMAC_DESCRIPTION": "Con el fin de validar la identidad de los usuarios, el SDK le permite pasar un `identity_hash` por cada usuario. Puede generar HMAC usando 'sha256' con la clave que se muestra aquí.",
       "HMAC_MANDATORY_VERIFICATION": "Forzar validación de identidad de usuario",
-      "HMAC_MANDATORY_DESCRIPTION": "Si está activado, el método setUser de SDKs de Cyber1SChat no funcionará a menos que se proporcione el `identifier_hash` para cada usuario.",
+      "HMAC_MANDATORY_DESCRIPTION": "Si está activado, el método setUser de SDKs de CYBER1SChat no funcionará a menos que se proporcione el `identifier_hash` para cada usuario.",
       "INBOX_IDENTIFIER": "Identificador de bandeja de entrada",
       "INBOX_IDENTIFIER_SUB_TEXT": "Usa el token `inbox_identifier` que se muestra aquí para autenticar tus clientes API.",
       "FORWARD_EMAIL_TITLE": "Reenviar al correo",

@@ -32,7 +32,7 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til Cyber1SChat Server, Prøv igen senere"
+          "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CYBER1SChat Server, Prøv igen senere"
         }
       },
       "ADD": {
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook blev tilføjet",
-          "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til Cyber1SChat Server, Prøv igen senere"
+          "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CYBER1SChat Server, Prøv igen senere"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Slet",
         "API": {
           "SUCCESS_MESSAGE": "Webhook blev slettet",
-          "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til Cyber1SChat Server, Prøv igen senere"
+          "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CYBER1SChat Server, Prøv igen senere"
         },
         "CONFIRM": {
           "TITLE": "Bekræft Sletning",

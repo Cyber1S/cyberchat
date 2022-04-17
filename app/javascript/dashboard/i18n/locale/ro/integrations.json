@@ -32,7 +32,7 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Nu s-a putut conecta la Cyber1SChat Server, încercați din nou mai târziu"
+          "ERROR_MESSAGE": "Nu s-a putut conecta la CYBER1SChat Server, încercați din nou mai târziu"
         }
       },
       "ADD": {
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook adăugat cu succes",
-          "ERROR_MESSAGE": "Nu s-a putut conecta la Cyber1SChat Server, încercați din nou mai târziu"
+          "ERROR_MESSAGE": "Nu s-a putut conecta la CYBER1SChat Server, încercați din nou mai târziu"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Şterge",
         "API": {
           "SUCCESS_MESSAGE": "Webhook șters cu succes",
-          "ERROR_MESSAGE": "Nu s-a putut conecta la Cyber1SChat Server, încercați din nou mai târziu"
+          "ERROR_MESSAGE": "Nu s-a putut conecta la CYBER1SChat Server, încercați din nou mai târziu"
         },
         "CONFIRM": {
           "TITLE": "Confirmă ștergerea",

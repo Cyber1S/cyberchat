@@ -11,7 +11,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Login Successful",
-      "ERROR_MESSAGE": "Nije moguće se povezati sa Cyber1SChat serverom, pokušajte ponovo kasnije",
+      "ERROR_MESSAGE": "Nije moguće se povezati sa CYBER1SChat serverom, pokušajte ponovo kasnije",
       "UNAUTH": "Username / Password Incorrect. Please try again"
     },
     "FORGOT_PASSWORD": "Forgot your password?",

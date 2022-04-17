@@ -1,6 +1,6 @@
 swagger: "2.0"
 info:
-  description: This is the API documentation for Cyber1SChat server.
+  description: This is the API documentation for CYBER1SChat server.
   version: 1.0.0
   title: Cyber1SChat
   termsOfService:	https://chat.cyber1s.com/terms-of-service/

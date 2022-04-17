@@ -186,13 +186,13 @@
     "BETA": "Beta"
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any Cyber1SChat accounts. Please create a new account to continue.",
+    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any CYBER1SChat accounts. Please create a new account to continue.",
     "NEW_ACCOUNT": "Új fiók",
     "SELECTOR_SUBTITLE": "Új fiók létrehozása",
     "API": {
       "SUCCESS_MESSAGE": "Ügynök sikeresen létrehozva",
       "EXIST_MESSAGE": "A fiók már létezik",
-      "ERROR_MESSAGE": "Nem sikerült csatlakozni a Cyber1SChat szerverhez, kérjük próbáld később"
+      "ERROR_MESSAGE": "Nem sikerült csatlakozni a CYBER1SChat szerverhez, kérjük próbáld később"
     },
     "FORM": {
       "NAME": {

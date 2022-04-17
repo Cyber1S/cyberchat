@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Registration Successfull",
-      "ERROR_MESSAGE": "Could not connect to Cyber1SChat Server, Please try again later"
+      "ERROR_MESSAGE": "Could not connect to CYBER1SChat Server, Please try again later"
     },
     "SUBMIT": "बुझाउनुहोस्",
     "HAVE_AN_ACCOUNT": "Already have an account?"

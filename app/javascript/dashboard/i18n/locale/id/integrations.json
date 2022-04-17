@@ -21,7 +21,7 @@
         "BUTTON_TEXT": "Edit",
         "TITLE": "Edit webhook",
         "CANCEL": "Batalkan",
-        "DESC": "Acara Webhook memberi Anda informasi realtime tentang apa yang terjadi di akun Cyber1SChat Anda. Harap masukkan URL yang valid untuk mengkonfigurasi callback.",
+        "DESC": "Acara Webhook memberi Anda informasi realtime tentang apa yang terjadi di akun CYBER1SChat Anda. Harap masukkan URL yang valid untuk mengkonfigurasi callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "URL Webhook",
@@ -38,7 +38,7 @@
       "ADD": {
         "CANCEL": "Batalkan",
         "TITLE": "Tambah webhook baru",
-        "DESC": "Acara Webhook memberi Anda informasi realtime tentang apa yang terjadi di akun Cyber1SChat Anda. Harap masukkan URL yang valid untuk mengkonfigurasi callback.",
+        "DESC": "Acara Webhook memberi Anda informasi realtime tentang apa yang terjadi di akun CYBER1SChat Anda. Harap masukkan URL yang valid untuk mengkonfigurasi callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "URL Webhook",

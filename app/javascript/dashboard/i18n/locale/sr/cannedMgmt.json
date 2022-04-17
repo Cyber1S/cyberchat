@@ -34,7 +34,7 @@
       },
       "API": {
         "SUCCESS_MESSAGE": "Gotov odgovor je uspešno dodat",
-        "ERROR_MESSAGE": "Nije moguće se povezati sa Cyber1SChat serverom, pokušajte ponovo kasnije"
+        "ERROR_MESSAGE": "Nije moguće se povezati sa CYBER1SChat serverom, pokušajte ponovo kasnije"
       }
     },
     "EDIT": {
@@ -56,14 +56,14 @@
       "BUTTON_TEXT": "Uredi",
       "API": {
         "SUCCESS_MESSAGE": "Canned Response updated successfully",
-        "ERROR_MESSAGE": "Nije moguće se povezati sa Cyber1SChat serverom, pokušajte ponovo kasnije"
+        "ERROR_MESSAGE": "Nije moguće se povezati sa CYBER1SChat serverom, pokušajte ponovo kasnije"
       }
     },
     "DELETE": {
       "BUTTON_TEXT": "Izbriši",
       "API": {
         "SUCCESS_MESSAGE": "Gotov odgovor je uspešno izbrisan",
-        "ERROR_MESSAGE": "Nije moguće se povezati sa Cyber1SChat serverom, pokušajte ponovo kasnije"
+        "ERROR_MESSAGE": "Nije moguće se povezati sa CYBER1SChat serverom, pokušajte ponovo kasnije"
       },
       "CONFIRM": {
         "TITLE": "Potvrdite brisanje",

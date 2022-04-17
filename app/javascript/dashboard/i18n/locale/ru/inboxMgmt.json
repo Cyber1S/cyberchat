@@ -415,7 +415,7 @@
       "HMAC_VERIFICATION": "Проверка личности пользователя",
       "HMAC_DESCRIPTION": "Для проверки личности пользователя SDK предлагает вам передать параметр `identity_hash` для каждого пользователя. Вы можете сгенерировать HMAC с помощью шифрования методом 'sha256' с ключом, который указан ниже.",
       "HMAC_MANDATORY_VERIFICATION": "Принудительная проверка личности пользователя",
-      "HMAC_MANDATORY_DESCRIPTION": "Если включено, метод Cyber1SChat SDK setUser не будет работать до тех пор, пока для каждого пользователя не будет указан метод `identifier_hash`.",
+      "HMAC_MANDATORY_DESCRIPTION": "Если включено, метод CYBER1SChat SDK setUser не будет работать до тех пор, пока для каждого пользователя не будет указан метод `identifier_hash`.",
       "INBOX_IDENTIFIER": "Идентификатор входящего канала",
       "INBOX_IDENTIFIER_SUB_TEXT": "Используйте токен `inbox_identifier` для аутентификации ваших клиентов API.",
       "FORWARD_EMAIL_TITLE": "Переслать на Email",

@@ -1,7 +1,7 @@
 {
   "INBOX_MGMT": {
     "HEADER": "Вхідні",
-    "SIDEBAR_TXT": "<p><b>Inbox</b></p> <p> When you connect a website or a facebook Page to Cyber1SChat, it is called an <b>Inbox</b>. You can have unlimited inboxes in your Cyber1SChat account. </p><p> Click on <b>Add Inbox</b> to connect a website or a Facebook Page. </p><p> In the Dashboard, you can see all the conversations from all your inboxes in a single place and respond to them under the `Conversations` tab. </p><p> You can also see conversations specific to an inbox by clicking on the inbox name on the left pane of the dashboard. </p>",
+    "SIDEBAR_TXT": "<p><b>Inbox</b></p> <p> When you connect a website or a facebook Page to Cyber1SChat, it is called an <b>Inbox</b>. You can have unlimited inboxes in your CYBER1SChat account. </p><p> Click on <b>Add Inbox</b> to connect a website or a Facebook Page. </p><p> In the Dashboard, you can see all the conversations from all your inboxes in a single place and respond to them under the `Conversations` tab. </p><p> You can also see conversations specific to an inbox by clicking on the inbox name on the left pane of the dashboard. </p>",
     "LIST": {
       "404": "В цього облікового запису немає скриньк."
     },
@@ -415,7 +415,7 @@
       "HMAC_VERIFICATION": "Перевірка ідентифікації користувача",
       "HMAC_DESCRIPTION": "Щоб підтвердити ідентифікацію користувача, SDK дозволяє вам передати `identifier_hash` для кожного користувача. Тут можна згенерувати HMAC за допомогою 'sha256'.",
       "HMAC_MANDATORY_VERIFICATION": "Застосувати примусову перевірку особистості користувача",
-      "HMAC_MANDATORY_DESCRIPTION": "Якщо увімкнено, метод Cyber1SChat SDKs setUser не буде працювати, якщо тільки для кожного користувача не надається `identifier_hash'.",
+      "HMAC_MANDATORY_DESCRIPTION": "Якщо увімкнено, метод CYBER1SChat SDKs setUser не буде працювати, якщо тільки для кожного користувача не надається `identifier_hash'.",
       "INBOX_IDENTIFIER": "Ідентифікатор каналу",
       "INBOX_IDENTIFIER_SUB_TEXT": "Використовуйте токен `inbox_identifier`, показаний тут для аутентифікації ваших API клієнтів.",
       "FORWARD_EMAIL_TITLE": "Переслати на ел. пошту",

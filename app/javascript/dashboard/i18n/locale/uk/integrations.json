@@ -32,7 +32,7 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "URL вебхуку успішно оновлено",
-          "ERROR_MESSAGE": "Не вдалося підключитися до Cyber1SChat Server, спробуйте ще раз пізніше"
+          "ERROR_MESSAGE": "Не вдалося підключитися до CYBER1SChat Server, спробуйте ще раз пізніше"
         }
       },
       "ADD": {
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Вебхук успішно додано",
-          "ERROR_MESSAGE": "Не вдалося підключитися до Cyber1SChat Server, спробуйте ще раз пізніше"
+          "ERROR_MESSAGE": "Не вдалося підключитися до CYBER1SChat Server, спробуйте ще раз пізніше"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Видалити",
         "API": {
           "SUCCESS_MESSAGE": "Вебхук успішно видалено",
-          "ERROR_MESSAGE": "Не вдалося підключитися до Cyber1SChat Server, спробуйте ще раз пізніше"
+          "ERROR_MESSAGE": "Не вдалося підключитися до CYBER1SChat Server, спробуйте ще раз пізніше"
         },
         "CONFIRM": {
           "TITLE": "Підтвердження видалення",

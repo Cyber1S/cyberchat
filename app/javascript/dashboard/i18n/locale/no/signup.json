@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Registrering fullført",
-      "ERROR_MESSAGE": "Kunne ikke koble til Cyber1SChat Server, vennligst prøv igjen senere"
+      "ERROR_MESSAGE": "Kunne ikke koble til CYBER1SChat Server, vennligst prøv igjen senere"
     },
     "SUBMIT": "Send",
     "HAVE_AN_ACCOUNT": "Har du allerede en konto?"
