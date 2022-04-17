@@ -88,7 +88,7 @@ rvm autolibs disable
 rvm install "ruby-3.0.2"
 rvm use 3.0.2 --default
 
-git clone https://github.com/cyber1s/cyber1schat.git
+git clone git@github.com:cyber1s/cyber1schat.git
 cd cyber1schat
 if [[ -z "$1" ]]; then
 git checkout master;
