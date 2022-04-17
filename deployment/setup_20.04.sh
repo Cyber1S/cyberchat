@@ -131,7 +131,7 @@ public_ip=$(curl http://checkip.amazonaws.com -s)
 if [ $configure_webserver != "yes" ]
 then
 echo -en "\n\n***************************************************************************\n"
-echo "Woot! Woot!! Cyber1SChat server installation is complete"
+echo "Wooh! Wooh!! Cyber1SChat server installation is complete"
 echo "The server will be accessible at http://$public_ip:3000"
 echo "To configure a domain and SSL certificate, follow the guide at https://chat.cyber1s.com/docs/deployment/deploy-cyber1schat-in-linux-vm"
 echo "***************************************************************************"
@@ -149,7 +149,7 @@ sed -i "s/http:\/\/0.0.0.0:3000/https:\/\/$domain_name/g" .env
 EOF
 systemctl restart cyber1schat.target
 echo -en "\n\n***************************************************************************\n"
-echo "Woot! Woot!! Cyber1SChat server installation is complete"
+echo "Wooh! Wooh!! Cyber1SChat server installation is complete"
 echo "The server will be accessible at https://$domain_name"
 echo "***************************************************************************"
 fi

@@ -192,7 +192,7 @@
     "API": {
       "SUCCESS_MESSAGE": "Account created successfully",
       "EXIST_MESSAGE": "Account already exists",
-      "ERROR_MESSAGE": "Nie można połączyć się z Woot Server, spróbuj ponownie później"
+      "ERROR_MESSAGE": "Nie można połączyć się z Cyber1SChat Server, spróbuj ponownie później"
     },
     "FORM": {
       "NAME": {

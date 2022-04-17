@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Rejestracja powiodła się",
-      "ERROR_MESSAGE": "Nie można połączyć się z Woot Server, spróbuj ponownie później"
+      "ERROR_MESSAGE": "Nie można połączyć się z Cyber1SChat Server, spróbuj ponownie później"
     },
     "SUBMIT": "Prześlij",
     "HAVE_AN_ACCOUNT": "Masz już konto?"

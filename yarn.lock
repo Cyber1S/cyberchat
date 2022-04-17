@@ -1113,7 +1113,7 @@
 
 "@cyber1s/utils@^0.0.6":
   version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@chatwoot/utils/-/utils-0.0.6.tgz#76d7b17d692b5b656c565b9b714b98e0f2bc1324"
+  resolved "https://registry.yarnpkg.com/@cyber1s/utils/-/utils-0.0.6.tgz#76d7b17d692b5b656c565b9b714b98e0f2bc1324"
   integrity sha512-fCvULfJSFSylDAiGh1cPAX5nQkVsmG5ASGm/E6YBYg8cox/2JU179JFstdtTxrIJg/YeHukcaq85Gc+/16ShPQ==
   dependencies:
     date-fns "^2.22.1"

@@ -46,7 +46,7 @@ rvm autolibs disable
 rvm install "ruby-3.0.2"
 rvm use 3.0.2 --default
 
-git clone git@github.com:cyber1s/cyber1schat.git
+git clone https://github.com/cyber1s/cyber1schat.git
 cd cyber1schat
 if [[ -z "$1" ]]; then
   git checkout master;
@@ -77,7 +77,7 @@ cp /home/cyber1schat/cyber1schat/deployment/cyber1schat.target /etc/systemd/syst
 systemctl enable cyber1schat.target
 systemctl start cyber1schat.target
 
-echo "Woot! Woot!! Cyber1SChat server installation is complete"
+echo "Wooh! Wooh!! Cyber1SChat server installation is complete"
 echo "The server will be accessible at http://<server-ip>:3000"
 echo "To configure a domain and SSL certificate, follow the guide at https://chat.cyber1s.com/docs/deployment/deploy-cyber1schat-in-linux-vm"
 

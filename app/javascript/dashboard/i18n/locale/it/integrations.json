@@ -32,7 +32,7 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "URL Webhook aggiornato con successo",
-          "ERROR_MESSAGE": "Impossibile connettersi al server Woot, riprova più tardi"
+          "ERROR_MESSAGE": "Impossibile connettersi al server Cyber1SChat, riprova più tardi"
         }
       },
       "ADD": {
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook aggiunto correttamente",
-          "ERROR_MESSAGE": "Impossibile connettersi al server Woot, riprova più tardi"
+          "ERROR_MESSAGE": "Impossibile connettersi al server Cyber1SChat, riprova più tardi"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Elimina",
         "API": {
           "SUCCESS_MESSAGE": "Webhook eliminato con successo",
-          "ERROR_MESSAGE": "Impossibile connettersi al server Woot, riprova più tardi"
+          "ERROR_MESSAGE": "Impossibile connettersi al server Cyber1SChat, riprova più tardi"
         },
         "CONFIRM": {
           "TITLE": "Conferma eliminazione",

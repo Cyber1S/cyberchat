@@ -32,7 +32,7 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Yhteyden muodostaminen Woot-palvelimelle ei onnistunut, yritä myöhemmin uudelleen"
+          "ERROR_MESSAGE": "Yhteyden muodostaminen Cyber1SChat-palvelimelle ei onnistunut, yritä myöhemmin uudelleen"
         }
       },
       "ADD": {
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook lisätty onnistuneesti",
-          "ERROR_MESSAGE": "Yhteyden muodostaminen Woot-palvelimelle ei onnistunut, yritä myöhemmin uudelleen"
+          "ERROR_MESSAGE": "Yhteyden muodostaminen Cyber1SChat-palvelimelle ei onnistunut, yritä myöhemmin uudelleen"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Poista",
         "API": {
           "SUCCESS_MESSAGE": "Webhook poistettu onnistuneesti",
-          "ERROR_MESSAGE": "Yhteyden muodostaminen Woot-palvelimelle ei onnistunut, yritä myöhemmin uudelleen"
+          "ERROR_MESSAGE": "Yhteyden muodostaminen Cyber1SChat-palvelimelle ei onnistunut, yritä myöhemmin uudelleen"
         },
         "CONFIRM": {
           "TITLE": "Vahvista poistaminen",

@@ -19,7 +19,7 @@
 it:
   hello: "Ciao mondo"
   messages:
-    reset_password_success: Woot! Richiesta di reimpostazione della password riuscita. Controlla la tua mail per le istruzioni.
+    reset_password_success: Wooh! Richiesta di reimpostazione della password riuscita. Controlla la tua mail per le istruzioni.
     reset_password_failure: Uh ho! Non siamo riusciti a trovare alcun utente con l'email specificata.
   errors:
     signup:

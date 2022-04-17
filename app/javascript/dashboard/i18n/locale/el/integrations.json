@@ -32,7 +32,7 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Το URL Webhook ενημερώθηκε με επιτυχία",
-          "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον Woot Server, Παρακαλώ προσπαθήστε αργότερα"
+          "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον Cyber1SChat Server, Παρακαλώ προσπαθήστε αργότερα"
         }
       },
       "ADD": {
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Το Webhook προστέθηκε επιτυχώς",
-          "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον Woot Server, Παρακαλώ προσπαθήστε αργότερα"
+          "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον Cyber1SChat Server, Παρακαλώ προσπαθήστε αργότερα"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Διαγραφή",
         "API": {
           "SUCCESS_MESSAGE": "Το Webhook διαγράφηκε επιτυχώς",
-          "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον Woot Server, Παρακαλώ προσπαθήστε αργότερα"
+          "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον Cyber1SChat Server, Παρακαλώ προσπαθήστε αργότερα"
         },
         "CONFIRM": {
           "TITLE": "Επιβεβαίωση Διαγραφής",

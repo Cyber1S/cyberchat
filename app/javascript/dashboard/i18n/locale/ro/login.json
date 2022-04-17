@@ -11,7 +11,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Autentificare reușită",
-      "ERROR_MESSAGE": "Nu s-a putut conecta la Woot Server, încercați din nou mai târziu",
+      "ERROR_MESSAGE": "Nu s-a putut conecta la Cyber1SChat Server, încercați din nou mai târziu",
       "UNAUTH": "Nume utilizator / parolă incorectă. Vă rugăm să încercaţi din nou"
     },
     "FORGOT_PASSWORD": "Ai uitat parola?",

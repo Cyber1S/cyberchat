@@ -32,7 +32,7 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Nije moguće se povezati sa Woot serverom, pokušajte ponovo kasnije"
+          "ERROR_MESSAGE": "Nije moguće se povezati sa Cyber1SChat serverom, pokušajte ponovo kasnije"
         }
       },
       "ADD": {
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook added successfully",
-          "ERROR_MESSAGE": "Nije moguće se povezati sa Woot serverom, pokušajte ponovo kasnije"
+          "ERROR_MESSAGE": "Nije moguće se povezati sa Cyber1SChat serverom, pokušajte ponovo kasnije"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Izbriši",
         "API": {
           "SUCCESS_MESSAGE": "Webhook deleted successfully",
-          "ERROR_MESSAGE": "Nije moguće se povezati sa Woot serverom, pokušajte ponovo kasnije"
+          "ERROR_MESSAGE": "Nije moguće se povezati sa Cyber1SChat serverom, pokušajte ponovo kasnije"
         },
         "CONFIRM": {
           "TITLE": "Potvrdite brisanje",

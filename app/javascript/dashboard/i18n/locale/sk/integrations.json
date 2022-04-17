@@ -32,7 +32,7 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Nepodarilo sa pripojiť k serveru Woot, skúste to prosím neskôr"
+          "ERROR_MESSAGE": "Nepodarilo sa pripojiť k serveru Cyber1SChat, skúste to prosím neskôr"
         }
       },
       "ADD": {
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook added successfully",
-          "ERROR_MESSAGE": "Nepodarilo sa pripojiť k serveru Woot, skúste to prosím neskôr"
+          "ERROR_MESSAGE": "Nepodarilo sa pripojiť k serveru Cyber1SChat, skúste to prosím neskôr"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Vymazať",
         "API": {
           "SUCCESS_MESSAGE": "Webhook deleted successfully",
-          "ERROR_MESSAGE": "Nepodarilo sa pripojiť k serveru Woot, skúste to prosím neskôr"
+          "ERROR_MESSAGE": "Nepodarilo sa pripojiť k serveru Cyber1SChat, skúste to prosím neskôr"
         },
         "CONFIRM": {
           "TITLE": "Potvrdiť vymazanie",

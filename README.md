@@ -24,8 +24,8 @@ ___
   <a title="Crowdin" target="_self" href="https://cyber1schat.crowdin.com/cyber1schat"><img src="https://badges.crowdin.net/e/37ced7eba411064bd792feb3b7a28b16/localized.svg"></a>
   <a href="https://discord.gg/cJXdrwS"><img src="https://img.shields.io/discord/647412545203994635" alt="Discord"></a>
   <a href="https://huntr.dev/bounties/disclose"><img src="https://cdn.huntr.dev/huntr_security_badge_mono.svg" alt="Huntr"></a>
-  <a href="https://status.chat.cyber1s.com"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcyber1schat%2Fstatus%2Fmaster%2Fapi%2Fcyber1schat%2Fuptime.json" alt="uptime"></a>
-  <a href="https://status.chat.cyber1s.com"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcyber1schat%2Fstatus%2Fmaster%2Fapi%2Fcyber1schat%2Fresponse-time.json" alt="response time"></a>
+  <a href="https://status-chat.cyber1s.com"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcyber1schat%2Fstatus%2Fmaster%2Fapi%2Fcyber1schat%2Fuptime.json" alt="uptime"></a>
+  <a href="https://status-chat.cyber1s.com"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcyber1schat%2Fstatus%2Fmaster%2Fapi%2Fcyber1schat%2Fresponse-time.json" alt="response time"></a>
 </p>
 
 <img src="https://cyber1schat-public-assets.s3.amazonaws.com/github/screenshot.png" width="100%" alt="Chat dashboard"/>

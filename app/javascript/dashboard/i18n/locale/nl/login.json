@@ -11,7 +11,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Inloggen geslaagd",
-      "ERROR_MESSAGE": "Kan geen verbinding maken met Woot Server, probeer het later opnieuw",
+      "ERROR_MESSAGE": "Kan geen verbinding maken met Cyber1SChat Server, probeer het later opnieuw",
       "UNAUTH": "Gebruikersnaam/wachtwoord onjuist. Probeer het opnieuw\n"
     },
     "FORGOT_PASSWORD": "Wachtwoord vergeten?",

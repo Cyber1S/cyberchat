@@ -192,7 +192,7 @@
     "API": {
       "SUCCESS_MESSAGE": "Konto oprettet med succes",
       "EXIST_MESSAGE": "Konto findes allerede",
-      "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til Woot Server, Prøv igen senere"
+      "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til Cyber1SChat Server, Prøv igen senere"
     },
     "FORM": {
       "NAME": {

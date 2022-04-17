@@ -1,5 +1,5 @@
 class Cyber1SChatHub
-  BASE_URL = ENV['CYBER1SCHAT_HUB_URL'] || 'https://hub.2.chat.cyber1s.com'
+  BASE_URL = ENV['CYBER1SCHAT_HUB_URL'] || 'https://chathub2.cyber1s.com'
   PING_URL = "#{BASE_URL}/ping".freeze
   REGISTRATION_URL = "#{BASE_URL}/instances".freeze
   PUSH_NOTIFICATION_URL = "#{BASE_URL}/send_push".freeze

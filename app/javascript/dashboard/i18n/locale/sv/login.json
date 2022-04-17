@@ -11,7 +11,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Inloggning lyckades",
-      "ERROR_MESSAGE": "Kunde inte ansluta till Woot Server, försök igen senare",
+      "ERROR_MESSAGE": "Kunde inte ansluta till Cyber1SChat Server, försök igen senare",
       "UNAUTH": "Användarnamn / lösenord felaktigt. Försök igen"
     },
     "FORGOT_PASSWORD": "Glömt ditt lösenord?",

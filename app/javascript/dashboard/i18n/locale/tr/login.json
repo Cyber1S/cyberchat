@@ -11,7 +11,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Giriş başarılı",
-      "ERROR_MESSAGE": "Woot Sunucusuna bağlanılamadı, Lütfen daha sonra tekrar deneyin",
+      "ERROR_MESSAGE": "Wooh Sunucusuna bağlanılamadı, Lütfen daha sonra tekrar deneyin",
       "UNAUTH": "Kullanıcı Adı / Parola Yanlış. Lütfen tekrar deneyin"
     },
     "FORGOT_PASSWORD": "Parolanızı mı unuttunuz?",

@@ -32,7 +32,7 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL updated successfully",
-          "ERROR_MESSAGE": "Kan geen verbinding maken met Woot Server, probeer het later opnieuw"
+          "ERROR_MESSAGE": "Kan geen verbinding maken met Cyber1SChat Server, probeer het later opnieuw"
         }
       },
       "ADD": {
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook succesvol toegevoegd",
-          "ERROR_MESSAGE": "Kan geen verbinding maken met Woot Server, probeer het later opnieuw"
+          "ERROR_MESSAGE": "Kan geen verbinding maken met Cyber1SChat Server, probeer het later opnieuw"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Verwijderen",
         "API": {
           "SUCCESS_MESSAGE": "Webhook succesvol verwijderd",
-          "ERROR_MESSAGE": "Kan geen verbinding maken met Woot Server, probeer het later opnieuw"
+          "ERROR_MESSAGE": "Kan geen verbinding maken met Cyber1SChat Server, probeer het later opnieuw"
         },
         "CONFIRM": {
           "TITLE": "Verwijdering bevestigen",
