@@ -8,7 +8,7 @@
       "HEADER_BTN_TXT": "添加新的 webhook",
       "LOADING": "正在获取已添加的 webhooks",
       "SEARCH_404": "没有任何项目符合此查询",
-      "SIDEBAR_TXT": "<p><b>Webhooks</b> </p> <p>Webhooks 是 HTTP 回调，可以为每个账户定义的。 他们是由诸如在CyberChat 中创建消息等事件所触发的。您可以为此帐户创建多个web钩子。 <br /><br /> 创建一个 <b>webhook</b>, 点击 <b>添加新的 webhook</b> 按钮。 您也可以通过点击删除按钮删除任何现有的网络钩子。</p>",
+      "SIDEBAR_TXT": "<p><b>Webhooks</b> </p> <p>Webhooks 是 HTTP 回调，可以为每个账户定义的。 他们是由诸如在Cyber1SChat 中创建消息等事件所触发的。您可以为此帐户创建多个web钩子。 <br /><br /> 创建一个 <b>webhook</b>, 点击 <b>添加新的 webhook</b> 按钮。 您也可以通过点击删除按钮删除任何现有的网络钩子。</p>",
       "LIST": {
         "404": "此帐户没有配置Webhooks。",
         "TITLE": "管理 webhooks",
@@ -21,7 +21,7 @@
         "BUTTON_TEXT": "编辑",
         "TITLE": "Edit webhook",
         "CANCEL": "取消",
-        "DESC": "Webhook 事件为您提供了有关CyberChat 帐户中发生的事情的实时信息。请输入一个有效的URL来配置回调。",
+        "DESC": "Webhook 事件为您提供了有关Cyber1SChat 帐户中发生的事情的实时信息。请输入一个有效的URL来配置回调。",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook 网址",
@@ -38,7 +38,7 @@
       "ADD": {
         "CANCEL": "取消操作",
         "TITLE": "添加新的 webhook",
-        "DESC": "Webhook 事件为您提供了有关CyberChat 帐户中发生的事情的实时信息。请输入一个有效的URL来配置回调。",
+        "DESC": "Webhook 事件为您提供了有关Cyber1SChat 帐户中发生的事情的实时信息。请输入一个有效的URL来配置回调。",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook 网址",
@@ -69,7 +69,7 @@
     "SLACK": {
       "HELP_TEXT": {
         "TITLE": "Using Slack Integration",
-        "BODY": "<br/><p>CyberChat will now sync all the incoming conversations into the <b><i>customer-conversations</i></b> channel inside your slack workplace.</p><p>Replying to a conversation thread in <b><i>customer-conversations</i></b> slack channel will create a response back to the customer through cyber1schat.</p><p>Start the replies with <b><i>note:</i></b> to create private notes instead of replies.</p><p>If the replier on slack has an agent profile in cyber1schat under the same email, the replies will be associated accordingly.</p><p>When the replier doesn't have an associated agent profile, the replies will be made from the bot profile.</p>"
+        "BODY": "<br/><p>Cyber1SChat will now sync all the incoming conversations into the <b><i>customer-conversations</i></b> channel inside your slack workplace.</p><p>Replying to a conversation thread in <b><i>customer-conversations</i></b> slack channel will create a response back to the customer through cyber1schat.</p><p>Start the replies with <b><i>note:</i></b> to create private notes instead of replies.</p><p>If the replier on slack has an agent profile in cyber1schat under the same email, the replies will be associated accordingly.</p><p>When the replier doesn't have an associated agent profile, the replies will be made from the bot profile.</p>"
       }
     },
     "DELETE": {

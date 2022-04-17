@@ -14,7 +14,7 @@ RSpec.describe Account do
       expect(account.usage_limits).to eq(
         {
           agents: 20,
-          inboxes: CyberChatApp.max_limit
+          inboxes: Cyber1SChatApp.max_limit
         }
       )
     end
@@ -24,7 +24,7 @@ RSpec.describe Account do
       expect(account.usage_limits).to eq(
         {
           agents: 10,
-          inboxes: CyberChatApp.max_limit
+          inboxes: Cyber1SChatApp.max_limit
         }
       )
     end

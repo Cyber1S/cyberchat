@@ -17,9 +17,9 @@
               })
             }}
           </p>
-          <p v-if="globalConfig.installationName === 'CyberChat'">
+          <p v-if="globalConfig.installationName === 'Cyber1SChat'">
             <a
-              href="https://www.chat.cyber1s.com/changelog"
+              href="https://chat.cyber1s.com/docs/changelog"
               target="_blank"
               rel="noopener nofollow noreferrer"
               class="onboarding--link"

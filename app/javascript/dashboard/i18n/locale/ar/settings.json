@@ -38,7 +38,7 @@
       },
       "ACCESS_TOKEN": {
         "TITLE": "رمز المصادقة",
-        "NOTE": "يمكن استخدام هذا رمز المصادقة إذا كنت تبني تطبيقات API للتكامل مع CyberChat"
+        "NOTE": "يمكن استخدام هذا رمز المصادقة إذا كنت تبني تطبيقات API للتكامل مع Cyber1SChat"
       },
       "AUDIO_NOTIFICATIONS_SECTION": {
         "TITLE": "الإشعارات الصوتية",

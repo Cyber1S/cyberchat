@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "אתה יכול לקבל אימיילים בדומיין המותאם אישית שלך עכשיו."
       }
     },
-    "UPDATE_CYBER1SCHAT": "עדכון %{latestCyberChatVersion} עבור CyberChat זמין. אנא עדכן את המופע שלך.",
+    "UPDATE_CYBER1SCHAT": "עדכון %{latestCyber1SChatVersion} עבור Cyber1SChat זמין. אנא עדכן את המופע שלך.",
     "LEARN_MORE": "Learn more"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "מנותק מ-CyberChat"
+      "TEXT": "מנותק מ-Cyber1SChat"
     },
     "BUTTON": {
       "REFRESH": "רענן"

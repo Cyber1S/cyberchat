@@ -60,7 +60,7 @@ class Api::V1::AccountsController < Api::BaseController
   end
 
   def validate_captcha
-    raise ActionController::InvalidAuthenticityToken, 'Invalid Captcha' unless CyberChatCaptcha.new(params[:h_captcha_client_response]).valid?
+    raise ActionController::InvalidAuthenticityToken, 'Invalid Captcha' unless Cyber1SChatCaptcha.new(params[:h_captcha_client_response]).valid?
   end
 
   def pundit_user

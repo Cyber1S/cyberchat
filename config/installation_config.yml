@@ -1,21 +1,21 @@
 # if you dont specify locked attribute, the default value will be true
 # which means the particular config will be locked
 - name: INSTALLATION_NAME
-  value: 'CyberChat'
+  value: 'Cyber1SChat'
 - name: LOGO_THUMBNAIL
   value: '/brand-assets/logo_thumbnail.svg'
 - name: LOGO
   value: '/brand-assets/logo.svg'
 - name: BRAND_URL
-  value: 'https://www.chat.cyber1s.com'
+  value: 'https://chat.cyber1s.com'
 - name: WIDGET_BRAND_URL
-  value: 'https://www.chat.cyber1s.com'
+  value: 'https://chat.cyber1s.com'
 - name: BRAND_NAME
-  value: 'CyberChat'
+  value: 'Cyber1SChat'
 - name: TERMS_URL
-  value: 'https://www.chat.cyber1s.com/terms-of-service'
+  value: 'https://chat.cyber1s.com/terms-of-service'
 - name: PRIVACY_URL
-  value: 'https://www.chat.cyber1s.com/privacy-policy'
+  value: 'https://chat.cyber1s.com/privacy-policy'
 - name: DISPLAY_MANIFEST
   value: true
 - name: MAILER_INBOUND_EMAIL_DOMAIN

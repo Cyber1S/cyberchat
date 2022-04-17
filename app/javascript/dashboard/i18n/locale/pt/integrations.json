@@ -8,7 +8,7 @@
       "HEADER_BTN_TXT": "Adicionar novo webhook",
       "LOADING": "Buscando webhooks anexados",
       "SEARCH_404": "Não existem itens correspondentes a esta consulta",
-      "SIDEBAR_TXT": "<p><b>Webhooks</b> </p> <p>Webhooks são chamadas HTTP que podem ser definidas para cada conta. Eles são acionados por eventos como criação de mensagens no CyberChat. Você pode criar mais de um webhook para esta conta. <br /><br /> Para criar um <b>webhook</b>, clique no botão <b>Adicionar novo webhook</b> . Você também pode remover qualquer webhook existente clicando no botão Excluir.</p>",
+      "SIDEBAR_TXT": "<p><b>Webhooks</b> </p> <p>Webhooks são chamadas HTTP que podem ser definidas para cada conta. Eles são acionados por eventos como criação de mensagens no Cyber1SChat. Você pode criar mais de um webhook para esta conta. <br /><br /> Para criar um <b>webhook</b>, clique no botão <b>Adicionar novo webhook</b> . Você também pode remover qualquer webhook existente clicando no botão Excluir.</p>",
       "LIST": {
         "404": "Não há webhooks configurados para esta conta.",
         "TITLE": "Gerenciar webhooks",
@@ -21,7 +21,7 @@
         "BUTTON_TEXT": "Alterar",
         "TITLE": "Editar Webhooks",
         "CANCEL": "cancelar",
-        "DESC": "Eventos Webhook fornecem informações em tempo real sobre o que está acontecendo em sua conta CyberChat. Por favor, insira uma URL válida para configurar uma callback.",
+        "DESC": "Eventos Webhook fornecem informações em tempo real sobre o que está acontecendo em sua conta Cyber1SChat. Por favor, insira uma URL válida para configurar uma callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "URL do Webhook",
@@ -38,7 +38,7 @@
       "ADD": {
         "CANCEL": "cancelar",
         "TITLE": "Adicionar novo webhook",
-        "DESC": "Eventos Webhook fornecem informações em tempo real sobre o que está acontecendo em sua conta CyberChat. Por favor, insira uma URL válida para configurar uma callback.",
+        "DESC": "Eventos Webhook fornecem informações em tempo real sobre o que está acontecendo em sua conta Cyber1SChat. Por favor, insira uma URL válida para configurar uma callback.",
         "FORM": {
           "END_POINT": {
             "LABEL": "URL do Webhook",
@@ -69,7 +69,7 @@
     "SLACK": {
       "HELP_TEXT": {
         "TITLE": "Utilizar a integração Slack",
-        "BODY": "<br/><p>CyberChat irá agora sincronizar todas as mensagens recebidas através do canal de <b><i>conversas com clientes</i></b> dentro do seu local de trabalho do Slack.</p><p>A resposta a uma mensagem nas <b><i>conversas com o cliente</i></b> no seu canal de slack irá criar uma resposta para o cliente através do CyberChat.</p><p> Comece as respostas com <b><i>nota:</i></b> para criar notas privadas em vez de respostas.</p><p>Se o remetente do slack tiver um perfil de agente no CyberChat com o mesmo e-mail, as respostas serão associadas de acordo com isso.</p><p>Quando a pessoa que responde não tiver um perfil de agente associado, as respostas serão dadas a partir do perfil do bot.</p>"
+        "BODY": "<br/><p>Cyber1SChat irá agora sincronizar todas as mensagens recebidas através do canal de <b><i>conversas com clientes</i></b> dentro do seu local de trabalho do Slack.</p><p>A resposta a uma mensagem nas <b><i>conversas com o cliente</i></b> no seu canal de slack irá criar uma resposta para o cliente através do Cyber1SChat.</p><p> Comece as respostas com <b><i>nota:</i></b> para criar notas privadas em vez de respostas.</p><p>Se o remetente do slack tiver um perfil de agente no Cyber1SChat com o mesmo e-mail, as respostas serão associadas de acordo com isso.</p><p>Quando a pessoa que responde não tiver um perfil de agente associado, as respostas serão dadas a partir do perfil do bot.</p>"
       }
     },
     "DELETE": {

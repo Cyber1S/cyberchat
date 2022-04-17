@@ -1,4 +1,4 @@
-class CyberChatHub
+class Cyber1SChatHub
   BASE_URL = ENV['CYBER1SCHAT_HUB_URL'] || 'https://hub.2.chat.cyber1s.com'
   PING_URL = "#{BASE_URL}/ping".freeze
   REGISTRATION_URL = "#{BASE_URL}/instances".freeze
@@ -14,7 +14,7 @@ class CyberChatHub
   def self.instance_config
     {
       installation_identifier: installation_identifier,
-      installation_version: CyberChat.config[:version],
+      installation_version: Cyber1SChat.config[:version],
       installation_host: URI.parse(ENV.fetch('FRONTEND_URL', '')).host,
       installation_env: ENV.fetch('INSTALLATION_ENV', ''),
       edition: ENV.fetch('CW_EDITION', '')

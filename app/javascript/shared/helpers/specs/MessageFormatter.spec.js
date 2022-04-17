@@ -4,16 +4,16 @@ describe('#MessageFormatter', () => {
   describe('content with links', () => {
     it('should format correctly', () => {
       const message =
-        'CyberChat is an opensource tool. [CyberChat](https://www.chat.cyber1s.com)';
+        'Cyber1SChat is an opensource tool. [Cyber1SChat](https://chat.cyber1s.com)';
       expect(new MessageFormatter(message).formattedMessage).toMatch(
-        '<p>CyberChat is an opensource tool. <a title="" class="link" href="https://www.chat.cyber1s.com" rel="noreferrer noopener nofollow" target="_blank">CyberChat</a></p>'
+        '<p>Cyber1SChat is an opensource tool. <a title="" class="link" href="https://chat.cyber1s.com" rel="noreferrer noopener nofollow" target="_blank">Cyber1SChat</a></p>'
       );
     });
     it('should format correctly', () => {
       const message =
-        'CyberChat is an opensource tool. https://www.chat.cyber1s.com';
+        'Cyber1SChat is an opensource tool. https://chat.cyber1s.com';
       expect(new MessageFormatter(message).formattedMessage).toMatch(
-        '<p>CyberChat is an opensource tool. <a title="" class="link" href="https://www.chat.cyber1s.com" rel="noreferrer noopener nofollow" target="_blank">https://www.chat.cyber1s.com</a></p>'
+        '<p>Cyber1SChat is an opensource tool. <a title="" class="link" href="https://chat.cyber1s.com" rel="noreferrer noopener nofollow" target="_blank">https://chat.cyber1s.com</a></p>'
       );
     });
   });
@@ -29,7 +29,7 @@ describe('#MessageFormatter', () => {
 
   describe('tweets', () => {
     it('should return the same string if not tags or @mentions', () => {
-      const message = 'CyberChat is an opensource tool';
+      const message = 'Cyber1SChat is an opensource tool';
       expect(new MessageFormatter(message).formattedMessage).toMatch(message);
     });
 
@@ -55,7 +55,7 @@ describe('#MessageFormatter', () => {
 
   describe('private notes', () => {
     it('should return the same string if not tags or @mentions', () => {
-      const message = 'CyberChat is an opensource tool';
+      const message = 'Cyber1SChat is an opensource tool';
       expect(new MessageFormatter(message).formattedMessage).toMatch(message);
     });
 
@@ -78,9 +78,9 @@ describe('#MessageFormatter', () => {
   describe('plain text content', () => {
     it('returns the plain text without HTML', () => {
       const message =
-        '<b>CyberChat is an opensource tool. https://www.chat.cyber1s.com</b>';
+        '<b>Cyber1SChat is an opensource tool. https://chat.cyber1s.com</b>';
       expect(new MessageFormatter(message).plainText).toMatch(
-        'CyberChat is an opensource tool. https://www.chat.cyber1s.com'
+        'Cyber1SChat is an opensource tool. https://chat.cyber1s.com'
       );
     });
   });

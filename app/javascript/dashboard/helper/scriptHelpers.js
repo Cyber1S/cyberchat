@@ -20,7 +20,7 @@ export const initializeAnalyticsEvents = () => {
   });
 };
 
-export const initializeCyberChatEvents = () => {
+export const initializeCyber1SChatEvents = () => {
   window.bus.$on(CYBER1SCHAT_RESET, () => {
     if (window.$cyber1schat) {
       window.$cyber1schat.reset();

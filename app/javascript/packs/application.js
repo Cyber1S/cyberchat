@@ -35,7 +35,7 @@ import { Integrations } from '@sentry/tracing';
 import posthog from 'posthog-js';
 import {
   initializeAnalyticsEvents,
-  initializeCyberChatEvents,
+  initializeCyber1SChatEvents,
 } from '../dashboard/helper/scriptHelpers';
 import FluentIcon from 'shared/components/FluentIcon/DashboardIcon';
 
@@ -86,7 +86,7 @@ commonHelpers();
 window.WootConstants = constants;
 window.axios = createAxios(axios);
 window.bus = new Vue();
-initializeCyberChatEvents();
+initializeCyber1SChatEvents();
 initializeAnalyticsEvents();
 initalizeRouter();
 

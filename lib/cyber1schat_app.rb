@@ -2,7 +2,7 @@
 
 require 'pathname'
 
-module CyberChatApp
+module Cyber1SChatApp
   def self.root
     Pathname.new(File.expand_path('..', __dir__))
   end

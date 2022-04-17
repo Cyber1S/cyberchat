@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe CyberChatHub do
+describe Cyber1SChatHub do
   it 'generates installation identifier' do
     installation_identifier = described_class.installation_identifier
     expect(installation_identifier).not_to eq nil

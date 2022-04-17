@@ -172,9 +172,9 @@ export default {
     ...mapGetters({ globalConfig: 'globalConfig/get' }),
     termsLink() {
       return this.$t('REGISTER.TERMS_ACCEPT')
-        .replace('https://www.chat.cyber1s.com/terms', this.globalConfig.termsURL)
+        .replace('https://chat.cyber1s.com/terms', this.globalConfig.termsURL)
         .replace(
-          'https://www.chat.cyber1s.com/privacy-policy',
+          'https://chat.cyber1s.com/privacy-policy',
           this.globalConfig.privacyURL
         );
     },

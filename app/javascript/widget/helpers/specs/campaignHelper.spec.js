@@ -12,8 +12,8 @@ describe('#Campaigns Helper', () => {
   describe('stripTrailingSlash', () => {
     it('should return striped trailing slash if url with trailing slash is passed', () => {
       expect(
-        stripTrailingSlash({ URL: 'https://www.chat.cyber1s.com/pricing/' })
-      ).toBe('https://www.chat.cyber1s.com/pricing');
+        stripTrailingSlash({ URL: 'https://chat.cyber1s.com/pricing/' })
+      ).toBe('https://chat.cyber1s.com/pricing');
     });
   });
 
@@ -24,13 +24,13 @@ describe('#Campaigns Helper', () => {
           id: 1,
           timeOnPage: 3,
           triggerOnlyDuringBusinessHours: false,
-          url: 'https://www.chat.cyber1s.com/pricing',
+          url: 'https://chat.cyber1s.com/pricing',
         },
         {
           id: 2,
           triggerOnlyDuringBusinessHours: false,
           timeOnPage: 6,
-          url: 'https://www.chat.cyber1s.com/about',
+          url: 'https://chat.cyber1s.com/about',
         },
       ]);
     });
@@ -43,23 +43,23 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: 'https://www.chat.cyber1s.com/pricing',
+              url: 'https://chat.cyber1s.com/pricing',
               triggerOnlyDuringBusinessHours: false,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://www.chat.cyber1s.com/about',
+              url: 'https://chat.cyber1s.com/about',
               triggerOnlyDuringBusinessHours: false,
             },
           ],
-          currentURL: 'https://www.chat.cyber1s.com/about/',
+          currentURL: 'https://chat.cyber1s.com/about/',
         })
       ).toStrictEqual([
         {
           id: 2,
           timeOnPage: 6,
-          url: 'https://www.chat.cyber1s.com/about',
+          url: 'https://chat.cyber1s.com/about',
           triggerOnlyDuringBusinessHours: false,
         },
       ]);
@@ -71,24 +71,24 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: 'https://www.chat.cyber1s.com/pricing',
+              url: 'https://chat.cyber1s.com/pricing',
               triggerOnlyDuringBusinessHours: false,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://www.chat.cyber1s.com/about',
+              url: 'https://chat.cyber1s.com/about',
               triggerOnlyDuringBusinessHours: true,
             },
           ],
-          currentURL: 'https://www.chat.cyber1s.com/about/',
+          currentURL: 'https://chat.cyber1s.com/about/',
           isInBusinessHours: true,
         })
       ).toStrictEqual([
         {
           id: 2,
           timeOnPage: 6,
-          url: 'https://www.chat.cyber1s.com/about',
+          url: 'https://chat.cyber1s.com/about',
           triggerOnlyDuringBusinessHours: true,
         },
       ]);
@@ -100,17 +100,17 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: 'https://www.chat.cyber1s.com/pricing',
+              url: 'https://chat.cyber1s.com/pricing',
               triggerOnlyDuringBusinessHours: true,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://www.chat.cyber1s.com/about',
+              url: 'https://chat.cyber1s.com/about',
               triggerOnlyDuringBusinessHours: true,
             },
           ],
-          currentURL: 'https://www.chat.cyber1s.com/about/',
+          currentURL: 'https://chat.cyber1s.com/about/',
           isInBusinessHours: false,
         })
       ).toStrictEqual([]);

@@ -97,7 +97,7 @@
         <div v-if="hasAnUpdateAvailable && globalConfig.displayManifest">
           {{
             $t('GENERAL_SETTINGS.UPDATE_CYBER1SCHAT', {
-              latestCyberChatVersion: latestCyberChatVersion,
+              latestCyber1SChatVersion: latestCyber1SChatVersion,
             })
           }}
         </div>
@@ -134,7 +134,7 @@ export default {
       supportEmail: '',
       features: {},
       autoResolveDuration: null,
-      latestCyberChatVersion: null,
+      latestCyber1SChatVersion: null,
     };
   },
   validations: {
@@ -156,13 +156,13 @@ export default {
       uiFlags: 'accounts/getUIFlags',
     }),
     hasAnUpdateAvailable() {
-      if (!semver.valid(this.latestCyberChatVersion)) {
+      if (!semver.valid(this.latestCyber1SChatVersion)) {
         return false;
       }
 
       return semver.lt(
         this.globalConfig.appVersion,
-        this.latestCyberChatVersion
+        this.latestCyber1SChatVersion
       );
     },
     languagesSortedByCode() {
@@ -205,7 +205,7 @@ export default {
           custom_email_domain_enabled,
           features,
           auto_resolve_duration,
-          latest_cyber1schat_version: latestCyberChatVersion,
+          latest_cyber1schat_version: latestCyber1SChatVersion,
         } = this.getAccount(this.accountId);
 
         this.$root.$i18n.locale = locale;
@@ -217,7 +217,7 @@ export default {
         this.customEmailDomainEnabled = custom_email_domain_enabled;
         this.features = features;
         this.autoResolveDuration = auto_resolve_duration;
-        this.latestCyberChatVersion = latestCyberChatVersion;
+        this.latestCyber1SChatVersion = latestCyber1SChatVersion;
       } catch (error) {
         // Ignore error
       }

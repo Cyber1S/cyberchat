@@ -5,7 +5,7 @@ RSpec.describe 'API Base', type: :request do
     it 'returns api version' do
       get '/api/'
       expect(response).to have_http_status(:success)
-      expect(response.body).to include(CyberChat.config[:version])
+      expect(response.body).to include(Cyber1SChat.config[:version])
     end
   end
 end

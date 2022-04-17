@@ -1,5 +1,5 @@
 {
-  "name": "CyberChat Development Codespace",
+  "name": "Cyber1SChat Development Codespace",
   "service": "app",
   "dockerComposeFile": "docker-compose.yml",
 

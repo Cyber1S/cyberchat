@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Description: CyberChat installation script
+# Description: Cyber1SChat installation script
 # OS: Ubuntu 18.04 LTS
 # Script Version: 0.2
 
@@ -77,8 +77,8 @@ cp /home/cyber1schat/cyber1schat/deployment/cyber1schat.target /etc/systemd/syst
 systemctl enable cyber1schat.target
 systemctl start cyber1schat.target
 
-echo "Woot! Woot!! CyberChat server installation is complete"
+echo "Woot! Woot!! Cyber1SChat server installation is complete"
 echo "The server will be accessible at http://<server-ip>:3000"
-echo "To configure a domain and SSL certificate, follow the guide at https://www.chat.cyber1s.com/docs/deployment/deploy-cyber1schat-in-linux-vm"
+echo "To configure a domain and SSL certificate, follow the guide at https://chat.cyber1s.com/docs/deployment/deploy-cyber1schat-in-linux-vm"
 
 # TODO: Auto-configure Nginx with SSL certificate

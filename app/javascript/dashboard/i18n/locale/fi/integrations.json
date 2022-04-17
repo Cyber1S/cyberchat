@@ -8,7 +8,7 @@
       "HEADER_BTN_TXT": "Lisää uusi webhook",
       "LOADING": "Haetaan liitettyjä webhookeja",
       "SEARCH_404": "Tätä hakua vastaavia kohteita ei löydy",
-      "SIDEBAR_TXT": "<p><b>Webhookit</b> </p> <p>Webhookit ovat HTTP-kutsuja, jotka voidaan määritellä jokaiselle tilille. Ne laukaisevat tapahtumia, kuten viestin luonti CyberChatissa. Voit luoda useamman kuin yhden webhookin tälle tilille. <br /><br /> Luodaksesi <b>webhookiin</b>, napsauta <b>Lisää uusi Webhook</b> -painiketta. Voit myös poistaa minkä tahansa olemassa olevan Webhookiin klikkaamalla Poista -painiketta.</p>",
+      "SIDEBAR_TXT": "<p><b>Webhookit</b> </p> <p>Webhookit ovat HTTP-kutsuja, jotka voidaan määritellä jokaiselle tilille. Ne laukaisevat tapahtumia, kuten viestin luonti Cyber1SChatissa. Voit luoda useamman kuin yhden webhookin tälle tilille. <br /><br /> Luodaksesi <b>webhookiin</b>, napsauta <b>Lisää uusi Webhook</b> -painiketta. Voit myös poistaa minkä tahansa olemassa olevan Webhookiin klikkaamalla Poista -painiketta.</p>",
       "LIST": {
         "404": "Tälle tilille ei ole määritetty webhookeja.",
         "TITLE": "Hallitse webhookeja",
@@ -69,7 +69,7 @@
     "SLACK": {
       "HELP_TEXT": {
         "TITLE": "Using Slack Integration",
-        "BODY": "<br/><p>CyberChat will now sync all the incoming conversations into the <b><i>customer-conversations</i></b> channel inside your slack workplace.</p><p>Replying to a conversation thread in <b><i>customer-conversations</i></b> slack channel will create a response back to the customer through cyber1schat.</p><p>Start the replies with <b><i>note:</i></b> to create private notes instead of replies.</p><p>If the replier on slack has an agent profile in cyber1schat under the same email, the replies will be associated accordingly.</p><p>When the replier doesn't have an associated agent profile, the replies will be made from the bot profile.</p>"
+        "BODY": "<br/><p>Cyber1SChat will now sync all the incoming conversations into the <b><i>customer-conversations</i></b> channel inside your slack workplace.</p><p>Replying to a conversation thread in <b><i>customer-conversations</i></b> slack channel will create a response back to the customer through cyber1schat.</p><p>Start the replies with <b><i>note:</i></b> to create private notes instead of replies.</p><p>If the replier on slack has an agent profile in cyber1schat under the same email, the replies will be associated accordingly.</p><p>When the replier doesn't have an associated agent profile, the replies will be made from the bot profile.</p>"
       }
     },
     "DELETE": {

@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "يمكنك تلقي رسائل البريد الإلكتروني في النطاق المخصص الخاص بك الآن."
       }
     },
-    "UPDATE_CYBER1SCHAT": "يتوفر تحديث %{latestCyberChatVersion} لـ CyberChat. الرجاء التحديث.",
+    "UPDATE_CYBER1SCHAT": "يتوفر تحديث %{latestCyber1SChatVersion} لـ Cyber1SChat. الرجاء التحديث.",
     "LEARN_MORE": "اعرف المزيد"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "قطع الاتصال من CyberChat"
+      "TEXT": "قطع الاتصال من Cyber1SChat"
     },
     "BUTTON": {
       "REFRESH": "تحديث"

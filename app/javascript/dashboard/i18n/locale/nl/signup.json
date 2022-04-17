@@ -2,7 +2,7 @@
   "REGISTER": {
     "TRY_WOOT": "Registreer een account",
     "TITLE": "Registreren",
-    "TERMS_ACCEPT": "Door je aan te melden ga je akkoord met onze <a href=\"https://www.chat.cyber1s.com/terms\">T & C</a> en <a href=\"https://www.chat.cyber1s.com/privacy-policy\">Privacy Policy</a>",
+    "TERMS_ACCEPT": "Door je aan te melden ga je akkoord met onze <a href=\"https://chat.cyber1s.com/terms\">T & C</a> en <a href=\"https://chat.cyber1s.com/privacy-policy\">Privacy Policy</a>",
     "ACCOUNT_NAME": {
       "LABEL": "accountnaam",
       "PLACEHOLDER": "Voer een accountnaam in. Bijvoorbeeld: Wayne Enterprises",

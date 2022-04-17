@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-# Description: CyberChat installation script
+# Description: Cyber1SChat installation script
 # OS: Ubuntu 20.04 LTS / Ubuntu 20.10
 # Script Version: 0.8
 # Run this script as root
 
-read -p 'Would you like to configure a domain and SSL for CyberChat?(yes or no): ' configure_webserver
+read -p 'Would you like to configure a domain and SSL for Cyber1SChat?(yes or no): ' configure_webserver
 
 if [ $configure_webserver == "yes" ]
 then
-read -p 'Enter your sub-domain to be used for CyberChat (cyber1schat.domain.com for example) : ' domain_name
+read -p 'Enter your sub-domain to be used for Cyber1SChat (cyber1schat.domain.com for example) : ' domain_name
 echo -e "\nThis script will try to generate SSL certificates via LetsEncrypt and serve cyber1schat at
 "https://$domain_name". Proceed further once you have pointed your DNS to the IP of the instance.\n"
 read -p 'Enter the email LetsEncrypt can use to send reminders when your SSL certificate is up for renewal: ' le_email
@@ -88,7 +88,7 @@ rvm autolibs disable
 rvm install "ruby-3.0.2"
 rvm use 3.0.2 --default
 
-git clone git@github.com:cyber1s/cyber1schat.git
+git clone https://github.com/cyber1s/cyber1schat.git
 cd cyber1schat
 if [[ -z "$1" ]]; then
 git checkout master;
@@ -131,9 +131,9 @@ public_ip=$(curl http://checkip.amazonaws.com -s)
 if [ $configure_webserver != "yes" ]
 then
 echo -en "\n\n***************************************************************************\n"
-echo "Woot! Woot!! CyberChat server installation is complete"
+echo "Woot! Woot!! Cyber1SChat server installation is complete"
 echo "The server will be accessible at http://$public_ip:3000"
-echo "To configure a domain and SSL certificate, follow the guide at https://www.chat.cyber1s.com/docs/deployment/deploy-cyber1schat-in-linux-vm"
+echo "To configure a domain and SSL certificate, follow the guide at https://chat.cyber1s.com/docs/deployment/deploy-cyber1schat-in-linux-vm"
 echo "***************************************************************************"
 else
 curl https://ssl-config.mozilla.org/ffdhe4096.txt >> /etc/ssl/dhparam
@@ -149,7 +149,7 @@ sed -i "s/http:\/\/0.0.0.0:3000/https:\/\/$domain_name/g" .env
 EOF
 systemctl restart cyber1schat.target
 echo -en "\n\n***************************************************************************\n"
-echo "Woot! Woot!! CyberChat server installation is complete"
+echo "Woot! Woot!! Cyber1SChat server installation is complete"
 echo "The server will be accessible at https://$domain_name"
 echo "***************************************************************************"
 fi

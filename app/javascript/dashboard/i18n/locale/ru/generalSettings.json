@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Теперь вы можете получать письма на свой домен."
       }
     },
-    "UPDATE_CYBER1SCHAT": "Доступно обновление %{latestCyberChatVersion} для CyberChat. Пожалуйста, обновите свою версию.",
+    "UPDATE_CYBER1SCHAT": "Доступно обновление %{latestCyber1SChatVersion} для Cyber1SChat. Пожалуйста, обновите свою версию.",
     "LEARN_MORE": "Узнайте больше"
   },
   "FORMS": {

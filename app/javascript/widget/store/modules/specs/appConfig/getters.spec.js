@@ -9,8 +9,8 @@ describe('#getters', () => {
   });
   describe('#getReferrerHost', () => {
     it('returns correct value', () => {
-      const state = { referrerHost: 'www.chat.cyber1s.com' };
-      expect(getters.getReferrerHost(state)).toEqual('www.chat.cyber1s.com');
+      const state = { referrerHost: 'chat.cyber1s.com' };
+      expect(getters.getReferrerHost(state)).toEqual('chat.cyber1s.com');
     });
   });
 });
