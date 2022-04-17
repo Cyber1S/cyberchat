@@ -119,9 +119,9 @@ RAILS_ENV=production bundle exec rake db:reset
 EOF
 fi
 
-cp /home/cyber1s/cyber1schat/deployment/cyber1schat-web.1.service /etc/systemd/system/cyber1schat-web.1.service
-cp /home/cyber1s/cyber1schat/deployment/cyber1schat-worker.1.service /etc/systemd/system/cyber1schat-worker.1.service
-cp /home/cyber1s/cyber1schat/deployment/cyber1schat.target /etc/systemd/system/cyber1schat.target
+cp /home/cyber1schat/cyber1schat/deployment/cyber1schat-web.1.service /etc/systemd/system/cyber1schat-web.1.service
+cp /home/cyber1schat/cyber1schat/deployment/cyber1schat-worker.1.service /etc/systemd/system/cyber1schat-worker.1.service
+cp /home/cyber1schat/cyber1schat/deployment/cyber1schat.target /etc/systemd/system/cyber1schat.target
 
 systemctl enable cyber1schat.target
 systemctl start cyber1schat.target

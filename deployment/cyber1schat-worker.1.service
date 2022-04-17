@@ -5,7 +5,7 @@ PartOf=cyber1schat.target
 [Service]
 Type=simple
 User=cyber1schat
-WorkingDirectory=/home/cyber1s/cyber1schat
+WorkingDirectory=/home/cyber1schat/cyber1schat
 
 ExecStart=/bin/bash -lc 'bundle exec sidekiq -C config/sidekiq.yml'
 
