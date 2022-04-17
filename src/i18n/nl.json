@@ -1,0 +1,155 @@
+{
+  "WELCOME": "Verwelkoming",
+  "COMMON": {
+    "ERROR": "Foutmelding",
+    "ERROR_TITLE": "Onverwachte fout opgetreden",
+    "REPORT_MESSAGE": "Ons team is op de hoogte van het probleem en werkt aan een oplossing. Sluit de app voor nu af en probeer het later opnieuw.",
+    "CLOSE": "Sluiten"
+  },
+  "FOOTER": {
+    "HOME": "Startpagina",
+    "CONVERSATION": "Gesprekken",
+    "NOTIFICATION": "Notificaties",
+    "SETTINGS": "Instellingen"
+  },
+  "CONFIGURE_URL": {
+    "ENTER_URL": "Installatie url",
+    "DESCRIPTION": "If you are using a self-hosted Chatwoot installation, input your server URL. Otherwise, use app.chatwoot.com.",
+    "URL_ERROR": "Voer een geldige URL in",
+    "URL_REQUIRED": "URL is required",
+    "CONNECT": "Koppelen",
+    "CHANGE_LANGUAGE": "Taal wijzigen",
+    "ERROR": "Ongeldige installatie-url"
+  },
+  "LOGIN": {
+    "TITLE": "Login to your account",
+    "DESCRIPTION": "You are connected to {{baseUrl}}. Login with your email address and password.",
+    "EMAIL": "E-mailadres",
+    "PASSWORD": "Wachtwoord",
+    "EMAIL_REQUIRED": "Email is required",
+    "EMAIL_ERROR": "Voer een geldig e-mailadres in",
+    "PASSWORD_REQUIRED": "Password is required",
+    "PASSWORD_ERROR": "Voer een geldig wachtwoord in",
+    "LOGIN": "Log in",
+    "FORGOT_PASSWORD": "Wachtwoord vergeten?",
+    "RESET_HERE": "Hier resetten",
+    "NO_ACCOUNT": "Nog geen account?",
+    "CREATE_ACCOUNT": "Nieuw account aanmaken",
+    "SETTINGS": "Instellingen",
+    "CHANGE_LANGUAGE": "Taal wijzigen",
+    "TERMS": "Algemene Voorwaarden",
+    "CHANGE_URL": "Wijzig link"
+  },
+  "FORGOT_PASSWORD": {
+    "EMAIL": "Voer uw e-mailadres in",
+    "EMAIL_ERROR": "Voer een geldig e-mailadres in",
+    "RESET_HERE": "Wachtwoord opnieuw instellen",
+    "HEADER_TITLE": "Wachtwoord opnieuw instellen",
+    "TITLE": "Wachtwoord vergeten?",
+    "SUB_TITLE": "Maak je geen zorgen!",
+    "API_SUCCESS": "Password reset link has been sent to your email address"
+  },
+  "CONVERSATION": {
+    "DEFAULT_HEADER_TITLE": "Gesprekken",
+    "MINE": "Mijn",
+    "UN_ASSIGNED": "Niet-toegewezen",
+    "ALL": "Allemaal",
+    "EMPTY": "Er zijn geen actieve gesprekken in deze groep.",
+    "PICTURE_CONTENT": "Bericht met foto",
+    "ATTACHMENT_CONTENT": "Bestand bijlage",
+    "DOWNLOAD": "downloaden",
+    "TODAY": "Vandaag",
+    "YESTERDAY": "Gisteren",
+    "TYPE_MESSAGE": "Typ een bericht",
+    "TYPING": "typen",
+    "ALL_CONVERSATION_LOADED": "Alle gesprekken geladen",
+    "RESOLVE": "Gesprek oplossen",
+    "RE_OPEN": "Heropen gesprek",
+    "ASSIGN": "Assign conversation",
+    "FILE_SIZE_LIMIT": "File exceeds the 5MB attachment limit",
+    "SHARE": "Share conversation",
+    "CANCEL": "annuleren",
+    "PRIVATE_MSG_INPUT": "This will be visible only to Agents",
+    "UN_ASSIGN": "Unassign conversation"
+  },
+  "FILTER": {
+    "HEADER_TITLE": "Gespreksfilter",
+    "CHOOSE_INBOX": "Postvak In kiezen",
+    "CHOOSE_STATUS": "Gesprek status",
+    "OPEN": "Open",
+    "RESOLVED": "Opgelost",
+    "BOT": "Bot",
+    "SUBMIT": "Bevestigen",
+    "PENDING": "Afwachtend",
+    "SNOOZED": "Gesluimerd"
+  },
+  "SETTINGS": {
+    "HEADER_TITLE": "Instellingen",
+    "AVAILABILITY": "Beschikbaarheid",
+    "NOTIFICATION": "Notificatie voorkeuren",
+    "HELP": "Helpdocumentatie",
+    "CHAT_WITH_US": "Chat with Us",
+    "LOG_OUT": "Afmelden",
+    "SWITCH_ACCOUNT": "Switch account",
+    "CHANGE_LANGUAGE": "Wijzig taal",
+    "SUBMIT": "Bevestigen"
+  },
+  "NOTIFICATION": {
+    "HEADER_TITLE": "Notificaties",
+    "EMPTY": "Er zijn nog geen notificaties.",
+    "EMPTY_MORE_TEXT": "Wanneer je notificaties ontvangt, zullen deze hier worden weergegeven.",
+    "ALL_NOTIFICATION_LOADED": "Alle notificaties geladen",
+    "MARK_ALL": "Markeer alles als gelezen",
+    "CANCEL": "annuleren"
+  },
+  "AVAILABILITY": {
+    "ONLINE": "Online",
+    "BUSY": "Bezig",
+    "OFFLINE": "Offline"
+  },
+  "NOTIFICATION_PREFERENCE": {
+    "TITLE": "Notificatie voorkeuren",
+    "EMAIL": "E-mailadres",
+    "PUSH": "Push",
+    "CONVERSATION_CREATE_PUSH": "Stuur pushberichten wanneer een nieuw gesprek is aangemaakt",
+    "CONVERSATION_ASSIGNEE_PUSH": "Stuur pushberichten wanneer een gesprek aan mij is toegewezen",
+    "CONVERSATION_ASSIGNED_NEW_MESSAGE_PUSH": "Send push notifications when a new message is created in an assigned conversation",
+    "CONVERSATION_MENTION": "Send push notifications when you are mentioned in a conversation",
+    "CONVERSATION_CREATE_EMAIL": "E-mailberichten verzenden wanneer een nieuw gesprek is gemaakt",
+    "CONVERSATION_ASSIGNEE_EMAIL": "E-mailberichten verzenden wanneer een gesprek aan mij is toegewezen",
+    "CONVERSATION_ASSIGNED_NEW_MESSAGE_EMAIL": "Send email notifications when a new message is created in an assigned conversation"
+  },
+  "CONVERSATION_DETAILS": {
+    "BROWSER": "Browser",
+    "OPERATING_SYSTEM": "Besturingssysteem",
+    "INITIATED_AT": "Geïnitieerd op",
+    "INITIATED_FROM": "Geïnitieerd vanuit"
+  },
+  "CONVERSATION_ACTION": {
+    "TITLE": "Acties"
+  },
+  "AGENT": {
+    "TITLE": "Select Agent"
+  },
+  "ERRORS": {
+    "COMMON_ERROR": "Kan geen verbinding maken met Woot Server, probeer het later opnieuw",
+    "OfFLINE": "U moet verbinding maken met Wi-Fi of een mobiel netwerk om weer online te kunnen komen",
+    "CANNOT_FETCH": "Er is een fout opgetreden bij het ophalen van de informatie, probeer het opnieuw",
+    "AUTH": "Gebruikersnaam / wachtwoord onjuist. Probeer het opnieuw",
+    "NO_ACCOUNTS_MESSAGE": "Je hebt geen toegang tot Chatwoot-accounts"
+  },
+  "SUCCESS": {
+    "AUTH": "Login succesvol"
+  },
+  "SERVER_UPGRADE": {
+    "TITLE": "Server upgrade required",
+    "WARNING_FOR_AGENT": "It seems like you are using unsupported Chatwoot server for your mobile app. Please contact your admin to upgrade your Chatwoot server.",
+    "WARNING_FOR_ADMIN": "It seems like you are using unsupported Chatwoot server for your mobile app. Upgrading to server version %{minimumVersion} or later is required."
+  },
+  "EXIT": {
+    "TITLE": "Afsluiten",
+    "SUBTITLE": "Weet u zeker dat u wilt afsluiten?",
+    "CANCEL": "annuleren",
+    "OK": "OK"
+  }
+}

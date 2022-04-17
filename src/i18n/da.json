@@ -1,0 +1,155 @@
+{
+  "WELCOME": "Welcome",
+  "COMMON": {
+    "ERROR": "Error",
+    "ERROR_TITLE": "Unexpected error occurred",
+    "REPORT_MESSAGE": "We have reported this to our team ! Please close the app and start again!",
+    "CLOSE": "Luk"
+  },
+  "FOOTER": {
+    "HOME": "Hjem",
+    "CONVERSATION": "Samtaler",
+    "NOTIFICATION": "Notifications",
+    "SETTINGS": "Indstillinger"
+  },
+  "CONFIGURE_URL": {
+    "ENTER_URL": "Installation URL",
+    "DESCRIPTION": "If you are using a self-hosted Chatwoot installation, input your server URL. Otherwise, use app.chatwoot.com.",
+    "URL_ERROR": "Enter a valid URL",
+    "URL_REQUIRED": "URL is required",
+    "CONNECT": "Tilslut",
+    "CHANGE_LANGUAGE": "Change language",
+    "ERROR": "Invalid installation url"
+  },
+  "LOGIN": {
+    "TITLE": "Login to your account",
+    "DESCRIPTION": "You are connected to {{baseUrl}}. Login with your email address and password.",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Adgangskode",
+    "EMAIL_REQUIRED": "Email is required",
+    "EMAIL_ERROR": "Enter a valid email",
+    "PASSWORD_REQUIRED": "Password is required",
+    "PASSWORD_ERROR": "Enter a valid password",
+    "LOGIN": "Sign In",
+    "FORGOT_PASSWORD": "Glemt din adgangskode?",
+    "RESET_HERE": "Reset here",
+    "NO_ACCOUNT": "Don't have an account?",
+    "CREATE_ACCOUNT": "Opret ny konto",
+    "SETTINGS": "Indstillinger",
+    "CHANGE_LANGUAGE": "Change language",
+    "TERMS": "Terms & Conditions",
+    "CHANGE_URL": "Change URL"
+  },
+  "FORGOT_PASSWORD": {
+    "EMAIL": "Indtast venligst din e-mail",
+    "EMAIL_ERROR": "Enter a valid email",
+    "RESET_HERE": "Reset password",
+    "HEADER_TITLE": "Reset password",
+    "TITLE": "Forgot Password?",
+    "SUB_TITLE": "Don't worry! We got your back",
+    "API_SUCCESS": "Password reset link has been sent to your email address"
+  },
+  "CONVERSATION": {
+    "DEFAULT_HEADER_TITLE": "Samtaler",
+    "MINE": "Mine",
+    "UN_ASSIGNED": "Ikke Tildelt",
+    "ALL": "Alle",
+    "EMPTY": "Der er ingen aktive samtaler i denne gruppe.",
+    "PICTURE_CONTENT": "Billedbesked",
+    "ATTACHMENT_CONTENT": "Fil Vedhæftning",
+    "DOWNLOAD": "Download",
+    "TODAY": "Today",
+    "YESTERDAY": "Yesterday",
+    "TYPE_MESSAGE": "Type message",
+    "TYPING": "typing",
+    "ALL_CONVERSATION_LOADED": "All conversations loaded",
+    "RESOLVE": "Resolve conversation",
+    "RE_OPEN": "Reopen conversation",
+    "ASSIGN": "Assign conversation",
+    "FILE_SIZE_LIMIT": "File exceeds the 5MB attachment limit",
+    "SHARE": "Share conversation",
+    "CANCEL": "Annuller",
+    "PRIVATE_MSG_INPUT": "This will be visible only to Agents",
+    "UN_ASSIGN": "Unassign conversation"
+  },
+  "FILTER": {
+    "HEADER_TITLE": "Conversation Filter",
+    "CHOOSE_INBOX": "Choose Inbox",
+    "CHOOSE_STATUS": "Conversation Status",
+    "OPEN": "Åbn",
+    "RESOLVED": "Løst",
+    "BOT": "Bot",
+    "SUBMIT": "Send",
+    "PENDING": "Pending",
+    "SNOOZED": "Snoozed"
+  },
+  "SETTINGS": {
+    "HEADER_TITLE": "Indstillinger",
+    "AVAILABILITY": "Tilgængelighed",
+    "NOTIFICATION": "Notification Preferences",
+    "HELP": "Help Docs",
+    "CHAT_WITH_US": "Chat with Us",
+    "LOG_OUT": "Log Ud",
+    "SWITCH_ACCOUNT": "Skift Konto",
+    "CHANGE_LANGUAGE": "Change Language",
+    "SUBMIT": "Send"
+  },
+  "NOTIFICATION": {
+    "HEADER_TITLE": "Notifications",
+    "EMPTY": "No notifications yet.",
+    "EMPTY_MORE_TEXT": "Once you start receiving notifications, they'll appear here.",
+    "ALL_NOTIFICATION_LOADED": "All notifications loaded",
+    "MARK_ALL": "Mark all as read",
+    "CANCEL": "Annuller"
+  },
+  "AVAILABILITY": {
+    "ONLINE": "Online",
+    "BUSY": "Optaget",
+    "OFFLINE": "Offline"
+  },
+  "NOTIFICATION_PREFERENCE": {
+    "TITLE": "Notification Preferences",
+    "EMAIL": "E-mail",
+    "PUSH": "Push",
+    "CONVERSATION_CREATE_PUSH": "Send push-notifikationer, når en ny samtale er oprettet",
+    "CONVERSATION_ASSIGNEE_PUSH": "Send push-notifikationer, når en samtale er tildelt mig",
+    "CONVERSATION_ASSIGNED_NEW_MESSAGE_PUSH": "Send push-notifikationer, når en ny besked oprettes i en tildelt samtale",
+    "CONVERSATION_MENTION": "Send push notifications when you are mentioned in a conversation",
+    "CONVERSATION_CREATE_EMAIL": "Send e-mail notifikationer når en ny samtale er oprettet",
+    "CONVERSATION_ASSIGNEE_EMAIL": "Send e-mail notifikationer når en samtale er tildelt mig",
+    "CONVERSATION_ASSIGNED_NEW_MESSAGE_EMAIL": "Send e-mail notifikationer når en ny besked er oprettet i en tildelt samtale"
+  },
+  "CONVERSATION_DETAILS": {
+    "BROWSER": "Browser",
+    "OPERATING_SYSTEM": "Operativsystem",
+    "INITIATED_AT": "Startet fra",
+    "INITIATED_FROM": "Startet fra"
+  },
+  "CONVERSATION_ACTION": {
+    "TITLE": "Handlinger"
+  },
+  "AGENT": {
+    "TITLE": "Select Agent"
+  },
+  "ERRORS": {
+    "COMMON_ERROR": "Kunne ikke oprette forbindelse til Woot Server, Prøv igen senere",
+    "OfFLINE": "You must connect to Wi-fi or a cellular network to get online again",
+    "CANNOT_FETCH": "There was an error fetching the information, please try again",
+    "AUTH": "Brugernavn / adgangskode forkert. Prøv igen",
+    "NO_ACCOUNTS_MESSAGE": "You don't have access to any chatwoot accounts"
+  },
+  "SUCCESS": {
+    "AUTH": "Login Lykkedes"
+  },
+  "SERVER_UPGRADE": {
+    "TITLE": "Server upgrade required",
+    "WARNING_FOR_AGENT": "It seems like you are using unsupported Chatwoot server for your mobile app. Please contact your admin to upgrade your Chatwoot server.",
+    "WARNING_FOR_ADMIN": "It seems like you are using unsupported Chatwoot server for your mobile app. Upgrading to server version %{minimumVersion} or later is required."
+  },
+  "EXIT": {
+    "TITLE": "Exit",
+    "SUBTITLE": "Are you sure you want to quit?",
+    "CANCEL": "Annuller",
+    "OK": "Ok"
+  }
+}
