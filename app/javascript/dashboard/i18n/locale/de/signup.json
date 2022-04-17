@@ -2,7 +2,7 @@
   "REGISTER": {
     "TRY_WOOT": "Einen Account registrieren",
     "TITLE": "Registrieren",
-    "TERMS_ACCEPT": "Mit Ihrer Anmeldung stimmen Sie unseren <a href=\"https://www.chat.cyber1s.com/terms\"> AGB </a> und <a href=\"https://www.chat.cyber1s.com/privacy-policy\"> Datenschutzrichtlinie </a>",
+    "TERMS_ACCEPT": "Mit Ihrer Anmeldung stimmen Sie unseren <a href=\"https://chat.cyber1s.com/terms\"> AGB </a> und <a href=\"https://chat.cyber1s.com/privacy-policy\"> Datenschutzrichtlinie </a>",
     "ACCOUNT_NAME": {
       "LABEL": "Kontobezeichnung",
       "PLACEHOLDER": "Geben Sie einen Kontonamen ein, z. B.: Wayne Enterprises",

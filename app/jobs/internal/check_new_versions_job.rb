@@ -4,7 +4,7 @@ class Internal::CheckNewVersionsJob < ApplicationJob
   def perform
     return unless Rails.env.production?
 
-    latest_version = CyberChatHub.latest_version
+    latest_version = Cyber1SChatHub.latest_version
     return unless latest_version
 
     ::Redis::Alfred.set(::Redis::Alfred::LATEST_CYBER1SCHAT_VERSION, latest_version)

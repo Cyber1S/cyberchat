@@ -4,8 +4,8 @@ describe('#mutations', () => {
   describe('#SET_REFERRER_HOST', () => {
     it('sets referrer host properly', () => {
       const state = { referrerHost: '' };
-      mutations.SET_REFERRER_HOST(state, 'www.chat.cyber1s.com');
-      expect(state.referrerHost).toEqual('www.chat.cyber1s.com');
+      mutations.SET_REFERRER_HOST(state, 'chat.cyber1s.com');
+      expect(state.referrerHost).toEqual('chat.cyber1s.com');
     });
   });
 

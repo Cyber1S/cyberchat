@@ -30,7 +30,7 @@ class Installation::OnboardingController < ApplicationController
     ::Redis::Alfred.delete(::Redis::Alfred::CYBER1SCHAT_INSTALLATION_ONBOARDING)
     return if onboarding_params[:subscribe_to_updates].blank?
 
-    CyberChatHub.register_instance(
+    Cyber1SChatHub.register_instance(
       onboarding_params.dig(:user, :company),
       onboarding_params.dig(:user, :name),
       onboarding_params.dig(:user, :email)

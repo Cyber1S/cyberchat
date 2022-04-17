@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Bạn có thể nhận email trong miền tùy chỉnh của mình ngay bây giờ."
       }
     },
-    "UPDATE_CYBER1SCHAT": "Đã có bản cập nhật %{latestCyberChatVersion} cho CyberChat. Vui lòng cập nhật phiên bản của bạn.",
+    "UPDATE_CYBER1SCHAT": "Đã có bản cập nhật %{latestCyber1SChatVersion} cho Cyber1SChat. Vui lòng cập nhật phiên bản của bạn.",
     "LEARN_MORE": "Learn more"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Đã ngắt kết nối khỏi CyberChat"
+      "TEXT": "Đã ngắt kết nối khỏi Cyber1SChat"
     },
     "BUTTON": {
       "REFRESH": "Làm mới"

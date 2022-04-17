@@ -1,6 +1,6 @@
 <template>
   <div v-if="!authUIFlags.isFetching" id="app" class="app-wrapper app-root">
-    <update-banner :latest-cyber1schat-version="latestCyberChatVersion" />
+    <update-banner :latest-cyber1schat-version="latestCyber1SChatVersion" />
     <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
@@ -41,7 +41,7 @@ export default {
   data() {
     return {
       showAddAccountModal: false,
-      latestCyberChatVersion: null,
+      latestCyber1SChatVersion: null,
     };
   },
 
@@ -89,11 +89,11 @@ export default {
       await this.$store.dispatch('accounts/get');
       const {
         locale,
-        latest_cyber1schat_version: latestCyberChatVersion,
+        latest_cyber1schat_version: latestCyber1SChatVersion,
       } = this.getAccount(this.currentAccountId);
       const { pubsub_token: pubsubToken } = this.currentUser || {};
       this.setLocale(locale);
-      this.latestCyberChatVersion = latestCyberChatVersion;
+      this.latestCyber1SChatVersion = latestCyber1SChatVersion;
       vueActionCable.init(pubsubToken);
     },
   },

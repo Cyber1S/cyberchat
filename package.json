@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@braid/vue-formulate": "^2.5.2",
-    "@cyber1s/prosemirror-schema": "https://github.com/cyber1s/prosemirror-schema.git#7e8acadd10d7b932c0dc0bd0a18f804434f83517",
+    "@cyber1s/prosemirror-schema": "https://github.com/cyber1s/prosemirror-schema.git",
     "@cyber1s/utils": "^0.0.6",
     "@hcaptcha/vue-hcaptcha": "^0.3.2",
     "@rails/actioncable": "6.1.3",

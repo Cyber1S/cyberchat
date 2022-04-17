@@ -117,8 +117,8 @@ class Account < ApplicationRecord
 
   def usage_limits
     {
-      agents: CyberChatApp.max_limit.to_i,
-      inboxes: CyberChatApp.max_limit.to_i
+      agents: Cyber1SChatApp.max_limit.to_i,
+      inboxes: Cyber1SChatApp.max_limit.to_i
     }
   end
 

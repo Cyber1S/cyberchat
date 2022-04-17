@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "지금 사용자 지정 도메인에서 이메일을 받을 수 있다."
       }
     },
-    "UPDATE_CYBER1SCHAT": "CyberChat에 대한 %{latestCyberChatVersion} 업데이트를 사용할 수 있습니다. 인스턴스를 업데이트하십시오.",
+    "UPDATE_CYBER1SCHAT": "Cyber1SChat에 대한 %{latestCyber1SChatVersion} 업데이트를 사용할 수 있습니다. 인스턴스를 업데이트하십시오.",
     "LEARN_MORE": "Learn more"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Disconnected from CyberChat"
+      "TEXT": "Disconnected from Cyber1SChat"
     },
     "BUTTON": {
       "REFRESH": "Refresh"

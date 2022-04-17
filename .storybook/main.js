@@ -1,7 +1,7 @@
 const path = require('path');
 const resolve = require('../config/webpack/resolve');
 
-// CyberChat's webpack.config.js
+// Cyber1SChat's webpack.config.js
 process.env.NODE_ENV = 'development';
 const custom = require('../config/webpack/environment');
 

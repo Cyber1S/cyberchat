@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Description: CyberChat installation script
+# Description: Cyber1SChat installation script
 # OS: Ubuntu 18.04 LTS
 # Script Version: 0.2
 
@@ -70,15 +70,15 @@ RAILS_ENV=production bundle exec rake db:reset
 rake assets:precompile RAILS_ENV=production
 EOF
 
-cp /home/cyber1s/cyber1schat/deployment/cyber1schat-web.1.service /etc/systemd/system/cyber1schat-web.1.service
-cp /home/cyber1s/cyber1schat/deployment/cyber1schat-worker.1.service /etc/systemd/system/cyber1schat-worker.1.service
-cp /home/cyber1s/cyber1schat/deployment/cyber1schat.target /etc/systemd/system/cyber1schat.target
+cp /home/cyber1schat/cyber1schat/deployment/cyber1schat-web.1.service /etc/systemd/system/cyber1schat-web.1.service
+cp /home/cyber1schat/cyber1schat/deployment/cyber1schat-worker.1.service /etc/systemd/system/cyber1schat-worker.1.service
+cp /home/cyber1schat/cyber1schat/deployment/cyber1schat.target /etc/systemd/system/cyber1schat.target
 
 systemctl enable cyber1schat.target
 systemctl start cyber1schat.target
 
-echo "Woot! Woot!! CyberChat server installation is complete"
+echo "Woot! Woot!! Cyber1SChat server installation is complete"
 echo "The server will be accessible at http://<server-ip>:3000"
-echo "To configure a domain and SSL certificate, follow the guide at https://www.chat.cyber1s.com/docs/deployment/deploy-cyber1schat-in-linux-vm"
+echo "To configure a domain and SSL certificate, follow the guide at https://chat.cyber1s.com/docs/deployment/deploy-cyber1schat-in-linux-vm"
 
 # TODO: Auto-configure Nginx with SSL certificate

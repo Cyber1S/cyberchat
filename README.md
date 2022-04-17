@@ -32,46 +32,46 @@ ___
 
 
 
-CyberChat is an open-source, self-hosted customer engagement suite. CyberChat lets you view and manage your customer data, communicate with them irrespective of which medium they use, and re-engage them based on their profile.
+Cyber1SChat is an open-source, self-hosted customer engagement suite. Cyber1SChat lets you view and manage your customer data, communicate with them irrespective of which medium they use, and re-engage them based on their profile.
 
 ## Features
 
-CyberChat supports the following conversation channels:
+Cyber1SChat supports the following conversation channels:
 
  - **Website**: Talk to your customers using our live chat widget and make use of our SDK to identify a user and provide contextual support.
  - **Facebook**: Connect your Facebook pages and start replying to the direct messages to your page.
  - **Instagram**: Connect your Instagram profile and start replying to the direct messages.
  - **Twitter**: Connect your Twitter profiles and reply to direct messages or the tweets where you are mentioned.
  - **Telegram**: Connect your Telegram bot and reply to your customers right from a single dashboard.
- - **WhatsApp**: Connect your WhatsApp business account and manage the conversation in CyberChat.
- - **Line**: Connect your Line account and manage the conversations in CyberChat.
- - **SMS**: Connect your Twilio SMS account and reply to the SMS queries in CyberChat.
+ - **WhatsApp**: Connect your WhatsApp business account and manage the conversation in Cyber1SChat.
+ - **Line**: Connect your Line account and manage the conversations in Cyber1SChat.
+ - **SMS**: Connect your Twilio SMS account and reply to the SMS queries in Cyber1SChat.
  - **API Channel**: Build custom communication channels using our API channel.
- - **Email**: Forward all your email queries to CyberChat and view it in our integrated dashboard.
+ - **Email**: Forward all your email queries to Cyber1SChat and view it in our integrated dashboard.
 
 And more.
 
 Other features include:
 
-- **CRM**: Save all your customer information right inside CyberChat, use contact notes to log emails, phone calls, or meeting notes.
+- **CRM**: Save all your customer information right inside Cyber1SChat, use contact notes to log emails, phone calls, or meeting notes.
 - **Custom Attributes**: Define custom attribute attributes to store information about a contact or a conversation and extend the product to match your workflow.
 - **Shared multi-brand inboxes**: Manage multiple brands or pages using a shared inbox.
 - **Private notes**: Use @mentions and private notes to communicate internally about a conversation.
 - **Canned responses (Saved replies)**: Improve the response rate by adding saved replies for frequently asked questions.
 - **Conversation Labels**: Use conversation labels to create custom workflows.
-- **Auto assignment**: CyberChat intelligently assigns a ticket to the agents who have access to the inbox depending on their availability and load.
-- **Conversation continuity**: If the user has provided an email address through the chat widget, CyberChat will send an email to the customer under the agent name so that the user can continue the conversation over the email.
-- **Multi-lingual support**: CyberChat supports 10+ languages.
-- **Powerful API & Webhooks**: Extend the capability of the software using CyberChat’s webhooks and APIs.
-- **Integrations**: CyberChat natively integrates with Slack right now. Manage your conversations in Slack without logging into the dashboard.
+- **Auto assignment**: Cyber1SChat intelligently assigns a ticket to the agents who have access to the inbox depending on their availability and load.
+- **Conversation continuity**: If the user has provided an email address through the chat widget, Cyber1SChat will send an email to the customer under the agent name so that the user can continue the conversation over the email.
+- **Multi-lingual support**: Cyber1SChat supports 10+ languages.
+- **Powerful API & Webhooks**: Extend the capability of the software using Cyber1SChat’s webhooks and APIs.
+- **Integrations**: Cyber1SChat natively integrates with Slack right now. Manage your conversations in Slack without logging into the dashboard.
 
 ## Documentation
 
-Detailed documentation is available at [chat.cyber1s.com/help-center](https://www.chat.cyber1s.com/help-center).
+Detailed documentation is available at [chat.cyber1s.com/help-center](https://chat.cyber1s.com/help-center).
 
 ## Translation process
 
-The translation process for CyberChat web and mobile app is managed at [https://translate.chat.cyber1s.com](https://translate.chat.cyber1s.com) using Crowdin. Please read the [translation guide](https://www.chat.cyber1s.com/docs/contributing/translating-cyber1schat-to-your-language) for contributing to CyberChat.
+The translation process for Cyber1SChat web and mobile app is managed at [https://translate.chat.cyber1s.com](https://translate.chat.cyber1s.com) using Crowdin. Please read the [translation guide](https://chat.cyber1s.com/docs/contributing/translating-cyber1schat-to-your-language) for contributing to Cyber1SChat.
 
 ## Branching model
 
@@ -82,16 +82,16 @@ If you are looking for a stable version, please use the `master` or tags labelle
 
 ### Heroku one-click deploy
 
-Deploying CyberChat to Heroku is a breeze. It's as simple as clicking this button:
+Deploying Cyber1SChat to Heroku is a breeze. It's as simple as clicking this button:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cyber1s/cyber1schat/tree/master)
 
-Follow this [link](https://www.chat.cyber1s.com/docs/environment-variables) to understand setting the correct environment variables for the app to work with all the features. There might be breakages if you do not set the relevant environment variables.
+Follow this [link](https://chat.cyber1s.com/docs/environment-variables) to understand setting the correct environment variables for the app to work with all the features. There might be breakages if you do not set the relevant environment variables.
 
 
 ### DigitalOcean 1-Click Kubernetes deployment
 
-CyberChat now supports 1-Click deployment to DigitalOcean as a kubernetes app.
+Cyber1SChat now supports 1-Click deployment to DigitalOcean as a kubernetes app.
 
 <a href="https://marketplace.digitalocean.com/apps/cyber1schat?refcode=f2238426a2a8" alt="Deploy to DigitalOcean">
   <img width="200" alt="Deploy to DO" src="https://www.deploytodo.com/do-btn-blue.svg"/>
@@ -113,9 +113,9 @@ If you need help or just want to hang out, come, say hi on our [Discord](https:/
 
 ## Contributors ✨
 
-Thanks goes to all these [wonderful people](https://www.chat.cyber1s.com/docs/contributors):
+Thanks goes to all these [wonderful people](https://chat.cyber1s.com/docs/contributors):
 
 <a href="https://github.com/cyber1s/cyber1schat/graphs/contributors"><img src="https://opencollective.com/cyber1schat/contributors.svg?width=890&button=false" /></a>
 
 
-*CyberChat* &copy; 2017-2022, CyberChat Inc - Released under the MIT License.
+*Cyber1SChat* &copy; 2017-2022, Cyber1SChat Inc - Released under the MIT License.

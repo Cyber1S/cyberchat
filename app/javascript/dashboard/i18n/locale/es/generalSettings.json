@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Ahora puede recibir emails en su dominio personalizado."
       }
     },
-    "UPDATE_CYBER1SCHAT": "Hay una actualización %{latestCyberChatVersion} para CyberChat disponible. Por favor, actualiza tu instancia.",
+    "UPDATE_CYBER1SCHAT": "Hay una actualización %{latestCyber1SChatVersion} para Cyber1SChat disponible. Por favor, actualiza tu instancia.",
     "LEARN_MORE": "Learn more"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Desconectado de CyberChat"
+      "TEXT": "Desconectado de Cyber1SChat"
     },
     "BUTTON": {
       "REFRESH": "Actualizar"

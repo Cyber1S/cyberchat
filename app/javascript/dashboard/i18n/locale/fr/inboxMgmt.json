@@ -1,7 +1,7 @@
 {
   "INBOX_MGMT": {
     "HEADER": "Boîtes de réception",
-    "SIDEBAR_TXT": "<p><b>Boîte de réception</b></p> <p> Lorsque vous connectez un site Web ou une page Facebook à CyberChat, elle est appelée une <b>Boîte de réception</b>. Vous pouvez avoir des boîtes de réception illimitées dans votre compte CyberChat. </p><p> Cliquez sur <b>Ajouter Boîte de réception</b> pour connecter un site Web ou une page Facebook. </p><p> Dans le tableau de bord, vous pouvez voir toutes les conversations de toutes vos boîtes de réception en un seul endroit et y répondre dans l'onglet `Conversations`. </p><p> Vous pouvez également voir les conversations spécifiques à une boîte de réception en cliquant sur le nom de la boîte de réception sur le volet gauche du tableau de bord. </p>",
+    "SIDEBAR_TXT": "<p><b>Boîte de réception</b></p> <p> Lorsque vous connectez un site Web ou une page Facebook à Cyber1SChat, elle est appelée une <b>Boîte de réception</b>. Vous pouvez avoir des boîtes de réception illimitées dans votre compte Cyber1SChat. </p><p> Cliquez sur <b>Ajouter Boîte de réception</b> pour connecter un site Web ou une page Facebook. </p><p> Dans le tableau de bord, vous pouvez voir toutes les conversations de toutes vos boîtes de réception en un seul endroit et y répondre dans l'onglet `Conversations`. </p><p> Vous pouvez également voir les conversations spécifiques à une boîte de réception en cliquant sur le nom de la boîte de réception sur le volet gauche du tableau de bord. </p>",
     "LIST": {
       "404": "Il n'y a aucune boîte de réception associée à ce compte."
     },
@@ -9,7 +9,7 @@
       {
         "title": "Choisir un canal",
         "route": "settings_inbox_new",
-        "body": "Choisissez le fournisseur que vous souhaitez intégrer avec CyberChat."
+        "body": "Choisissez le fournisseur que vous souhaitez intégrer avec Cyber1SChat."
       },
       {
         "title": "Créer une boîte de réception",
@@ -37,7 +37,7 @@
         "PLACEHOLDER": "Entrez le nom de votre boîte de réception (ex: Acme Inc)"
       },
       "FB": {
-        "HELP": "PS : En vous connectant, nous avons seulement accès aux messages de votre page. Vos messages privés ne peuvent jamais être consultés par CyberChat.",
+        "HELP": "PS : En vous connectant, nous avons seulement accès aux messages de votre page. Vos messages privés ne peuvent jamais être consultés par Cyber1SChat.",
         "CHOOSE_PAGE": "Choisir la page",
         "CHOOSE_PLACEHOLDER": "Sélectionnez une page dans la liste",
         "INBOX_NAME": "Nom de la boîte de réception",
@@ -298,7 +298,7 @@
       },
       "AUTH": {
         "TITLE": "Choisir un canal",
-        "DESC": "CyberChat propose un widget de chat en direct, supporte les pages Facebook, les profils Twitter, Whatsapp, Email etc., en tant que canaux. Si vous voulez construire un canal personnalisé, vous pouvez le créer en utilisant le canal API. Sélectionnez un canal parmi les options ci-dessous pour continuer."
+        "DESC": "Cyber1SChat propose un widget de chat en direct, supporte les pages Facebook, les profils Twitter, Whatsapp, Email etc., en tant que canaux. Si vous voulez construire un canal personnalisé, vous pouvez le créer en utilisant le canal API. Sélectionnez un canal parmi les options ci-dessous pour continuer."
       },
       "AGENTS": {
         "TITLE": "Agents",
@@ -308,11 +308,11 @@
       },
       "DETAILS": {
         "TITLE": "Détails de la boîte de réception",
-        "DESC": "Dans le menu déroulant ci-dessous, sélectionnez la page Facebook que vous voulez connecter à CyberChat. Vous pouvez également donner un nom personnalisé à votre boîte de réception pour une meilleure identification."
+        "DESC": "Dans le menu déroulant ci-dessous, sélectionnez la page Facebook que vous voulez connecter à Cyber1SChat. Vous pouvez également donner un nom personnalisé à votre boîte de réception pour une meilleure identification."
       },
       "FINISH": {
         "TITLE": "Mission accomplie !",
-        "DESC": "Vous avez terminé avec succès l’intégration de votre page Facebook avec CyberChat. La prochaine fois qu’un client enverra un message à votre page, la conversation apparaîtra automatiquement dans votre boîte de réception.<br>Nous fournissons également un script de widget que vous pouvez facilement ajouter à votre site Web. Une fois que cela est configuré sur votre site web, les clients peuvent vous envoyer des messages directement depuis votre site Web sans l'aide d'un outil externe et la conversation apparaîtra ici, sur CyberChat.<br>Cool, hein ? Eh bien, nous essayons de l'être :)"
+        "DESC": "Vous avez terminé avec succès l’intégration de votre page Facebook avec Cyber1SChat. La prochaine fois qu’un client enverra un message à votre page, la conversation apparaîtra automatiquement dans votre boîte de réception.<br>Nous fournissons également un script de widget que vous pouvez facilement ajouter à votre site Web. Une fois que cela est configuré sur votre site web, les clients peuvent vous envoyer des messages directement depuis votre site Web sans l'aide d'un outil externe et la conversation apparaîtra ici, sur Cyber1SChat.<br>Cool, hein ? Eh bien, nous essayons de l'être :)"
       }
     },
     "DETAILS": {
@@ -415,7 +415,7 @@
       "HMAC_VERIFICATION": "Validation de l'identité de l'utilisateur",
       "HMAC_DESCRIPTION": "Afin de valider l'identité des utilisateurs, le SDK vous permet de passer un `identifier_hash` pour chaque utilisateur. Vous pouvez générer HMAC en utilisant 'sha256' avec la clé indiquée ici.",
       "HMAC_MANDATORY_VERIFICATION": "Forcer la validation de l'identité de l'utilisateur",
-      "HMAC_MANDATORY_DESCRIPTION": "Si activé, la méthode setUser du SDK CyberChat ne fonctionnera pas à moins que le `identifier_hash` soit fourni pour chaque utilisateur.",
+      "HMAC_MANDATORY_DESCRIPTION": "Si activé, la méthode setUser du SDK Cyber1SChat ne fonctionnera pas à moins que le `identifier_hash` soit fourni pour chaque utilisateur.",
       "INBOX_IDENTIFIER": "Identificateur de la boîte de réception",
       "INBOX_IDENTIFIER_SUB_TEXT": "Utilisez le jeton `inbox_identifier` affiché ici pour authentifier vos clients API.",
       "FORWARD_EMAIL_TITLE": "Transférer par e-mail",

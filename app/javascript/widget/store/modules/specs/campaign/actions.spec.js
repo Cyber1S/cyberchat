@@ -45,7 +45,7 @@ describe('#actions', () => {
         { commit },
         {
           websiteToken: 'XDsafmADasd',
-          currentURL: 'https://www.chat.cyber1s.com',
+          currentURL: 'https://chat.cyber1s.com',
           isInBusinessHours: true,
         }
       );

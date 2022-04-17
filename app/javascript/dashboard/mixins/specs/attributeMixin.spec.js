@@ -87,7 +87,7 @@ describe('attributeMixin', () => {
     const wrapper = shallowMount(Component, { store, localVue });
     expect(wrapper.vm.attributeDisplayType('date')).toBe('text');
     expect(
-      wrapper.vm.attributeDisplayType('https://www.chat.cyber1s.com/pricing')
+      wrapper.vm.attributeDisplayType('https://chat.cyber1s.com/pricing')
     ).toBe('link');
     expect(wrapper.vm.attributeDisplayType(9988)).toBe('number');
   });
