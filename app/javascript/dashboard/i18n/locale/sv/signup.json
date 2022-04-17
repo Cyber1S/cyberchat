@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Registreringen lyckades",
-      "ERROR_MESSAGE": "Kunde inte ansluta till C1Chat Server, försök igen senare"
+      "ERROR_MESSAGE": "Kunde inte ansluta till Cyber1SChat Server, försök igen senare"
     },
     "SUBMIT": "Skicka",
     "HAVE_AN_ACCOUNT": "Har du redan ett konto?"
