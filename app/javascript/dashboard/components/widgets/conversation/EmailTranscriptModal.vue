@@ -1,7 +1,7 @@
 <template>
-  <woot-modal :show.sync="show" :on-close="onCancel">
+  <c1chat-modal :show.sync="show" :on-close="onCancel">
     <div class="column content-box">
-      <woot-modal-header
+      <c1chat-modal-header
         :header-title="$t('EMAIL_TRANSCRIPT.TITLE')"
         :header-content="$t('EMAIL_TRANSCRIPT.DESC')"
       />
@@ -59,7 +59,7 @@
         </div>
         <div class="modal-footer">
           <div class="medium-12 row">
-            <woot-submit-button
+            <c1chat-submit-button
               :button-text="$t('EMAIL_TRANSCRIPT.SUBMIT')"
               :disabled="!isFormValid"
             />
@@ -70,7 +70,7 @@
         </div>
       </form>
     </div>
-  </woot-modal>
+  </c1chat-modal>
 </template>
 
 <script>

@@ -9,13 +9,13 @@
           <p>{{ $t('PROFILE_SETTINGS.FORM.PROFILE_SECTION.NOTE') }}</p>
         </div>
         <div class="columns small-9 medium-5">
-          <woot-avatar-uploader
+          <c1chat-avatar-uploader
             :label="$t('PROFILE_SETTINGS.FORM.PROFILE_IMAGE.LABEL')"
             :src="avatarUrl"
             @change="handleImageUpload"
           />
           <div v-if="showDeleteButton" class="avatar-delete-btn">
-            <woot-button
+            <c1chat-button
               type="button"
               color-scheme="alert"
               variant="hollow"
@@ -23,7 +23,7 @@
               @click="deleteAvatar"
             >
               {{ $t('PROFILE_SETTINGS.DELETE_AVATAR') }}
-            </woot-button>
+            </c1chat-button>
           </div>
           <label :class="{ error: $v.name.$error }">
             {{ $t('PROFILE_SETTINGS.FORM.NAME.LABEL') }}
@@ -63,9 +63,9 @@
               {{ $t('PROFILE_SETTINGS.FORM.EMAIL.ERROR') }}
             </span>
           </label>
-          <woot-button type="submit" :is-loading="isProfileUpdating">
+          <c1chat-button type="submit" :is-loading="isProfileUpdating">
             {{ $t('PROFILE_SETTINGS.BTN_TEXT') }}
-          </woot-button>
+          </c1chat-button>
         </div>
       </div>
     </form>
@@ -87,7 +87,7 @@
         </p>
       </div>
       <div class="columns small-9 medium-5">
-        <woot-code :script="currentUser.access_token"></woot-code>
+        <c1chat-code :script="currentUser.access_token"></c1chat-code>
       </div>
     </div>
   </div>

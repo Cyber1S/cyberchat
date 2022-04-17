@@ -68,7 +68,7 @@
         v-tooltip.top="tooltipForSender"
         class="sender--info"
       >
-        <woot-thumbnail
+        <c1chat-thumbnail
           :src="sender.thumbnail"
           :username="senderNameForAvatar"
           size="16px"
@@ -84,7 +84,7 @@
         </a>
       </div>
       <div v-if="isFailed" class="message-failed--alert">
-        <woot-button
+        <c1chat-button
           v-tooltip.top-end="$t('CONVERSATION.TRY_AGAIN')"
           size="tiny"
           color-scheme="alert"

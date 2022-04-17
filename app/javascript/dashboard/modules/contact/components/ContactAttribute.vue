@@ -19,7 +19,7 @@
           @keyup.enter="onUpdate"
         />
         <div class="input-group-button">
-          <woot-button size="small" icon="ion-checkmark" @click="onUpdate" />
+          <c1chat-button size="small" icon="ion-checkmark" @click="onUpdate" />
         </div>
       </div>
     </div>
@@ -31,7 +31,7 @@
       <p class="value">
         {{ value || '---' }}
       </p>
-      <woot-button
+      <c1chat-button
         v-if="showEdit"
         variant="clear link"
         size="small"

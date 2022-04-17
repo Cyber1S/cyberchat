@@ -5,11 +5,11 @@
   @include custom-border-top(3px, transparent);
 
   &.active {
-    @include custom-border-top(3px, $color-woot);
+    @include custom-border-top(3px, $color-c1chat);
     @include background-white;
     .heading,
     .metric {
-      color: $color-woot;
+      color: $color-c1chat;
     }
   }
 

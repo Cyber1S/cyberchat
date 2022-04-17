@@ -27,14 +27,14 @@
           >
             {{ snoozedDisplayText }}
           </span>
-          <woot-button
+          <c1chat-button
             class="user--profile__button margin-right-small"
             size="small"
             variant="link"
             @click="$emit('contact-panel-toggle')"
           >
             {{ contactPanelToggleText }}
-          </woot-button>
+          </c1chat-button>
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@ import agentMixin from '../../../mixins/agentMixin.js';
 import eventListenerMixins from 'shared/mixins/eventListenerMixins';
 import inboxMixin from 'shared/mixins/inboxMixin';
 import { hasPressedAltAndOKey } from 'shared/helpers/KeyboardHelpers';
-import wootConstants from '../../../constants';
+import c1chatConstants from '../../../constants';
 import differenceInHours from 'date-fns/differenceInHours';
 import InboxName from '../InboxName';
 
@@ -95,7 +95,7 @@ export default {
       );
     },
     isSnoozed() {
-      return this.currentChat.status === wootConstants.STATUS_TYPE.SNOOZED;
+      return this.currentChat.status === c1chatConstants.STATUS_TYPE.SNOOZED;
     },
     snoozedDisplayText() {
       const { snoozed_until: snoozedUntil } = this.currentChat;

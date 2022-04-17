@@ -1,6 +1,6 @@
 <template>
-  <woot-modal :show.sync="show" :on-close="onClose">
-    <woot-modal-header
+  <c1chat-modal :show.sync="show" :on-close="onClose">
+    <c1chat-modal-header
       :header-title="$t('MERGE_CONTACTS.TITLE')"
       :header-content="$t('MERGE_CONTACTS.DESCRIPTION')"
     />
@@ -14,7 +14,7 @@
       @cancel="onClose"
       @submit="onMergeContacts"
     />
-  </woot-modal>
+  </c1chat-modal>
 </template>
 
 <script>

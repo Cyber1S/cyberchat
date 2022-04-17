@@ -89,7 +89,7 @@
           </p>
         </div>
         <div class="columns small-9 medium-5">
-          <woot-code :script="getAccountId"></woot-code>
+          <c1chat-code :script="getAccountId"></c1chat-code>
         </div>
       </div>
       <div class="current-version">
@@ -103,15 +103,15 @@
         </div>
       </div>
 
-      <woot-submit-button
+      <c1chat-submit-button
         class="button nice success button--fixed-right-top"
         :button-text="$t('GENERAL_SETTINGS.SUBMIT')"
         :loading="isUpdating"
       >
-      </woot-submit-button>
+      </c1chat-submit-button>
     </form>
 
-    <woot-loading-state v-if="uiFlags.isFetchingItem" />
+    <c1chat-loading-state v-if="uiFlags.isFetchingItem" />
   </div>
 </template>
 

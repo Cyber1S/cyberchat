@@ -3,16 +3,16 @@
     <label>
       <span v-if="label">{{ label }}</span>
     </label>
-    <woot-thumbnail v-if="src" size="80px" :src="src" />
+    <c1chat-thumbnail v-if="src" size="80px" :src="src" />
     <div v-if="src && deleteAvatar" class="avatar-delete-btn">
-      <woot-button
+      <c1chat-button
         color-scheme="alert"
         variant="hollow"
         size="tiny"
         @click="onAvatarDelete"
       >
         {{ this.$t('INBOX_MGMT.DELETE.AVATAR_DELETE_BUTTON_TEXT') }}
-      </woot-button>
+      </c1chat-button>
     </div>
     <label>
       <input

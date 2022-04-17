@@ -15,7 +15,7 @@
 </template>
 <script>
 export default {
-  name: 'WootTabsItem',
+  name: 'c1chatTabsItem',
   props: {
     index: {
       type: Number,

@@ -1,6 +1,6 @@
 <template>
   <div class="medium-3 bg-white contact--panel">
-    <woot-button
+    <c1chat-button
       icon="chevron-right"
       class="close-button clear secondary"
       @click="onPanelToggle"

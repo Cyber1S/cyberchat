@@ -27,7 +27,7 @@
         <div v-if="integrationEnabled">
           <div v-if="integrationAction === 'disconnect'">
             <div @click="openDeletePopup()">
-              <woot-submit-button
+              <c1chat-submit-button
                 :button-text="
                   $t('INTEGRATION_SETTINGS.WEBHOOK.DELETE.BUTTON_TEXT')
                 "
@@ -49,7 +49,7 @@
         </a>
       </div>
     </div>
-    <woot-delete-modal
+    <c1chat-delete-modal
       :show.sync="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

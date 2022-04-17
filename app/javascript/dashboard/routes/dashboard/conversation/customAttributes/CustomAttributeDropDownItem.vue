@@ -1,9 +1,9 @@
 <template>
-  <woot-dropdown-item>
-    <woot-button variant="clear" @click="onClick">
+  <c1chat-dropdown-item>
+    <c1chat-button variant="clear" @click="onClick">
       <span class="label-text" :title="title">{{ title }}</span>
-    </woot-button>
-  </woot-dropdown-item>
+    </c1chat-button>
+  </c1chat-dropdown-item>
 </template>
 
 <script>

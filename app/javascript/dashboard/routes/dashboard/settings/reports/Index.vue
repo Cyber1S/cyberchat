@@ -1,13 +1,13 @@
 <template>
   <div class="column content-box">
-    <woot-button
+    <c1chat-button
       color-scheme="success"
       class-names="button--fixed-right-top"
       icon="arrow-download"
       @click="downloadAgentReports"
     >
       {{ $t('REPORT.DOWNLOAD_AGENT_REPORTS') }}
-    </woot-button>
+    </c1chat-button>
 
     <report-filter-selector
       group-by-filter
@@ -18,7 +18,7 @@
       @business-hours-toggle="onBusinessHoursToggle"
     />
     <div class="row">
-      <woot-report-stats-card
+      <c1chat-report-stats-card
         v-for="(metric, index) in metrics"
         :key="metric.NAME"
         :desc="metric.DESC"
@@ -32,12 +32,12 @@
       />
     </div>
     <div class="report-bar">
-      <woot-loading-state
+      <c1chat-loading-state
         v-if="accountReport.isFetching"
         :message="$t('REPORT.LOADING_CHART')"
       />
       <div v-else class="chart-container">
-        <woot-bar
+        <c1chat-bar
           v-if="accountReport.data.length"
           :collection="collection"
           :chart-options="chartOptions"

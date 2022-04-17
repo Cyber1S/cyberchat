@@ -1,8 +1,8 @@
 <template>
   <div class="column">
-    <woot-modal-header :header-title="$t('FILTER.TITLE')">
+    <c1chat-modal-header :header-title="$t('FILTER.TITLE')">
       <p>{{ $t('FILTER.SUBTITLE') }}</p>
-    </woot-modal-header>
+    </c1chat-modal-header>
     <div class="row modal-content">
       <div class="medium-12 columns filters-wrap">
         <filter-input-box
@@ -26,7 +26,7 @@
           @removeFilter="removeFilter(i)"
         />
         <div class="filter-actions">
-          <woot-button
+          <c1chat-button
             icon="add"
             color-scheme="success"
             variant="smooth"
@@ -34,17 +34,17 @@
             @click="appendNewFilter"
           >
             {{ $t('FILTER.ADD_NEW_FILTER') }}
-          </woot-button>
+          </c1chat-button>
         </div>
       </div>
       <div class="medium-12 columns">
         <div class="modal-footer justify-content-end w-full">
-          <woot-button class="button clear" @click.prevent="onClose">
+          <c1chat-button class="button clear" @click.prevent="onClose">
             {{ $t('FILTER.CANCEL_BUTTON_LABEL') }}
-          </woot-button>
-          <woot-button @click="submitFilterQuery">
+          </c1chat-button>
+          <c1chat-button @click="submitFilterQuery">
             {{ $t('FILTER.SUBMIT_BUTTON_LABEL') }}
-          </woot-button>
+          </c1chat-button>
         </div>
       </div>
     </div>

@@ -1,15 +1,15 @@
 <template>
   <section class="notification--table-wrap">
-    <woot-submit-button
+    <c1chat-submit-button
       v-if="notificationMetadata.unreadCount"
       class="button nice success button--fixed-right-top"
       :button-text="$t('NOTIFICATIONS_PAGE.MARK_ALL_DONE')"
       :loading="isUpdating"
       @click="onMarkAllDoneClick"
     >
-    </woot-submit-button>
+    </c1chat-submit-button>
 
-    <table class="woot-table notifications-table">
+    <table class="c1chat-table notifications-table">
       <tbody v-show="!isLoading">
         <tr
           v-for="notificationItem in notifications"
@@ -176,7 +176,7 @@ export default {
   width: var(--space-one);
   height: var(--space-one);
   border-radius: 50%;
-  background: var(--color-woot);
+  background: var(--color-c1chat);
 }
 
 .notification--created-at {

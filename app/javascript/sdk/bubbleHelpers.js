@@ -1,4 +1,4 @@
-import { addClass, removeClass, toggleClass, wootOn } from './DOMHelpers';
+import { addClass, removeClass, toggleClass, c1chatOn } from './DOMHelpers';
 import { IFrameHelper } from './IFrameHelper';
 import { isExpandedView } from './settingsHelper';
 
@@ -15,13 +15,13 @@ export const notificationBubble = document.createElement('span');
 
 export const setBubbleText = bubbleText => {
   if (isExpandedView(window.$cyber1schat.type)) {
-    const textNode = document.getElementById('woot-widget--expanded__text');
+    const textNode = document.getElementById('c1chat-widget--expanded__text');
     textNode.innerHTML = bubbleText;
   }
 };
 
 export const createBubbleIcon = ({ className, src, target }) => {
-  let bubbleClassName = `${className} woot-elements--${window.$cyber1schat.position}`;
+  let bubbleClassName = `${className} c1chat-elements--${window.$cyber1schat.position}`;
   const bubbleIcon = document.createElement('img');
   bubbleIcon.src = src;
   bubbleIcon.alt = 'bubble-icon';
@@ -29,10 +29,10 @@ export const createBubbleIcon = ({ className, src, target }) => {
 
   if (isExpandedView(window.$cyber1schat.type)) {
     const textNode = document.createElement('div');
-    textNode.id = 'woot-widget--expanded__text';
+    textNode.id = 'c1chat-widget--expanded__text';
     textNode.innerHTML = '';
     target.appendChild(textNode);
-    bubbleClassName += ' woot-widget--expanded';
+    bubbleClassName += ' c1chat-widget--expanded';
   }
 
   target.className = bubbleClassName;
@@ -40,12 +40,12 @@ export const createBubbleIcon = ({ className, src, target }) => {
 };
 
 export const createBubbleHolder = () => {
-  addClass(bubbleHolder, 'woot--bubble-holder');
+  addClass(bubbleHolder, 'c1chat--bubble-holder');
   body.appendChild(bubbleHolder);
 };
 
 export const createNotificationBubble = () => {
-  addClass(notificationBubble, 'woot--notification');
+  addClass(notificationBubble, 'c1chat--notification');
   return notificationBubble;
 };
 
@@ -56,9 +56,9 @@ export const onBubbleClick = (props = {}) => {
     const newIsOpen = toggleValue === undefined ? !isOpen : toggleValue;
     window.$cyber1schat.isOpen = newIsOpen;
 
-    toggleClass(chatBubble, 'woot--hide');
-    toggleClass(closeBubble, 'woot--hide');
-    toggleClass(widgetHolder, 'woot--hide');
+    toggleClass(chatBubble, 'c1chat--hide');
+    toggleClass(closeBubble, 'c1chat--hide');
+    toggleClass(widgetHolder, 'c1chat--hide');
     IFrameHelper.events.onBubbleToggle(newIsOpen);
 
     if (!newIsOpen) {
@@ -68,15 +68,15 @@ export const onBubbleClick = (props = {}) => {
 };
 
 export const onClickChatBubble = () => {
-  wootOn(bubbleHolder, 'click', onBubbleClick);
+  c1chatOn(bubbleHolder, 'click', onBubbleClick);
 };
 
 export const addUnreadClass = () => {
-  const holderEl = document.querySelector('.woot-widget-holder');
+  const holderEl = document.querySelector('.c1chat-widget-holder');
   addClass(holderEl, 'has-unread-view');
 };
 
 export const removeUnreadClass = () => {
-  const holderEl = document.querySelector('.woot-widget-holder');
+  const holderEl = document.querySelector('.c1chat-widget-holder');
   removeClass(holderEl, 'has-unread-view');
 };

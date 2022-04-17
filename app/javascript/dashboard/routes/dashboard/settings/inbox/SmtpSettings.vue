@@ -15,7 +15,7 @@
         </label>
         <p>{{ $t('INBOX_MGMT.SMTP.TOGGLE_HELP') }}</p>
         <div v-if="isSMTPEnabled" class="smtp-details-wrap">
-          <woot-input
+          <c1chat-input
             v-model.trim="address"
             :class="{ error: $v.address.$error }"
             class="medium-9 columns"
@@ -23,7 +23,7 @@
             :placeholder="$t('INBOX_MGMT.SMTP.ADDRESS.PLACE_HOLDER')"
             @blur="$v.address.$touch"
           />
-          <woot-input
+          <c1chat-input
             v-model="port"
             type="number"
             :class="{ error: $v.port.$error }"
@@ -32,7 +32,7 @@
             :placeholder="$t('INBOX_MGMT.SMTP.PORT.PLACE_HOLDER')"
             @blur="$v.port.$touch"
           />
-          <woot-input
+          <c1chat-input
             v-model="login"
             :class="{ error: $v.login.$error }"
             class="medium-9 columns"
@@ -40,7 +40,7 @@
             :placeholder="$t('INBOX_MGMT.SMTP.LOGIN.PLACE_HOLDER')"
             @blur="$v.login.$touch"
           />
-          <woot-input
+          <c1chat-input
             v-model="password"
             :class="{ error: $v.password.$error }"
             class="medium-9 columns"
@@ -49,7 +49,7 @@
             type="password"
             @blur="$v.password.$touch"
           />
-          <woot-input
+          <c1chat-input
             v-model.trim="domain"
             :class="{ error: $v.domain.$error }"
             class="medium-9 columns"
@@ -77,7 +77,7 @@
             :action="handleAuthMechanismChange"
           />
         </div>
-        <woot-submit-button
+        <c1chat-submit-button
           :button-text="$t('INBOX_MGMT.SMTP.UPDATE')"
           :loading="uiFlags.isUpdatingInbox"
           :disabled="($v.$invalid && isSMTPEnabled) || uiFlags.isUpdatingSMTP"

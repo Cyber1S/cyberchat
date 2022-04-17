@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
 import {
-  wootOn,
+  c1chatOn,
   addClass,
   loadCSS,
   removeClass,
@@ -54,12 +54,12 @@ export const IFrameHelper = {
     iframe.id = 'cyber1schat_live_chat_widget';
     iframe.style.visibility = 'hidden';
 
-    let holderClassName = `woot-widget-holder woot--hide woot-elements--${window.$cyber1schat.position}`;
+    let holderClassName = `c1chat-widget-holder c1chat--hide c1chat-elements--${window.$cyber1schat.position}`;
     if (window.$cyber1schat.hideMessageBubble) {
-      holderClassName += ` woot-widget--without-bubble`;
+      holderClassName += ` c1chat-widget--without-bubble`;
     }
     if (isFlatWidgetStyle(window.$cyber1schat.widgetStyle)) {
-      holderClassName += ` woot-widget-holder--flat`;
+      holderClassName += ` c1chat-widget-holder--flat`;
     }
 
     addClass(widgetHolder, holderClassName);
@@ -70,7 +70,7 @@ export const IFrameHelper = {
     IFrameHelper.preventDefaultScroll();
   },
   getAppFrame: () => document.getElementById('cyber1schat_live_chat_widget'),
-  getBubbleHolder: () => document.getElementsByClassName('woot--bubble-holder'),
+  getBubbleHolder: () => document.getElementsByClassName('c1chat--bubble-holder'),
   sendMessage: (key, value) => {
     const element = IFrameHelper.getAppFrame();
     element.contentWindow.postMessage(
@@ -93,7 +93,7 @@ export const IFrameHelper = {
     };
   },
   initWindowSizeListener: () => {
-    wootOn(window, 'resize', () => IFrameHelper.toggleCloseButton());
+    c1chatOn(window, 'resize', () => IFrameHelper.toggleCloseButton());
   },
   preventDefaultScroll: () => {
     widgetHolder.addEventListener('wheel', event => {
@@ -232,7 +232,7 @@ export const IFrameHelper = {
         return;
       }
 
-      const bubbleElement = document.querySelector('.woot-widget-bubble');
+      const bubbleElement = document.querySelector('.c1chat-widget-bubble');
       if (
         event.unreadMessageCount > 0 &&
         !bubbleElement.classList.contains('unread-notification')
@@ -266,12 +266,12 @@ export const IFrameHelper = {
     createBubbleHolder();
     onLocationChangeListener();
     if (!window.$cyber1schat.hideMessageBubble) {
-      let className = 'woot-widget-bubble';
-      let closeBtnClassName = `woot-elements--${window.$cyber1schat.position} woot-widget-bubble woot--close woot--hide`;
+      let className = 'c1chat-widget-bubble';
+      let closeBtnClassName = `c1chat-elements--${window.$cyber1schat.position} c1chat-widget-bubble c1chat--close c1chat--hide`;
 
       if (isFlatWidgetStyle(window.$cyber1schat.widgetStyle)) {
-        className += ' woot-widget-bubble--flat';
-        closeBtnClassName += ' woot-widget-bubble--flat';
+        className += ' c1chat-widget-bubble--flat';
+        closeBtnClassName += ' c1chat-widget-bubble--flat';
       }
 
       const chatIcon = createBubbleIcon({

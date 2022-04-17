@@ -4,7 +4,7 @@
     class="selector-wrap"
     @keyup.esc="onCloseDropdown"
   >
-    <woot-button
+    <c1chat-button
       variant="hollow"
       color-scheme="secondary"
       class="selector-button"
@@ -36,7 +36,7 @@
           <i v-else class="icon ion-chevron-down" />
         </div>
       </div>
-    </woot-button>
+    </c1chat-button>
     <div
       :class="{ 'dropdown-pane--open': showSearchDropdown }"
       class="dropdown-pane"

@@ -15,7 +15,7 @@
           @statusFilterChange="updateStatusType"
         />
         <div v-if="hasAppliedFilters && !hasActiveFolders">
-          <woot-button
+          <c1chat-button
             v-tooltip.top-end="$t('FILTER.CUSTOM_VIEWS.ADD.SAVE_BUTTON')"
             size="tiny"
             variant="smooth"
@@ -23,7 +23,7 @@
             icon="save"
             @click="onClickOpenAddFoldersModal"
           />
-          <woot-button
+          <c1chat-button
             v-tooltip.top-end="$t('FILTER.CLEAR_BUTTON_LABEL')"
             size="tiny"
             variant="smooth"
@@ -33,7 +33,7 @@
           />
         </div>
         <div v-if="hasActiveFolders">
-          <woot-button
+          <c1chat-button
             v-tooltip.top-end="$t('FILTER.CUSTOM_VIEWS.DELETE.DELETE_BUTTON')"
             size="tiny"
             variant="smooth"
@@ -44,7 +44,7 @@
           />
         </div>
 
-        <woot-button
+        <c1chat-button
           v-else
           v-tooltip.top-end="$t('FILTER.TOOLTIP_LABEL')"
           variant="clear"
@@ -54,7 +54,7 @@
           class="btn-filter"
           @click="onToggleAdvanceFiltersModal"
         >
-        </woot-button>
+        </c1chat-button>
       </div>
     </div>
 
@@ -102,14 +102,14 @@
         <span class="spinner"></span>
       </div>
 
-      <woot-button
+      <c1chat-button
         v-if="!hasCurrentPageEndReached && !chatListLoading"
         variant="clear"
         size="expanded"
         @click="loadMoreConversations"
       >
         {{ $t('CHAT_LIST.LOAD_MORE_CONVERSATIONS') }}
-      </woot-button>
+      </c1chat-button>
 
       <p
         v-if="
@@ -122,7 +122,7 @@
         {{ $t('CHAT_LIST.EOF') }}
       </p>
     </div>
-    <woot-modal
+    <c1chat-modal
       :show.sync="showAdvancedFilters"
       :on-close="onToggleAdvanceFiltersModal"
       size="medium"
@@ -133,7 +133,7 @@
         :on-close="onToggleAdvanceFiltersModal"
         @applyFilter="onApplyFilter"
       />
-    </woot-modal>
+    </c1chat-modal>
   </div>
 </template>
 
@@ -147,7 +147,7 @@ import ConversationCard from './widgets/conversation/ConversationCard';
 import timeMixin from '../mixins/time';
 import eventListenerMixins from 'shared/mixins/eventListenerMixins';
 import conversationMixin from '../mixins/conversations';
-import wootConstants from '../constants';
+import c1chatConstants from '../constants';
 import advancedFilterTypes from './widgets/conversation/advancedFilterItems';
 import filterQueryGenerator from '../helper/filterQueryGenerator.js';
 import AddCustomViews from 'dashboard/routes/dashboard/customviews/AddCustomViews';
@@ -192,8 +192,8 @@ export default {
   },
   data() {
     return {
-      activeAssigneeTab: wootConstants.ASSIGNEE_TYPE.ME,
-      activeStatus: wootConstants.STATUS_TYPE.OPEN,
+      activeAssigneeTab: c1chatConstants.ASSIGNEE_TYPE.ME,
+      activeStatus: c1chatConstants.STATUS_TYPE.OPEN,
       showAdvancedFilters: false,
       advancedFilterTypes: advancedFilterTypes.map(filter => ({
         ...filter,
@@ -247,7 +247,7 @@ export default {
     showAssigneeInConversationCard() {
       return (
         this.hasAppliedFiltersOrActiveFolders ||
-        this.activeAssigneeTab === wootConstants.ASSIGNEE_TYPE.ALL
+        this.activeAssigneeTab === c1chatConstants.ASSIGNEE_TYPE.ALL
       );
     },
     inbox() {
@@ -520,7 +520,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '~dashboard/assets/scss/woot';
+@import '~dashboard/assets/scss/c1chat';
 
 .spinner {
   margin-top: var(--space-normal);

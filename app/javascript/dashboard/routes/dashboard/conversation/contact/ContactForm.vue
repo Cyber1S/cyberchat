@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    <woot-input
+    <c1chat-input
       v-model.trim="companyName"
       class="columns"
       :label="$t('CONTACT_FORM.FORM.COMPANY_NAME.LABEL')"
@@ -81,7 +81,7 @@
     </div>
     <div class="modal-footer">
       <div class="medium-12 columns">
-        <woot-submit-button
+        <c1chat-submit-button
           :loading="inProgress"
           :button-text="$t('CONTACT_FORM.FORM.SUBMIT')"
         />

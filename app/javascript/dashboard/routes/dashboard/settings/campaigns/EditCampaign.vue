@@ -1,9 +1,9 @@
 <template>
   <div class="column content-box">
-    <woot-modal-header :header-title="pageTitle" />
+    <c1chat-modal-header :header-title="pageTitle" />
     <form class="row" @submit.prevent="editCampaign">
       <div class="medium-12 columns">
-        <woot-input
+        <c1chat-input
           v-model="title"
           :label="$t('CAMPAIGN.ADD.FORM.TITLE.LABEL')"
           type="text"
@@ -14,7 +14,7 @@
         />
         <label class="editor-wrap">
           {{ $t('CAMPAIGN.ADD.FORM.MESSAGE.LABEL') }}
-          <woot-message-editor
+          <c1chat-message-editor
             v-model.trim="message"
             class="message-editor"
             :is-format-mode="true"
@@ -54,7 +54,7 @@
             {{ $t('CAMPAIGN.ADD.FORM.SENT_BY.ERROR') }}
           </span>
         </label>
-        <woot-input
+        <c1chat-input
           v-model="endPoint"
           :label="$t('CAMPAIGN.ADD.FORM.END_POINT.LABEL')"
           type="text"
@@ -65,7 +65,7 @@
           :placeholder="$t('CAMPAIGN.ADD.FORM.END_POINT.PLACEHOLDER')"
           @blur="$v.endPoint.$touch"
         />
-        <woot-input
+        <c1chat-input
           v-model="timeOnPage"
           :label="$t('CAMPAIGN.ADD.FORM.TIME_ON_PAGE.LABEL')"
           type="text"
@@ -98,12 +98,12 @@
         </label>
       </div>
       <div class="modal-footer">
-        <woot-button :is-loading="uiFlags.isCreating">
+        <c1chat-button :is-loading="uiFlags.isCreating">
           {{ $t('CAMPAIGN.EDIT.UPDATE_BUTTON_TEXT') }}
-        </woot-button>
-        <woot-button variant="clear" @click.prevent="onClose">
+        </c1chat-button>
+        <c1chat-button variant="clear" @click.prevent="onClose">
           {{ $t('CAMPAIGN.ADD.CANCEL_BUTTON_TEXT') }}
-        </woot-button>
+        </c1chat-button>
       </div>
     </form>
   </div>
@@ -112,12 +112,12 @@
 <script>
 import { mapGetters } from 'vuex';
 import { required, url, minLength } from 'vuelidate/lib/validators';
-import WootMessageEditor from 'dashboard/components/widgets/WootWriter/Editor';
+import c1chatMessageEditor from 'dashboard/components/widgets/c1chatWriter/Editor';
 import alertMixin from 'shared/mixins/alertMixin';
 import campaignMixin from 'shared/mixins/campaignMixin';
 export default {
   components: {
-    WootMessageEditor,
+    c1chatMessageEditor,
   },
   mixins: [alertMixin, campaignMixin],
   props: {
@@ -265,7 +265,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-::v-deep .ProseMirror-woot-style {
+::v-deep .ProseMirror-c1chat-style {
   height: 8rem;
 }
 </style>

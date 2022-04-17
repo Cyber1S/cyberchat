@@ -1,13 +1,13 @@
 <template>
   <div class="column content-box">
-    <woot-button
+    <c1chat-button
       color-scheme="success"
       class-names="button--fixed-right-top"
       icon="add-circle"
       @click="openAddPopup"
     >
       {{ $t('LABEL_MGMT.HEADER_BTN_TXT') }}
-    </woot-button>
+    </c1chat-button>
     <div class="row">
       <div class="small-8 columns with-right-space ">
         <p
@@ -16,11 +16,11 @@
         >
           {{ $t('LABEL_MGMT.LIST.404') }}
         </p>
-        <woot-loading-state
+        <c1chat-loading-state
           v-if="uiFlags.isFetching"
           :message="$t('LABEL_MGMT.LOADING')"
         />
-        <table v-if="!uiFlags.isFetching && records.length" class="woot-table">
+        <table v-if="!uiFlags.isFetching && records.length" class="c1chat-table">
           <thead>
             <th
               v-for="thHeader in $t('LABEL_MGMT.LIST.TABLE_HEADER')"
@@ -43,7 +43,7 @@
                 </div>
               </td>
               <td class="button-wrapper">
-                <woot-button
+                <c1chat-button
                   v-tooltip.top="$t('LABEL_MGMT.FORM.EDIT')"
                   variant="smooth"
                   size="tiny"
@@ -53,8 +53,8 @@
                   icon="edit"
                   @click="openEditPopup(label)"
                 >
-                </woot-button>
-                <woot-button
+                </c1chat-button>
+                <c1chat-button
                   v-tooltip.top="$t('LABEL_MGMT.FORM.DELETE')"
                   variant="smooth"
                   color-scheme="alert"
@@ -64,7 +64,7 @@
                   :is-loading="loading[label.id]"
                   @click="openDeletePopup(label, index)"
                 >
-                </woot-button>
+                </c1chat-button>
               </td>
             </tr>
           </tbody>
@@ -75,18 +75,18 @@
         <span v-html="$t('LABEL_MGMT.SIDEBAR_TXT')"></span>
       </div>
     </div>
-    <woot-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
+    <c1chat-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
       <add-label @close="hideAddPopup" />
-    </woot-modal>
+    </c1chat-modal>
 
-    <woot-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
+    <c1chat-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
       <edit-label
         :selected-response="selectedResponse"
         @close="hideEditPopup"
       />
-    </woot-modal>
+    </c1chat-modal>
 
-    <woot-delete-modal
+    <c1chat-delete-modal
       :show.sync="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

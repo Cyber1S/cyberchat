@@ -1,5 +1,5 @@
 <template>
-  <woot-reports
+  <c1chat-reports
     key="team-reports"
     type="team"
     getter-key="teams/getTeams"
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import WootReports from './components/WootReports';
+import c1chatReports from './components/c1chatReports';
 
 export default {
   components: {
-    WootReports,
+    c1chatReports,
   },
 };
 </script>

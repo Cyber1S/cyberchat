@@ -1,8 +1,8 @@
 <template>
   <div class="column content-box">
-    <woot-modal-header :header-title="pageTitle" />
+    <c1chat-modal-header :header-title="pageTitle" />
     <form class="row" @submit.prevent="editLabel">
-      <woot-input
+      <c1chat-input
         v-model.trim="title"
         :class="{ error: $v.title.$error }"
         class="medium-12 columns"
@@ -11,7 +11,7 @@
         :error="getLabelTitleErrorMessage"
         @input="$v.title.$touch"
       />
-      <woot-input
+      <c1chat-input
         v-model.trim="description"
         :class="{ error: $v.description.$error }"
         class="medium-12 columns"
@@ -23,7 +23,7 @@
       <div class="medium-12">
         <label>
           {{ $t('LABEL_MGMT.FORM.COLOR.LABEL') }}
-          <woot-color-picker v-model="color" />
+          <c1chat-color-picker v-model="color" />
         </label>
       </div>
       <div class="medium-12">
@@ -34,15 +34,15 @@
       </div>
       <div class="modal-footer">
         <div class="medium-12 columns">
-          <woot-button
+          <c1chat-button
             :is-disabled="$v.title.$invalid || uiFlags.isUpdating"
             :is-loading="uiFlags.isUpdating"
           >
             {{ $t('LABEL_MGMT.FORM.EDIT') }}
-          </woot-button>
-          <woot-button class="button clear" @click.prevent="onClose">
+          </c1chat-button>
+          <c1chat-button class="button clear" @click.prevent="onClose">
             {{ $t('LABEL_MGMT.FORM.CANCEL') }}
-          </woot-button>
+          </c1chat-button>
         </div>
       </div>
     </form>

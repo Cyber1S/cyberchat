@@ -106,7 +106,7 @@ export default {
 
   .clear-button {
     background: transparent;
-    color: $color-woot;
+    color: $color-c1chat;
     padding: 0;
     border: 0;
     font-weight: $font-weight-bold;

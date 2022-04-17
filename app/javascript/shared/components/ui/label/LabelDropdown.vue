@@ -15,7 +15,7 @@
     </div>
     <div class="list-wrap">
       <div class="list">
-        <woot-dropdown-menu>
+        <c1chat-dropdown-menu>
           <label-dropdown-item
             v-for="label in filteredActiveLabels"
             :key="label.title"
@@ -24,7 +24,7 @@
             :selected="selectedLabels.includes(label.title)"
             @click="onAddRemove(label)"
           />
-        </woot-dropdown-menu>
+        </c1chat-dropdown-menu>
         <div v-if="noResult" class="no-result">
           {{ $t('CONTACT_PANEL.LABELS.LABEL_SELECT.NO_RESULT') }}
         </div>

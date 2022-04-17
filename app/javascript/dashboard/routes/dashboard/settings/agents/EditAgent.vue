@@ -1,7 +1,7 @@
 <template>
   <modal :show.sync="show" :on-close="onClose">
     <div class="column content-box">
-      <woot-modal-header :header-title="pageTitle" />
+      <c1chat-modal-header :header-title="pageTitle" />
       <form class="row medium-8" @submit.prevent="editAgent()">
         <div class="medium-12 columns">
           <label :class="{ error: $v.agentName.$error }">
@@ -30,7 +30,7 @@
         </div>
         <div class="medium-12 modal-footer">
           <div class="medium-6 columns">
-            <woot-submit-button
+            <c1chat-submit-button
               :disabled="
                 $v.agentType.$invalid ||
                   $v.agentName.$invalid ||
@@ -44,13 +44,13 @@
             </button>
           </div>
           <div class="medium-6 columns text-right">
-            <woot-button
+            <c1chat-button
               icon="lock-closed"
               variant="clear"
               @click.prevent="resetPassword"
             >
               {{ $t('AGENT_MGMT.EDIT.PASSWORD_RESET.ADMIN_RESET_BUTTON') }}
-            </woot-button>
+            </c1chat-button>
           </div>
         </div>
       </form>
@@ -61,13 +61,13 @@
 <script>
 import { required, minLength } from 'vuelidate/lib/validators';
 import { mapGetters } from 'vuex';
-import WootSubmitButton from '../../../../components/buttons/FormSubmitButton';
+import c1chatSubmitButton from '../../../../components/buttons/FormSubmitButton';
 import Modal from '../../../../components/Modal';
 import Auth from '../../../../api/auth';
 
 export default {
   components: {
-    WootSubmitButton,
+    c1chatSubmitButton,
     Modal,
   },
   props: {

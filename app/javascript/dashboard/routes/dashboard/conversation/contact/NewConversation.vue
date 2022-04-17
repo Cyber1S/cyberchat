@@ -1,7 +1,7 @@
 <template>
-  <woot-modal :show.sync="show" :on-close="onCancel">
+  <c1chat-modal :show.sync="show" :on-close="onCancel">
     <div class="column content-box">
-      <woot-modal-header
+      <c1chat-modal-header
         :header-title="$t('NEW_CONVERSATION.TITLE')"
         :header-content="$t('NEW_CONVERSATION.DESC')"
       />
@@ -12,7 +12,7 @@
         @cancel="onCancel"
       />
     </div>
-  </woot-modal>
+  </c1chat-modal>
 </template>
 
 <script>

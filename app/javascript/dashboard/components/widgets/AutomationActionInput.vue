@@ -54,7 +54,7 @@
           />
         </div>
       </div>
-      <woot-button
+      <c1chat-button
         icon="dismiss"
         variant="clear"
         color-scheme="secondary"

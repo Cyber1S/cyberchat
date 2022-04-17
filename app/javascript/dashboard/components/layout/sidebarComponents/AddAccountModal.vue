@@ -1,11 +1,11 @@
 <template>
-  <woot-modal
+  <c1chat-modal
     :show="show"
     :on-close="() => $emit('close-account-create-modal')"
     class="account-selector--modal"
   >
     <div class="column content-box">
-      <woot-modal-header
+      <c1chat-modal-header
         :header-title="$t('CREATE_ACCOUNT.NEW_ACCOUNT')"
         :header-content="$t('CREATE_ACCOUNT.SELECTOR_SUBTITLE')"
       />
@@ -32,7 +32,7 @@
         </div>
         <div class="modal-footer medium-12 columns">
           <div class="medium-12 columns">
-            <woot-submit-button
+            <c1chat-submit-button
               :disabled="
                 $v.accountName.$invalid ||
                   $v.accountName.$invalid ||
@@ -46,7 +46,7 @@
         </div>
       </form>
     </div>
-  </woot-modal>
+  </c1chat-modal>
 </template>
 
 <script>

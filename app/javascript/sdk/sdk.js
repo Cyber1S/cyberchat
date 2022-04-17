@@ -3,7 +3,7 @@ export const SDK_CSS = `
   --b-100: #F2F3F7;
 }
 
-.woot-widget-holder {
+.c1chat-widget-holder {
   box-shadow: 0 5px 40px rgba(0, 0, 0, .16);
   opacity: 1;
   will-change: transform, opacity;
@@ -14,20 +14,20 @@ export const SDK_CSS = `
   z-index: 2147483000 !important;
 }
 
-.woot-widget-holder.woot-widget-holder--flat {
+.c1chat-widget-holder.c1chat-widget-holder--flat {
   box-shadow: none;
   border-radius: 0;
   border: 1px solid var(--b-100);
 }
 
-.woot-widget-holder iframe {
+.c1chat-widget-holder iframe {
   border: 0;
   height: 100% !important;
   width: 100% !important;
   max-height: 100vh !important;
 }
 
-.woot-widget-holder.has-unread-view {
+.c1chat-widget-holder.has-unread-view {
   border-radius: 0 !important;
   min-height: 80px !important;
   height: auto;
@@ -36,7 +36,7 @@ export const SDK_CSS = `
   border: 0;
 }
 
-.woot-widget-bubble {
+.c1chat-widget-bubble {
   background: #1f93ff;
   border-radius: 100px;
   border-width: 0px;
@@ -51,30 +51,30 @@ export const SDK_CSS = `
   z-index: 2147483000 !important;
 }
 
-.woot-widget-bubble.woot-widget-bubble--flat {
+.c1chat-widget-bubble.c1chat-widget-bubble--flat {
   border-radius: 0;
 }
 
-.woot-widget-holder.woot-widget-holder--flat {
+.c1chat-widget-holder.c1chat-widget-holder--flat {
   bottom: 90px;
 }
 
-.woot-widget-bubble.woot-widget-bubble--flat {
+.c1chat-widget-bubble.c1chat-widget-bubble--flat {
   height: 56px;
   width: 56px;
 }
 
-.woot-widget-bubble.woot-widget-bubble--flat img {
+.c1chat-widget-bubble.c1chat-widget-bubble--flat img {
   margin: 16px;
 }
 
-.woot-widget-bubble.woot-widget-bubble--flat.woot--close::before,
-.woot-widget-bubble.woot-widget-bubble--flat.woot--close::after {
+.c1chat-widget-bubble.c1chat-widget-bubble--flat.c1chat--close::before,
+.c1chat-widget-bubble.c1chat-widget-bubble--flat.c1chat--close::after {
   left: 28px;
   top: 16px;
 }
 
-.woot-widget-bubble.unread-notification::after {
+.c1chat-widget-bubble.unread-notification::after {
   content: '';
   position: absolute;
   width: 12px;
@@ -87,7 +87,7 @@ export const SDK_CSS = `
   transition: background 0.2s ease;
 }
 
-.woot-widget-bubble.woot-widget--expanded {
+.c1chat-widget-bubble.c1chat-widget--expanded {
   bottom: 24px;
   display: flex;
   height: 48px !important;
@@ -95,7 +95,7 @@ export const SDK_CSS = `
   align-items: center;
 }
 
-.woot-widget-bubble.woot-widget--expanded div {
+.c1chat-widget-bubble.c1chat-widget--expanded div {
   align-items: center;
   color: #fff;
   display: flex;
@@ -107,26 +107,26 @@ export const SDK_CSS = `
   width: auto !important;
 }
 
-.woot-widget-bubble.woot-widget--expanded img {
+.c1chat-widget-bubble.c1chat-widget--expanded img {
   height: 20px;
   margin: 14px 8px 14px 16px;
   width: 20px;
 }
 
-.woot-widget-bubble.woot-elements--left {
+.c1chat-widget-bubble.c1chat-elements--left {
   left: 20px;
 }
 
-.woot-widget-bubble.woot-elements--right {
+.c1chat-widget-bubble.c1chat-elements--right {
   right: 20px;
 }
 
-.woot-widget-bubble:hover {
+.c1chat-widget-bubble:hover {
   background: #1f93ff;
   box-shadow: 0 8px 32px rgba(0, 0, 0, .4) !important;
 }
 
-.woot-widget-bubble img {
+.c1chat-widget-bubble img {
   all: revert;
   height: 24px;
   margin: 20px;
@@ -134,19 +134,19 @@ export const SDK_CSS = `
 }
 
 @media only screen and (min-width: 667px) {
-  .woot-widget-holder.woot-elements--left {
+  .c1chat-widget-holder.c1chat-elements--left {
     left: 20px;
  }
-  .woot-widget-holder.woot-elements--right {
+  .c1chat-widget-holder.c1chat-elements--right {
     right: 20px;
  }
 }
 
-.woot--close:hover {
+.c1chat--close:hover {
   opacity: 1;
 }
 
-.woot--close::before, .woot--close::after {
+.c1chat--close::before, .c1chat--close::after {
   background-color: #fff;
   content: ' ';
   display: inline;
@@ -157,15 +157,15 @@ export const SDK_CSS = `
   width: 2px;
 }
 
-.woot--close::before {
+.c1chat--close::before {
   transform: rotate(45deg);
 }
 
-.woot--close::after {
+.c1chat--close::after {
   transform: rotate(-45deg);
 }
 
-.woot--hide {
+.c1chat--hide {
   bottom: -100vh !important;
   transform: translateY(40px);
   top: unset !important;
@@ -174,24 +174,24 @@ export const SDK_CSS = `
   z-index: -1 !important;
 }
 
-.woot-widget--without-bubble {
+.c1chat-widget--without-bubble {
   bottom: 20px !important;
 }
 
 @media only screen and (max-width: 667px) {
-  .woot-widget-holder {
+  .c1chat-widget-holder {
     height: 100%;
     right: 0;
     top: 0;
     width: 100%;
  }
 
- .woot-widget-holder iframe {
+ .c1chat-widget-holder iframe {
     min-height: 100% !important;
   }
 
 
- .woot-widget-holder.has-unread-view {
+ .c1chat-widget-holder.has-unread-view {
     height: auto;
     right: 0;
     width: auto;
@@ -201,15 +201,15 @@ export const SDK_CSS = `
     padding: 0 8px;
   }
 
-  .woot-widget-holder.has-unread-view iframe {
+  .c1chat-widget-holder.has-unread-view iframe {
     min-height: unset !important;
   }
 
- .woot-widget-holder.has-unread-view.woot-elements--left {
+ .c1chat-widget-holder.has-unread-view.c1chat-elements--left {
     left: 0;
   }
 
-  .woot-widget-bubble.woot--close {
+  .c1chat-widget-bubble.c1chat--close {
     bottom: 60px;
     opacity: 0;
     visibility: hidden !important;
@@ -218,7 +218,7 @@ export const SDK_CSS = `
 }
 
 @media only screen and (min-width: 667px) {
-  .woot-widget-holder {
+  .c1chat-widget-holder {
     border-radius: 16px;
     bottom: 104px;
     height: calc(85% - 64px - 20px);

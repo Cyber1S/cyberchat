@@ -17,16 +17,16 @@
             @keyup.enter="onSearchSubmit"
             @input="onInputSearch"
           />
-          <woot-button
+          <c1chat-button
             :is-loading="false"
             class="clear"
             :class-names="searchButtonClass"
             @click="onSearchSubmit"
           >
             {{ $t('CONTACTS_PAGE.SEARCH_BUTTON') }}
-          </woot-button>
+          </c1chat-button>
         </div>
-        <woot-button
+        <c1chat-button
           v-if="hasActiveSegments"
           class="margin-right-small clear"
           color-scheme="alert"
@@ -34,10 +34,10 @@
           @click="onToggleDeleteSegmentsModal"
         >
           {{ $t('CONTACTS_PAGE.FILTER_CONTACTS_DELETE') }}
-        </woot-button>
+        </c1chat-button>
         <div v-if="!hasActiveSegments" class="filters__button-wrap">
           <div v-if="hasAppliedFilters" class="filters__applied-indicator" />
-          <woot-button
+          <c1chat-button
             class="margin-right-small clear"
             color-scheme="secondary"
             data-testid="create-new-contact"
@@ -45,10 +45,10 @@
             @click="onToggleFilter"
           >
             {{ $t('CONTACTS_PAGE.FILTER_CONTACTS') }}
-          </woot-button>
+          </c1chat-button>
         </div>
 
-        <woot-button
+        <c1chat-button
           v-if="hasAppliedFilters && !hasActiveSegments"
           class="margin-right-small clear"
           color-scheme="alert"
@@ -57,8 +57,8 @@
           @click="onToggleSegmentsModal"
         >
           {{ $t('CONTACTS_PAGE.FILTER_CONTACTS_SAVE') }}
-        </woot-button>
-        <woot-button
+        </c1chat-button>
+        <c1chat-button
           class="margin-right-small clear"
           color-scheme="success"
           icon="person-add"
@@ -66,16 +66,16 @@
           @click="onToggleCreate"
         >
           {{ $t('CREATE_CONTACT.BUTTON_LABEL') }}
-        </woot-button>
+        </c1chat-button>
 
-        <woot-button
+        <c1chat-button
           color-scheme="info"
           icon="upload"
           class="clear"
           @click="onToggleImport"
         >
           {{ $t('IMPORT_CONTACTS.BUTTON_LABEL') }}
-        </woot-button>
+        </c1chat-button>
       </div>
     </div>
   </header>

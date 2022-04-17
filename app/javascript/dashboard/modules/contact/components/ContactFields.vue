@@ -41,14 +41,14 @@
         @update="value => onCustomAttributeUpdate(attribute, value)"
       />
     </div>
-    <woot-button
+    <c1chat-button
       size="small"
       variant="link"
       icon="add"
       @click="handleCustomCreate"
     >
       {{ $t('CUSTOM_ATTRIBUTES.ADD.TITLE') }}
-    </woot-button>
+    </c1chat-button>
   </div>
 </template>
 <script>

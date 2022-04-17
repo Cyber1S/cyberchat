@@ -6,13 +6,13 @@ import VTooltip from 'v-tooltip';
 
 import i18n from 'dashboard/i18n';
 import Thumbnail from 'dashboard/components/widgets/Thumbnail';
-import WootButton from 'dashboard/components/ui/WootButton';
+import c1chatButton from 'dashboard/components/ui/c1chatButton';
 const localVue = createLocalVue();
 localVue.use(Vuex);
 localVue.use(VueI18n);
 localVue.component('thumbnail', Thumbnail);
-localVue.component('woot-button', WootButton);
-localVue.component('woot-button', WootButton);
+localVue.component('c1chat-button', c1chatButton);
+localVue.component('c1chat-button', c1chatButton);
 localVue.use(VTooltip, {
   defaultHtml: false,
 });

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <woot-delete-modal
+    <c1chat-delete-modal
       v-if="showDeletePopup"
       :show.sync="showDeletePopup"
       :on-close="closeDeletePopup"

@@ -8,9 +8,9 @@
     >
       <availability-status />
       <li class="divider" />
-      <woot-dropdown-menu>
-        <woot-dropdown-item v-if="showChangeAccountOption">
-          <woot-button
+      <c1chat-dropdown-menu>
+        <c1chat-dropdown-item v-if="showChangeAccountOption">
+          <c1chat-button
             variant="clear"
             color-scheme="secondary"
             size="small"
@@ -18,10 +18,10 @@
             @click="$emit('toggle-accounts')"
           >
             {{ $t('SIDEBAR_ITEMS.CHANGE_ACCOUNTS') }}
-          </woot-button>
-        </woot-dropdown-item>
-        <woot-dropdown-item v-if="globalConfig.cyber1schatInboxToken">
-          <woot-button
+          </c1chat-button>
+        </c1chat-dropdown-item>
+        <c1chat-dropdown-item v-if="globalConfig.cyber1schatInboxToken">
+          <c1chat-button
             variant="clear"
             color-scheme="secondary"
             size="small"
@@ -29,10 +29,10 @@
             @click="$emit('show-support-chat-window')"
           >
             {{ $t('SIDEBAR_ITEMS.CONTACT_SUPPORT') }}
-          </woot-button>
-        </woot-dropdown-item>
-        <woot-dropdown-item>
-          <woot-button
+          </c1chat-button>
+        </c1chat-dropdown-item>
+        <c1chat-dropdown-item>
+          <c1chat-button
             variant="clear"
             color-scheme="secondary"
             size="small"
@@ -40,9 +40,9 @@
             @click="handleKeyboardHelpClick"
           >
             {{ $t('SIDEBAR_ITEMS.KEYBOARD_SHORTCUTS') }}
-          </woot-button>
-        </woot-dropdown-item>
-        <woot-dropdown-item>
+          </c1chat-button>
+        </c1chat-dropdown-item>
+        <c1chat-dropdown-item>
           <router-link
             v-slot="{ href, isActive, navigate }"
             :to="`/app/accounts/${accountId}/profile/settings`"
@@ -60,9 +60,9 @@
               </span>
             </a>
           </router-link>
-        </woot-dropdown-item>
-        <woot-dropdown-item>
-          <woot-button
+        </c1chat-dropdown-item>
+        <c1chat-dropdown-item>
+          <c1chat-button
             variant="clear"
             color-scheme="secondary"
             size="small"
@@ -70,9 +70,9 @@
             @click="logout"
           >
             {{ $t('SIDEBAR_ITEMS.LOGOUT') }}
-          </woot-button>
-        </woot-dropdown-item>
-      </woot-dropdown-menu>
+          </c1chat-button>
+        </c1chat-dropdown-item>
+      </c1chat-dropdown-menu>
     </div>
   </transition>
 </template>
@@ -81,14 +81,14 @@
 import { mixin as clickaway } from 'vue-clickaway';
 import { mapGetters } from 'vuex';
 import Auth from '../../../api/auth';
-import WootDropdownItem from 'shared/components/ui/dropdown/DropdownItem';
-import WootDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu';
+import c1chatDropdownItem from 'shared/components/ui/dropdown/DropdownItem';
+import c1chatDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu';
 import AvailabilityStatus from 'dashboard/components/layout/AvailabilityStatus';
 
 export default {
   components: {
-    WootDropdownMenu,
-    WootDropdownItem,
+    c1chatDropdownMenu,
+    c1chatDropdownItem,
     AvailabilityStatus,
   },
   mixins: [clickaway],

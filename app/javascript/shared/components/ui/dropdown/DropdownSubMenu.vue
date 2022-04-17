@@ -1,20 +1,20 @@
 <template>
   <li class="sub-menu-container">
     <ul class="sub-menu-li-container">
-      <woot-dropdown-header :title="title" />
+      <c1chat-dropdown-header :title="title" />
       <slot></slot>
     </ul>
   </li>
 </template>
 <script>
-import WootDropdownHeader from 'shared/components/ui/dropdown/DropdownHeader';
+import c1chatDropdownHeader from 'shared/components/ui/dropdown/DropdownHeader';
 
 export default {
-  name: 'WootDropdownMenu',
-  componentName: 'WootDropdownMenu',
+  name: 'c1chatDropdownMenu',
+  componentName: 'c1chatDropdownMenu',
 
   components: {
-    WootDropdownHeader,
+    c1chatDropdownHeader,
   },
   props: {
     title: {

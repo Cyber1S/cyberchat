@@ -1,10 +1,10 @@
 <template>
-  <woot-modal
+  <c1chat-modal
     :show="showAccountModal"
     :on-close="() => $emit('close-account-modal')"
     class="account-selector--modal"
   >
-    <woot-modal-header
+    <c1chat-modal-header
       :header-title="$t('SIDEBAR_ITEMS.CHANGE_ACCOUNTS')"
       :header-content="$t('SIDEBAR_ITEMS.SELECTOR_SUBTITLE')"
     />
@@ -38,7 +38,7 @@
         {{ $t('CREATE_ACCOUNT.NEW_ACCOUNT') }}
       </button>
     </div>
-  </woot-modal>
+  </c1chat-modal>
 </template>
 
 <script>

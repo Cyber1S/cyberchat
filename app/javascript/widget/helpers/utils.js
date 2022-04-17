@@ -1,4 +1,4 @@
-import { WOOT_PREFIX } from './constants';
+import { C1CHAT_PREFIX } from './constants';
 
 export const isEmptyObject = obj =>
   Object.keys(obj).length === 0 && obj.constructor === Object;
@@ -20,11 +20,11 @@ export const IFrameHelper = {
   },
   isAValidEvent: e => {
     const isDataAString = typeof e.data === 'string';
-    const isAValidWootEvent =
-      isDataAString && e.data.indexOf(WOOT_PREFIX) === 0;
-    return isAValidWootEvent;
+    const isAValidc1chatEvent =
+      isDataAString && e.data.indexOf(C1CHAT_PREFIX) === 0;
+    return isAValidc1chatEvent;
   },
-  getMessage: e => JSON.parse(e.data.replace(WOOT_PREFIX, '')),
+  getMessage: e => JSON.parse(e.data.replace(C1CHAT_PREFIX, '')),
 };
 export const RNHelper = {
   isRNWebView: () => window.ReactNativeWebView,

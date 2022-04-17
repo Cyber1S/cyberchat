@@ -12,8 +12,8 @@
 </template>
 <script>
 export default {
-  name: 'WootDropdownItem',
-  componentName: 'WootDropdownMenu',
+  name: 'c1chatDropdownItem',
+  componentName: 'c1chatDropdownMenu',
   props: {
     disabled: {
       type: Boolean,

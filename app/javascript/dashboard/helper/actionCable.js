@@ -143,6 +143,6 @@ class ActionCableConnector extends BaseActionCableConnector {
 
 export default {
   init(pubsubToken) {
-    return new ActionCableConnector(window.WOOT, pubsubToken);
+    return new ActionCableConnector(window.C1CHAT, pubsubToken);
   },
 };

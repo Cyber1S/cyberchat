@@ -1,30 +1,30 @@
 <template>
   <div class="card">
-    <woot-message-editor
+    <c1chat-message-editor
       v-model="noteContent"
       class="input--note"
       :placeholder="$t('NOTES.ADD.PLACEHOLDER')"
       :enable-suggestions="false"
     />
     <div class="footer">
-      <woot-button
+      <c1chat-button
         color-scheme="warning"
         :title="$t('NOTES.ADD.TITLE')"
         :is-disabled="buttonDisabled"
         @click="onAdd"
       >
         {{ $t('NOTES.ADD.BUTTON') }} (⌘⏎)
-      </woot-button>
+      </c1chat-button>
     </div>
   </div>
 </template>
 
 <script>
-import WootMessageEditor from 'dashboard/components/widgets/WootWriter/Editor';
+import c1chatMessageEditor from 'dashboard/components/widgets/c1chatWriter/Editor';
 import { hasPressedCommandAndEnter } from 'shared/helpers/KeyboardHelpers';
 export default {
   components: {
-    WootMessageEditor,
+    c1chatMessageEditor,
   },
 
   data() {
@@ -71,7 +71,7 @@ export default {
     margin-top: var(--space-minus-small);
   }
 
-  &::v-deep .ProseMirror-woot-style {
+  &::v-deep .ProseMirror-c1chat-style {
     max-height: 36rem;
   }
 }

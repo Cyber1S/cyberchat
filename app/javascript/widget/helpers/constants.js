@@ -13,4 +13,4 @@ export const MESSAGE_TYPE = {
   TEMPLATE: 3,
 };
 
-export const WOOT_PREFIX = 'cyber1schat-widget:';
+export const C1CHAT_PREFIX = 'cyber1schat-widget:';

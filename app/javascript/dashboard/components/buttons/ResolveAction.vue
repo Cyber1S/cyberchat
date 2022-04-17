@@ -1,7 +1,7 @@
 <template>
   <div class="resolve-actions">
     <div class="button-group">
-      <woot-button
+      <c1chat-button
         v-if="isOpen"
         class-names="resolve"
         color-scheme="success"
@@ -11,8 +11,8 @@
         @click="onCmdResolveConversation"
       >
         {{ this.$t('CONVERSATION.HEADER.RESOLVE_ACTION') }}
-      </woot-button>
-      <woot-button
+      </c1chat-button>
+      <c1chat-button
         v-else-if="isResolved"
         class-names="resolve"
         color-scheme="warning"
@@ -22,8 +22,8 @@
         @click="onCmdOpenConversation"
       >
         {{ this.$t('CONVERSATION.HEADER.REOPEN_ACTION') }}
-      </woot-button>
-      <woot-button
+      </c1chat-button>
+      <c1chat-button
         v-else-if="showOpenButton"
         class-names="resolve"
         color-scheme="primary"
@@ -32,8 +32,8 @@
         @click="onCmdOpenConversation"
       >
         {{ this.$t('CONVERSATION.HEADER.OPEN_ACTION') }}
-      </woot-button>
-      <woot-button
+      </c1chat-button>
+      <c1chat-button
         v-if="showAdditionalActions"
         ref="arrowDownButton"
         :color-scheme="buttonClass"
@@ -48,9 +48,9 @@
       v-on-clickaway="closeDropdown"
       class="dropdown-pane dropdown-pane--open"
     >
-      <woot-dropdown-menu>
-        <woot-dropdown-item v-if="!isPending">
-          <woot-button
+      <c1chat-dropdown-menu>
+        <c1chat-dropdown-item v-if="!isPending">
+          <c1chat-button
             variant="clear"
             color-scheme="secondary"
             size="small"
@@ -58,16 +58,16 @@
             @click="() => toggleStatus(STATUS_TYPE.PENDING)"
           >
             {{ this.$t('CONVERSATION.RESOLVE_DROPDOWN.MARK_PENDING') }}
-          </woot-button>
-        </woot-dropdown-item>
+          </c1chat-button>
+        </c1chat-dropdown-item>
 
-        <woot-dropdown-divider v-if="isOpen" />
-        <woot-dropdown-sub-menu
+        <c1chat-dropdown-divider v-if="isOpen" />
+        <c1chat-dropdown-sub-menu
           v-if="isOpen"
           :title="this.$t('CONVERSATION.RESOLVE_DROPDOWN.SNOOZE.TITLE')"
         >
-          <woot-dropdown-item>
-            <woot-button
+          <c1chat-dropdown-item>
+            <c1chat-button
               variant="clear"
               color-scheme="secondary"
               size="small"
@@ -75,10 +75,10 @@
               @click="() => toggleStatus(STATUS_TYPE.SNOOZED, null)"
             >
               {{ this.$t('CONVERSATION.RESOLVE_DROPDOWN.SNOOZE.NEXT_REPLY') }}
-            </woot-button>
-          </woot-dropdown-item>
-          <woot-dropdown-item>
-            <woot-button
+            </c1chat-button>
+          </c1chat-dropdown-item>
+          <c1chat-dropdown-item>
+            <c1chat-button
               variant="clear"
               color-scheme="secondary"
               size="small"
@@ -88,10 +88,10 @@
               "
             >
               {{ this.$t('CONVERSATION.RESOLVE_DROPDOWN.SNOOZE.TOMORROW') }}
-            </woot-button>
-          </woot-dropdown-item>
-          <woot-dropdown-item>
-            <woot-button
+            </c1chat-button>
+          </c1chat-dropdown-item>
+          <c1chat-dropdown-item>
+            <c1chat-button
               variant="clear"
               color-scheme="secondary"
               size="small"
@@ -101,10 +101,10 @@
               "
             >
               {{ this.$t('CONVERSATION.RESOLVE_DROPDOWN.SNOOZE.NEXT_WEEK') }}
-            </woot-button>
-          </woot-dropdown-item>
-        </woot-dropdown-sub-menu>
-      </woot-dropdown-menu>
+            </c1chat-button>
+          </c1chat-dropdown-item>
+        </c1chat-dropdown-sub-menu>
+      </c1chat-dropdown-menu>
     </div>
   </div>
 </template>
@@ -120,12 +120,12 @@ import {
   hasPressedAltAndMKey,
 } from 'shared/helpers/KeyboardHelpers';
 
-import WootDropdownItem from 'shared/components/ui/dropdown/DropdownItem.vue';
-import WootDropdownSubMenu from 'shared/components/ui/dropdown/DropdownSubMenu.vue';
-import WootDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu.vue';
-import WootDropdownDivider from 'shared/components/ui/dropdown/DropdownDivider';
+import c1chatDropdownItem from 'shared/components/ui/dropdown/DropdownItem.vue';
+import c1chatDropdownSubMenu from 'shared/components/ui/dropdown/DropdownSubMenu.vue';
+import c1chatDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu.vue';
+import c1chatDropdownDivider from 'shared/components/ui/dropdown/DropdownDivider';
 
-import wootConstants from '../../constants';
+import c1chatConstants from '../../constants';
 import {
   getUnixTime,
   addHours,
@@ -141,10 +141,10 @@ import {
 
 export default {
   components: {
-    WootDropdownItem,
-    WootDropdownMenu,
-    WootDropdownSubMenu,
-    WootDropdownDivider,
+    c1chatDropdownItem,
+    c1chatDropdownMenu,
+    c1chatDropdownSubMenu,
+    c1chatDropdownDivider,
   },
   mixins: [clickaway, alertMixin, eventListenerMixins],
   props: { conversationId: { type: [String, Number], required: true } },
@@ -152,22 +152,22 @@ export default {
     return {
       isLoading: false,
       showActionsDropdown: false,
-      STATUS_TYPE: wootConstants.STATUS_TYPE,
+      STATUS_TYPE: c1chatConstants.STATUS_TYPE,
     };
   },
   computed: {
     ...mapGetters({ currentChat: 'getSelectedChat' }),
     isOpen() {
-      return this.currentChat.status === wootConstants.STATUS_TYPE.OPEN;
+      return this.currentChat.status === c1chatConstants.STATUS_TYPE.OPEN;
     },
     isPending() {
-      return this.currentChat.status === wootConstants.STATUS_TYPE.PENDING;
+      return this.currentChat.status === c1chatConstants.STATUS_TYPE.PENDING;
     },
     isResolved() {
-      return this.currentChat.status === wootConstants.STATUS_TYPE.RESOLVED;
+      return this.currentChat.status === c1chatConstants.STATUS_TYPE.RESOLVED;
     },
     isSnoozed() {
-      return this.currentChat.status === wootConstants.STATUS_TYPE.SNOOZED;
+      return this.currentChat.status === c1chatConstants.STATUS_TYPE.SNOOZED;
     },
     buttonClass() {
       if (this.isPending) return 'primary';
@@ -218,7 +218,7 @@ export default {
         );
         const lastConversationIndex = allConversations.length - 1;
         try {
-          await this.toggleStatus(wootConstants.STATUS_TYPE.RESOLVED);
+          await this.toggleStatus(c1chatConstants.STATUS_TYPE.RESOLVED);
         } catch (error) {
           // error
         }

@@ -61,13 +61,13 @@
 
   &.is-active {
     a {
-      border-bottom-color: $color-woot;
-      color: $color-woot;
+      border-bottom-color: $color-c1chat;
+      color: $color-c1chat;
     }
 
     .badge {
       background: $color-extra-light-blue;
-      color: $color-woot;
+      color: $color-c1chat;
     }
   }
 }

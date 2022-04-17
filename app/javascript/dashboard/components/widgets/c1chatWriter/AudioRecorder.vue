@@ -14,7 +14,7 @@ import alertMixin from '../../../../shared/mixins/alertMixin';
 WaveSurfer.microphone = MicrophonePlugin;
 
 export default {
-  name: 'WootAudioRecorder',
+  name: 'c1chatAudioRecorder',
   mixins: [inboxMixin, alertMixin],
   data() {
     return {

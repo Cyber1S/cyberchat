@@ -19,7 +19,7 @@ window.bus = new Vue();
 Vue.config.productionTip = false;
 
 window.onload = () => {
-  window.WOOT_SURVEY = new Vue({
+  window.C1CHAT_SURVEY = new Vue({
     i18n: i18nConfig,
     store,
     render: h => h(App),

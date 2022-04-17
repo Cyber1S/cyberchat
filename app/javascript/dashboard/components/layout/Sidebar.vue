@@ -1,5 +1,5 @@
 <template>
-  <aside class="woot-sidebar">
+  <aside class="c1chat-sidebar">
     <primary-sidebar
       :logo-source="globalConfig.logoThumbnail"
       :installation-name="globalConfig.installationName"
@@ -185,7 +185,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.woot-sidebar {
+.c1chat-sidebar {
   background: var(--white);
   display: flex;
   min-height: 0;

@@ -155,7 +155,7 @@
           }}
         </p>
         <div v-else>
-          <woot-submit-button
+          <c1chat-submit-button
             :button-text="
               $t(
                 'PROFILE_SETTINGS.FORM.PUSH_NOTIFICATIONS_SECTION.REQUEST_PUSH'

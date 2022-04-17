@@ -1,6 +1,6 @@
 <template>
   <div class="context-menu">
-    <woot-button
+    <c1chat-button
       icon="more-vertical"
       class="button--delete-message"
       color-scheme="secondary"
@@ -13,19 +13,19 @@
       class="dropdown-pane dropdown-pane--open"
       :class="`dropdown-pane--${menuPosition}`"
     >
-      <woot-dropdown-menu>
-        <woot-dropdown-item v-if="showCopy">
-          <woot-button
+      <c1chat-dropdown-menu>
+        <c1chat-dropdown-item v-if="showCopy">
+          <c1chat-button
             variant="clear"
             size="small"
             icon="clipboard"
             @click="handleCopy"
           >
             {{ $t('CONVERSATION.CONTEXT_MENU.COPY') }}
-          </woot-button>
-        </woot-dropdown-item>
-        <woot-dropdown-item>
-          <woot-button
+          </c1chat-button>
+        </c1chat-dropdown-item>
+        <c1chat-dropdown-item>
+          <c1chat-button
             variant="clear"
             color-scheme="alert"
             size="small"
@@ -33,22 +33,22 @@
             @click="handleDelete"
           >
             {{ $t('CONVERSATION.CONTEXT_MENU.DELETE') }}
-          </woot-button>
-        </woot-dropdown-item>
-      </woot-dropdown-menu>
+          </c1chat-button>
+        </c1chat-dropdown-item>
+      </c1chat-dropdown-menu>
     </div>
   </div>
 </template>
 <script>
 import { mixin as clickaway } from 'vue-clickaway';
 
-import WootDropdownItem from 'shared/components/ui/dropdown/DropdownItem';
-import WootDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu';
+import c1chatDropdownItem from 'shared/components/ui/dropdown/DropdownItem';
+import c1chatDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu';
 
 export default {
   components: {
-    WootDropdownMenu,
-    WootDropdownItem,
+    c1chatDropdownMenu,
+    c1chatDropdownItem,
   },
   mixins: [clickaway],
   props: {

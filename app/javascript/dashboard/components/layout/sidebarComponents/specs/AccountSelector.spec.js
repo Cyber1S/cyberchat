@@ -5,13 +5,13 @@ import VueI18n from 'vue-i18n';
 
 import i18n from 'dashboard/i18n';
 
-import WootModal from 'dashboard/components/Modal';
-import WootModalHeader from 'dashboard/components/ModalHeader';
+import c1chatModal from 'dashboard/components/Modal';
+import c1chatModalHeader from 'dashboard/components/ModalHeader';
 import FluentIcon from 'shared/components/FluentIcon/DashboardIcon';
 
 const localVue = createLocalVue();
-localVue.component('woot-modal', WootModal);
-localVue.component('woot-modal-header', WootModalHeader);
+localVue.component('c1chat-modal', c1chatModal);
+localVue.component('c1chat-modal-header', c1chatModalHeader);
 localVue.component('fluent-icon', FluentIcon);
 
 localVue.use(Vuex);
@@ -75,7 +75,7 @@ describe('accountSelctor', () => {
   });
 
   it('title and sub title exist', () => {
-    const headerComponent = accountSelector.findComponent(WootModalHeader);
+    const headerComponent = accountSelector.findComponent(c1chatModalHeader);
     const topBar = headerComponent.find('.page-top-bar');
     const titleComponent = topBar.find('.page-sub-title');
     expect(titleComponent.text()).toBe('Switch Account');

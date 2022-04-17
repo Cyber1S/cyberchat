@@ -8,7 +8,7 @@
         <p>{{ $t('PROFILE_SETTINGS.FORM.PASSWORD_SECTION.NOTE') }}</p>
       </div>
       <div class="columns small-9 medium-5">
-        <woot-input
+        <c1chat-input
           v-model="currentPassword"
           type="password"
           :class="{ error: $v.currentPassword.$error }"
@@ -24,7 +24,7 @@
           @blur="$v.currentPassword.$touch"
         />
 
-        <woot-input
+        <c1chat-input
           v-model="password"
           type="password"
           :class="{ error: $v.password.$error }"
@@ -36,7 +36,7 @@
           @blur="$v.password.$touch"
         />
 
-        <woot-input
+        <c1chat-input
           v-model="passwordConfirmation"
           type="password"
           :class="{ error: $v.passwordConfirmation.$error }"
@@ -52,7 +52,7 @@
           @blur="$v.passwordConfirmation.$touch"
         />
 
-        <woot-button
+        <c1chat-button
           :is-loading="isPasswordChanging"
           type="submit"
           :disabled="
@@ -62,7 +62,7 @@
           "
         >
           {{ $t('PROFILE_SETTINGS.FORM.PASSWORD_SECTION.BTN_TEXT') }}
-        </woot-button>
+        </c1chat-button>
       </div>
     </div>
   </form>

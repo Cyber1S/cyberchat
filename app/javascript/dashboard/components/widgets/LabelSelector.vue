@@ -1,7 +1,7 @@
 <template>
   <div v-on-clickaway="closeDropdownLabel" class="label-wrap">
     <add-label @add="toggleLabels" />
-    <woot-label
+    <c1chat-label
       v-for="label in savedLabels"
       :key="label.id"
       :title="label.title"

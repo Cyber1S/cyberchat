@@ -1,9 +1,9 @@
 <template>
   <div class="column">
-    <woot-modal-header :header-title="$t('AUTOMATION.ADD.TITLE')" />
+    <c1chat-modal-header :header-title="$t('AUTOMATION.ADD.TITLE')" />
     <div class="row modal-content">
       <div class="medium-12 columns">
-        <woot-input
+        <c1chat-input
           v-model="automation.name"
           :label="$t('AUTOMATION.ADD.FORM.NAME.LABEL')"
           type="text"
@@ -16,7 +16,7 @@
           :placeholder="$t('AUTOMATION.ADD.FORM.NAME.PLACEHOLDER')"
           @blur="$v.automation.name.$touch"
         />
-        <woot-input
+        <c1chat-input
           v-model="automation.description"
           :label="$t('AUTOMATION.ADD.FORM.DESC.LABEL')"
           type="text"
@@ -73,7 +73,7 @@
               @removeFilter="removeFilter(i)"
             />
             <div class="filter-actions">
-              <woot-button
+              <c1chat-button
                 icon="add"
                 color-scheme="success"
                 variant="smooth"
@@ -81,7 +81,7 @@
                 @click="appendNewCondition"
               >
                 {{ $t('AUTOMATION.ADD.CONDITION_BUTTON_LABEL') }}
-              </woot-button>
+              </c1chat-button>
             </div>
           </div>
         </section>
@@ -108,7 +108,7 @@
               @removeAction="removeAction(i)"
             />
             <div class="filter-actions">
-              <woot-button
+              <c1chat-button
                 icon="add"
                 color-scheme="success"
                 variant="smooth"
@@ -116,19 +116,19 @@
                 @click="appendNewAction"
               >
                 {{ $t('AUTOMATION.ADD.ACTION_BUTTON_LABEL') }}
-              </woot-button>
+              </c1chat-button>
             </div>
           </div>
         </section>
         <!-- // Actions End -->
         <div class="medium-12 columns">
           <div class="modal-footer justify-content-end w-full">
-            <woot-button class="button clear" @click.prevent="onClose">
+            <c1chat-button class="button clear" @click.prevent="onClose">
               {{ $t('AUTOMATION.ADD.CANCEL_BUTTON_TEXT') }}
-            </woot-button>
-            <woot-button @click="submitAutomation">
+            </c1chat-button>
+            <c1chat-button @click="submitAutomation">
               {{ $t('AUTOMATION.ADD.SUBMIT') }}
-            </woot-button>
+            </c1chat-button>
           </div>
         </div>
       </div>

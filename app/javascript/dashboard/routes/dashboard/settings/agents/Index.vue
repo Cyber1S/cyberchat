@@ -1,18 +1,18 @@
 <template>
   <div class="column content-box">
-    <woot-button
+    <c1chat-button
       color-scheme="success"
       class-names="button--fixed-right-top"
       icon="add-circle"
       @click="openAddPopup()"
     >
       {{ $t('AGENT_MGMT.HEADER_BTN_TXT') }}
-    </woot-button>
+    </c1chat-button>
 
     <!-- List Agents -->
     <div class="row">
       <div class="small-8 columns with-right-space ">
-        <woot-loading-state
+        <c1chat-loading-state
           v-if="uiFlags.isFetching"
           :message="$t('AGENT_MGMT.LOADING')"
         />
@@ -20,7 +20,7 @@
           <p v-if="!agentList.length">
             {{ $t('AGENT_MGMT.LIST.404') }}
           </p>
-          <table v-else class="woot-table">
+          <table v-else class="c1chat-table">
             <tbody>
               <tr v-for="(agent, index) in agentList" :key="agent.email">
                 <!-- Gravtar Image -->
@@ -57,7 +57,7 @@
                 <!-- Actions -->
                 <td>
                   <div class="button-wrapper">
-                    <woot-button
+                    <c1chat-button
                       v-if="showEditAction(agent)"
                       v-tooltip.top="$t('AGENT_MGMT.EDIT.BUTTON_TEXT')"
                       variant="smooth"
@@ -67,8 +67,8 @@
                       class-names="grey-btn"
                       @click="openEditPopup(agent)"
                     >
-                    </woot-button>
-                    <woot-button
+                    </c1chat-button>
+                    <c1chat-button
                       v-if="showDeleteAction(agent)"
                       v-tooltip.top="$t('AGENT_MGMT.DELETE.BUTTON_TEXT')"
                       variant="smooth"
@@ -79,7 +79,7 @@
                       :is-loading="loading[agent.id]"
                       @click="openDeletePopup(agent, index)"
                     >
-                    </woot-button>
+                    </c1chat-button>
                   </div>
                 </td>
               </tr>
@@ -99,11 +99,11 @@
       </div>
     </div>
     <!-- Add Agent -->
-    <woot-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
+    <c1chat-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
       <add-agent :on-close="hideAddPopup" />
-    </woot-modal>
+    </c1chat-modal>
     <!-- Edit Agent -->
-    <woot-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
+    <c1chat-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
       <edit-agent
         v-if="showEditPopup"
         :id="currentAgent.id"
@@ -112,9 +112,9 @@
         :email="currentAgent.email"
         :on-close="hideEditPopup"
       />
-    </woot-modal>
+    </c1chat-modal>
     <!-- Delete Agent -->
-    <woot-delete-modal
+    <c1chat-delete-modal
       :show.sync="showDeletePopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

@@ -21,7 +21,7 @@ window.bus = new Vue();
 Vue.config.productionTip = false;
 
 window.onload = () => {
-  window.WOOT_WIDGET = new Vue({
+  window.C1CHAT_WIDGET = new Vue({
     router,
     store,
     i18n: i18nConfig,
@@ -29,7 +29,7 @@ window.onload = () => {
   }).$mount('#app');
 
   window.actionCable = new ActionCableConnector(
-    window.WOOT_WIDGET,
+    window.C1CHAT_WIDGET,
     window.cyber1schatPubsubToken
   );
 };

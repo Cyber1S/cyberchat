@@ -1,6 +1,6 @@
 <template>
   <transition-group name="toast-fade" tag="div" class="ui-snackbar-container">
-    <woot-snackbar
+    <c1chat-snackbar
       v-for="snackMessage in snackMessages"
       :key="snackMessage.key"
       :message="snackMessage.message"
@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import WootSnackbar from './Snackbar';
+import c1chatSnackbar from './Snackbar';
 
 export default {
   components: {
-    WootSnackbar,
+    c1chatSnackbar,
   },
   props: {
     duration: {

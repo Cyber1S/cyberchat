@@ -1,14 +1,14 @@
 <template>
   <div class="row table-wrap">
     <div class="column">
-      <woot-tabs :index="selectedTabIndex" @change="onClickTabChange">
-        <woot-tabs-item
+      <c1chat-tabs :index="selectedTabIndex" @change="onClickTabChange">
+        <c1chat-tabs-item
           v-for="tab in tabs"
           :key="tab.key"
           :name="tab.name"
           :show-badge="false"
         />
-      </woot-tabs>
+      </c1chat-tabs>
 
       <div class="columns with-right-space">
         <p
@@ -17,13 +17,13 @@
         >
           {{ $t('ATTRIBUTES_MGMT.LIST.EMPTY_RESULT.404') }}
         </p>
-        <woot-loading-state
+        <c1chat-loading-state
           v-if="uiFlags.isFetching"
           :message="$t('ATTRIBUTES_MGMT.LOADING')"
         />
         <table
           v-if="!uiFlags.isFetching && attributes.length"
-          class="woot-table"
+          class="c1chat-table"
         >
           <thead>
             <th
@@ -49,7 +49,7 @@
                 {{ attribute.attribute_key }}
               </td>
               <td class="button-wrapper">
-                <woot-button
+                <c1chat-button
                   v-tooltip.top="$t('ATTRIBUTES_MGMT.LIST.BUTTONS.EDIT')"
                   variant="smooth"
                   size="tiny"
@@ -58,8 +58,8 @@
                   icon="edit"
                   @click="openEditPopup(attribute)"
                 >
-                </woot-button>
-                <woot-button
+                </c1chat-button>
+                <c1chat-button
                   v-tooltip.top="$t('ATTRIBUTES_MGMT.LIST.BUTTONS.DELETE')"
                   variant="smooth"
                   color-scheme="alert"
@@ -68,7 +68,7 @@
                   class-names="grey-btn"
                   @click="openDelete(attribute)"
                 >
-                </woot-button>
+                </c1chat-button>
               </td>
             </tr>
           </tbody>
@@ -78,14 +78,14 @@
     <div class="small-4 columns">
       <span v-html="$t('ATTRIBUTES_MGMT.SIDEBAR_TXT')"></span>
     </div>
-    <woot-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
+    <c1chat-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
       <edit-attribute
         :selected-attribute="selectedAttribute"
         :is-updating="uiFlags.isUpdating"
         @on-close="hideEditPopup"
       />
-    </woot-modal>
-    <woot-confirm-delete-modal
+    </c1chat-modal>
+    <c1chat-confirm-delete-modal
       v-if="showDeletePopup"
       :show.sync="showDeletePopup"
       :title="confirmDeleteTitle"
@@ -212,7 +212,7 @@ export default {
   padding-left: var(--space-small);
 }
 
-.woot-table {
+.c1chat-table {
   width: 100%;
   margin-top: var(--space-small);
 }

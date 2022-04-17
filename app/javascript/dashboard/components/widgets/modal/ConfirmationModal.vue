@@ -1,7 +1,7 @@
 <template>
   <modal :show.sync="show" :on-close="cancel">
     <div class="column content-box">
-      <woot-modal-header :header-title="title"> </woot-modal-header>
+      <c1chat-modal-header :header-title="title"> </c1chat-modal-header>
       <div class="row modal-content">
         <div class="medium-12 columns">
           <p>
@@ -10,9 +10,9 @@
         </div>
         <div class="modal-footer">
           <div class="medium-12 columns">
-            <woot-button @click="confirm">
+            <c1chat-button @click="confirm">
               {{ confirmLabel }}
-            </woot-button>
+            </c1chat-button>
             <button class="button clear" @click="cancel">
               {{ cancelLabel }}
             </button>

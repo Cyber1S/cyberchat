@@ -6,7 +6,7 @@
         :title="$t('CONVERSATION_SIDEBAR.ASSIGNEE_LABEL')"
       >
         <template v-slot:button>
-          <woot-button
+          <c1chat-button
             v-if="showSelfAssign"
             icon="arrow-right"
             variant="link"
@@ -14,7 +14,7 @@
             @click="onSelfAssign"
           >
             {{ $t('CONVERSATION_SIDEBAR.SELF_ASSIGN') }}
-          </woot-button>
+          </c1chat-button>
         </template>
       </contact-details-item>
       <multiselect-dropdown

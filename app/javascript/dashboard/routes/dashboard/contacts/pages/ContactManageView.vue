@@ -31,14 +31,14 @@
       <div class="row h-full">
         <contact-info-panel :show-avatar="false" :contact="contact" />
         <div class="small-12 medium-9 h-full">
-          <woot-tabs :index="selectedTabIndex" @change="onClickTabChange">
-            <woot-tabs-item
+          <c1chat-tabs :index="selectedTabIndex" @change="onClickTabChange">
+            <c1chat-tabs-item
               v-for="tab in tabs"
               :key="tab.key"
               :name="tab.name"
               :show-badge="false"
             />
-          </woot-tabs>
+          </c1chat-tabs>
           <div class="tab-content overflow-auto">
             <contact-notes
               v-if="selectedTabIndex === 0"

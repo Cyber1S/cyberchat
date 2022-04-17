@@ -14,7 +14,7 @@
           </span>
         </div>
         <div class="flex-view">
-          <woot-button
+          <c1chat-button
             v-if="!noUnreadNotificationAvailable"
             color-scheme="primary"
             variant="smooth"
@@ -24,8 +24,8 @@
             @click="onMarkAllDoneClick"
           >
             {{ $t('NOTIFICATIONS_PAGE.MARK_ALL_DONE') }}
-          </woot-button>
-          <woot-button
+          </c1chat-button>
+          <c1chat-button
             color-scheme="secondary"
             variant="link"
             size="tiny"
@@ -42,7 +42,7 @@
       />
       <div v-if="records.length !== 0" class="footer-wrap flex-space-between">
         <div class="flex-view">
-          <woot-button
+          <c1chat-button
             size="medium"
             variant="clear"
             color-scheme="secondary"
@@ -56,8 +56,8 @@
               size="16"
               class="margin-left-minus-slab"
             />
-          </woot-button>
-          <woot-button
+          </c1chat-button>
+          <c1chat-button
             color-scheme="secondary"
             variant="clear"
             size="medium"
@@ -65,11 +65,11 @@
             :disabled="inFirstPage"
             @click="onClickPreviousPage"
           >
-          </woot-button>
+          </c1chat-button>
         </div>
         <span class="page-count"> {{ currentPage }} - {{ lastPage }} </span>
         <div class="flex-view">
-          <woot-button
+          <c1chat-button
             color-scheme="secondary"
             variant="clear"
             size="medium"
@@ -77,8 +77,8 @@
             :disabled="inLastPage"
             @click="onClickNextPage"
           >
-          </woot-button>
-          <woot-button
+          </c1chat-button>
+          <c1chat-button
             size="medium"
             variant="clear"
             color-scheme="secondary"
@@ -92,7 +92,7 @@
               size="16"
               class="margin-left-minus-slab"
             />
-          </woot-button>
+          </c1chat-button>
         </div>
       </div>
       <div v-else></div>

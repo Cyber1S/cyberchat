@@ -12,12 +12,12 @@
     </div>
     <div class="list-scroll-container">
       <div class="multiselect-dropdown--list">
-        <woot-dropdown-menu>
-          <woot-dropdown-item
+        <c1chat-dropdown-menu>
+          <c1chat-dropdown-item
             v-for="option in filteredOptions"
             :key="option.id"
           >
-            <woot-button
+            <c1chat-button
               class="multiselect-dropdown--item"
               variant="clear"
               :class="{
@@ -47,9 +47,9 @@
                   </fluent-icon>
                 </div>
               </div>
-            </woot-button>
-          </woot-dropdown-item>
-        </woot-dropdown-menu>
+            </c1chat-button>
+          </c1chat-dropdown-item>
+        </c1chat-dropdown-menu>
         <h4 v-if="noResult" class="no-result text-truncate text-block-title">
           {{ noSearchResult }}
         </h4>
@@ -59,14 +59,14 @@
 </template>
 
 <script>
-import WootDropdownItem from 'shared/components/ui/dropdown/DropdownItem.vue';
-import WootDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu.vue';
+import c1chatDropdownItem from 'shared/components/ui/dropdown/DropdownItem.vue';
+import c1chatDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu.vue';
 import Thumbnail from 'dashboard/components/widgets/Thumbnail.vue';
 
 export default {
   components: {
-    WootDropdownItem,
-    WootDropdownMenu,
+    c1chatDropdownItem,
+    c1chatDropdownMenu,
     Thumbnail,
   },
 

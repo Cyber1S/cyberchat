@@ -53,10 +53,10 @@
       :on-close="closeContactInfoPanel"
     />
     <create-contact :show="showCreateModal" @cancel="onToggleCreate" />
-    <woot-modal :show.sync="showImportModal" :on-close="onToggleImport">
+    <c1chat-modal :show.sync="showImportModal" :on-close="onToggleImport">
       <import-contacts v-if="showImportModal" :on-close="onToggleImport" />
-    </woot-modal>
-    <woot-modal
+    </c1chat-modal>
+    <c1chat-modal
       :show.sync="showFiltersModal"
       :on-close="onToggleFilters"
       size="medium"
@@ -68,7 +68,7 @@
         @applyFilter="onApplyFilter"
         @clearFilters="clearFilters"
       />
-    </woot-modal>
+    </c1chat-modal>
   </div>
 </template>
 

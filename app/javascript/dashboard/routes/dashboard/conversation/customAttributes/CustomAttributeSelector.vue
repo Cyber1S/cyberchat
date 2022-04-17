@@ -5,14 +5,14 @@
       class="label-wrap"
       @keyup.esc="closeDropdown"
     >
-      <woot-button
+      <c1chat-button
         size="small"
         variant="link"
         icon="add"
         @click="toggleAttributeDropDown"
       >
         {{ $t('CUSTOM_ATTRIBUTES.ADD_BUTTON_TEXT') }}
-      </woot-button>
+      </c1chat-button>
 
       <div class="dropdown-wrap">
         <div

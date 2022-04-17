@@ -119,7 +119,7 @@
         @select="changeDateSelection"
       />
     </div>
-    <woot-date-range-picker
+    <c1chat-date-range-picker
       v-if="isDateRangeSelected"
       show-range
       :value="customDateRange"
@@ -150,7 +150,7 @@
         {{ $t('REPORT.BUSINESS_HOURS') }}
       </span>
       <span>
-        <woot-switch v-model="businessHoursSelected" />
+        <c1chat-switch v-model="businessHoursSelected" />
       </span>
     </div>
   </div>
@@ -161,14 +161,14 @@ import getUnixTime from 'date-fns/getUnixTime';
 import startOfDay from 'date-fns/startOfDay';
 import subDays from 'date-fns/subDays';
 import Thumbnail from 'dashboard/components/widgets/Thumbnail.vue';
-import WootDateRangePicker from 'dashboard/components/ui/DateRangePicker.vue';
+import c1chatDateRangePicker from 'dashboard/components/ui/DateRangePicker.vue';
 
 import { GROUP_BY_FILTER } from '../constants';
 const CUSTOM_DATE_RANGE_ID = 5;
 
 export default {
   components: {
-    WootDateRangePicker,
+    c1chatDateRangePicker,
     Thumbnail,
   },
   props: {

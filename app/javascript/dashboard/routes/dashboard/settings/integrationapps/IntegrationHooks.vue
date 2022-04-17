@@ -1,6 +1,6 @@
 <template>
   <div class="row content-box full-height">
-    <woot-button
+    <c1chat-button
       v-if="showAddButton"
       color-scheme="success"
       class-names="button--fixed-right-top"
@@ -8,7 +8,7 @@
       @click="openAddHookModal"
     >
       {{ $t('INTEGRATION_APPS.ADD_BUTTON') }}
-    </woot-button>
+    </c1chat-button>
     <div v-if="showIntegrationHooks" class="integration-hooks">
       <div v-if="isIntegrationMultiple">
         <multiple-integration-hooks
@@ -26,11 +26,11 @@
       </div>
     </div>
 
-    <woot-modal :show.sync="showAddHookModal" :on-close="hideAddHookModal">
+    <c1chat-modal :show.sync="showAddHookModal" :on-close="hideAddHookModal">
       <new-hook :integration="integration" @close="hideAddHookModal" />
-    </woot-modal>
+    </c1chat-modal>
 
-    <woot-delete-modal
+    <c1chat-delete-modal
       :show.sync="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

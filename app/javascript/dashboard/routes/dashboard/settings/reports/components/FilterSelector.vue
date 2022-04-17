@@ -15,7 +15,7 @@
         @select="changeDateSelection"
       />
     </div>
-    <woot-date-range-picker
+    <c1chat-date-range-picker
       v-if="isDateRangeSelected"
       show-range
       :value="customDateRange"
@@ -66,13 +66,13 @@
         {{ $t('REPORT.BUSINESS_HOURS') }}
       </span>
       <span>
-        <woot-switch v-model="businessHoursSelected" />
+        <c1chat-switch v-model="businessHoursSelected" />
       </span>
     </div>
   </div>
 </template>
 <script>
-import WootDateRangePicker from 'dashboard/components/ui/DateRangePicker.vue';
+import c1chatDateRangePicker from 'dashboard/components/ui/DateRangePicker.vue';
 const CUSTOM_DATE_RANGE_ID = 5;
 import subDays from 'date-fns/subDays';
 import startOfDay from 'date-fns/startOfDay';
@@ -82,7 +82,7 @@ import endOfDay from 'date-fns/endOfDay';
 
 export default {
   components: {
-    WootDateRangePicker,
+    c1chatDateRangePicker,
   },
   props: {
     filterItemsList: {

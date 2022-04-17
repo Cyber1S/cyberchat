@@ -14,8 +14,8 @@ import {
   hasPressedArrowDownKey,
 } from 'shared/helpers/KeyboardHelpers';
 export default {
-  name: 'WootDropdownMenu',
-  componentName: 'WootDropdownMenu',
+  name: 'c1chatDropdownMenu',
+  componentName: 'c1chatDropdownMenu',
 
   mixins: [eventListenerMixins],
 

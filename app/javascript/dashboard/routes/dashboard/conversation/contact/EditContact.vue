@@ -1,7 +1,7 @@
 <template>
-  <woot-modal :show.sync="show" :on-close="onCancel" modal-type="right-aligned">
+  <c1chat-modal :show.sync="show" :on-close="onCancel" modal-type="right-aligned">
     <div class="column content-box">
-      <woot-modal-header
+      <c1chat-modal-header
         :header-title="
           `${$t('EDIT_CONTACT.TITLE')} - ${contact.name || contact.email}`
         "
@@ -15,7 +15,7 @@
         @cancel="onCancel"
       />
     </div>
-  </woot-modal>
+  </c1chat-modal>
 </template>
 
 <script>

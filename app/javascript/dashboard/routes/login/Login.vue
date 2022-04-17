@@ -36,7 +36,7 @@
                 @input="$v.credentials.password.$touch"
               />
             </label>
-            <woot-submit-button
+            <c1chat-submit-button
               :disabled="
                 $v.credentials.email.$invalid ||
                   $v.credentials.password.$invalid ||
@@ -46,7 +46,7 @@
               :loading="loginApi.showLoading"
               button-class="large expanded"
             >
-            </woot-submit-button>
+            </c1chat-submit-button>
           </div>
         </form>
         <div class="column text-center sigin__footer">
@@ -62,7 +62,7 @@
           </p>
         </div>
       </div>
-      <woot-spinner v-else size="" />
+      <c1chat-spinner v-else size="" />
     </div>
   </div>
 </template>
@@ -70,12 +70,12 @@
 <script>
 import { required, email } from 'vuelidate/lib/validators';
 import globalConfigMixin from 'shared/mixins/globalConfigMixin';
-import WootSubmitButton from '../../components/buttons/FormSubmitButton';
+import c1chatSubmitButton from '../../components/buttons/FormSubmitButton';
 import { mapGetters } from 'vuex';
 
 export default {
   components: {
-    WootSubmitButton,
+    c1chatSubmitButton,
   },
   mixins: [globalConfigMixin],
   props: {

@@ -1,16 +1,16 @@
 <template>
   <div class="top-box">
     <div class="mode-wrap button-group">
-      <woot-button
+      <c1chat-button
         variant="clear"
         class="button--reply"
         :class="replyButtonClass"
         @click="handleReplyClick"
       >
         {{ $t('CONVERSATION.REPLYBOX.REPLY') }}
-      </woot-button>
+      </c1chat-button>
 
-      <woot-button
+      <c1chat-button
         class="button--note"
         variant="clear"
         color-scheme="warning"
@@ -18,7 +18,7 @@
         @click="handleNoteClick"
       >
         {{ $t('CONVERSATION.REPLYBOX.PRIVATE_NOTE') }}
-      </woot-button>
+      </c1chat-button>
     </div>
     <div class="action-wrap">
       <div v-if="isMessageLengthReachingThreshold" class="tabs-title">
@@ -27,7 +27,7 @@
         </span>
       </div>
     </div>
-    <woot-button
+    <c1chat-button
       v-if="popoutReplyBox"
       variant="clear"
       icon="dismiss"
@@ -35,7 +35,7 @@
       class-names="popout-button"
       @click="$emit('click')"
     />
-    <woot-button
+    <c1chat-button
       v-else
       variant="clear"
       icon="resize-large"

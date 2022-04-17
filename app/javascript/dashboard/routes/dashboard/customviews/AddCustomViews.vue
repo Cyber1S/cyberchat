@@ -1,9 +1,9 @@
 <template>
-  <woot-modal :show.sync="show" :on-close="onClose">
-    <woot-modal-header :header-title="$t('FILTER.CUSTOM_VIEWS.ADD.TITLE')" />
+  <c1chat-modal :show.sync="show" :on-close="onClose">
+    <c1chat-modal-header :header-title="$t('FILTER.CUSTOM_VIEWS.ADD.TITLE')" />
     <form class="row" @submit.prevent="saveCustomViews">
       <div class="medium-12 columns">
-        <woot-input
+        <c1chat-input
           v-model="name"
           :label="$t('FILTER.CUSTOM_VIEWS.ADD.LABEL')"
           type="text"
@@ -16,16 +16,16 @@
         />
 
         <div class="modal-footer">
-          <woot-button :disabled="isButtonDisabled">
+          <c1chat-button :disabled="isButtonDisabled">
             {{ $t('FILTER.CUSTOM_VIEWS.ADD.SAVE_BUTTON') }}
-          </woot-button>
-          <woot-button variant="clear" @click.prevent="onClose">
+          </c1chat-button>
+          <c1chat-button variant="clear" @click.prevent="onClose">
             {{ $t('FILTER.CUSTOM_VIEWS.ADD.CANCEL_BUTTON') }}
-          </woot-button>
+          </c1chat-button>
         </div>
       </div>
     </form>
-  </woot-modal>
+  </c1chat-modal>
 </template>
 
 <script>

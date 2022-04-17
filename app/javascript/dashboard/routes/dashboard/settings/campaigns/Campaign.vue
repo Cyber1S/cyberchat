@@ -8,13 +8,13 @@
       @on-edit-click="openEditPopup"
       @on-delete-click="openDeletePopup"
     />
-    <woot-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
+    <c1chat-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
       <edit-campaign
         :selected-campaign="selectedCampaign"
         @on-close="hideEditPopup"
       />
-    </woot-modal>
-    <woot-delete-modal
+    </c1chat-modal>
+    <c1chat-delete-modal
       :show.sync="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

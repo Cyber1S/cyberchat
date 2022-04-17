@@ -1,7 +1,7 @@
 <template>
-  <woot-dropdown-item>
+  <c1chat-dropdown-item>
     <div class="item-wrap">
-      <woot-button variant="clear" @click="onClick">
+      <c1chat-button variant="clear" @click="onClick">
         <div class="button-wrap">
           <div class="name-label-wrap">
             <div
@@ -15,9 +15,9 @@
             <i v-if="selected" class="icon ion-checkmark-round" />
           </div>
         </div>
-      </woot-button>
+      </c1chat-button>
     </div>
-  </woot-dropdown-item>
+  </c1chat-dropdown-item>
 </template>
 
 <script>

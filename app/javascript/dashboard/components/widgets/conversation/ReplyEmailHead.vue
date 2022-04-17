@@ -6,7 +6,7 @@
           {{ $t('CONVERSATION.REPLYBOX.EMAIL_HEAD.CC.LABEL') }}
         </label>
         <div class="input-group-field">
-          <woot-input
+          <c1chat-input
             v-model.trim="$v.ccEmailsVal.$model"
             type="text"
             :class="{ error: $v.ccEmailsVal.$error }"
@@ -14,14 +14,14 @@
             @blur="onBlur"
           />
         </div>
-        <woot-button
+        <c1chat-button
           v-if="!showBcc"
           variant="clear"
           size="small"
           @click="handleAddBcc"
         >
           {{ $t('CONVERSATION.REPLYBOX.EMAIL_HEAD.ADD_BCC') }}
-        </woot-button>
+        </c1chat-button>
       </div>
       <span v-if="$v.ccEmailsVal.$error" class="message">
         {{ $t('CONVERSATION.REPLYBOX.EMAIL_HEAD.CC.ERROR') }}
@@ -33,7 +33,7 @@
           {{ $t('CONVERSATION.REPLYBOX.EMAIL_HEAD.BCC.LABEL') }}
         </label>
         <div class="input-group-field">
-          <woot-input
+          <c1chat-input
             v-model.trim="$v.bccEmailsVal.$model"
             type="text"
             :class="{ error: $v.bccEmailsVal.$error }"

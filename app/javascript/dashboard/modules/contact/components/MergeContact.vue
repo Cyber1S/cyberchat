@@ -4,12 +4,12 @@
       <div class="multiselect-wrap--medium">
         <label class="multiselect__label">
           {{ $t('MERGE_CONTACTS.PRIMARY.TITLE') }}
-          <woot-label
+          <c1chat-label
             :title="$t('MERGE_CONTACTS.PRIMARY.HELP_LABEL')"
             color-scheme="success"
             small
             class="label--merge-warning"
-          ></woot-label>
+          ></c1chat-label>
         </label>
         <multiselect
           :value="primaryContact"
@@ -41,12 +41,12 @@
         >
           <label class="multiselect__label">
             {{ $t('MERGE_CONTACTS.CHILD.TITLE')
-            }}<woot-label
+            }}<c1chat-label
               :title="$t('MERGE_CONTACTS.CHILD.HELP_LABEL')"
               color-scheme="alert"
               small
               class="label--merge-warning"
-            ></woot-label>
+            ></c1chat-label>
           </label>
           <multiselect
             v-model="childContact"
@@ -96,12 +96,12 @@
       :child-contact-name="childContactName"
     />
     <div class="footer">
-      <woot-button variant="clear" @click.prevent="onCancel">
+      <c1chat-button variant="clear" @click.prevent="onCancel">
         {{ $t('MERGE_CONTACTS.FORM.CANCEL') }}
-      </woot-button>
-      <woot-button type="submit" :is-loading="isMerging">
+      </c1chat-button>
+      <c1chat-button type="submit" :is-loading="isMerging">
         {{ $t('MERGE_CONTACTS.FORM.SUBMIT') }}
-      </woot-button>
+      </c1chat-button>
     </div>
   </form>
 </template>

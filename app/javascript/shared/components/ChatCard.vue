@@ -84,8 +84,8 @@ export default {
 
   .action-button + .action-button {
     background: $color-white;
-    @include thin-border($color-woot);
-    color: $color-woot;
+    @include thin-border($color-c1chat);
+    color: $color-c1chat;
   }
 }
 </style>

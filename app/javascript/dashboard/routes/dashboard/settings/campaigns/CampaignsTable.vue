@@ -21,7 +21,7 @@ import { VeTable } from 'vue-easytable';
 import Spinner from 'shared/components/Spinner.vue';
 import Label from 'dashboard/components/ui/Label';
 import EmptyState from 'dashboard/components/widgets/EmptyState.vue';
-import WootButton from 'dashboard/components/ui/WootButton.vue';
+import c1chatButton from 'dashboard/components/ui/c1chatButton.vue';
 import messageFormatterMixin from 'shared/mixins/messageFormatterMixin';
 import UserAvatarWithName from 'dashboard/components/widgets/UserAvatarWithName';
 import campaignMixin from 'shared/mixins/campaignMixin';
@@ -193,7 +193,7 @@ export default {
             align: 'left',
             renderBodyCell: row => (
               <div class="button-wrapper">
-                <WootButton
+                <c1chatButton
                   variant="clear"
                   icon="edit"
                   color-scheme="secondary"
@@ -201,15 +201,15 @@ export default {
                   onClick={() => this.$emit('on-edit-click', row)}
                 >
                   {this.$t('CAMPAIGN.LIST.BUTTONS.EDIT')}
-                </WootButton>
-                <WootButton
+                </c1chatButton>
+                <c1chatButton
                   variant="link"
                   icon="dismiss-circle"
                   color-scheme="secondary"
                   onClick={() => this.$emit('on-delete-click', row)}
                 >
                   {this.$t('CAMPAIGN.LIST.BUTTONS.DELETE')}
-                </WootButton>
+                </c1chatButton>
               </div>
             ),
           },
@@ -245,14 +245,14 @@ export default {
           align: 'left',
           renderBodyCell: row => (
             <div class="button-wrapper">
-              <WootButton
+              <c1chatButton
                 variant="link"
                 icon="dismiss-circle"
                 color-scheme="secondary"
                 onClick={() => this.$emit('on-delete-click', row)}
               >
                 {this.$t('CAMPAIGN.LIST.BUTTONS.DELETE')}
-              </WootButton>
+              </c1chatButton>
             </div>
           ),
         },

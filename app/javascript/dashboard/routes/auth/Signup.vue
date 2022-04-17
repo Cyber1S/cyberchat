@@ -7,13 +7,13 @@
         class="hero--logo"
       />
       <h2 class="hero--title">
-        {{ $t('REGISTER.TRY_WOOT') }}
+        {{ $t('REGISTER.TRY_C1CHAT') }}
       </h2>
     </div>
     <div class="row align-center">
       <div class="small-12 medium-6 large-5 column">
         <form class="signup--box login-box" @submit.prevent="submit">
-          <woot-input
+          <c1chat-input
             v-model="credentials.fullName"
             :class="{ error: $v.credentials.fullName.$error }"
             :label="$t('REGISTER.FULL_NAME.LABEL')"
@@ -25,7 +25,7 @@
             "
             @blur="$v.credentials.fullName.$touch"
           />
-          <woot-input
+          <c1chat-input
             v-model.trim="credentials.email"
             type="email"
             :class="{ error: $v.credentials.email.$error }"
@@ -36,7 +36,7 @@
             "
             @blur="$v.credentials.email.$touch"
           />
-          <woot-input
+          <c1chat-input
             v-model="credentials.accountName"
             :class="{ error: $v.credentials.accountName.$error }"
             :label="$t('REGISTER.ACCOUNT_NAME.LABEL')"
@@ -48,7 +48,7 @@
             "
             @blur="$v.credentials.accountName.$touch"
           />
-          <woot-input
+          <c1chat-input
             v-model.trim="credentials.password"
             type="password"
             :class="{ error: $v.credentials.password.$error }"
@@ -57,7 +57,7 @@
             :error="passwordErrorText"
             @blur="$v.credentials.password.$touch"
           />
-          <woot-input
+          <c1chat-input
             v-model.trim="credentials.confirmPassword"
             type="password"
             :class="{ error: $v.credentials.confirmPassword.$error }"
@@ -84,13 +84,13 @@
               {{ $t('SET_NEW_PASSWORD.CAPTCHA.ERROR') }}
             </span>
           </div>
-          <woot-submit-button
+          <c1chat-submit-button
             :disabled="isSignupInProgress || !hasAValidCaptcha"
             :button-text="$t('REGISTER.SUBMIT')"
             :loading="isSignupInProgress"
             button-class="large expanded"
           >
-          </woot-submit-button>
+          </c1chat-submit-button>
           <p class="accept--terms" v-html="termsLink"></p>
         </form>
         <div class="column text-center sigin--footer">

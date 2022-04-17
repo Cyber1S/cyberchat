@@ -11,17 +11,17 @@
             )
           }}
         </p>
-        <woot-button variant="clear" size="small" @click="refreshPage">
+        <c1chat-button variant="clear" size="small" @click="refreshPage">
           {{ $t('NETWORK.BUTTON.REFRESH') }}
-        </woot-button>
-        <woot-button
+        </c1chat-button>
+        <c1chat-button
           variant="smooth"
           size="small"
           color-scheme="warning"
           icon="dismiss-circle"
           @click="closeNotification"
         >
-        </woot-button>
+        </c1chat-button>
       </div>
     </div>
   </transition>

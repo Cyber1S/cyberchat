@@ -25,7 +25,7 @@
     />
 
     <div class="sidebar-toggle__wrap">
-      <woot-button
+      <c1chat-button
         variant="smooth"
         size="tiny"
         color-scheme="secondary"
@@ -33,7 +33,7 @@
         :icon="isRightOrLeftIcon"
         @click="onToggleContactPanel"
       >
-      </woot-button>
+      </c1chat-button>
     </div>
     <ul class="conversation-panel">
       <transition name="slide-up">
@@ -376,7 +376,7 @@ export default {
 
 .modal-mask {
   &::v-deep {
-    .ProseMirror-woot-style {
+    .ProseMirror-c1chat-style {
       max-height: 40rem;
     }
 

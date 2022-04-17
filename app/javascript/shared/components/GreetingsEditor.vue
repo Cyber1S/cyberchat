@@ -1,7 +1,7 @@
 <template>
   <section>
     <label v-if="richtext" class="greetings--richtext">
-      <woot-message-editor
+      <c1chat-message-editor
         v-model="greetingsMessage"
         :is-format-mode="true"
         class="input"
@@ -24,12 +24,12 @@
 </template>
 
 <script>
-import WootMessageEditor from 'dashboard/components/widgets/WootWriter/Editor';
+import c1chatMessageEditor from 'dashboard/components/widgets/c1chatWriter/Editor';
 import ResizableTextArea from 'shared/components/ResizableTextArea';
 
 export default {
   components: {
-    WootMessageEditor,
+    c1chatMessageEditor,
     ResizableTextArea,
   },
   props: {

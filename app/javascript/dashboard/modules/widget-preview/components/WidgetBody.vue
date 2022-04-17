@@ -57,7 +57,7 @@ $tailwind-black-700: #3c4858;
       max-width: 100%;
       .chat-bubble {
         box-shadow: var(--shadow-medium);
-        background: var(--color-woot);
+        background: var(--color-c1chat);
         border-radius: var(--border-radius-large);
         color: var(--white);
         display: inline-block;

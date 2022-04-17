@@ -11,7 +11,7 @@
         {{ hrefLinkText }}
       </a>
     </span>
-    <woot-button
+    <c1chat-button
       v-if="hasActionButton"
       size="small"
       variant="link"
@@ -21,8 +21,8 @@
       @click="onClick"
     >
       {{ actionButtonLabel }}
-    </woot-button>
-    <woot-button
+    </c1chat-button>
+    <c1chat-button
       v-if="hasCloseButton"
       size="small"
       variant="link"
@@ -31,7 +31,7 @@
       class-names="banner-action__button"
       @click="onClickClose"
     >
-    </woot-button>
+    </c1chat-button>
   </div>
 </template>
 

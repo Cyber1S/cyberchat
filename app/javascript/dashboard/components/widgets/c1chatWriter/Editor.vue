@@ -30,14 +30,14 @@ import {
 } from '@cyber1s/prosemirror-schema/src/mentions/plugin';
 import { EditorState } from 'prosemirror-state';
 import { defaultMarkdownParser } from 'prosemirror-markdown';
-import { wootWriterSetup } from '@cyber1s/prosemirror-schema';
+import { c1chatWriterSetup } from '@cyber1s/prosemirror-schema';
 
 import TagAgents from '../conversation/TagAgents';
 import CannedResponse from '../conversation/CannedResponse';
 
 const TYPING_INDICATOR_IDLE_TIME = 4000;
 
-import '@cyber1s/prosemirror-schema/src/woot-editor.css';
+import '@cyber1s/prosemirror-schema/src/c1chat-editor.css';
 import {
   hasPressedAltAndPKey,
   hasPressedAltAndLKey,
@@ -47,7 +47,7 @@ import eventListenerMixins from 'shared/mixins/eventListenerMixins';
 const createState = (content, placeholder, plugins = []) => {
   return EditorState.create({
     doc: addMentionsToMarkdownParser(defaultMarkdownParser).parse(content),
-    plugins: wootWriterSetup({
+    plugins: c1chatWriterSetup({
       schema: schemaWithMentions,
       placeholder,
       plugins,
@@ -56,7 +56,7 @@ const createState = (content, placeholder, plugins = []) => {
 };
 
 export default {
-  name: 'WootMessageEditor',
+  name: 'c1chatMessageEditor',
   components: { TagAgents, CannedResponse },
   mixins: [eventListenerMixins],
   props: {
@@ -206,7 +206,7 @@ export default {
       }
     },
     focusEditorInputField() {
-      this.$refs.editor.querySelector('div.ProseMirror-woot-style').focus();
+      this.$refs.editor.querySelector('div.ProseMirror-c1chat-style').focus();
     },
     insertMentionNode(mentionItem) {
       if (!this.view) {
@@ -296,7 +296,7 @@ export default {
   width: 100%;
 }
 
-.ProseMirror-woot-style {
+.ProseMirror-c1chat-style {
   min-height: 8rem;
   max-height: 12rem;
   overflow: auto;

@@ -1,7 +1,7 @@
 <template>
-  <woot-modal :show.sync="show" :on-close="onClose">
+  <c1chat-modal :show.sync="show" :on-close="onClose">
     <div class="column content-box">
-      <woot-modal-header :header-title="$t('ATTRIBUTES_MGMT.ADD.TITLE')" />
+      <c1chat-modal-header :header-title="$t('ATTRIBUTES_MGMT.ADD.TITLE')" />
 
       <form class="row" @submit.prevent="addAttributes">
         <div class="medium-12 columns">
@@ -16,7 +16,7 @@
               {{ $t('ATTRIBUTES_MGMT.ADD.FORM.MODEL.ERROR') }}
             </span>
           </label>
-          <woot-input
+          <c1chat-input
             v-model="displayName"
             :label="$t('ATTRIBUTES_MGMT.ADD.FORM.NAME.LABEL')"
             type="text"
@@ -30,7 +30,7 @@
             @input="onDisplayNameChange"
             @blur="$v.displayName.$touch"
           />
-          <woot-input
+          <c1chat-input
             v-model="attributeKey"
             :label="$t('ATTRIBUTES_MGMT.ADD.FORM.KEY.LABEL')"
             type="text"
@@ -87,7 +87,7 @@
             </label>
           </div>
           <div class="modal-footer">
-            <woot-submit-button
+            <c1chat-submit-button
               :disabled="isButtonDisabled"
               :button-text="$t('ATTRIBUTES_MGMT.ADD.SUBMIT')"
             />
@@ -98,7 +98,7 @@
         </div>
       </form>
     </div>
-  </woot-modal>
+  </c1chat-modal>
 </template>
 
 <script>

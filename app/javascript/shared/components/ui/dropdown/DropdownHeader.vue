@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  componentName: 'WootDropdownMenu',
+  componentName: 'c1chatDropdownMenu',
   props: {
     title: {
       type: String,

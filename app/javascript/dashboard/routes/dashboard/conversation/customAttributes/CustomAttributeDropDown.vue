@@ -15,25 +15,25 @@
     </div>
     <div class="list-wrap">
       <div class="list">
-        <woot-dropdown-menu>
+        <c1chat-dropdown-menu>
           <custom-attribute-drop-down-item
             v-for="attribute in filteredAttributes"
             :key="attribute.attribute_display_name"
             :title="attribute.attribute_display_name"
             @click="onAddAttribute(attribute)"
           />
-        </woot-dropdown-menu>
+        </c1chat-dropdown-menu>
         <div v-if="noResult" class="no-result">
           {{ $t('CUSTOM_ATTRIBUTES.FORM.ATTRIBUTE_SELECT.NO_RESULT') }}
         </div>
-        <woot-button
+        <c1chat-button
           class="add"
           icon="add"
           size="tiny"
           @click="addNewAttribute"
         >
           {{ $t('CUSTOM_ATTRIBUTES.FORM.ADD.TITLE') }}
-        </woot-button>
+        </c1chat-button>
       </div>
     </div>
   </div>

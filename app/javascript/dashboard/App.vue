@@ -8,7 +8,7 @@
       :show="showAddAccountModal"
       :has-accounts="hasAccounts"
     />
-    <woot-snackbar-box />
+    <c1chat-snackbar-box />
     <network-notification />
   </div>
   <loading-state v-else />
@@ -21,7 +21,7 @@ import LoadingState from './components/widgets/LoadingState.vue';
 import NetworkNotification from './components/NetworkNotification';
 import UpdateBanner from './components/app/UpdateBanner.vue';
 import vueActionCable from './helper/actionCable';
-import WootSnackbarBox from './components/SnackbarContainer';
+import c1chatSnackbarBox from './components/SnackbarContainer';
 import {
   registerSubscription,
   verifyServiceWorkerExistence,
@@ -35,7 +35,7 @@ export default {
     LoadingState,
     NetworkNotification,
     UpdateBanner,
-    WootSnackbarBox,
+    c1chatSnackbarBox,
   },
 
   data() {

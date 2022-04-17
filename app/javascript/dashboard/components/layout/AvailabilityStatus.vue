@@ -1,12 +1,12 @@
 <template>
-  <woot-dropdown-menu>
-    <woot-dropdown-header :title="$t('SIDEBAR.SET_AVAILABILITY_TITLE')" />
-    <woot-dropdown-item
+  <c1chat-dropdown-menu>
+    <c1chat-dropdown-header :title="$t('SIDEBAR.SET_AVAILABILITY_TITLE')" />
+    <c1chat-dropdown-item
       v-for="status in availabilityStatuses"
       :key="status.value"
       class="status-items"
     >
-      <woot-button
+      <c1chat-button
         size="small"
         :color-scheme="status.disabled ? '' : 'secondary'"
         :variant="status.disabled ? 'smooth' : 'clear'"
@@ -15,29 +15,29 @@
       >
         <availability-status-badge :status="status.value" />
         {{ status.label }}
-      </woot-button>
-    </woot-dropdown-item>
-    <woot-dropdown-divider />
-  </woot-dropdown-menu>
+      </c1chat-button>
+    </c1chat-dropdown-item>
+    <c1chat-dropdown-divider />
+  </c1chat-dropdown-menu>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
 import { mixin as clickaway } from 'vue-clickaway';
-import WootDropdownItem from 'shared/components/ui/dropdown/DropdownItem';
-import WootDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu';
-import WootDropdownHeader from 'shared/components/ui/dropdown/DropdownHeader';
-import WootDropdownDivider from 'shared/components/ui/dropdown/DropdownDivider';
+import c1chatDropdownItem from 'shared/components/ui/dropdown/DropdownItem';
+import c1chatDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu';
+import c1chatDropdownHeader from 'shared/components/ui/dropdown/DropdownHeader';
+import c1chatDropdownDivider from 'shared/components/ui/dropdown/DropdownDivider';
 import AvailabilityStatusBadge from '../widgets/conversation/AvailabilityStatusBadge';
 
 const AVAILABILITY_STATUS_KEYS = ['online', 'busy', 'offline'];
 
 export default {
   components: {
-    WootDropdownHeader,
-    WootDropdownDivider,
-    WootDropdownMenu,
-    WootDropdownItem,
+    c1chatDropdownHeader,
+    c1chatDropdownDivider,
+    c1chatDropdownMenu,
+    c1chatDropdownItem,
     AvailabilityStatusBadge,
   },
 

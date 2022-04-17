@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="add-agents__header"></div>
-    <table class="woot-table">
+    <table class="c1chat-table">
       <thead>
         <tr>
           <td>
@@ -62,7 +62,7 @@
           })
         }}
       </p>
-      <woot-submit-button
+      <c1chat-submit-button
         :button-text="submitButtonText"
         :loading="isWorking"
         :disabled="disableSubmitButton"

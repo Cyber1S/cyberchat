@@ -11,12 +11,12 @@ import axios from 'axios';
 import hljs from 'highlight.js';
 import Multiselect from 'vue-multiselect';
 import VueFormulate from '@braid/vue-formulate';
-import WootSwitch from 'components/ui/Switch';
-import WootWizard from 'components/ui/Wizard';
+import c1chatSwitch from 'components/ui/Switch';
+import c1chatWizard from 'components/ui/Wizard';
 import { sync } from 'vuex-router-sync';
 import Vuelidate from 'vuelidate';
 import VTooltip from 'v-tooltip';
-import WootUiKit from '../dashboard/components';
+import c1chatUiKit from '../dashboard/components';
 import App from '../dashboard/App';
 import i18n from '../dashboard/i18n';
 import createAxios from '../dashboard/helper/APIHelper';
@@ -57,7 +57,7 @@ if (window.analyticsConfig) {
 
 Vue.use(VueRouter);
 Vue.use(VueI18n);
-Vue.use(WootUiKit);
+Vue.use(c1chatUiKit);
 Vue.use(Vuelidate);
 Vue.use(VueFormulate, {
   rules: {
@@ -70,8 +70,8 @@ Vue.use(VTooltip, {
 Vue.use(hljs.vuePlugin);
 
 Vue.component('multiselect', Multiselect);
-Vue.component('woot-switch', WootSwitch);
-Vue.component('woot-wizard', WootWizard);
+Vue.component('c1chat-switch', c1chatSwitch);
+Vue.component('c1chat-wizard', c1chatWizard);
 Vue.component('fluent-icon', FluentIcon);
 
 const i18nConfig = new VueI18n({
@@ -83,7 +83,7 @@ sync(store, router);
 // load common helpers into js
 commonHelpers();
 
-window.WootConstants = constants;
+window.c1chatConstants = constants;
 window.axios = createAxios(axios);
 window.bus = new Vue();
 initializeCyber1SChatEvents();
@@ -91,7 +91,7 @@ initializeAnalyticsEvents();
 initalizeRouter();
 
 window.onload = () => {
-  window.WOOT = new Vue({
+  window.C1CHAT = new Vue({
     router,
     store,
     i18n: i18nConfig,

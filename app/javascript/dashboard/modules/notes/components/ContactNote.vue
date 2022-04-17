@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="actions">
-        <woot-button
+        <c1chat-button
           v-tooltip="$t('NOTES.CONTENT_HEADER.DELETE')"
           variant="smooth"
           size="tiny"
@@ -24,7 +24,7 @@
           @click="toggleDeleteModal"
         />
       </div>
-      <woot-delete-modal
+      <c1chat-delete-modal
         v-if="showDeleteModal"
         :show.sync="showDeleteModal"
         :on-close="closeDelete"

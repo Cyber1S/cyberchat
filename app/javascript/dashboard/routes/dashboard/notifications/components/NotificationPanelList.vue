@@ -1,6 +1,6 @@
 <template>
   <div class="notification-list-item--wrap h-full flex-view ">
-    <woot-button
+    <c1chat-button
       v-for="notificationItem in notifications"
       v-show="!isLoading"
       :key="notificationItem.id"
@@ -54,12 +54,12 @@
           </span>
         </div>
       </div>
-    </woot-button>
+    </c1chat-button>
     <empty-state
       v-if="showEmptyResult"
       :title="$t('NOTIFICATIONS_PAGE.UNREAD_NOTIFICATION.EMPTY_MESSAGE')"
     />
-    <woot-button
+    <c1chat-button
       v-if="!isLoading && inLastPage"
       size="medium"
       variant="clear"
@@ -68,7 +68,7 @@
       @click="openNotificationPage"
     >
       {{ $t('NOTIFICATIONS_PAGE.UNREAD_NOTIFICATION.ALL_NOTIFICATIONS') }}
-    </woot-button>
+    </c1chat-button>
     <div v-if="isLoading" class="notifications-loader flex-view">
       <spinner />
       <span>{{
@@ -202,7 +202,7 @@ export default {
   width: var(--space-small);
   height: var(--space-small);
   border-radius: var(--border-radius-rounded);
-  background: var(--color-woot);
+  background: var(--color-c1chat);
 }
 
 .action-button {

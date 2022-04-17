@@ -1,45 +1,45 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 
-import WootButton from '../../app/javascript/dashboard/components/ui/WootButton.vue';
+import c1chatButton from '../../app/javascript/dashboard/components/ui/c1chatButton.vue';
 
 <Meta title="Styleguide/Buttons" />
 
 # Buttons
 
-Buttons can be used by `woot-button` component in `vue`. You can play with all the props here 👉 [woot-button](/story/components-button--primary). The button component is made on top of [foundation button](https://get.foundation/sites/docs/button.html)
+Buttons can be used by `c1chat-button` component in `vue`. You can play with all the props here 👉 [c1chat-button](/story/components-button--primary). The button component is made on top of [foundation button](https://get.foundation/sites/docs/button.html)
 so the style of button can be used outside of vue with `button` class.
 
-Other than declred props the `woot-button` can be customised by providing custom classnames through `class-names` prop.
+Other than declred props the `c1chat-button` can be customised by providing custom classnames through `class-names` prop.
 
 <Story name="default">
   {{
-    template: `<woot-button size="" title="Press me">Default</woot-button>`,
+    template: `<c1chat-button size="" title="Press me">Default</c1chat-button>`,
   }}
 </Story>
 
 - While naming button labels make sure to describe the action with some context.
-- For HTML forms use `<woot-button type="submit">` instead of `<input type="submit" />`
+- For HTML forms use `<c1chat-button type="submit">` instead of `<input type="submit" />`
 - Provide title or tooltip if possible.
 
 ## Button sizes
 
-Size of the buttons can be set with `size` to `woot-button`. By default medium is the default size of a button. Other sizes are `tiny, small, medium, large`.
+Size of the buttons can be set with `size` to `c1chat-button`. By default medium is the default size of a button. Other sizes are `tiny, small, medium, large`.
 
 <Canvas>
   <Story name="sizes">
     {{
       template: `<div class="row">
           <div class="margin-horizontal-2">
-              <woot-button size="tiny">Tiny</woot-button>
+              <c1chat-button size="tiny">Tiny</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button size="small">Small</woot-button>
+              <c1chat-button size="small">Small</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button size="">Default</woot-button>
+              <c1chat-button size="">Default</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button size="large">Large</woot-button>
+              <c1chat-button size="large">Large</c1chat-button>
           </div>
         </div>`,
     }}
@@ -54,7 +54,7 @@ Buttons can expanded to full width by setting the `is-expanded` prop. For with b
     {{
       template: `<div class="row">
           <div class="columns">
-              <woot-button size="large" is-expanded title="Micheal Scott said the rest">This is buttons is very long</woot-button>
+              <c1chat-button size="large" is-expanded title="Micheal Scott said the rest">This is buttons is very long</c1chat-button>
           </div>
         </div>`,
     }}
@@ -63,7 +63,7 @@ Buttons can expanded to full width by setting the `is-expanded` prop. For with b
 
 ## Button colors
 
-Cyber1SChat comes with predefined set of colors for buttons. The color of the button can be set with `color-scheme` to `woot-button`.
+Cyber1SChat comes with predefined set of colors for buttons. The color of the button can be set with `color-scheme` to `c1chat-button`.
 Default color scheme is `primary`, other color-schemes are `secondary, success, alert, warning`.
 
 <Canvas>
@@ -71,19 +71,19 @@ Default color scheme is `primary`, other color-schemes are `secondary, success, 
     {{
       template: `<div class="row">
           <div class="margin-horizontal-2">
-              <woot-button >Primary</woot-button>
+              <c1chat-button >Primary</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="secondary">Secondary</woot-button>
+              <c1chat-button color-scheme="secondary">Secondary</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="success">Success</woot-button>
+              <c1chat-button color-scheme="success">Success</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="alert">Alert</woot-button>
+              <c1chat-button color-scheme="alert">Alert</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="warning">Warning</woot-button>
+              <c1chat-button color-scheme="warning">Warning</c1chat-button>
           </div>
         </div>`,
     }}
@@ -92,7 +92,7 @@ Default color scheme is `primary`, other color-schemes are `secondary, success, 
 
 ## Button style variations
 
-There are diffrent styles that comes with cyber1schat buttons. This can set with `variants` prop for `woot-button`. By deault the filled will be the style, other variations are `smooth, hollow, clear, link`
+There are diffrent styles that comes with cyber1schat buttons. This can set with `variants` prop for `c1chat-button`. By deault the filled will be the style, other variations are `smooth, hollow, clear, link`
 
 - Primary form actions like Save details, Create campaign etc should use default style.
 - The Cancel action has to use the smooth style.
@@ -102,19 +102,19 @@ There are diffrent styles that comes with cyber1schat buttons. This can set with
     {{
       template: `<div class="row">
           <div class="margin-horizontal-2">
-              <woot-button >Default</woot-button>
+              <c1chat-button >Default</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button variant="smooth" color-scheme="alert">Smooth</woot-button>
+              <c1chat-button variant="smooth" color-scheme="alert">Smooth</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="secondary" variant="hollow">Hollow</woot-button>
+              <c1chat-button color-scheme="secondary" variant="hollow">Hollow</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="success" variant="clear">Success</woot-button>
+              <c1chat-button color-scheme="success" variant="clear">Success</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="alert" variant="link">Link</woot-button>
+              <c1chat-button color-scheme="alert" variant="link">Link</c1chat-button>
           </div>
         </div>`,
     }}
@@ -132,10 +132,10 @@ These are states other than the default interaction states like hover, active, f
     {{
       template: `<div class="row">
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="alert" is-disabled>disabled :/</woot-button>
+              <c1chat-button color-scheme="alert" is-disabled>disabled :/</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button variant="smooth" color-scheme="primary" is-loading>Loading...</woot-button>
+              <c1chat-button variant="smooth" color-scheme="primary" is-loading>Loading...</c1chat-button>
           </div>
         </div>`,
     }}
@@ -152,10 +152,10 @@ The prop `icon` can be used to pass the **ion icon classname** to render the ico
     {{
       template: `<div class="row">
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="alert" icon="ion-stop">Stop</woot-button>
+              <c1chat-button color-scheme="alert" icon="ion-stop">Stop</c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button icon="ion-person" variant="hollow">Hollow man</woot-button>
+              <c1chat-button icon="ion-person" variant="hollow">Hollow man</c1chat-button>
           </div>
         </div>`,
     }}
@@ -164,20 +164,20 @@ The prop `icon` can be used to pass the **ion icon classname** to render the ico
 
 #### Buttons with only icon
 
-The `woot-button` can be used as an icon only button by keeping the button text empty.
+The `c1chat-button` can be used as an icon only button by keeping the button text empty.
 
 <Canvas>
   <Story name="icononly">
     {{
       template: `<div class="row">
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="success" icon="ion-plus" size="tiny"></woot-button>
+              <c1chat-button color-scheme="success" icon="ion-plus" size="tiny"></c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button color-scheme="secondary" icon="ion-plus" size="small" variant="smooth"></woot-button>
+              <c1chat-button color-scheme="secondary" icon="ion-plus" size="small" variant="smooth"></c1chat-button>
           </div>
           <div class="margin-horizontal-2">
-              <woot-button icon="ion-plus" variant="hollow"></woot-button>
+              <c1chat-button icon="ion-plus" variant="hollow"></c1chat-button>
           </div>
         </div>`,
     }}

@@ -1,13 +1,13 @@
 <template>
   <div class="column content-box">
-    <woot-button
+    <c1chat-button
       color-scheme="success"
       class-names="button--fixed-right-top"
       icon="add-circle"
       @click="openAddPopup()"
     >
       {{ $t('AUTOMATION.HEADER_BTN_TXT') }}
-    </woot-button>
+    </c1chat-button>
     <div class="row">
       <div class="small-8 columns with-right-space">
         <p
@@ -16,11 +16,11 @@
         >
           {{ $t('AUTOMATION.LIST.404') }}
         </p>
-        <woot-loading-state
+        <c1chat-loading-state
           v-if="uiFlags.isFetching"
           :message="$t('AUTOMATION.LOADING')"
         />
-        <table v-if="!uiFlags.isFetching && records.length" class="woot-table">
+        <table v-if="!uiFlags.isFetching && records.length" class="c1chat-table">
           <thead>
             <th
               v-for="thHeader in $t('AUTOMATION.LIST.TABLE_HEADER')"
@@ -34,14 +34,14 @@
               <td>{{ automation.name }}</td>
               <td>{{ automation.description }}</td>
               <td>
-                <woot-switch
+                <c1chat-switch
                   :value="automation.active"
                   @input="toggleAutomation(automation, automation.active)"
                 />
               </td>
               <td>{{ readableTime(automation.created_on) }}</td>
               <td class="button-wrapper">
-                <woot-button
+                <c1chat-button
                   v-tooltip.top="$t('AUTOMATION.FORM.EDIT')"
                   variant="smooth"
                   size="tiny"
@@ -51,8 +51,8 @@
                   icon="edit"
                   @click="openEditPopup(automation)"
                 >
-                </woot-button>
-                <woot-button
+                </c1chat-button>
+                <c1chat-button
                   v-tooltip.top="$t('AUTOMATION.CLONE.TOOLTIP')"
                   variant="smooth"
                   size="tiny"
@@ -62,8 +62,8 @@
                   icon="copy"
                   @click="cloneAutomation(automation.id)"
                 >
-                </woot-button>
-                <woot-button
+                </c1chat-button>
+                <c1chat-button
                   v-tooltip.top="$t('AUTOMATION.FORM.DELETE')"
                   variant="smooth"
                   color-scheme="alert"
@@ -73,7 +73,7 @@
                   :is-loading="loading[automation.id]"
                   @click="openDeletePopup(automation, index)"
                 >
-                </woot-button>
+                </c1chat-button>
               </td>
             </tr>
           </tbody>
@@ -84,7 +84,7 @@
         <span v-html="$t('AUTOMATION.SIDEBAR_TXT')"></span>
       </div>
     </div>
-    <woot-modal
+    <c1chat-modal
       :show.sync="showAddPopup"
       size="medium"
       :on-close="hideAddPopup"
@@ -94,9 +94,9 @@
         :on-close="hideAddPopup"
         @saveAutomation="submitAutomation"
       />
-    </woot-modal>
+    </c1chat-modal>
 
-    <woot-delete-modal
+    <c1chat-delete-modal
       :show.sync="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"
@@ -106,7 +106,7 @@
       :reject-text="deleteRejectText"
     />
 
-    <woot-modal
+    <c1chat-modal
       :show.sync="showEditPopup"
       size="medium"
       :on-close="hideEditPopup"
@@ -117,8 +117,8 @@
         :selected-response="selectedResponse"
         @saveAutomation="submitAutomation"
       />
-    </woot-modal>
-    <woot-confirm-modal
+    </c1chat-modal>
+    <c1chat-confirm-modal
       ref="confirmDialog"
       :title="toggleModalTitle"
       :description="toggleModalDescription"

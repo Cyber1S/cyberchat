@@ -1,8 +1,8 @@
 <template>
   <modal :show.sync="show" :on-close="closeModal">
-    <woot-modal-header :header-title="title" :header-content="message" />
+    <c1chat-modal-header :header-title="title" :header-content="message" />
     <form @submit.prevent="onConfirm">
-      <woot-input
+      <c1chat-input
         v-model="value"
         type="text"
         :class="{ error: $v.value.$error }"
@@ -10,12 +10,12 @@
         @blur="$v.value.$touch"
       />
       <div class="button-wrapper">
-        <woot-button color-scheme="alert" :is-disabled="$v.value.$invalid">
+        <c1chat-button color-scheme="alert" :is-disabled="$v.value.$invalid">
           {{ confirmText }}
-        </woot-button>
-        <woot-button class="clear" @click.prevent="closeModal">
+        </c1chat-button>
+        <c1chat-button class="clear" @click.prevent="closeModal">
           {{ rejectText }}
-        </woot-button>
+        </c1chat-button>
       </div>
     </form>
   </modal>
