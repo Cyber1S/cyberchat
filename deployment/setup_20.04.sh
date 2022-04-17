@@ -9,7 +9,7 @@ read -p 'Would you like to configure a domain and SSL for Cyber1SChat?(yes or no
 
 if [ $configure_webserver == "yes" ]
 then
-read -p 'Enter your sub-domain to be used for Cyber1SChat (cyber1schat.domain.com for example) : ' domain_name
+read -p 'Enter your sub-domain to be used for Cyber1SChat (Cyber1SChat.domain.com for example) : ' domain_name
 echo -e "\nThis script will try to generate SSL certificates via LetsEncrypt and serve cyber1schat at
 "https://$domain_name". Proceed further once you have pointed your DNS to the IP of the instance.\n"
 read -p 'Enter the email LetsEncrypt can use to send reminders when your SSL certificate is up for renewal: ' le_email
@@ -137,10 +137,10 @@ echo "To configure a domain and SSL certificate, follow the guide at https://cha
 echo "***************************************************************************"
 else
 curl https://ssl-config.mozilla.org/ffdhe4096.txt >> /etc/ssl/dhparam
-wget https://raw.githubusercontent.com/cyber1s/cyber1schat/develop/deployment/nginx_cyber1schat.conf
+wget https://raw.githubusercontent.com/Cyber1S/Cyber1sChat/develop/deployment/nginx_cyber1schat.conf
 cp nginx_cyber1schat.conf /etc/nginx/sites-available/nginx_cyber1schat.conf
 certbot certonly --non-interactive --agree-tos --nginx -m $le_email -d $domain_name
-sed -i "s/cyber1schat.domain.com/$domain_name/g" /etc/nginx/sites-available/nginx_cyber1schat.conf
+sed -i "s/Cyber1SChat.domain.com/$domain_name/g" /etc/nginx/sites-available/nginx_cyber1schat.conf
 ln -s /etc/nginx/sites-available/nginx_cyber1schat.conf /etc/nginx/sites-enabled/nginx_cyber1schat.conf
 systemctl restart nginx
 sudo -i -u cyber1schat << EOF
