@@ -18,24 +18,24 @@ describe('#getUserString', () => {
         user: {
           name: 'Pranav',
           email: 'pranav@example.com',
-          avatar_url: 'https://images.cyberchat.com/placeholder',
+          avatar_url: 'https://api.multiavatar.com/placeholder',
           identifier_hash: '12345',
         },
         identifier: '12345',
       })
     ).toBe(
-      'avatar_urlhttps://images.cyberchat.com/placeholderemailpranav@example.comnamePranavidentifier_hash12345identifier12345'
+      'avatar_urlhttps://api.multiavatar.com/namePranav'
     );
 
     expect(
       getUserString({
         user: {
           email: 'pranav@example.com',
-          avatar_url: 'https://images.cyberchat.com/placeholder',
+          avatar_url: 'https://api.multiavatar.com/placeholder',
         },
       })
     ).toBe(
-      'avatar_urlhttps://images.cyberchat.com/placeholderemailpranav@example.comnameidentifier_hashidentifier'
+      'avatar_urlhttps://api.multiavatar.com/emailpranav@example.comname'
     );
   });
 });
