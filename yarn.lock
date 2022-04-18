@@ -1114,7 +1114,7 @@
 "@cyber1s/utils@^0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@cyber1s/utils/-/utils-0.0.6.tgz#76d7b17d692b5b656c565b9b714b98e0f2bc1324"
-  integrity sha512-fCvULfJSFSylDAiGh1cPAX5nQkVsmG5ASGm/E6YBYg8cox/2JU179JFstdtTxrIJg/YeHukcaq85Gc+/16ShPQ==
+  integrity sha512-bK+S4s1WSQqJ26Vv4xgXHGaL63i3VubhQnbb2ulL1pYp7FYe5YMvMwEFWB2Th6AfEgrBR4extWJwERwDSHE2aw==
   dependencies:
     date-fns "^2.22.1"
 
