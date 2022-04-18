@@ -1096,7 +1096,7 @@
     is-url "^1.2.4"
     nanoid "^2.1.11"
 
-"@cyber1s/prosemirror-schema@https://github.com/cyber1s/prosemirror-schema.git":
+"@cyber1s/prosemirror-schema@https://github.com/cyber1s/prosemirror-schema.git#e3832d22da8b80e249fd1c55092d2f148c6dff11":
   version "1.0.0"
   resolved "https://github.com/cyber1s/prosemirror-schema.git"
   dependencies:
