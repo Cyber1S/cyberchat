@@ -3,7 +3,7 @@ import { dispatchWindowEvent } from '../CustomEventHelper';
 describe('dispatchWindowEvent', () => {
   it('dispatches correct event', () => {
     window.dispatchEvent = jest.fn();
-    dispatchWindowEvent({ eventName: 'cyber1schat:ready' });
+    dispatchWindowEvent({ eventName: 'cyberchat:ready' });
     expect(dispatchEvent).toHaveBeenCalled();
   });
 });

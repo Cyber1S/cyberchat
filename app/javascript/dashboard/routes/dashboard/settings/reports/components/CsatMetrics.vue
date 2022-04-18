@@ -31,7 +31,7 @@
         </div>
       </h3>
       <div class="emoji--distribution-chart">
-        <c1chat-horizontal-bar :collection="chartData" :height="24" />
+        <wooh-horizontal-bar :collection="chartData" :height="24" />
       </div>
     </div>
   </div>

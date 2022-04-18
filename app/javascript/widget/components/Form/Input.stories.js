@@ -1,9 +1,9 @@
 import { action } from '@storybook/addon-actions';
-import c1chatInput from './Input';
+import woohInput from './Input';
 
 export default {
   title: 'Components/Form/Input',
-  component: c1chatInput,
+  component: woohInput,
   argTypes: {
     label: {
       defaultValue: 'Email Address',
@@ -40,8 +40,8 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { c1chatInput },
-  template: '<c1chat-input v-bind="$props" @input="onClick"></c1chat-input>',
+  components: { woohInput },
+  template: '<wooh-input v-bind="$props" @input="onClick"></wooh-input>',
 });
 
 export const Input = Template.bind({});

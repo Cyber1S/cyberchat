@@ -1,7 +1,7 @@
 {
   "INBOX_MGMT": {
     "HEADER": "收件箱",
-    "SIDEBAR_TXT": "<p><b>收件箱</b></p> <p> 当您将网站或Facebook页面连接到Cyber1SChat 它被称为一个 <b>收件箱</b>。 您可以在Cyber1SChat 帐户中拥有无限的收件箱。 </p><p> 点击 <b>添加收件箱</b> 连接网站或 Facebook 页面。 </p><p> 在仪表盘中 您可以在一个地方看到所有收件箱中的所有对话，并在“对话”选项卡下回复。 </p><p> 您也可以通过点击仪表板左侧面板上的收件箱名称看到针对收件箱的对话。 </p>",
+    "SIDEBAR_TXT": "<p><b>收件箱</b></p> <p> 当您将网站或Facebook页面连接到Cyberchat 它被称为一个 <b>收件箱</b>。 您可以在Cyberchat 帐户中拥有无限的收件箱。 </p><p> 点击 <b>添加收件箱</b> 连接网站或 Facebook 页面。 </p><p> 在仪表盘中 您可以在一个地方看到所有收件箱中的所有对话，并在“对话”选项卡下回复。 </p><p> 您也可以通过点击仪表板左侧面板上的收件箱名称看到针对收件箱的对话。 </p>",
     "LIST": {
       "404": "此账户没有收件箱。"
     },
@@ -9,7 +9,7 @@
       {
         "title": "选择频道",
         "route": "settings_inbox_new",
-        "body": "选择你想要与Cyber1SChat 集成的提供商。"
+        "body": "选择你想要与Cyberchat 集成的提供商。"
       },
       {
         "title": "新增收件箱",
@@ -298,7 +298,7 @@
       },
       "AUTH": {
         "TITLE": "Choose a channel",
-        "DESC": "Cyber1SChat supports live-chat widget, Facebook page, Twitter profile, WhatsApp, Email etc., as channels. If you want to build a custom channel, you can create it using the API channel. Select one channel from the options below to proceed."
+        "DESC": "Cyberchat supports live-chat widget, Facebook page, Twitter profile, WhatsApp, Email etc., as channels. If you want to build a custom channel, you can create it using the API channel. Select one channel from the options below to proceed."
       },
       "AGENTS": {
         "TITLE": "客服代理们",
@@ -312,7 +312,7 @@
       },
       "FINISH": {
         "TITLE": "已被注明！",
-        "DESC": "您已成功地将您的Facebook页面与Cyber1SChat集成。下次客户消息您的页面时，对话将自动出现在收件箱中。<br>我们还为您提供了一个小部件脚本，您可以轻松地添加到您的网站。 在您的网站上登录后， 客户可以在没有任何外部工具帮助的情况下从您的网站向您发送消息，对话将会在这里出现在Cyber1SChat 上。<br>酷，好吧？好吧，我们肯定试着是 :)"
+        "DESC": "您已成功地将您的Facebook页面与Cyberchat集成。下次客户消息您的页面时，对话将自动出现在收件箱中。<br>我们还为您提供了一个小部件脚本，您可以轻松地添加到您的网站。 在您的网站上登录后， 客户可以在没有任何外部工具帮助的情况下从您的网站向您发送消息，对话将会在这里出现在Cyberchat 上。<br>酷，好吧？好吧，我们肯定试着是 :)"
       }
     },
     "DETAILS": {
@@ -415,7 +415,7 @@
       "HMAC_VERIFICATION": "User Identity Validation",
       "HMAC_DESCRIPTION": "Inorder to validate the user's identity, the SDK allows you to pass an `identifier_hash` for each user. You can generate HMAC using 'sha256' with the key shown here.",
       "HMAC_MANDATORY_VERIFICATION": "Enforce User Identity Validation",
-      "HMAC_MANDATORY_DESCRIPTION": "If enabled, CYBER1SChat SDKs setUser method will not work unless the `identifier_hash` is provided for each user.",
+      "HMAC_MANDATORY_DESCRIPTION": "If enabled, Cyberchat SDKs setUser method will not work unless the `identifier_hash` is provided for each user.",
       "INBOX_IDENTIFIER": "Inbox Identifier",
       "INBOX_IDENTIFIER_SUB_TEXT": "Use the `inbox_identifier` token shown here to authentication your API clients.",
       "FORWARD_EMAIL_TITLE": "Forward to Email",

@@ -1,30 +1,30 @@
 <template>
   <div class="card">
-    <c1chat-message-editor
+    <wooh-message-editor
       v-model="noteContent"
       class="input--note"
       :placeholder="$t('NOTES.ADD.PLACEHOLDER')"
       :enable-suggestions="false"
     />
     <div class="footer">
-      <c1chat-button
+      <wooh-button
         color-scheme="warning"
         :title="$t('NOTES.ADD.TITLE')"
         :is-disabled="buttonDisabled"
         @click="onAdd"
       >
         {{ $t('NOTES.ADD.BUTTON') }} (⌘⏎)
-      </c1chat-button>
+      </wooh-button>
     </div>
   </div>
 </template>
 
 <script>
-import c1chatMessageEditor from 'dashboard/components/widgets/c1chatWriter/Editor';
+import WoohMessageEditor from 'dashboard/components/widgets/WoohWriter/Editor';
 import { hasPressedCommandAndEnter } from 'shared/helpers/KeyboardHelpers';
 export default {
   components: {
-    c1chatMessageEditor,
+    WoohMessageEditor,
   },
 
   data() {
@@ -71,7 +71,7 @@ export default {
     margin-top: var(--space-minus-small);
   }
 
-  &::v-deep .ProseMirror-c1chat-style {
+  &::v-deep .ProseMirror-wooh-style {
     max-height: 36rem;
   }
 }

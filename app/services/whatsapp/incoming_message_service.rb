@@ -27,7 +27,7 @@ class Whatsapp::IncomingMessageService
   private
 
   def message_content(message)
-    # TODO: map interactive messages back to button messages in cyber1schat
+    # TODO: map interactive messages back to button messages in cyberchat
     message.dig(:text, :body) ||
       message.dig(:button, :text) ||
       message.dig(:interactive, :button_reply, :title) ||

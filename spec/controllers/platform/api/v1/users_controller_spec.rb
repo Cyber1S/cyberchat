@@ -71,7 +71,7 @@ RSpec.describe 'Platform Users API', type: :request do
 
         expect(response).to have_http_status(:success)
         data = JSON.parse(response.body)
-        expect(data['url']).to include('email=dev%2Btesting%40chat.cyber1s.com&sso_auth_token=')
+        expect(data['url']).to include('email=dev%2Btesting%40cyberchat.com&sso_auth_token=')
       end
     end
   end

@@ -1,9 +1,9 @@
 <template>
   <div class="column content-box">
-    <c1chat-modal-header :header-title="pageTitle" />
+    <wooh-modal-header :header-title="pageTitle" />
     <form class="row" @submit.prevent="editCampaign">
       <div class="medium-12 columns">
-        <c1chat-input
+        <wooh-input
           v-model="title"
           :label="$t('CAMPAIGN.ADD.FORM.TITLE.LABEL')"
           type="text"
@@ -14,7 +14,7 @@
         />
         <label class="editor-wrap">
           {{ $t('CAMPAIGN.ADD.FORM.MESSAGE.LABEL') }}
-          <c1chat-message-editor
+          <wooh-message-editor
             v-model.trim="message"
             class="message-editor"
             :is-format-mode="true"
@@ -54,7 +54,7 @@
             {{ $t('CAMPAIGN.ADD.FORM.SENT_BY.ERROR') }}
           </span>
         </label>
-        <c1chat-input
+        <wooh-input
           v-model="endPoint"
           :label="$t('CAMPAIGN.ADD.FORM.END_POINT.LABEL')"
           type="text"
@@ -65,7 +65,7 @@
           :placeholder="$t('CAMPAIGN.ADD.FORM.END_POINT.PLACEHOLDER')"
           @blur="$v.endPoint.$touch"
         />
-        <c1chat-input
+        <wooh-input
           v-model="timeOnPage"
           :label="$t('CAMPAIGN.ADD.FORM.TIME_ON_PAGE.LABEL')"
           type="text"
@@ -98,12 +98,12 @@
         </label>
       </div>
       <div class="modal-footer">
-        <c1chat-button :is-loading="uiFlags.isCreating">
+        <wooh-button :is-loading="uiFlags.isCreating">
           {{ $t('CAMPAIGN.EDIT.UPDATE_BUTTON_TEXT') }}
-        </c1chat-button>
-        <c1chat-button variant="clear" @click.prevent="onClose">
+        </wooh-button>
+        <wooh-button variant="clear" @click.prevent="onClose">
           {{ $t('CAMPAIGN.ADD.CANCEL_BUTTON_TEXT') }}
-        </c1chat-button>
+        </wooh-button>
       </div>
     </form>
   </div>
@@ -112,12 +112,12 @@
 <script>
 import { mapGetters } from 'vuex';
 import { required, url, minLength } from 'vuelidate/lib/validators';
-import c1chatMessageEditor from 'dashboard/components/widgets/c1chatWriter/Editor';
+import WoohMessageEditor from 'dashboard/components/widgets/WoohWriter/Editor';
 import alertMixin from 'shared/mixins/alertMixin';
 import campaignMixin from 'shared/mixins/campaignMixin';
 export default {
   components: {
-    c1chatMessageEditor,
+    WoohMessageEditor,
   },
   mixins: [alertMixin, campaignMixin],
   props: {
@@ -265,7 +265,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-::v-deep .ProseMirror-c1chat-style {
+::v-deep .ProseMirror-wooh-style {
   height: 8rem;
 }
 </style>

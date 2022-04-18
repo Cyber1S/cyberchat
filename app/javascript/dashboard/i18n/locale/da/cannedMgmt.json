@@ -34,7 +34,7 @@
       },
       "API": {
         "SUCCESS_MESSAGE": "Standardsvar tilføjet",
-        "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CYBER1SChat Server, Prøv igen senere"
+        "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CyberChat, Prøv igen senere"
       }
     },
     "EDIT": {
@@ -56,14 +56,14 @@
       "BUTTON_TEXT": "Rediger",
       "API": {
         "SUCCESS_MESSAGE": "Standardsvar opdateret",
-        "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CYBER1SChat Server, Prøv igen senere"
+        "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CyberChat, Prøv igen senere"
       }
     },
     "DELETE": {
       "BUTTON_TEXT": "Slet",
       "API": {
         "SUCCESS_MESSAGE": "Standardsvar slettet",
-        "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CYBER1SChat Server, Prøv igen senere"
+        "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CyberChat, Prøv igen senere"
       },
       "CONFIRM": {
         "TITLE": "Bekræft Sletning",

@@ -1,14 +1,14 @@
 <template>
   <modal :show.sync="show" :on-close="onClose">
     <div class="column content-box">
-      <c1chat-modal-header :header-title="$t('IMPORT_CONTACTS.TITLE')">
+      <wooh-modal-header :header-title="$t('IMPORT_CONTACTS.TITLE')">
         <p>
           {{ $t('IMPORT_CONTACTS.DESC') }}
           <a :href="csvUrl" download="import-contacts-sample">{{
             $t('IMPORT_CONTACTS.DOWNLOAD_LABEL')
           }}</a>
         </p>
-      </c1chat-modal-header>
+      </wooh-modal-header>
       <div class="row modal-content">
         <div class="medium-12 columns">
           <label>
@@ -24,13 +24,13 @@
         </div>
         <div class="modal-footer">
           <div class="medium-12 columns">
-            <c1chat-button
+            <wooh-button
               :disabled="uiFlags.isCreating || !file"
               :loading="uiFlags.isCreating"
               @click="uploadFile"
             >
               {{ $t('IMPORT_CONTACTS.FORM.SUBMIT') }}
-            </c1chat-button>
+            </wooh-button>
             <button class="button clear" @click.prevent="onClose">
               {{ $t('IMPORT_CONTACTS.FORM.CANCEL') }}
             </button>

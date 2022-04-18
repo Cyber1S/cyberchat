@@ -8,7 +8,7 @@
       "HEADER_BTN_TXT": "Thêm mới webhook",
       "LOADING": "Đang tải về các webhooks",
       "SEARCH_404": "Không có kết quả nào được tìm thấy",
-      "SIDEBAR_TXT": "<p><b>Webhooks</b> </p> <p>Webhook là các lệnh gọi lại HTTP có thể được xác định cho mọi tài khoản. Chúng được kích hoạt bởi các sự kiện như tạo tin nhắn trong Cyber1SChat. Bạn có thể tạo nhiều webhook cho tài khoản này. <br /><br /> Để tạo một <b>webhook</b>, click vào <b>Tạo mới</b>. Bạn cũng có thể xóa bất kỳ webhook hiện có nào bằng cách nhấp vào nút Xóa.</p>",
+      "SIDEBAR_TXT": "<p><b>Webhooks</b> </p> <p>Webhook là các lệnh gọi lại HTTP có thể được xác định cho mọi tài khoản. Chúng được kích hoạt bởi các sự kiện như tạo tin nhắn trong Cyberchat. Bạn có thể tạo nhiều webhook cho tài khoản này. <br /><br /> Để tạo một <b>webhook</b>, click vào <b>Tạo mới</b>. Bạn cũng có thể xóa bất kỳ webhook hiện có nào bằng cách nhấp vào nút Xóa.</p>",
       "LIST": {
         "404": "Không có webhook nào được định cấu hình cho tài khoản này.",
         "TITLE": "Quản lý webhooks",
@@ -21,7 +21,7 @@
         "BUTTON_TEXT": "Chỉnh sửa",
         "TITLE": "Sửa webhook",
         "CANCEL": "Huỷ",
-        "DESC": "Webhook events cung cấp cho bạn thông tin thời gian thực về những gì đang xảy ra trong tài khoản CYBER1SChat của bạn. Vui lòng nhập một URL hợp lệ để định cấu hình một cuộc gọi lại.",
+        "DESC": "Webhook events cung cấp cho bạn thông tin thời gian thực về những gì đang xảy ra trong tài khoản Cyberchat của bạn. Vui lòng nhập một URL hợp lệ để định cấu hình một cuộc gọi lại.",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook URL",
@@ -32,13 +32,13 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook URL cập nhật thành công",
-          "ERROR_MESSAGE": "Không thể kết nối với Máy chủ Cyber1SChat, Vui lòng thử lại sau"
+          "ERROR_MESSAGE": "Không thể kết nối với Máy chủ CyberChat, Vui lòng thử lại sau"
         }
       },
       "ADD": {
         "CANCEL": "Xoá",
         "TITLE": "Thêm mới webhook",
-        "DESC": "Webhook events cung cấp cho bạn thông tin thời gian thực về những gì đang xảy ra trong tài khoản CYBER1SChat của bạn. Vui lòng nhập một URL hợp lệ để định cấu hình một cuộc gọi lại.",
+        "DESC": "Webhook events cung cấp cho bạn thông tin thời gian thực về những gì đang xảy ra trong tài khoản Cyberchat của bạn. Vui lòng nhập một URL hợp lệ để định cấu hình một cuộc gọi lại.",
         "FORM": {
           "END_POINT": {
             "LABEL": "Webhook URL",
@@ -49,14 +49,14 @@
         },
         "API": {
           "SUCCESS_MESSAGE": "Webhook đã được thêm thành công",
-          "ERROR_MESSAGE": "Không thể kết nối với Máy chủ Cyber1SChat, Vui lòng thử lại sau"
+          "ERROR_MESSAGE": "Không thể kết nối với Máy chủ CyberChat, Vui lòng thử lại sau"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Xoá",
         "API": {
           "SUCCESS_MESSAGE": "Webhook đã được xoá thành công",
-          "ERROR_MESSAGE": "Không thể kết nối với Máy chủ Cyber1SChat, Vui lòng thử lại sau"
+          "ERROR_MESSAGE": "Không thể kết nối với Máy chủ CyberChat, Vui lòng thử lại sau"
         },
         "CONFIRM": {
           "TITLE": "Xác Nhận Xoá",
@@ -69,7 +69,7 @@
     "SLACK": {
       "HELP_TEXT": {
         "TITLE": "Dùng tích hợp Slack",
-        "BODY": "<br/><p>Cyber1SChat giờ đây sẽ đồng bộ hóa tất cả các cuộc trò chuyện đến vào kênh <b><i>cuộc trò chuyện với khách hàng</i></b> bên trong nơi làm việc Slack của bạn.</p><p>Trả lời chuỗi hội thoại trong kênh Slack <b><i>cuộc trò chuyện với khách hàng</i></b> sẽ tạo phản hồi lại cho khách hàng thông qua cyber1schat. </p><p>Bắt đầu câu trả lời bằng <b><i>ghi chú:</i></b> để tạo ghi chú riêng tư thay vì trả lời.</p><p>Nếu người trả lời trên slack có hồ sơ đại lý trong cyber1schat dưới cùng một email, thì các câu trả lời sẽ được liên kết theo đó.</p><p>Khi người trả lời không có hồ sơ đại lý được liên kết, các câu trả lời sẽ được thực hiện từ hồ sơ bot.</p>"
+        "BODY": "<br/><p>Cyberchat giờ đây sẽ đồng bộ hóa tất cả các cuộc trò chuyện đến vào kênh <b><i>cuộc trò chuyện với khách hàng</i></b> bên trong nơi làm việc Slack của bạn.</p><p>Trả lời chuỗi hội thoại trong kênh Slack <b><i>cuộc trò chuyện với khách hàng</i></b> sẽ tạo phản hồi lại cho khách hàng thông qua cyberchat. </p><p>Bắt đầu câu trả lời bằng <b><i>ghi chú:</i></b> để tạo ghi chú riêng tư thay vì trả lời.</p><p>Nếu người trả lời trên slack có hồ sơ đại lý trong cyberchat dưới cùng một email, thì các câu trả lời sẽ được liên kết theo đó.</p><p>Khi người trả lời không có hồ sơ đại lý được liên kết, các câu trả lời sẽ được thực hiện từ hồ sơ bot.</p>"
       }
     },
     "DELETE": {

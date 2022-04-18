@@ -1,7 +1,7 @@
 <template>
-  <c1chat-modal :show.sync="show" :on-close="onClose">
+  <wooh-modal :show.sync="show" :on-close="onClose">
     <div class="column content-box">
-      <c1chat-modal-header :header-title="$t('ATTRIBUTES_MGMT.ADD.TITLE')" />
+      <wooh-modal-header :header-title="$t('ATTRIBUTES_MGMT.ADD.TITLE')" />
 
       <form class="row" @submit.prevent="addAttributes">
         <div class="medium-12 columns">
@@ -16,7 +16,7 @@
               {{ $t('ATTRIBUTES_MGMT.ADD.FORM.MODEL.ERROR') }}
             </span>
           </label>
-          <c1chat-input
+          <wooh-input
             v-model="displayName"
             :label="$t('ATTRIBUTES_MGMT.ADD.FORM.NAME.LABEL')"
             type="text"
@@ -30,7 +30,7 @@
             @input="onDisplayNameChange"
             @blur="$v.displayName.$touch"
           />
-          <c1chat-input
+          <wooh-input
             v-model="attributeKey"
             :label="$t('ATTRIBUTES_MGMT.ADD.FORM.KEY.LABEL')"
             type="text"
@@ -87,7 +87,7 @@
             </label>
           </div>
           <div class="modal-footer">
-            <c1chat-submit-button
+            <wooh-submit-button
               :disabled="isButtonDisabled"
               :button-text="$t('ATTRIBUTES_MGMT.ADD.SUBMIT')"
             />
@@ -98,7 +98,7 @@
         </div>
       </form>
     </div>
-  </c1chat-modal>
+  </wooh-modal>
 </template>
 
 <script>

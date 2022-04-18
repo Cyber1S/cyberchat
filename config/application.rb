@@ -8,7 +8,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Cyber1SChat
+module Cyberchat
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
@@ -26,7 +26,7 @@ module Cyber1SChat
     config.generators.javascripts = false
     config.generators.stylesheets = false
 
-    # Custom cyber1schat configurations
+    # Custom cyberchat configurations
     config.x = config_for(:app).with_indifferent_access
   end
 
@@ -36,7 +36,7 @@ module Cyber1SChat
 
   def self.redis_ssl_verify_mode
     # Introduced this method to fix the issue in heroku where redis connections fail for redis 6
-    # ref: https://github.com/cyber1s/cyber1schat/issues/2420
+    # ref: https://github.com/cyber1s/cyberchat/issues/2420
     #
     # unless the redis verify mode is explicitly specified as none, we will fall back to the default 'verify peer'
     # ref: https://www.rubydoc.info/stdlib/openssl/OpenSSL/SSL/SSLContext#DEFAULT_PARAMS-constant

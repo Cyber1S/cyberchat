@@ -4,7 +4,7 @@ import { newMessageNotification } from 'shared/helpers/AudioNotificationHelper';
 
 class ActionCableConnector extends BaseActionCableConnector {
   constructor(app, pubsubToken) {
-    const { websocketURL = '' } = window.cyber1schatConfig || {};
+    const { websocketURL = '' } = window.cyberchatConfig || {};
     super(app, pubsubToken, websocketURL);
     this.CancelTyping = [];
     this.events = {
@@ -143,6 +143,6 @@ class ActionCableConnector extends BaseActionCableConnector {
 
 export default {
   init(pubsubToken) {
-    return new ActionCableConnector(window.C1CHAT, pubsubToken);
+    return new ActionCableConnector(window.WOOH, pubsubToken);
   },
 };

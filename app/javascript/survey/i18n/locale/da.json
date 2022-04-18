@@ -12,8 +12,8 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Survey updated successfully",
-      "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CYBER1SChat Server, Prøv igen senere"
+      "ERROR_MESSAGE": "Kunne ikke oprette forbindelse til CyberChat, Prøv igen senere"
     }
   },
-  "POWERED_BY": "Drevet af Cyber1SChat"
+  "POWERED_BY": "Drevet af Cyberchat"
 }

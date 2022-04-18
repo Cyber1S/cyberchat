@@ -5,14 +5,14 @@
       class="label-wrap"
       @keyup.esc="closeDropdown"
     >
-      <c1chat-button
+      <wooh-button
         size="small"
         variant="link"
         icon="add"
         @click="toggleAttributeDropDown"
       >
         {{ $t('CUSTOM_ATTRIBUTES.ADD_BUTTON_TEXT') }}
-      </c1chat-button>
+      </wooh-button>
 
       <div class="dropdown-wrap">
         <div

@@ -1,13 +1,13 @@
 <template>
   <div class="column content-box">
-    <c1chat-button
+    <wooh-button
       color-scheme="success"
       class-names="button--fixed-right-top"
       icon="add-circle"
       @click="openAddPopup()"
     >
       {{ $t('AUTOMATION.HEADER_BTN_TXT') }}
-    </c1chat-button>
+    </wooh-button>
     <div class="row">
       <div class="small-8 columns with-right-space">
         <p
@@ -16,11 +16,11 @@
         >
           {{ $t('AUTOMATION.LIST.404') }}
         </p>
-        <c1chat-loading-state
+        <wooh-loading-state
           v-if="uiFlags.isFetching"
           :message="$t('AUTOMATION.LOADING')"
         />
-        <table v-if="!uiFlags.isFetching && records.length" class="c1chat-table">
+        <table v-if="!uiFlags.isFetching && records.length" class="wooh-table">
           <thead>
             <th
               v-for="thHeader in $t('AUTOMATION.LIST.TABLE_HEADER')"
@@ -34,14 +34,14 @@
               <td>{{ automation.name }}</td>
               <td>{{ automation.description }}</td>
               <td>
-                <c1chat-switch
+                <wooh-switch
                   :value="automation.active"
                   @input="toggleAutomation(automation, automation.active)"
                 />
               </td>
               <td>{{ readableTime(automation.created_on) }}</td>
               <td class="button-wrapper">
-                <c1chat-button
+                <wooh-button
                   v-tooltip.top="$t('AUTOMATION.FORM.EDIT')"
                   variant="smooth"
                   size="tiny"
@@ -51,8 +51,8 @@
                   icon="edit"
                   @click="openEditPopup(automation)"
                 >
-                </c1chat-button>
-                <c1chat-button
+                </wooh-button>
+                <wooh-button
                   v-tooltip.top="$t('AUTOMATION.CLONE.TOOLTIP')"
                   variant="smooth"
                   size="tiny"
@@ -62,8 +62,8 @@
                   icon="copy"
                   @click="cloneAutomation(automation.id)"
                 >
-                </c1chat-button>
-                <c1chat-button
+                </wooh-button>
+                <wooh-button
                   v-tooltip.top="$t('AUTOMATION.FORM.DELETE')"
                   variant="smooth"
                   color-scheme="alert"
@@ -73,7 +73,7 @@
                   :is-loading="loading[automation.id]"
                   @click="openDeletePopup(automation, index)"
                 >
-                </c1chat-button>
+                </wooh-button>
               </td>
             </tr>
           </tbody>
@@ -84,7 +84,7 @@
         <span v-html="$t('AUTOMATION.SIDEBAR_TXT')"></span>
       </div>
     </div>
-    <c1chat-modal
+    <wooh-modal
       :show.sync="showAddPopup"
       size="medium"
       :on-close="hideAddPopup"
@@ -94,9 +94,9 @@
         :on-close="hideAddPopup"
         @saveAutomation="submitAutomation"
       />
-    </c1chat-modal>
+    </wooh-modal>
 
-    <c1chat-delete-modal
+    <wooh-delete-modal
       :show.sync="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"
@@ -106,7 +106,7 @@
       :reject-text="deleteRejectText"
     />
 
-    <c1chat-modal
+    <wooh-modal
       :show.sync="showEditPopup"
       size="medium"
       :on-close="hideEditPopup"
@@ -117,8 +117,8 @@
         :selected-response="selectedResponse"
         @saveAutomation="submitAutomation"
       />
-    </c1chat-modal>
-    <c1chat-confirm-modal
+    </wooh-modal>
+    <wooh-confirm-modal
       ref="confirmDialog"
       :title="toggleModalTitle"
       :description="toggleModalDescription"

@@ -1,4 +1,4 @@
-class Cyber1SChatCaptcha
+class CyberchatCaptcha
   def initialize(client_response)
     @client_response = client_response
     @server_key = GlobalConfigService.load('HCAPTCHA_SERVER_KEY', '')

@@ -38,10 +38,10 @@ $font-weight-black: 700;
 $nav-bar-width: 23rem;
 $header-height: 5.6rem;
 
-$c1chat-logo-padding: $space-large $space-two;
+$wooh-logo-padding: $space-large $space-two;
 
 // Colors
-$color-c1chat: #1f93ff;
+$color-wooh: #1f93ff;
 $color-gray: #6e6f73;
 $color-light-gray: #747677;
 $color-border: #e0e6ed;
@@ -54,7 +54,7 @@ $color-body: #3c4858;
 $color-heading: #1f2d3d;
 $color-extra-light-blue: #f5f7f9;
 
-$primary-color: $color-c1chat;
+$primary-color: $color-wooh;
 $secondary-color: #5d7592;
 $success-color: #44ce4b;
 $warning-color: #ffc532;
@@ -65,7 +65,7 @@ $masked-bg: rgba(0, 0, 0, .4);
 // Color-palettes
 
 $color-primary-light: #c7e3ff;
-$color-primary-dark: darken($color-c1chat, 20%);
+$color-primary-dark: darken($color-wooh, 20%);
 
 // Thumbnail
 $thumbnail-radius: 4rem;
@@ -84,8 +84,8 @@ $spinkit-spinner-margin: 0 0 0 1.6rem !default;
 $spinkit-size: 1.6rem !default;
 
 // Snackbar default
-$c1chat-snackbar-bg: #323232;
-$c1chat-snackbar-button: #ffeb3b;
+$wooh-snackbar-bg: #323232;
+$wooh-snackbar-button: #ffeb3b;
 
 $swift-ease-out-duration: .4s !default;
 $swift-ease-out-timing-function: cubic-bezier(.25, .8, .25, 1) !default;

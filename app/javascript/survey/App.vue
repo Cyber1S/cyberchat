@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="c1chat-survey-wrap">
+  <div id="app" class="wooh-survey-wrap">
     <response />
   </div>
 </template>
@@ -16,5 +16,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~survey/assets/scss/c1chat.scss';
+@import '~survey/assets/scss/wooh.scss';
 </style>

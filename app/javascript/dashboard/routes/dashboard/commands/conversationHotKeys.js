@@ -1,5 +1,5 @@
 import { mapGetters } from 'vuex';
-import c1chatConstants from '../../../constants';
+import woohConstants from '../../../constants';
 import {
   CMD_MUTE_CONVERSATION,
   CMD_REOPEN_CONVERSATION,
@@ -129,11 +129,11 @@ export default {
     },
     statusActions() {
       const isOpen =
-        this.currentChat?.status === c1chatConstants.STATUS_TYPE.OPEN;
+        this.currentChat?.status === woohConstants.STATUS_TYPE.OPEN;
       const isSnoozed =
-        this.currentChat?.status === c1chatConstants.STATUS_TYPE.SNOOZED;
+        this.currentChat?.status === woohConstants.STATUS_TYPE.SNOOZED;
       const isResolved =
-        this.currentChat?.status === c1chatConstants.STATUS_TYPE.RESOLVED;
+        this.currentChat?.status === woohConstants.STATUS_TYPE.RESOLVED;
 
       let actions = [];
       if (isOpen) {

@@ -11,12 +11,12 @@ import axios from 'axios';
 import hljs from 'highlight.js';
 import Multiselect from 'vue-multiselect';
 import VueFormulate from '@braid/vue-formulate';
-import c1chatSwitch from 'components/ui/Switch';
-import c1chatWizard from 'components/ui/Wizard';
+import WoohSwitch from 'components/ui/Switch';
+import WoohWizard from 'components/ui/Wizard';
 import { sync } from 'vuex-router-sync';
 import Vuelidate from 'vuelidate';
 import VTooltip from 'v-tooltip';
-import c1chatUiKit from '../dashboard/components';
+import WoohUiKit from '../dashboard/components';
 import App from '../dashboard/App';
 import i18n from '../dashboard/i18n';
 import createAxios from '../dashboard/helper/APIHelper';
@@ -35,7 +35,7 @@ import { Integrations } from '@sentry/tracing';
 import posthog from 'posthog-js';
 import {
   initializeAnalyticsEvents,
-  initializeCyber1SChatEvents,
+  initializeCyberchatEvents,
 } from '../dashboard/helper/scriptHelpers';
 import FluentIcon from 'shared/components/FluentIcon/DashboardIcon';
 
@@ -57,7 +57,7 @@ if (window.analyticsConfig) {
 
 Vue.use(VueRouter);
 Vue.use(VueI18n);
-Vue.use(c1chatUiKit);
+Vue.use(WoohUiKit);
 Vue.use(Vuelidate);
 Vue.use(VueFormulate, {
   rules: {
@@ -70,8 +70,8 @@ Vue.use(VTooltip, {
 Vue.use(hljs.vuePlugin);
 
 Vue.component('multiselect', Multiselect);
-Vue.component('c1chat-switch', c1chatSwitch);
-Vue.component('c1chat-wizard', c1chatWizard);
+Vue.component('wooh-switch', WoohSwitch);
+Vue.component('wooh-wizard', WoohWizard);
 Vue.component('fluent-icon', FluentIcon);
 
 const i18nConfig = new VueI18n({
@@ -83,15 +83,15 @@ sync(store, router);
 // load common helpers into js
 commonHelpers();
 
-window.c1chatConstants = constants;
+window.WoohConstants = constants;
 window.axios = createAxios(axios);
 window.bus = new Vue();
-initializeCyber1SChatEvents();
+initializeCyberchatEvents();
 initializeAnalyticsEvents();
 initalizeRouter();
 
 window.onload = () => {
-  window.C1CHAT = new Vue({
+  window.WOOH = new Vue({
     router,
     store,
     i18n: i18nConfig,

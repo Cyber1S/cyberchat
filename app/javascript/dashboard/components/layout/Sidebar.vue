@@ -1,5 +1,5 @@
 <template>
-  <aside class="c1chat-sidebar">
+  <aside class="wooh-sidebar">
     <primary-sidebar
       :logo-source="globalConfig.logoThumbnail"
       :installation-name="globalConfig.installationName"
@@ -169,7 +169,7 @@ export default {
       return this.$route.name === routeName;
     },
     toggleSupportChatWindow() {
-      window.$cyber1schat.toggle();
+      window.$cyberchat.toggle();
     },
     toggleAccountModal() {
       this.$emit('toggle-account-modal');
@@ -185,7 +185,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.c1chat-sidebar {
+.wooh-sidebar {
   background: var(--white);
   display: flex;
   min-height: 0;

@@ -8,7 +8,7 @@ export const loadCSS = () => {
   document.body.appendChild(css);
 };
 
-export const c1chatOn = (elm, event, fn) => {
+export const woohOn = (elm, event, fn) => {
   if (document.addEventListener) {
     elm.addEventListener(event, fn, false);
   } else if (document.attachEvent) {

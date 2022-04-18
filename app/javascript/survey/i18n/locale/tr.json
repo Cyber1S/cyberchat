@@ -12,8 +12,8 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Anket başarıyla güncellendi",
-      "ERROR_MESSAGE": "Cyber1SChat Sunucusuna bağlanılamadı, Lütfen daha sonra tekrar deneyin"
+      "ERROR_MESSAGE": "CyberChat Sunucusuna bağlanılamadı, Lütfen daha sonra tekrar deneyin"
     }
   },
-  "POWERED_BY": "Cyber1SChat tarafından desteklenmektedir"
+  "POWERED_BY": "Cyberchat tarafından desteklenmektedir"
 }

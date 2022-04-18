@@ -9,7 +9,7 @@
       <meta name="msapplication-TileColor" content="#1f93ff">
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
       <meta name="theme-color" content="#1f93ff">
-      <meta name="description" content="Cyber1SChat is a customer support solution that helps companies engage customers over Messenger, Twitter, Telegram, WeChat, Whatsapp. Simply connect your channels and converse with your customers from a single place. Easily add new agents to your system and have them own and resolve conversations with customers.Cyber1SChat also gives you real-time reports to measure your team's performance, canned responses to easily respond to frequently asked questions and private notes for agents to collaborate among themselves.">
+      <meta name="description" content="Cyberchat is a customer support solution that helps companies engage customers over Messenger, Twitter, Telegram, WeChat, Whatsapp. Simply connect your channels and converse with your customers from a single place. Easily add new agents to your system and have them own and resolve conversations with customers.Cyberchat also gives you real-time reports to measure your team's performance, canned responses to easily respond to frequently asked questions and private notes for agents to collaborate among themselves.">
       <% if ENV['IOS_APP_IDENTIFIER'].present? %>
         <meta name="apple-itunes-app" content='app-id=<%= ENV['IOS_APP_IDENTIFIER'] %>'>
       <% end %>
@@ -31,7 +31,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="<%= @global_config['LOGO_THUMBNAIL'] %>">
     <%= csrf_meta_tags %>
     <script>
-      window.cyber1schatConfig = {
+      window.cyberchatConfig = {
         hostURL: '<%= ENV.fetch('FRONTEND_URL', '') %>',
         fbAppId: '<%= ENV.fetch('FB_APP_ID', nil) %>',
         signupEnabled: '<%= @global_config['ENABLE_ACCOUNT_SIGNUP'] %>',
@@ -63,17 +63,17 @@
     <div id="app"></div>
     <noscript id="noscript">This app works best with JavaScript enabled.</noscript>
     <%= yield %>
-    <% if @global_config['CYBER1SCHAT_INBOX_TOKEN'].present? %>
+    <% if @global_config['CYBERCHAT_INBOX_TOKEN'].present? %>
     <script>
-      window.cyber1schatSettings = { hideMessageBubble: true, position: 'left' };
+      window.cyberchatSettings = { hideMessageBubble: true, position: 'left' };
       (function(d,t) {
-        var BASE_URL='<%= ENV.fetch('FRONTEND_URL', 'https://chat.cyber1s.com') %>';
+        var BASE_URL='<%= ENV.fetch('FRONTEND_URL', 'https://mychat.cyber1s.com') %>';
         var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src=BASE_URL+"/packs/js/sdk.js"; g.defer=true; g.async=true;
         s.parentNode.insertBefore(g,s);
         g.onload=function(){
-          window.cyber1schatSDK.run({
-            websiteToken: '<%= @global_config['CYBER1SCHAT_INBOX_TOKEN'] %>',
+          window.cyberchatSDK.run({
+            websiteToken: '<%= @global_config['CYBERCHAT_INBOX_TOKEN'] %>',
             baseUrl: BASE_URL,
           });
         }

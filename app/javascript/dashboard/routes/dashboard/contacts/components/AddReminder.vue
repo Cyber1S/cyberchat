@@ -33,7 +33,7 @@
             </select>
           </div>
         </div>
-        <c1chat-button
+        <wooh-button
           size="tiny"
           color-scheme="primary"
           class-names="add-button"
@@ -42,7 +42,7 @@
           @click="onAdd"
         >
           {{ $t('REMINDER.ADD_BUTTON.BUTTON') }}
-        </c1chat-button>
+        </wooh-button>
       </div>
     </div>
   </div>

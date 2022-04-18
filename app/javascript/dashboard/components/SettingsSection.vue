@@ -46,7 +46,7 @@ export default {
   padding: $space-normal $space-normal $space-normal 0;
 
   .sub-block-title {
-    color: $color-c1chat;
+    color: $color-wooh;
     font-weight: $font-weight-medium;
     margin-bottom: 0;
   }

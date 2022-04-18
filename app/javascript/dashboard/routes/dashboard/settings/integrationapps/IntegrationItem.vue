@@ -17,7 +17,7 @@
       </p>
     </div>
     <div class="small-2 column button-wrap">
-      <c1chat-label :title="labelText" :color-scheme="labelColor" />
+      <wooh-label :title="labelText" :color-scheme="labelColor" />
     </div>
     <div class="small-2 column button-wrap">
       <router-link
@@ -27,9 +27,9 @@
           )
         "
       >
-        <c1chat-button icon="settings">
+        <wooh-button icon="settings">
           {{ $t('INTEGRATION_APPS.CONFIGURE') }}
-        </c1chat-button>
+        </wooh-button>
       </router-link>
     </div>
   </div>
@@ -37,12 +37,12 @@
 <script>
 import { mapGetters } from 'vuex';
 import { frontendURL } from '../../../../helper/URLHelper';
-import c1chatLabel from 'dashboard/components/ui/Label';
+import WoohLabel from 'dashboard/components/ui/Label';
 import globalConfigMixin from 'shared/mixins/globalConfigMixin';
 
 export default {
   components: {
-    c1chatLabel,
+    WoohLabel,
   },
   mixins: [globalConfigMixin],
   props: {

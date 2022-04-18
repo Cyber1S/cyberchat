@@ -35,7 +35,7 @@ RUN curl -L https://github.com/DarthSim/overmind/releases/download/v2.1.0/overmi
   && sudo mv overmind /usr/local/bin \
   && chmod +x /usr/local/bin/overmind
 
-# Do the set up required for cyber1schat app
+# Do the set up required for cyberchat app
 WORKDIR /workspace
 COPY . /workspace
 RUN yarn

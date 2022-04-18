@@ -74,7 +74,7 @@ class Sms::IncomingMessageService
     return if params[:media].blank?
 
     params[:media].each do |media_url|
-      # we don't need to process this files since cyber1schat doesn't support it
+      # we don't need to process this files since cyberchat doesn't support it
       next if media_url.end_with?('.smil', '.xml')
 
       attachment_file = Down.download(

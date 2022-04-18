@@ -26,7 +26,7 @@ RSpec.describe AutomationRule, type: :model do
         actions: [
           {
             action_name: :send_message,
-            action_params: ['Welcome to the cyber1schat platform.']
+            action_params: ['Welcome to the cyberchat platform.']
           },
           {
             action_name: :assign_team,

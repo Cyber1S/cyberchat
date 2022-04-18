@@ -12,8 +12,8 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Survey updated successfully",
-      "ERROR_MESSAGE": "Nu s-a putut conecta la CYBER1SChat Server, încercați din nou mai târziu"
+      "ERROR_MESSAGE": "Nu s-a putut conecta la CyberChat, încercați din nou mai târziu"
     }
   },
-  "POWERED_BY": "Oferit de Cyber1SChat"
+  "POWERED_BY": "Oferit de Cyberchat"
 }

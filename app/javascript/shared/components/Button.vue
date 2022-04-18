@@ -40,7 +40,7 @@ export default {
       }
 
       if (this.type === 'blue' && !Object.keys(this.buttonStyles).length) {
-        className = `${className} bg-c1chat-500 hover:bg-c1chat-700`;
+        className = `${className} bg-wooh-500 hover:bg-wooh-700`;
       }
       if (this.block) {
         className = `${className} w-full`;

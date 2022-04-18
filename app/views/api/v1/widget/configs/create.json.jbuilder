@@ -1,4 +1,4 @@
-json.cyber1schat_website_channel do
+json.cyberchat_website_channel do
   json.avatar_url @web_widget.inbox.avatar_url
   json.has_a_connected_agent_bot @web_widget.inbox.agent_bot&.name
   json.locale @web_widget.account.locale
@@ -18,7 +18,7 @@ json.cyber1schat_website_channel do
   json.out_of_office_message @web_widget.inbox.out_of_office_message
   json.utc_off_set ActiveSupport::TimeZone[@web_widget.inbox.timezone].now.formatted_offset
 end
-json.cyber1schat_widget_defaults do
+json.cyberchat_widget_defaults do
   json.use_inbox_avatar_for_bot ActiveModel::Type::Boolean.new.cast(ENV.fetch('USE_INBOX_AVATAR_FOR_BOT', false))
 end
 json.contact do

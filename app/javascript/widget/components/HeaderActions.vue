@@ -81,7 +81,7 @@ export default {
       this.closeWindow();
       const {
         location: { origin },
-        cyber1schatWebChannel: { websiteToken },
+        cyberchatWebChannel: { websiteToken },
         authToken,
       } = window;
       popoutChatWindow(

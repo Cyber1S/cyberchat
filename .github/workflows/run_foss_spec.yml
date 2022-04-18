@@ -4,7 +4,7 @@
 # # This is set to run against every PR.
 # #
 
-name: Run CYBER1SChat CE spec
+name: Run Cyberchat CE spec
 on:
   push:
     branches:

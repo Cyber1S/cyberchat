@@ -24,7 +24,7 @@
         </span>
       </div>
       <div class="remove-file-wrap">
-        <c1chat-button
+        <wooh-button
           v-if="!isTypeAudio(attachment.resource)"
           class="remove--attachment clear secondary"
           icon="dismiss"

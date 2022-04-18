@@ -1,5 +1,6 @@
 GIT
   remote: https://github.com/cyber1s/devise-secure_password
+  revision: 562cd56788efc785de07914fece31621f1844962
   specs:
     devise-secure_password (2.0.1)
       devise (>= 4.0.0, < 5.0.0)

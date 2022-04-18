@@ -54,7 +54,7 @@
           />
         </div>
       </div>
-      <c1chat-button
+      <wooh-button
         icon="dismiss"
         variant="clear"
         color-scheme="secondary"

@@ -12,7 +12,7 @@
           <label for="message-signature-input">{{
             $t('PROFILE_SETTINGS.FORM.MESSAGE_SIGNATURE.LABEL')
           }}</label>
-          <c1chat-message-editor
+          <wooh-message-editor
             id="message-signature-input"
             v-model="messageSignature"
             class="message-editor"
@@ -23,13 +23,13 @@
             @blur="$v.messageSignature.$touch"
           />
         </div>
-        <c1chat-button
+        <wooh-button
           :is-loading="isUpdating"
           type="submit"
           :is-disabled="$v.messageSignature.$invalid"
         >
           {{ $t('PROFILE_SETTINGS.FORM.MESSAGE_SIGNATURE_SECTION.BTN_TEXT') }}
-        </c1chat-button>
+        </wooh-button>
       </div>
     </div>
   </form>
@@ -39,12 +39,12 @@
 import { required } from 'vuelidate/lib/validators';
 import { mapGetters } from 'vuex';
 
-import c1chatMessageEditor from 'dashboard/components/widgets/c1chatWriter/Editor';
+import WoohMessageEditor from 'dashboard/components/widgets/WoohWriter/Editor';
 import alertMixin from 'shared/mixins/alertMixin';
 
 export default {
   components: {
-    c1chatMessageEditor,
+    WoohMessageEditor,
   },
   mixins: [alertMixin],
   data() {
@@ -111,7 +111,7 @@ export default {
 
 <style lang="scss">
 .profile--settings--row {
-  .ProseMirror-c1chat-style {
+  .ProseMirror-wooh-style {
     height: 8rem;
   }
 

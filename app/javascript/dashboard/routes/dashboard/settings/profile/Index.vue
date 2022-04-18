@@ -9,13 +9,13 @@
           <p>{{ $t('PROFILE_SETTINGS.FORM.PROFILE_SECTION.NOTE') }}</p>
         </div>
         <div class="columns small-9 medium-5">
-          <c1chat-avatar-uploader
+          <wooh-avatar-uploader
             :label="$t('PROFILE_SETTINGS.FORM.PROFILE_IMAGE.LABEL')"
             :src="avatarUrl"
             @change="handleImageUpload"
           />
           <div v-if="showDeleteButton" class="avatar-delete-btn">
-            <c1chat-button
+            <wooh-button
               type="button"
               color-scheme="alert"
               variant="hollow"
@@ -23,7 +23,7 @@
               @click="deleteAvatar"
             >
               {{ $t('PROFILE_SETTINGS.DELETE_AVATAR') }}
-            </c1chat-button>
+            </wooh-button>
           </div>
           <label :class="{ error: $v.name.$error }">
             {{ $t('PROFILE_SETTINGS.FORM.NAME.LABEL') }}
@@ -63,9 +63,9 @@
               {{ $t('PROFILE_SETTINGS.FORM.EMAIL.ERROR') }}
             </span>
           </label>
-          <c1chat-button type="submit" :is-loading="isProfileUpdating">
+          <wooh-button type="submit" :is-loading="isProfileUpdating">
             {{ $t('PROFILE_SETTINGS.BTN_TEXT') }}
-          </c1chat-button>
+          </wooh-button>
         </div>
       </div>
     </form>
@@ -87,7 +87,7 @@
         </p>
       </div>
       <div class="columns small-9 medium-5">
-        <c1chat-code :script="currentUser.access_token"></c1chat-code>
+        <wooh-code :script="currentUser.access_token"></wooh-code>
       </div>
     </div>
   </div>

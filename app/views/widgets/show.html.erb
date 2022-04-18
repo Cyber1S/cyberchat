@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <script>
-      window.cyber1schatWebChannel = {
+      window.cyberchatWebChannel = {
         avatarUrl: '<%= @web_widget.inbox.avatar_url %>',
         hasAConnectedAgentBot: '<%= @web_widget.inbox.agent_bot&.name %>',
         locale: '<%= @web_widget.account.locale %>',
@@ -26,10 +26,10 @@
         utcOffset: '<%= ActiveSupport::TimeZone[@web_widget.inbox.timezone].now.formatted_offset %>',
         allowMessagesAfterResolved: <%= @web_widget.inbox.allow_messages_after_resolved %>
       }
-      window.cyber1schatWidgetDefaults = {
+      window.cyberchatWidgetDefaults = {
         useInboxAvatarForBot: <%= ActiveModel::Type::Boolean.new.cast(ENV.fetch('USE_INBOX_AVATAR_FOR_BOT', false)) %>,
       }
-      window.cyber1schatPubsubToken = '<%= @contact_inbox.pubsub_token %>'
+      window.cyberchatPubsubToken = '<%= @contact_inbox.pubsub_token %>'
       window.authToken = '<%= @token %>'
       window.globalConfig = <%= raw @global_config.to_json %>
     </script>

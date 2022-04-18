@@ -186,13 +186,13 @@
     "BETA": "Beta"
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Ồ ồ! Chúng tôi không thể tìm thấy bất kỳ tài khoản CYBER1SChat nào. Vui lòng tạo một tài khoản mới để tiếp tục.",
+    "NO_ACCOUNT_WARNING": "Ồ ồ! Chúng tôi không thể tìm thấy bất kỳ tài khoản Cyberchat nào. Vui lòng tạo một tài khoản mới để tiếp tục.",
     "NEW_ACCOUNT": "Tạo mới tài khoản",
     "SELECTOR_SUBTITLE": "Tạo mới một tài khoản",
     "API": {
       "SUCCESS_MESSAGE": "Tài khoản được tạo thành công",
       "EXIST_MESSAGE": "Tài khoản đã tồn tại",
-      "ERROR_MESSAGE": "Không thể kết nối với Máy chủ Cyber1SChat, Vui lòng thử lại sau"
+      "ERROR_MESSAGE": "Không thể kết nối với Máy chủ CyberChat, Vui lòng thử lại sau"
     },
     "FORM": {
       "NAME": {

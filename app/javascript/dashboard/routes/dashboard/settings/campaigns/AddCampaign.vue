@@ -1,12 +1,12 @@
 <template>
   <div class="column content-box">
-    <c1chat-modal-header
+    <wooh-modal-header
       :header-title="$t('CAMPAIGN.ADD.TITLE')"
       :header-content="$t('CAMPAIGN.ADD.DESC')"
     />
     <form class="row" @submit.prevent="addCampaign">
       <div class="medium-12 columns">
-        <c1chat-input
+        <wooh-input
           v-model="title"
           :label="$t('CAMPAIGN.ADD.FORM.TITLE.LABEL')"
           type="text"
@@ -18,7 +18,7 @@
 
         <label v-if="isOngoingType" class="editor-wrap">
           {{ $t('CAMPAIGN.ADD.FORM.MESSAGE.LABEL') }}
-          <c1chat-message-editor
+          <wooh-message-editor
             v-model="message"
             class="message-editor"
             :class="{ editor_warning: $v.message.$error }"
@@ -103,7 +103,7 @@
 
         <label v-if="isOnOffType">
           {{ $t('CAMPAIGN.ADD.FORM.SCHEDULED_AT.LABEL') }}
-          <c1chat-date-time-picker
+          <wooh-date-time-picker
             :value="scheduledAt"
             :confirm-text="$t('CAMPAIGN.ADD.FORM.SCHEDULED_AT.CONFIRM')"
             :placeholder="$t('CAMPAIGN.ADD.FORM.SCHEDULED_AT.PLACEHOLDER')"
@@ -111,7 +111,7 @@
           />
         </label>
 
-        <c1chat-input
+        <wooh-input
           v-if="isOngoingType"
           v-model="endPoint"
           :label="$t('CAMPAIGN.ADD.FORM.END_POINT.LABEL')"
@@ -123,7 +123,7 @@
           :placeholder="$t('CAMPAIGN.ADD.FORM.END_POINT.PLACEHOLDER')"
           @blur="$v.endPoint.$touch"
         />
-        <c1chat-input
+        <wooh-input
           v-if="isOngoingType"
           v-model="timeOnPage"
           :label="$t('CAMPAIGN.ADD.FORM.TIME_ON_PAGE.LABEL')"
@@ -158,12 +158,12 @@
       </div>
 
       <div class="modal-footer">
-        <c1chat-button :is-loading="uiFlags.isCreating">
+        <wooh-button :is-loading="uiFlags.isCreating">
           {{ $t('CAMPAIGN.ADD.CREATE_BUTTON_TEXT') }}
-        </c1chat-button>
-        <c1chat-button variant="clear" @click.prevent="onClose">
+        </wooh-button>
+        <wooh-button variant="clear" @click.prevent="onClose">
           {{ $t('CAMPAIGN.ADD.CANCEL_BUTTON_TEXT') }}
-        </c1chat-button>
+        </wooh-button>
       </div>
     </form>
   </div>
@@ -173,14 +173,14 @@
 import { mapGetters } from 'vuex';
 import { required, url, minLength } from 'vuelidate/lib/validators';
 import alertMixin from 'shared/mixins/alertMixin';
-import c1chatMessageEditor from 'dashboard/components/widgets/c1chatWriter/Editor';
+import WoohMessageEditor from 'dashboard/components/widgets/WoohWriter/Editor';
 import campaignMixin from 'shared/mixins/campaignMixin';
-import c1chatDateTimePicker from 'dashboard/components/ui/DateTimePicker.vue';
+import WoohDateTimePicker from 'dashboard/components/ui/DateTimePicker.vue';
 
 export default {
   components: {
-    c1chatDateTimePicker,
-    c1chatMessageEditor,
+    WoohDateTimePicker,
+    WoohMessageEditor,
   },
 
   mixins: [alertMixin, campaignMixin],
@@ -335,7 +335,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-::v-deep .ProseMirror-c1chat-style {
+::v-deep .ProseMirror-wooh-style {
   height: 8rem;
 }
 </style>

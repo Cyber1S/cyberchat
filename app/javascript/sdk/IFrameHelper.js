@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
 import {
-  c1chatOn,
+  woohOn,
   addClass,
   loadCSS,
   removeClass,
@@ -23,7 +23,7 @@ import {
   removeUnreadClass,
 } from './bubbleHelpers';
 import { dispatchWindowEvent } from 'shared/helpers/CustomEventHelper';
-import { CYBER1SCHAT_ERROR, CYBER1SCHAT_READY } from '../widget/constants/sdkEvents';
+import { CYBERCHAT_ERROR, CYBERCHAT_READY } from '../widget/constants/sdkEvents';
 import { SET_USER_ERROR } from '../widget/constants/errorTypes';
 import { getUserCookieName } from './cookieHelpers';
 import {
@@ -51,15 +51,15 @@ export const IFrameHelper = {
     }
     iframe.src = widgetUrl;
 
-    iframe.id = 'cyber1schat_live_chat_widget';
+    iframe.id = 'cyberchat_live_chat_widget';
     iframe.style.visibility = 'hidden';
 
-    let holderClassName = `c1chat-widget-holder c1chat--hide c1chat-elements--${window.$cyber1schat.position}`;
-    if (window.$cyber1schat.hideMessageBubble) {
-      holderClassName += ` c1chat-widget--without-bubble`;
+    let holderClassName = `wooh-widget-holder wooh--hide wooh-elements--${window.$cyberchat.position}`;
+    if (window.$cyberchat.hideMessageBubble) {
+      holderClassName += ` wooh-widget--without-bubble`;
     }
-    if (isFlatWidgetStyle(window.$cyber1schat.widgetStyle)) {
-      holderClassName += ` c1chat-widget-holder--flat`;
+    if (isFlatWidgetStyle(window.$cyberchat.widgetStyle)) {
+      holderClassName += ` wooh-widget-holder--flat`;
     }
 
     addClass(widgetHolder, holderClassName);
@@ -69,12 +69,12 @@ export const IFrameHelper = {
     IFrameHelper.initWindowSizeListener();
     IFrameHelper.preventDefaultScroll();
   },
-  getAppFrame: () => document.getElementById('cyber1schat_live_chat_widget'),
-  getBubbleHolder: () => document.getElementsByClassName('c1chat--bubble-holder'),
+  getAppFrame: () => document.getElementById('cyberchat_live_chat_widget'),
+  getBubbleHolder: () => document.getElementsByClassName('wooh--bubble-holder'),
   sendMessage: (key, value) => {
     const element = IFrameHelper.getAppFrame();
     element.contentWindow.postMessage(
-      `cyber1schat-widget:${JSON.stringify({ event: key, ...value })}`,
+      `cyberchat-widget:${JSON.stringify({ event: key, ...value })}`,
       '*'
     );
   },
@@ -82,18 +82,18 @@ export const IFrameHelper = {
     window.onmessage = e => {
       if (
         typeof e.data !== 'string' ||
-        e.data.indexOf('cyber1schat-widget:') !== 0
+        e.data.indexOf('cyberchat-widget:') !== 0
       ) {
         return;
       }
-      const message = JSON.parse(e.data.replace('cyber1schat-widget:', ''));
+      const message = JSON.parse(e.data.replace('cyberchat-widget:', ''));
       if (typeof IFrameHelper.events[message.event] === 'function') {
         IFrameHelper.events[message.event](message);
       }
     };
   },
   initWindowSizeListener: () => {
-    c1chatOn(window, 'resize', () => IFrameHelper.toggleCloseButton());
+    woohOn(window, 'resize', () => IFrameHelper.toggleCloseButton());
   },
   preventDefaultScroll: () => {
     widgetHolder.addEventListener('wheel', event => {
@@ -120,7 +120,7 @@ export const IFrameHelper = {
   },
 
   setupAudioListeners: () => {
-    const { baseUrl = '' } = window.$cyber1schat;
+    const { baseUrl = '' } = window.$cyberchat;
     getAlertAudio(baseUrl).then(() =>
       initOnEvents.forEach(event => {
         document.removeEventListener(
@@ -138,22 +138,22 @@ export const IFrameHelper = {
         expires: 365,
         sameSite: 'Lax',
       });
-      window.$cyber1schat.hasLoaded = true;
+      window.$cyberchat.hasLoaded = true;
       IFrameHelper.sendMessage('config-set', {
-        locale: window.$cyber1schat.locale,
-        position: window.$cyber1schat.position,
-        hideMessageBubble: window.$cyber1schat.hideMessageBubble,
-        showPopoutButton: window.$cyber1schat.showPopoutButton,
-        widgetStyle: window.$cyber1schat.widgetStyle,
-        darkMode: window.$cyber1schat.darkMode,
+        locale: window.$cyberchat.locale,
+        position: window.$cyberchat.position,
+        hideMessageBubble: window.$cyberchat.hideMessageBubble,
+        showPopoutButton: window.$cyberchat.showPopoutButton,
+        widgetStyle: window.$cyberchat.widgetStyle,
+        darkMode: window.$cyberchat.darkMode,
       });
       IFrameHelper.onLoad({
         widgetColor: message.config.channelConfig.widgetColor,
       });
       IFrameHelper.toggleCloseButton();
 
-      if (window.$cyber1schat.user) {
-        IFrameHelper.sendMessage('set-user', window.$cyber1schat.user);
+      if (window.$cyberchat.user) {
+        IFrameHelper.sendMessage('set-user', window.$cyberchat.user);
       }
 
       window.playAudioAlert = () => {};
@@ -162,12 +162,12 @@ export const IFrameHelper = {
         document.addEventListener(e, IFrameHelper.setupAudioListeners, false);
       });
 
-      if (!window.$cyber1schat.resetTriggered) {
-        dispatchWindowEvent({ eventName: CYBER1SCHAT_READY });
+      if (!window.$cyberchat.resetTriggered) {
+        dispatchWindowEvent({ eventName: CYBERCHAT_READY });
       }
     },
     error: ({ errorType, data }) => {
-      dispatchWindowEvent({ eventName: CYBER1SCHAT_ERROR, data: data });
+      dispatchWindowEvent({ eventName: CYBERCHAT_ERROR, data: data });
 
       if (errorType === SET_USER_ERROR) {
         Cookies.remove(getUserCookieName());
@@ -175,10 +175,10 @@ export const IFrameHelper = {
     },
 
     setBubbleLabel(message) {
-      if (window.$cyber1schat.hideMessageBubble) {
+      if (window.$cyberchat.hideMessageBubble) {
         return;
       }
-      setBubbleText(window.$cyber1schat.launcherTitle || message.label);
+      setBubbleText(window.$cyberchat.launcherTitle || message.label);
     },
 
     toggleBubble: state => {
@@ -194,7 +194,7 @@ export const IFrameHelper = {
 
     popoutChatWindow: ({ baseUrl, websiteToken, locale }) => {
       const cwCookie = Cookies.get('cw_conversation');
-      window.$cyber1schat.toggle('close');
+      window.$cyberchat.toggle('close');
       popoutChatWindow(baseUrl, websiteToken, locale, cwCookie);
     },
 
@@ -228,11 +228,11 @@ export const IFrameHelper = {
 
     resetUnreadMode: () => removeUnreadClass(),
     handleNotificationDot: event => {
-      if (window.$cyber1schat.hideMessageBubble) {
+      if (window.$cyberchat.hideMessageBubble) {
         return;
       }
 
-      const bubbleElement = document.querySelector('.c1chat-widget-bubble');
+      const bubbleElement = document.querySelector('.wooh-widget-bubble');
       if (
         event.unreadMessageCount > 0 &&
         !bubbleElement.classList.contains('unread-notification')
@@ -258,20 +258,20 @@ export const IFrameHelper = {
   onLoad: ({ widgetColor }) => {
     const iframe = IFrameHelper.getAppFrame();
     iframe.style.visibility = '';
-    iframe.setAttribute('id', `cyber1schat_live_chat_widget`);
+    iframe.setAttribute('id', `cyberchat_live_chat_widget`);
 
     if (IFrameHelper.getBubbleHolder().length) {
       return;
     }
     createBubbleHolder();
     onLocationChangeListener();
-    if (!window.$cyber1schat.hideMessageBubble) {
-      let className = 'c1chat-widget-bubble';
-      let closeBtnClassName = `c1chat-elements--${window.$cyber1schat.position} c1chat-widget-bubble c1chat--close c1chat--hide`;
+    if (!window.$cyberchat.hideMessageBubble) {
+      let className = 'wooh-widget-bubble';
+      let closeBtnClassName = `wooh-elements--${window.$cyberchat.position} wooh-widget-bubble wooh--close wooh--hide`;
 
-      if (isFlatWidgetStyle(window.$cyber1schat.widgetStyle)) {
-        className += ' c1chat-widget-bubble--flat';
-        closeBtnClassName += ' c1chat-widget-bubble--flat';
+      if (isFlatWidgetStyle(window.$cyberchat.widgetStyle)) {
+        className += ' wooh-widget-bubble--flat';
+        closeBtnClassName += ' wooh-widget-bubble--flat';
       }
 
       const chatIcon = createBubbleIcon({

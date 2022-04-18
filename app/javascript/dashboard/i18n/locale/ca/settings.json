@@ -186,13 +186,13 @@
     "BETA": "Beta"
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any CYBER1SChat accounts. Please create a new account to continue.",
+    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any Cyberchat accounts. Please create a new account to continue.",
     "NEW_ACCOUNT": "Compte nou",
     "SELECTOR_SUBTITLE": "Crear un compte nou",
     "API": {
       "SUCCESS_MESSAGE": "El compte s'ha creat correctament",
       "EXIST_MESSAGE": "El compte ja existeix",
-      "ERROR_MESSAGE": "No s'ha pogut connectar amb el servidor Cyber1SChat. Torna-ho a provar més endavant"
+      "ERROR_MESSAGE": "No s'ha pogut connectar amb el servidor CyberChat. Torna-ho a provar més endavant"
     },
     "FORM": {
       "NAME": {

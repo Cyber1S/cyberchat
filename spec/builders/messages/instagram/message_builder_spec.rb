@@ -8,7 +8,7 @@ describe  ::Messages::Instagram::MessageBuilder do
   end
 
   let!(:account) { create(:account) }
-  let!(:instagram_channel) { create(:channel_instagram_fb_page, account: account, instagram_id: 'cyber1schat-app-user-id-1') }
+  let!(:instagram_channel) { create(:channel_instagram_fb_page, account: account, instagram_id: 'cyberchat-app-user-id-1') }
   let!(:instagram_inbox) { create(:inbox, channel: instagram_channel, account: account, greeting_enabled: false) }
   let!(:dm_params) { build(:instagram_message_create_event).with_indifferent_access }
   let(:fb_object) { double }
@@ -23,7 +23,7 @@ describe  ::Messages::Instagram::MessageBuilder do
           name: 'Jane',
           id: 'Sender-id-1',
           account_id: instagram_inbox.account_id,
-          profile_pic: 'https://cyber1schat-assets.local/sample.png'
+          profile_pic: 'https://cyberchat-assets.local/sample.png'
         }.with_indifferent_access
       )
       messaging = dm_params[:entry][0]['messaging'][0]

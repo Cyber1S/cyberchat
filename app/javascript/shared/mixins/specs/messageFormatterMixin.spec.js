@@ -9,9 +9,9 @@ describe('messageFormatterMixin', () => {
     };
     const wrapper = shallowMount(Component);
     const message =
-      '<b>Cyber1SChat is an opensource tool. https://chat.cyber1s.com</b>';
+      '<b>Cyberchat is an opensource tool. https://chat.cyber1s.com</b>';
     expect(wrapper.vm.getPlainText(message)).toMatch(
-      'Cyber1SChat is an opensource tool. https://chat.cyber1s.com'
+      'Cyberchat is an opensource tool. https://chat.cyber1s.com'
     );
   });
 
@@ -22,9 +22,9 @@ describe('messageFormatterMixin', () => {
     };
     const wrapper = shallowMount(Component);
     const message =
-      '<b style="max-width:100%">Cyber1SChat is an opensource tool. https://chat.cyber1s.com</b><style type="css">.message{}</style>';
+      '<b style="max-width:100%">Cyberchat is an opensource tool. https://chat.cyber1s.com</b><style type="css">.message{}</style>';
     expect(wrapper.vm.stripStyleCharacters(message)).toMatch(
-      '<b>Cyber1SChat is an opensource tool. https://chat.cyber1s.com</b>'
+      '<b>Cyberchat is an opensource tool. https://chat.cyber1s.com</b>'
     );
   });
 });

@@ -17,7 +17,7 @@
           {{ $t('RESET_PASSWORD.EMAIL.ERROR') }}
         </span>
       </label>
-      <c1chat-submit-button
+      <wooh-submit-button
         :disabled="$v.credentials.email.$invalid || resetPassword.showLoading"
         :button-text="$t('RESET_PASSWORD.SUBMIT')"
         :loading="resetPassword.showLoading"

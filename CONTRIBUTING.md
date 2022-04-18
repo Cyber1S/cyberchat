@@ -1,4 +1,4 @@
-# Contributing to Cyber1SChat
+# Contributing to Cyberchat
 
 Thanks for taking the time to contribute! :tada::+1:
 

@@ -52,7 +52,7 @@ describe Twilio::SendOnTwilioService do
     end
 
     context 'with reply' do
-      it 'if message is sent from cyber1schat and is outgoing' do
+      it 'if message is sent from cyberchat and is outgoing' do
         allow(messages_double).to receive(:create).and_return(message_record_double)
         allow(message_record_double).to receive(:sid).and_return('1234')
 

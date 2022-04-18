@@ -1,7 +1,7 @@
 <template>
   <div v-on-clickaway="closeSearch" class="search-wrap">
     <div class="search" :class="{ 'is-active': showSearchBox }">
-      <c1chat-sidemenu-icon />
+      <wooh-sidemenu-icon />
       <div class="icon">
         <fluent-icon icon="search" class="search--icon" size="28" />
       </div>
@@ -23,7 +23,7 @@
               </span>
             </div>
             <div v-if="uiFlags.isFetching" class="search--activity-message">
-              <c1chat-spinner size="" />
+              <wooh-spinner size="" />
               {{ $t('CONVERSATION.SEARCH.LOADING_MESSAGE') }}
             </div>
           </div>

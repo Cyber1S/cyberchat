@@ -78,11 +78,11 @@ module SlackStubs
     [
       {
         mimetype: 'image/png',
-        url_private: 'https://cyber1schat-assets.local/sample.png',
+        url_private: 'https://cyberchat-assets.local/sample.png',
         name: 'name_of_the_file',
         title: 'title_of_the_file',
         filetype: 'png',
-        url_private_download: 'https://cyber1schat-assets.local/sample.png'
+        url_private_download: 'https://cyberchat-assets.local/sample.png'
       }
     ]
   end

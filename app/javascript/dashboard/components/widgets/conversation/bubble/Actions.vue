@@ -164,7 +164,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~dashboard/assets/scss/c1chat';
+@import '~dashboard/assets/scss/wooh';
 
 .right {
   .message-text--metadata {

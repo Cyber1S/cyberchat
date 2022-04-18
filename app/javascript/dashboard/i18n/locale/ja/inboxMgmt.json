@@ -1,7 +1,7 @@
 {
   "INBOX_MGMT": {
     "HEADER": "受信トレイ",
-    "SIDEBAR_TXT": "<p><b>受信トレイ</b></p> <p>ウェブサイトと接続した場合、またはFacebookページとCyber1SChatを接続した場合、受信トレイが作成されます。1つのCyber1SChatアカウントにつき、受信トレイは無制限で作成することができます。</p><p><b>受信トレイ作成</b>ボタンをクリックすると、ウェブサイトまたはFacebookと接続できるようになります。</p><p> 管理画面では、受信トレイ内にあるすべての会話がひとつの場所で確認でき、会話タブにて返信することができます。</p><p> 管理画面の左パネルから受信トレイの名前をクリックすることでも、特定の会話を見ることができます。</p>",
+    "SIDEBAR_TXT": "<p><b>受信トレイ</b></p> <p>ウェブサイトと接続した場合、またはFacebookページとCyberchatを接続した場合、受信トレイが作成されます。1つのCyberchatアカウントにつき、受信トレイは無制限で作成することができます。</p><p><b>受信トレイ作成</b>ボタンをクリックすると、ウェブサイトまたはFacebookと接続できるようになります。</p><p> 管理画面では、受信トレイ内にあるすべての会話がひとつの場所で確認でき、会話タブにて返信することができます。</p><p> 管理画面の左パネルから受信トレイの名前をクリックすることでも、特定の会話を見ることができます。</p>",
     "LIST": {
       "404": "このアカウントに紐付けられている受信トレイはありません。"
     },
@@ -9,7 +9,7 @@
       {
         "title": "チャンネルを選択",
         "route": "settings_inbox_new",
-        "body": "Cyber1SChatと統合するプロバイダを選択してください。"
+        "body": "Cyberchatと統合するプロバイダを選択してください。"
       },
       {
         "title": "受信トレイを作成",
@@ -37,7 +37,7 @@
         "PLACEHOLDER": "ウェブサイト名を入力してください(例：Acme Inc)"
       },
       "FB": {
-        "HELP": "PS: サインインすることで、私たちはあなたのページのメッセージにのみアクセスできます。あなたのプライベートメッセージはCyber1SChatによってアクセスすることはできません。",
+        "HELP": "PS: サインインすることで、私たちはあなたのページのメッセージにのみアクセスできます。あなたのプライベートメッセージはCyberchatによってアクセスすることはできません。",
         "CHOOSE_PAGE": "ページを選択",
         "CHOOSE_PLACEHOLDER": "リストからページを選択",
         "INBOX_NAME": "受信トレイ名",
@@ -298,7 +298,7 @@
       },
       "AUTH": {
         "TITLE": "Choose a channel",
-        "DESC": "Cyber1SChat supports live-chat widget, Facebook page, Twitter profile, WhatsApp, Email etc., as channels. If you want to build a custom channel, you can create it using the API channel. Select one channel from the options below to proceed."
+        "DESC": "Cyberchat supports live-chat widget, Facebook page, Twitter profile, WhatsApp, Email etc., as channels. If you want to build a custom channel, you can create it using the API channel. Select one channel from the options below to proceed."
       },
       "AGENTS": {
         "TITLE": "担当者",
@@ -308,11 +308,11 @@
       },
       "DETAILS": {
         "TITLE": "受信トレイの詳細",
-        "DESC": "下のドロップダウンから、Cyber1SChat に接続する Facebook ページを選択してください。 わかりやすくするために受信トレイの名前をカスタマイズすることもできます。"
+        "DESC": "下のドロップダウンから、Cyberchat に接続する Facebook ページを選択してください。 わかりやすくするために受信トレイの名前をカスタマイズすることもできます。"
       },
       "FINISH": {
         "TITLE": "ばっちりです！",
-        "DESC": "FacebookページとCyber1SChatとの統合が正常に完了しました。次回から、あなたのページに送信された顧客からのメッセージや会話は、自動的に受信トレイに表示されます。<br>また、ウェブサイトに簡単に追加できるウィジェットスクリプトを提供しています。 一度これをあなたのウェブサイトに設定すれば、 顧客は他のツールの助けを借りずにWebサイトから直接メッセージを送信でき、Cyber1SChat上に会話が表示されます。 <br><br>素敵でしょ？まあ、私たちはきっとそうしますけどね:)"
+        "DESC": "FacebookページとCyberchatとの統合が正常に完了しました。次回から、あなたのページに送信された顧客からのメッセージや会話は、自動的に受信トレイに表示されます。<br>また、ウェブサイトに簡単に追加できるウィジェットスクリプトを提供しています。 一度これをあなたのウェブサイトに設定すれば、 顧客は他のツールの助けを借りずにWebサイトから直接メッセージを送信でき、Cyberchat上に会話が表示されます。 <br><br>素敵でしょ？まあ、私たちはきっとそうしますけどね:)"
       }
     },
     "DETAILS": {
@@ -415,7 +415,7 @@
       "HMAC_VERIFICATION": "User Identity Validation",
       "HMAC_DESCRIPTION": "Inorder to validate the user's identity, the SDK allows you to pass an `identifier_hash` for each user. You can generate HMAC using 'sha256' with the key shown here.",
       "HMAC_MANDATORY_VERIFICATION": "Enforce User Identity Validation",
-      "HMAC_MANDATORY_DESCRIPTION": "If enabled, CYBER1SChat SDKs setUser method will not work unless the `identifier_hash` is provided for each user.",
+      "HMAC_MANDATORY_DESCRIPTION": "If enabled, Cyberchat SDKs setUser method will not work unless the `identifier_hash` is provided for each user.",
       "INBOX_IDENTIFIER": "Inbox Identifier",
       "INBOX_IDENTIFIER_SUB_TEXT": "Use the `inbox_identifier` token shown here to authentication your API clients.",
       "FORWARD_EMAIL_TITLE": "Forward to Email",

@@ -1,6 +1,6 @@
 {
   "LOGIN": {
-    "TITLE": "Iniciar sesión en Cyber1SChat",
+    "TITLE": "Iniciar sesión en Cyberchat",
     "EMAIL": {
       "LABEL": "E-mail",
       "PLACEHOLDER": "Email por ejemplo: alguien@ejemplo.com"
@@ -11,7 +11,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Inicio de sesión exitoso",
-      "ERROR_MESSAGE": "No se pudo conectar al servidor Cyber1SChat, por favor inténtalo de nuevo más tarde",
+      "ERROR_MESSAGE": "No se pudo conectar al servidor CyberChat, por favor inténtalo de nuevo más tarde",
       "UNAUTH": "Nombre de usuario / Contraseña incorrecto. Inténtelo de nuevo"
     },
     "FORGOT_PASSWORD": "¿Olvidaste tu contraseña?",

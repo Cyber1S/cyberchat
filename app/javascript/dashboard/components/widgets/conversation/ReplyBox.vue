@@ -33,7 +33,7 @@
         :cc-emails.sync="ccEmails"
         :bcc-emails.sync="bccEmails"
       />
-      <c1chat-audio-recorder
+      <wooh-audio-recorder
         v-if="showAudioRecorderEditor"
         ref="audioRecorderInput"
         @state-recorder-timer-changed="onStateRecorderTimerChanged"
@@ -52,7 +52,7 @@
         @focus="onFocus"
         @blur="onBlur"
       />
-      <c1chat-message-editor
+      <wooh-message-editor
         v-else
         v-model="message"
         class="input"
@@ -126,13 +126,13 @@ import EmojiInput from 'shared/components/emoji/EmojiInput';
 import CannedResponse from './CannedResponse';
 import ResizableTextArea from 'shared/components/ResizableTextArea';
 import AttachmentPreview from 'dashboard/components/widgets/AttachmentsPreview';
-import ReplyTopPanel from 'dashboard/components/widgets/c1chatWriter/ReplyTopPanel';
+import ReplyTopPanel from 'dashboard/components/widgets/WoohWriter/ReplyTopPanel';
 import ReplyEmailHead from './ReplyEmailHead';
-import ReplyBottomPanel from 'dashboard/components/widgets/c1chatWriter/ReplyBottomPanel';
+import ReplyBottomPanel from 'dashboard/components/widgets/WoohWriter/ReplyBottomPanel';
 import Banner from 'dashboard/components/ui/Banner.vue';
-import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/c1chatWriter/constants';
-import c1chatMessageEditor from 'dashboard/components/widgets/c1chatWriter/Editor';
-import c1chatAudioRecorder from 'dashboard/components/widgets/c1chatWriter/AudioRecorder';
+import { REPLY_EDITOR_MODES } from 'dashboard/components/widgets/WoohWriter/constants';
+import WoohMessageEditor from 'dashboard/components/widgets/WoohWriter/Editor';
+import WoohAudioRecorder from 'dashboard/components/widgets/WoohWriter/AudioRecorder';
 import messageFormatterMixin from 'shared/mixins/messageFormatterMixin';
 import { checkFileSizeLimit } from 'shared/helpers/FileHelper';
 import { MAXIMUM_FILE_UPLOAD_SIZE } from 'shared/constants/messages';
@@ -159,8 +159,8 @@ export default {
     ReplyTopPanel,
     ReplyEmailHead,
     ReplyBottomPanel,
-    c1chatMessageEditor,
-    c1chatAudioRecorder,
+    WoohMessageEditor,
+    WoohAudioRecorder,
     Banner,
   },
   mixins: [

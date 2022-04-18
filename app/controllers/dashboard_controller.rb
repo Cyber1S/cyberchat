@@ -21,7 +21,7 @@ class DashboardController < ActionController::Base
       'PRIVACY_URL',
       'DISPLAY_MANIFEST',
       'CREATE_NEW_ACCOUNT_FROM_DASHBOARD',
-      'CYBER1SCHAT_INBOX_TOKEN',
+      'CYBERCHAT_INBOX_TOKEN',
       'API_CHANNEL_NAME',
       'API_CHANNEL_THUMBNAIL',
       'ANALYTICS_TOKEN',
@@ -34,11 +34,11 @@ class DashboardController < ActionController::Base
   end
 
   def ensure_installation_onboarding
-    redirect_to '/installation/onboarding' if ::Redis::Alfred.get(::Redis::Alfred::CYBER1SCHAT_INSTALLATION_ONBOARDING)
+    redirect_to '/installation/onboarding' if ::Redis::Alfred.get(::Redis::Alfred::CYBERCHAT_INSTALLATION_ONBOARDING)
   end
 
   def app_config
-    { APP_VERSION: Cyber1SChat.config[:version],
+    { APP_VERSION: Cyberchat.config[:version],
       VAPID_PUBLIC_KEY: VapidService.public_key,
       ENABLE_ACCOUNT_SIGNUP: GlobalConfigService.load('ENABLE_ACCOUNT_SIGNUP', 'false'),
       FB_APP_ID: GlobalConfigService.load('FB_APP_ID', '') }

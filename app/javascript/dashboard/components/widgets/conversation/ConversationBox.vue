@@ -85,7 +85,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '~dashboard/assets/scss/c1chat';
+@import '~dashboard/assets/scss/wooh';
 
 .conversation-details-wrap {
   display: flex;

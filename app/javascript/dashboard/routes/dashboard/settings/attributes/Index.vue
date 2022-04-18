@@ -1,17 +1,17 @@
 <template>
   <div class="column content-box">
-    <c1chat-button
+    <wooh-button
       color-scheme="success"
       class-names="button--fixed-right-top"
       icon="add-circle"
       @click="openAddPopup()"
     >
       {{ $t('ATTRIBUTES_MGMT.HEADER_BTN_TXT') }}
-    </c1chat-button>
+    </wooh-button>
     <custom-attribute />
-    <c1chat-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
+    <wooh-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
       <add-attribute :on-close="hideAddPopup" />
-    </c1chat-modal>
+    </wooh-modal>
   </div>
 </template>
 

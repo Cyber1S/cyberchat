@@ -6,4 +6,4 @@ json.custom_email_domain_enabled @account.custom_email_domain_enabled
 json.support_email @account.support_email
 json.features @account.all_features
 json.auto_resolve_duration @account.auto_resolve_duration
-json.latest_cyber1schat_version @latest_cyber1schat_version
+json.latest_cyberchat_version @latest_cyberchat_version

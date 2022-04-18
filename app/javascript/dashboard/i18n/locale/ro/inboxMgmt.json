@@ -1,7 +1,7 @@
 {
   "INBOX_MGMT": {
     "HEADER": "Căsuțe",
-    "SIDEBAR_TXT": "<p><b>Inbox</b></p> <p> Când conectezi un site web sau o pagină de Facebook la Cyber1SChat, se numește <b>Inbox</b>. Poți avea inbox-uri nelimitate în contul tău din Cyber1SChat. </p><p> Faceţi clic pe <b>Adăugaţi Inbox</b> pentru a conecta un website sau o pagină Facebook. </p><p> În tabloul de bord, poți vedea toate conversațiile din toate cutiile tale într-un singur loc și să le răspunzi sub fila `Conversations`. </p><p> De asemenea, poți vedea conversații specifice unei căsuțe poștale făcând clic pe numele inbox-ului din panoul stâng al tabloului de bord. </p>",
+    "SIDEBAR_TXT": "<p><b>Inbox</b></p> <p> Când conectezi un site web sau o pagină de Facebook la Cyberchat, se numește <b>Inbox</b>. Poți avea inbox-uri nelimitate în contul tău din Cyberchat. </p><p> Faceţi clic pe <b>Adăugaţi Inbox</b> pentru a conecta un website sau o pagină Facebook. </p><p> În tabloul de bord, poți vedea toate conversațiile din toate cutiile tale într-un singur loc și să le răspunzi sub fila `Conversations`. </p><p> De asemenea, poți vedea conversații specifice unei căsuțe poștale făcând clic pe numele inbox-ului din panoul stâng al tabloului de bord. </p>",
     "LIST": {
       "404": "Nu există căsuțe poștale atașate acestui cont."
     },
@@ -9,7 +9,7 @@
       {
         "title": "Alege canalul",
         "route": "setare_inbox_nou",
-        "body": "Alegeți serviciul pe care doriți să-l integrați cu Cyber1SChat."
+        "body": "Alegeți serviciul pe care doriți să-l integrați cu Cyberchat."
       },
       {
         "title": "Crează căsuța",
@@ -37,7 +37,7 @@
         "PLACEHOLDER": "Introduceți numele website-ului dvs. (de exemplu: Acme Inc)"
       },
       "FB": {
-        "HELP": "PS: Prin conectare, vom avea acces doar la mesajele paginii tale. Mesajele tale private nu pot fi accesate niciodată de Cyber1SChat.",
+        "HELP": "PS: Prin conectare, vom avea acces doar la mesajele paginii tale. Mesajele tale private nu pot fi accesate niciodată de Cyberchat.",
         "CHOOSE_PAGE": "Alege pagina",
         "CHOOSE_PLACEHOLDER": "Selectaţi o pagină din listă",
         "INBOX_NAME": "Nume Inbox",
@@ -298,7 +298,7 @@
       },
       "AUTH": {
         "TITLE": "Choose a channel",
-        "DESC": "Cyber1SChat supports live-chat widget, Facebook page, Twitter profile, WhatsApp, Email etc., as channels. If you want to build a custom channel, you can create it using the API channel. Select one channel from the options below to proceed."
+        "DESC": "Cyberchat supports live-chat widget, Facebook page, Twitter profile, WhatsApp, Email etc., as channels. If you want to build a custom channel, you can create it using the API channel. Select one channel from the options below to proceed."
       },
       "AGENTS": {
         "TITLE": "Agenți",
@@ -308,11 +308,11 @@
       },
       "DETAILS": {
         "TITLE": "Detalii inbox",
-        "DESC": "Din meniul derulant de mai jos, selectați pagina Facebook pe care doriți să vă conectați la Cyber1SChat. Poți de asemenea să dai un nume personalizat inbox-ului pentru o mai bună identificare."
+        "DESC": "Din meniul derulant de mai jos, selectați pagina Facebook pe care doriți să vă conectați la Cyberchat. Poți de asemenea să dai un nume personalizat inbox-ului pentru o mai bună identificare."
       },
       "FINISH": {
         "TITLE": "Corect!",
-        "DESC": "Ai reușit să integrezi pagina ta de Facebook cu Cyber1SChat. Data viitoare când un client trimite un mesaj paginii tale, conversația va apărea automat pe căsuța ta poștală.<br>Vă oferim și un script de widget pe care îl puteți adăuga cu ușurință la site-ul dvs. Odată ce aceasta este în direct pe site-ul tău, clienții vă pot trimite mesaje direct de pe site-ul dvs fără ajutorul niciunui instrument extern și conversația va apărea aici, pe Cyber1SChat.<br>Cool, nu? Păi, sigur că încercăm să fim :)"
+        "DESC": "Ai reușit să integrezi pagina ta de Facebook cu Cyberchat. Data viitoare când un client trimite un mesaj paginii tale, conversația va apărea automat pe căsuța ta poștală.<br>Vă oferim și un script de widget pe care îl puteți adăuga cu ușurință la site-ul dvs. Odată ce aceasta este în direct pe site-ul tău, clienții vă pot trimite mesaje direct de pe site-ul dvs fără ajutorul niciunui instrument extern și conversația va apărea aici, pe Cyberchat.<br>Cool, nu? Păi, sigur că încercăm să fim :)"
       }
     },
     "DETAILS": {
@@ -415,7 +415,7 @@
       "HMAC_VERIFICATION": "User Identity Validation",
       "HMAC_DESCRIPTION": "Inorder to validate the user's identity, the SDK allows you to pass an `identifier_hash` for each user. You can generate HMAC using 'sha256' with the key shown here.",
       "HMAC_MANDATORY_VERIFICATION": "Enforce User Identity Validation",
-      "HMAC_MANDATORY_DESCRIPTION": "If enabled, CYBER1SChat SDKs setUser method will not work unless the `identifier_hash` is provided for each user.",
+      "HMAC_MANDATORY_DESCRIPTION": "If enabled, Cyberchat SDKs setUser method will not work unless the `identifier_hash` is provided for each user.",
       "INBOX_IDENTIFIER": "Inbox Identifier",
       "INBOX_IDENTIFIER_SUB_TEXT": "Use the `inbox_identifier` token shown here to authentication your API clients.",
       "FORWARD_EMAIL_TITLE": "Forward to Email",

@@ -1,6 +1,6 @@
 {
   "REGISTER": {
-    "TRY_C1CHAT": "Registreer een account",
+    "TRY_WOOH": "Registreer een account",
     "TITLE": "Registreren",
     "TERMS_ACCEPT": "Door je aan te melden ga je akkoord met onze <a href=\"https://chat.cyber1s.com/terms\">T & C</a> en <a href=\"https://chat.cyber1s.com/privacy-policy\">Privacy Policy</a>",
     "ACCOUNT_NAME": {
@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Registratie geslaagd",
-      "ERROR_MESSAGE": "Kan geen verbinding maken met CYBER1SChat Server, probeer het later opnieuw"
+      "ERROR_MESSAGE": "Kan geen verbinding maken met CyberChat, probeer het later opnieuw"
     },
     "SUBMIT": "Bevestigen",
     "HAVE_AN_ACCOUNT": "Heeft u al een account?"

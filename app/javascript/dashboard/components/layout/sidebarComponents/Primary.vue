@@ -81,7 +81,7 @@ export default {
       this.$emit('toggle-accounts');
     },
     toggleSupportChatWindow() {
-      window.$cyber1schat.toggle();
+      window.$cyberchat.toggle();
     },
     openNotificationPanel() {
       this.$emit('open-notification-panel');

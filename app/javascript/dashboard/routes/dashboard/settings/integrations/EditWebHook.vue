@@ -1,6 +1,6 @@
 <template>
   <div class="column content-box">
-    <c1chat-modal-header
+    <wooh-modal-header
       :header-title="$t('INTEGRATION_SETTINGS.WEBHOOK.EDIT.TITLE')"
     />
     <form class="row" @submit.prevent="editWebhook">
@@ -24,17 +24,17 @@
 
       <div class="modal-footer">
         <div class="medium-12 columns">
-          <c1chat-button
+          <wooh-button
             :is-disabled="
               $v.endPoint.$invalid || uiFlags.updatingItem || endPoint === url
             "
             :is-loading="uiFlags.updatingItem"
           >
             {{ $t('INTEGRATION_SETTINGS.WEBHOOK.EDIT.FORM.SUBMIT') }}
-          </c1chat-button>
-          <c1chat-button class="button clear" @click.prevent="onClose">
+          </wooh-button>
+          <wooh-button class="button clear" @click.prevent="onClose">
             {{ $t('INTEGRATION_SETTINGS.WEBHOOK.ADD.CANCEL') }}
-          </c1chat-button>
+          </wooh-button>
         </div>
       </div>
     </form>

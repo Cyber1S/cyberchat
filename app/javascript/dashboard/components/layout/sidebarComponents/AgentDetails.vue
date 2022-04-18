@@ -1,5 +1,5 @@
 <template>
-  <c1chat-button
+  <wooh-button
     v-tooltip.right="$t(`SIDEBAR.PROFILE_SETTINGS`)"
     variant="link"
     class="current-user"
@@ -12,7 +12,7 @@
       should-show-status-always
       size="32px"
     />
-  </c1chat-button>
+  </wooh-button>
 </template>
 <script>
 import { mapGetters } from 'vuex';

@@ -1,7 +1,7 @@
 <template>
   <div class="row ">
     <div class="small-8 columns with-right-space ">
-      <table v-if="hasConnectedHooks" class="c1chat-table">
+      <table v-if="hasConnectedHooks" class="wooh-table">
         <thead>
           <th v-for="hookHeader in hookHeaders" :key="hookHeader">
             {{ hookHeader }}
@@ -23,7 +23,7 @@
               {{ inboxName(hook) }}
             </td>
             <td class="button-wrapper">
-              <c1chat-button
+              <wooh-button
                 v-tooltip.top="$t('INTEGRATION_APPS.LIST.DELETE.BUTTON_TEXT')"
                 variant="smooth"
                 color-scheme="alert"
@@ -32,7 +32,7 @@
                 class-names="grey-btn"
                 @click="$emit('delete', hook)"
               >
-              </c1chat-button>
+              </wooh-button>
             </td>
           </tr>
         </tbody>

@@ -37,7 +37,7 @@
           {{ $t('INBOX_MGMT.PRE_CHAT_FORM.REQUIRE_EMAIL.LABEL') }}
         </label>
       </div>
-      <c1chat-submit-button
+      <wooh-submit-button
         :button-text="$t('INBOX_MGMT.SETTINGS_POPUP.UPDATE')"
         :loading="uiFlags.isUpdatingInbox"
       />

@@ -1,7 +1,7 @@
 <template>
-  <c1chat-modal :show.sync="show" :on-close="onClose">
+  <wooh-modal :show.sync="show" :on-close="onClose">
     <div class="column content-box">
-      <c1chat-modal-header
+      <wooh-modal-header
         :header-title="$t('AGENT_MGMT.ADD.TITLE')"
         :header-content="$t('AGENT_MGMT.ADD.DESC')"
       />
@@ -44,7 +44,7 @@
         </div>
         <div class="modal-footer">
           <div class="medium-12 columns">
-            <c1chat-submit-button
+            <wooh-submit-button
               :disabled="
                 $v.agentEmail.$invalid ||
                   $v.agentName.$invalid ||
@@ -60,7 +60,7 @@
         </div>
       </form>
     </div>
-  </c1chat-modal>
+  </wooh-modal>
 </template>
 
 <script>

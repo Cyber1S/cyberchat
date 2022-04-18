@@ -43,7 +43,7 @@ export default {
 
 .option {
   border-radius: $space-jumbo;
-  border: 1px solid $color-c1chat;
+  border: 1px solid $color-wooh;
   float: left;
   margin: $space-smaller;
   max-width: 100%;

@@ -31,7 +31,7 @@ class Twitter::WebhookSubscribeService
     return true if webhooks&.first&.try(:[], 'url') == twitter_url
 
     # twitter supports only one webhook url per environment
-    # so we will delete the existing one if its not cyber1schat
+    # so we will delete the existing one if its not cyberchat
     unregister_webhook(webhooks.first) if webhooks&.first
     register_webhook
   end

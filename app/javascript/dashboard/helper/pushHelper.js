@@ -53,14 +53,14 @@ export const sendRegistrationToServer = subscription => {
 };
 
 export const registerSubscription = (onSuccess = () => {}) => {
-  if (!window.cyber1schatConfig.vapidPublicKey) {
+  if (!window.cyberchatConfig.vapidPublicKey) {
     return;
   }
   navigator.serviceWorker.ready
     .then(serviceWorkerRegistration =>
       serviceWorkerRegistration.pushManager.subscribe({
         userVisibleOnly: true,
-        applicationServerKey: window.cyber1schatConfig.vapidPublicKey,
+        applicationServerKey: window.cyberchatConfig.vapidPublicKey,
       })
     )
     .then(sendRegistrationToServer)

@@ -21,7 +21,7 @@
         :show="showCreateAccountModal"
         @close-account-create-modal="closeCreateAccountModal"
       />
-      <c1chat-key-shortcut-modal
+      <wooh-key-shortcut-modal
         v-if="showShortcutModal"
         @close="closeKeyShortcutModal"
         @clickaway="closeKeyShortcutModal"
@@ -30,9 +30,9 @@
         v-if="isNotificationPanel"
         @close="closeNotificationPanel"
       />
-      <c1chat-modal :show.sync="showAddLabelModal" :on-close="hideAddLabelPopup">
+      <wooh-modal :show.sync="showAddLabelModal" :on-close="hideAddLabelPopup">
         <add-label-modal @close="hideAddLabelPopup" />
-      </c1chat-modal>
+      </wooh-modal>
     </section>
   </div>
 </template>
@@ -41,7 +41,7 @@
 import Sidebar from '../../components/layout/Sidebar';
 import CommandBar from './commands/commandbar.vue';
 import { BUS_EVENTS } from 'shared/constants/busEvents';
-import c1chatKeyShortcutModal from 'dashboard/components/widgets/modal/c1chatKeyShortcutModal';
+import WoohKeyShortcutModal from 'dashboard/components/widgets/modal/WoohKeyShortcutModal';
 import AddAccountModal from 'dashboard/components/layout/sidebarComponents/AddAccountModal';
 import AccountSelector from 'dashboard/components/layout/sidebarComponents/AccountSelector';
 import AddLabelModal from 'dashboard/routes/dashboard/settings/labels/AddLabel.vue';
@@ -51,7 +51,7 @@ export default {
   components: {
     Sidebar,
     CommandBar,
-    c1chatKeyShortcutModal,
+    WoohKeyShortcutModal,
     AddAccountModal,
     AccountSelector,
     AddLabelModal,

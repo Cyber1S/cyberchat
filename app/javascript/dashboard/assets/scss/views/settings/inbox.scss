@@ -62,26 +62,26 @@
 
     &.active {
       h3 {
-        color: $color-c1chat;
+        color: $color-wooh;
       }
 
       .step {
-        background: $color-c1chat;
+        background: $color-wooh;
       }
     }
 
     &.over {
       &::after {
-        background: $color-c1chat;
+        background: $color-wooh;
       }
 
       .step {
-        background: $color-c1chat;
+        background: $color-wooh;
       }
 
       & + .item {
         &::before {
-          background: $color-c1chat;
+          background: $color-wooh;
         }
       }
     }

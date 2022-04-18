@@ -1,7 +1,7 @@
 <template>
   <div class="settings-header">
     <h1 class="page-title">
-      <c1chat-sidemenu-icon></c1chat-sidemenu-icon>
+      <wooh-sidemenu-icon></wooh-sidemenu-icon>
       <back-button
         v-if="showBackButton"
         :button-label="backButtonLabel"

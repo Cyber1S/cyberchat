@@ -5,7 +5,7 @@ import {
 } from '../campaignHelper';
 import campaigns from './campaignFixtures';
 
-global.cyber1schatWebChannel = {
+global.cyberchatWebChannel = {
   workingHoursEnabled: false,
 };
 describe('#Campaigns Helper', () => {

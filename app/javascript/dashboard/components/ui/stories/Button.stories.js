@@ -1,9 +1,9 @@
 import { action } from '@storybook/addon-actions';
-import c1chatButton from '../c1chatButton.vue';
+import WoohButton from '../WoohButton.vue';
 
 export default {
   title: 'Components/Button',
-  component: c1chatButton,
+  component: WoohButton,
   argTypes: {
     colorScheme: {
       control: {
@@ -38,9 +38,9 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { c1chatButton },
+  components: { WoohButton },
   template:
-    '<c1chat-button v-bind="$props" @click="onClick">{{label}}</c1chat-button>',
+    '<wooh-button v-bind="$props" @click="onClick">{{label}}</wooh-button>',
 });
 
 export const Primary = Template.bind({});

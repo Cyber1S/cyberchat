@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "您現在可以在您的自定義域名的電子信箱中接收消息。"
       }
     },
-    "UPDATE_CYBER1SCHAT": "An update %{latestCyber1SChatVersion} for CYBER1SChat is available. Please update your instance.",
+    "UPDATE_CYBERCHAT": "An update %{latestCyberchatVersion} for Cyberchat is available. Please update your instance.",
     "LEARN_MORE": "Learn more"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Disconnected from Cyber1SChat"
+      "TEXT": "Disconnected from Cyberchat"
     },
     "BUTTON": {
       "REFRESH": "Refresh"

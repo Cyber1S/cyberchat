@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions';
-import c1chatDateRangePicker from '../DateRangePicker.vue';
+import WoohDateRangePicker from '../DateRangePicker.vue';
 
 export default {
   title: 'Components/Date Picker/Date Range Picker',
@@ -26,9 +26,9 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { c1chatDateRangePicker },
+  components: { WoohDateRangePicker },
   template:
-    '<c1chat-date-range-picker v-bind="$props" @change="onChange"></c1chat-date-range-picker>',
+    '<wooh-date-range-picker v-bind="$props" @change="onChange"></wooh-date-range-picker>',
 });
 
 export const DateRangePicker = Template.bind({});

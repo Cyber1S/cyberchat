@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Τώρα μπορείτε να λαμβάνετε emails στον τομέα (domain) σας."
       }
     },
-    "UPDATE_CYBER1SCHAT": "Μια ενημέρωση %{latestCyber1SChatVersion} για το CYBER1SChat είναι διαθέσιμη. Ενημερώστε την εφαρμογή σας.",
+    "UPDATE_CYBERCHAT": "Μια ενημέρωση %{latestCyberchatVersion} για το Cyberchat είναι διαθέσιμη. Ενημερώστε την εφαρμογή σας.",
     "LEARN_MORE": "Μάθετε περισσότερα"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Αποσυνδέθηκε από το Cyber1SChat"
+      "TEXT": "Αποσυνδέθηκε από το CyberChat"
     },
     "BUTTON": {
       "REFRESH": "Ανανέωση"

@@ -1,6 +1,6 @@
 {
   "REGISTER": {
-    "TRY_C1CHAT": "アカウントを登録",
+    "TRY_WOOH": "アカウントを登録",
     "TITLE": "登録",
     "TERMS_ACCEPT": "サインアップすることで、 <a href=\"https://chat.cyber1s.com/terms\">T & C</a> および <a href=\"https://chat.cyber1s.com/privacy-policy\">プライバシー ポリシー</a> に同意したことになります。",
     "ACCOUNT_NAME": {
@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "登録に成功しました",
-      "ERROR_MESSAGE": "Cyber1SChat Serverに接続できませんでした。後でもう一度お試しください。"
+      "ERROR_MESSAGE": "CyberChatに接続できませんでした。後でもう一度お試しください。"
     },
     "SUBMIT": "送信",
     "HAVE_AN_ACCOUNT": "Already have an account?"

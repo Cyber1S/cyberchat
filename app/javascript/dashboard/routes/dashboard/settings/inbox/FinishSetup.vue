@@ -7,43 +7,43 @@
     >
       <div class="medium-12 columns text-center">
         <div class="website--code">
-          <c1chat-code
+          <wooh-code
             v-if="currentInbox.web_widget_script"
             :script="currentInbox.web_widget_script"
           >
-          </c1chat-code>
+          </wooh-code>
         </div>
         <div class="medium-6 small-offset-3">
-          <c1chat-code
+          <wooh-code
             v-if="isATwilioInbox"
             lang="html"
             :script="currentInbox.callback_webhook_url"
           >
-          </c1chat-code>
+          </wooh-code>
         </div>
         <div class="medium-6 small-offset-3">
-          <c1chat-code
+          <wooh-code
             v-if="isALineInbox"
             lang="html"
             :script="currentInbox.callback_webhook_url"
           >
-          </c1chat-code>
+          </wooh-code>
         </div>
         <div class="medium-6 small-offset-3">
-          <c1chat-code
+          <wooh-code
             v-if="isASmsInbox"
             lang="html"
             :script="currentInbox.callback_webhook_url"
           >
-          </c1chat-code>
+          </wooh-code>
         </div>
         <div class="medium-6 small-offset-3">
-          <c1chat-code
+          <wooh-code
             v-if="isAEmailInbox"
             lang="html"
             :script="currentInbox.forward_to_email"
           >
-          </c1chat-code>
+          </wooh-code>
         </div>
         <div class="footer">
           <router-link

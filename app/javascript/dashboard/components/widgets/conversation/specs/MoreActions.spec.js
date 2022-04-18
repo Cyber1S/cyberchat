@@ -14,7 +14,7 @@ localVue.use(VueI18n);
 localVue.use(VTooltip);
 
 localVue.component('fluent-icon', FluentIcon);
-localVue.component('c1chat-button', Button);
+localVue.component('wooh-button', Button);
 
 const i18nConfig = new VueI18n({
   locale: 'en',

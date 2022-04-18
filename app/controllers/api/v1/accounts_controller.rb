@@ -30,7 +30,7 @@ class Api::V1::AccountsController < Api::BaseController
   end
 
   def show
-    @latest_cyber1schat_version = ::Redis::Alfred.get(::Redis::Alfred::LATEST_CYBER1SCHAT_VERSION)
+    @latest_cyberchat_version = ::Redis::Alfred.get(::Redis::Alfred::LATEST_CYBERCHAT_VERSION)
     render 'api/v1/accounts/show.json'
   end
 
@@ -60,7 +60,7 @@ class Api::V1::AccountsController < Api::BaseController
   end
 
   def validate_captcha
-    raise ActionController::InvalidAuthenticityToken, 'Invalid Captcha' unless Cyber1SChatCaptcha.new(params[:h_captcha_client_response]).valid?
+    raise ActionController::InvalidAuthenticityToken, 'Invalid Captcha' unless CyberchatCaptcha.new(params[:h_captcha_client_response]).valid?
   end
 
   def pundit_user

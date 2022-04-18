@@ -1,5 +1,5 @@
 <template>
-  <c1chat-reports
+  <wooh-reports
     key="inbox-reports"
     type="inbox"
     getter-key="inboxes/getInboxes"
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import c1chatReports from './components/c1chatReports';
+import WoohReports from './components/WoohReports';
 
 export default {
   components: {
-    c1chatReports,
+    WoohReports,
   },
 };
 </script>

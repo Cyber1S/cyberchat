@@ -1,0 +1,25 @@
+[Unit]
+Requires=network.target
+PartOf=cyberchat.target
+
+[Service]
+Type=simple
+User=cyberchat
+WorkingDirectory=/home/cyberchat/cyberchat
+
+ExecStart=/bin/bash -lc 'bundle exec sidekiq -C config/sidekiq.yml'
+
+Restart=always
+RestartSec=1
+TimeoutStopSec=30
+KillMode=mixed
+StandardInput=null
+SyslogIdentifier=%p
+
+Environment="PATH=/home/cyberchat/.rvm/gems/ruby-3.0.2/bin:/home/cyberchat/.rvm/gems/ruby-3.0.2@global/bin:/home/cyberchat/.rvm/rubies/ruby-3.0.2/bin:/home/cyberchat/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/cyberchat/.rvm/bin:/home/cyberchat/.rvm/bin"
+Environment="PORT=3000"
+Environment="RAILS_ENV=production"
+Environment="NODE_ENV=production"
+Environment="RAILS_LOG_TO_STDOUT=true"
+Environment="GEM_HOME=/home/cyberchat/.rvm/gems/ruby-3.0.2"
+Environment="GEM_PATH=/home/cyberchat/.rvm/gems/ruby-3.0.2:/home/cyberchat/.rvm/gems/ruby-3.0.2@global"

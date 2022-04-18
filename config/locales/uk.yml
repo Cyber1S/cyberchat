@@ -97,7 +97,7 @@ uk:
       description: "Slack is a chat tool that brings all your communication together in one place. By integrating Slack, you can get notified of all the new conversations in your account right inside your Slack."
     webhooks:
       name: "Веб-хук"
-      description: "Вебхуки автоматично повідомляють про те, що відбувається у вашому обліковому записі Cyber1SChat. Ви можете скористатись веб-хуками для обміну подіями з вашими улюбленими додатками, такими як Slack чи Github. Натисніть на Налаштування, щоб налаштувати web-хуки."
+      description: "Вебхуки автоматично повідомляють про те, що відбувається у вашому обліковому записі Cyberchat. Ви можете скористатись веб-хуками для обміну подіями з вашими улюбленими додатками, такими як Slack чи Github. Натисніть на Налаштування, щоб налаштувати web-хуки."
     dialogflow:
       name: "Dialogflow"
       description: "Створюйте чатів з допомогою Dialogflow та швидко під'єднайте їх до вхідних каналів. Дозвольте ботам обробляти запити перед передачею їх агенту."

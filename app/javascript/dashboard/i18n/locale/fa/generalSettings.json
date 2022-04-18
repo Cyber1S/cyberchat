@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "اکنون می‌توانید ایمیل‌ها را در دامنه سفارشی خود دریافت کنید."
       }
     },
-    "UPDATE_CYBER1SCHAT": "به روزرسانی%{latestCyber1SChatVersion} برای CYBER1SChat در دسترس است. لطفا نمونه خود را به روز کنید.",
+    "UPDATE_CYBERCHAT": "به روزرسانی%{latestCyberchatVersion} برای Cyberchat در دسترس است. لطفا نمونه خود را به روز کنید.",
     "LEARN_MORE": "بیشتر بدانید"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "قطع کردن Cyber1SChat"
+      "TEXT": "قطع کردن Cyberchat"
     },
     "BUTTON": {
       "REFRESH": "تازه کردن"

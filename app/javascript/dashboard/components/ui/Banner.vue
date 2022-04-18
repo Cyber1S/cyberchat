@@ -11,7 +11,7 @@
         {{ hrefLinkText }}
       </a>
     </span>
-    <c1chat-button
+    <wooh-button
       v-if="hasActionButton"
       size="small"
       variant="link"
@@ -21,8 +21,8 @@
       @click="onClick"
     >
       {{ actionButtonLabel }}
-    </c1chat-button>
-    <c1chat-button
+    </wooh-button>
+    <wooh-button
       v-if="hasCloseButton"
       size="small"
       variant="link"
@@ -31,7 +31,7 @@
       class-names="banner-action__button"
       @click="onClickClose"
     >
-    </c1chat-button>
+    </wooh-button>
   </div>
 </template>
 

@@ -1,11 +1,11 @@
 <template>
   <modal :show.sync="show" :on-close="onClose">
-    <c1chat-modal-header
+    <wooh-modal-header
       :header-title="$t('CUSTOM_ATTRIBUTES.ADD.TITLE')"
       :header-content="$t('CUSTOM_ATTRIBUTES.ADD.DESC')"
     />
     <form class="row" @submit.prevent="addCustomAttribute">
-      <c1chat-input
+      <wooh-input
         v-model.trim="attributeName"
         :class="{ error: $v.attributeName.$error }"
         class="medium-12 columns"
@@ -14,22 +14,22 @@
         :placeholder="$t('CUSTOM_ATTRIBUTES.FORM.NAME.PLACEHOLDER')"
         @input="$v.attributeName.$touch"
       />
-      <c1chat-input
+      <wooh-input
         v-model.trim="attributeValue"
         class="medium-12 columns"
         :label="$t('CUSTOM_ATTRIBUTES.FORM.VALUE.LABEL')"
         :placeholder="$t('CUSTOM_ATTRIBUTES.FORM.VALUE.PLACEHOLDER')"
       />
       <div class="modal-footer">
-        <c1chat-button
+        <wooh-button
           :is-disabled="$v.attributeName.$invalid || isCreating"
           :is-loading="isCreating"
         >
           {{ $t('CUSTOM_ATTRIBUTES.FORM.CREATE') }}
-        </c1chat-button>
-        <c1chat-button variant="clear" @click.prevent="onClose">
+        </wooh-button>
+        <wooh-button variant="clear" @click.prevent="onClose">
           {{ $t('CUSTOM_ATTRIBUTES.FORM.CANCEL') }}
-        </c1chat-button>
+        </wooh-button>
       </div>
     </form>
   </modal>

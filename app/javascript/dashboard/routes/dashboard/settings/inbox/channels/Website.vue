@@ -4,7 +4,7 @@
       :header-title="$t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.TITLE')"
       :header-content="$t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.DESC')"
     />
-    <c1chat-loading-state
+    <wooh-loading-state
       v-if="uiFlags.isCreating"
       :message="$t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.LOADING_MESSAGE')"
     />
@@ -39,7 +39,7 @@
       <div class="medium-12 columns">
         <label>
           {{ $t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.WIDGET_COLOR.LABEL') }}
-          <c1chat-color-picker v-model="channelWidgetColor" />
+          <wooh-color-picker v-model="channelWidgetColor" />
         </label>
       </div>
 
@@ -115,7 +115,7 @@
       />
       <div class="modal-footer">
         <div class="medium-12 columns">
-          <c1chat-submit-button
+          <wooh-submit-button
             :loading="uiFlags.isCreating"
             :disabled="!channelWebsiteUrl || !inboxName"
             :button-text="$t('INBOX_MGMT.ADD.WEBSITE_CHANNEL.SUBMIT_BUTTON')"

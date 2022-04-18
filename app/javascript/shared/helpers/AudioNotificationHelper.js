@@ -77,16 +77,16 @@ export const getAssigneeFromNotification = currentConv => {
   return id;
 };
 export const newMessageNotification = data => {
-  const { conversation_id: currentConvId } = window.C1CHAT.$route.params;
-  const currentUserId = window.C1CHAT.$store.getters.getCurrentUserID;
+  const { conversation_id: currentConvId } = window.WOOH.$route.params;
+  const currentUserId = window.WOOH.$store.getters.getCurrentUserID;
   const { conversation_id: incomingConvId } = data;
   const currentConv =
-    window.C1CHAT.$store.getters.getConversationById(incomingConvId) || {};
+    window.WOOH.$store.getters.getConversationById(incomingConvId) || {};
   const assigneeId = getAssigneeFromNotification(currentConv);
   const isDocHidden = document.hidden;
   const {
     enable_audio_alerts: enableAudioAlerts = false,
-  } = window.C1CHAT.$store.getters.getUISettings;
+  } = window.WOOH.$store.getters.getUISettings;
   const playAudio = shouldPlayAudio(
     data,
     currentConvId,

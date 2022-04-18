@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Cyber1SChatCaptcha do
+describe CyberchatCaptcha do
   it 'returns true if HCAPTCHA SERVER KEY is absent' do
     expect(described_class.new('random_key').valid?).to eq(true)
   end

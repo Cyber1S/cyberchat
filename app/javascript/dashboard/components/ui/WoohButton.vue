@@ -21,7 +21,7 @@ import Spinner from 'shared/components/Spinner';
 import EmojiOrIcon from 'shared/components/EmojiOrIcon';
 
 export default {
-  name: 'c1chatButton',
+  name: 'WoohButton',
   components: { EmojiOrIcon, Spinner },
   props: {
     variant: {

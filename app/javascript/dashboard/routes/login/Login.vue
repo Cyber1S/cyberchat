@@ -36,7 +36,7 @@
                 @input="$v.credentials.password.$touch"
               />
             </label>
-            <c1chat-submit-button
+            <wooh-submit-button
               :disabled="
                 $v.credentials.email.$invalid ||
                   $v.credentials.password.$invalid ||
@@ -46,7 +46,7 @@
               :loading="loginApi.showLoading"
               button-class="large expanded"
             >
-            </c1chat-submit-button>
+            </wooh-submit-button>
           </div>
         </form>
         <div class="column text-center sigin__footer">
@@ -62,7 +62,7 @@
           </p>
         </div>
       </div>
-      <c1chat-spinner v-else size="" />
+      <wooh-spinner v-else size="" />
     </div>
   </div>
 </template>
@@ -70,12 +70,12 @@
 <script>
 import { required, email } from 'vuelidate/lib/validators';
 import globalConfigMixin from 'shared/mixins/globalConfigMixin';
-import c1chatSubmitButton from '../../components/buttons/FormSubmitButton';
+import WoohSubmitButton from '../../components/buttons/FormSubmitButton';
 import { mapGetters } from 'vuex';
 
 export default {
   components: {
-    c1chatSubmitButton,
+    WoohSubmitButton,
   },
   mixins: [globalConfigMixin],
   props: {
@@ -129,7 +129,7 @@ export default {
       bus.$emit('newToastMessage', this.loginApi.message);
     },
     showSignupLink() {
-      return window.cyber1schatConfig.signupEnabled === 'true';
+      return window.cyberchatConfig.signupEnabled === 'true';
     },
     login() {
       this.loginApi.showLoading = true;

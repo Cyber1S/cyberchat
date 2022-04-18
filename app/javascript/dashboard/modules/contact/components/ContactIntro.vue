@@ -22,22 +22,22 @@
       <social-icons :social-profiles="socialProfiles" />
     </div>
     <div class="contact-actions">
-      <c1chat-button
+      <wooh-button
         class="new-message"
         size="small expanded"
         icon="ion-paper-airplane"
         @click="onNewMessageClick"
       >
         {{ $t('CONTACT_PANEL.NEW_MESSAGE') }}
-      </c1chat-button>
-      <c1chat-button
+      </wooh-button>
+      <wooh-button
         variant="hollow"
         size="small expanded"
         icon="edit"
         @click="onEditClick"
       >
         {{ $t('EDIT_CONTACT.BUTTON_LABEL') }}
-      </c1chat-button>
+      </wooh-button>
     </div>
   </div>
 </template>

@@ -7,7 +7,7 @@
         $t('CONTACT_PANEL.NOT_AVAILABLE')
       }}</span>
 
-      <c1chat-button
+      <wooh-button
         v-if="showCopy"
         type="submit"
         variant="link"

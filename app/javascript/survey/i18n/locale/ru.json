@@ -12,8 +12,8 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Опрос успешно обновлен",
-      "ERROR_MESSAGE": "Не удается соединиться с сервером Cyber1SChat, попробуйте позже"
+      "ERROR_MESSAGE": "Не удается соединиться с сервером CyberChat, попробуйте позже"
     }
   },
-  "POWERED_BY": "Работает на Cyber1SChat"
+  "POWERED_BY": "Работает на Cyberchat"
 }

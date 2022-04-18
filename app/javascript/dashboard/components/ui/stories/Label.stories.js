@@ -55,7 +55,7 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  template: '<c1chat-label v-bind="$props" @click="onClick"></c1chat-label>',
+  template: '<wooh-label v-bind="$props" @click="onClick"></wooh-label>',
 });
 
 export const DefaultLabel = Template.bind({});

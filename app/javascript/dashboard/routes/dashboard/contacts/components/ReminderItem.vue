@@ -9,20 +9,20 @@
       </p>
       <div class="footer">
         <div class="meta">
-          <c1chat-label
+          <wooh-label
             :title="date"
             description="date"
             icon="ion-android-calendar"
             color-scheme="secondary"
           />
-          <c1chat-label
+          <wooh-label
             :title="label"
             description="label"
             color-scheme="secondary"
           />
         </div>
         <div class="actions">
-          <c1chat-button
+          <wooh-button
             variant="smooth"
             size="small"
             icon="edit"
@@ -30,7 +30,7 @@
             class="action-button"
             @click="onEdit"
           />
-          <c1chat-button
+          <wooh-button
             variant="smooth"
             size="small"
             icon="ion-trash-b"

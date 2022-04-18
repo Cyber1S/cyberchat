@@ -22,9 +22,9 @@ class Integrations::Facebook::MessageCreator
   private
 
   def agent_message_via_echo?
-    # TODO : check and remove send_from_cyber1schat_app if not working
-    response.echo? && !response.sent_from_cyber1schat_app?
-    # this means that it is an agent message from page, but not sent from cyber1schat.
+    # TODO : check and remove send_from_cyberchat_app if not working
+    response.echo? && !response.sent_from_cyberchat_app?
+    # this means that it is an agent message from page, but not sent from cyberchat.
     # User can send from fb page directly on mobile / web messenger, so this case should be handled as agent message
   end
 

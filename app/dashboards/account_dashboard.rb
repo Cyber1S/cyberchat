@@ -8,7 +8,7 @@ class AccountDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
 
-  enterprise_attribute_types = Cyber1SChatApp.enterprise? ? { limits: Enterprise::AccountLimitsField } : {}
+  enterprise_attribute_types = CyberchatApp.enterprise? ? { limits: Enterprise::AccountLimitsField } : {}
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     name: Field::String,
@@ -35,7 +35,7 @@ class AccountDashboard < Administrate::BaseDashboard
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
-  enterprise_show_page_attributes = Cyber1SChatApp.enterprise? ? %i[limits] : []
+  enterprise_show_page_attributes = CyberchatApp.enterprise? ? %i[limits] : []
   SHOW_PAGE_ATTRIBUTES = (%i[
     id
     name
@@ -49,7 +49,7 @@ class AccountDashboard < Administrate::BaseDashboard
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
-  enterprise_form_attributes = Cyber1SChatApp.enterprise? ? %i[limits] : []
+  enterprise_form_attributes = CyberchatApp.enterprise? ? %i[limits] : []
   FORM_ATTRIBUTES = (%i[
     name
     locale

@@ -1,7 +1,7 @@
 <template>
-  <c1chat-modal :show.sync="show" :on-close="onCancel" modal-type="right-aligned">
+  <wooh-modal :show.sync="show" :on-close="onCancel" modal-type="right-aligned">
     <div class="column content-box">
-      <c1chat-modal-header
+      <wooh-modal-header
         :header-title="
           `${$t('EDIT_CONTACT.TITLE')} - ${contact.name || contact.email}`
         "
@@ -15,7 +15,7 @@
         @cancel="onCancel"
       />
     </div>
-  </c1chat-modal>
+  </wooh-modal>
 </template>
 
 <script>

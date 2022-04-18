@@ -1,9 +1,9 @@
 <template>
-  <c1chat-dropdown-item>
-    <c1chat-button variant="clear" @click="onClick">
+  <wooh-dropdown-item>
+    <wooh-button variant="clear" @click="onClick">
       <span class="label-text" :title="title">{{ title }}</span>
-    </c1chat-button>
-  </c1chat-dropdown-item>
+    </wooh-button>
+  </wooh-dropdown-item>
 </template>
 
 <script>

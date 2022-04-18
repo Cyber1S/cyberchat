@@ -1,13 +1,13 @@
 <template>
   <div class="row content-box full-height">
-    <c1chat-button
+    <wooh-button
       color-scheme="success"
       class-names="button--fixed-right-top"
       icon="add-circle"
       @click="openAddPopup()"
     >
       {{ $t('INTEGRATION_SETTINGS.WEBHOOK.HEADER_BTN_TXT') }}
-    </c1chat-button>
+    </wooh-button>
 
     <div class="row">
       <div class="small-8 columns with-right-space ">
@@ -17,14 +17,14 @@
         >
           {{ $t('INTEGRATION_SETTINGS.WEBHOOK.LIST.404') }}
         </p>
-        <c1chat-loading-state
+        <wooh-loading-state
           v-if="uiFlags.fetchingList"
           :message="$t('INTEGRATION_SETTINGS.WEBHOOK.LOADING')"
         />
 
         <table
           v-if="!uiFlags.fetchingList && records.length"
-          class="c1chat-table"
+          class="wooh-table"
         >
           <thead>
             <th
@@ -42,7 +42,7 @@
                 {{ webHookItem.url }}
               </td>
               <td class="button-wrapper">
-                <c1chat-button
+                <wooh-button
                   v-tooltip.top="
                     $t('INTEGRATION_SETTINGS.WEBHOOK.EDIT.BUTTON_TEXT')
                   "
@@ -52,8 +52,8 @@
                   icon="edit"
                   @click="openEditPopup(webHookItem)"
                 >
-                </c1chat-button>
-                <c1chat-button
+                </wooh-button>
+                <wooh-button
                   v-tooltip.top="
                     $t('INTEGRATION_SETTINGS.WEBHOOK.DELETE.BUTTON_TEXT')
                   "
@@ -63,7 +63,7 @@
                   icon="dismiss-circle"
                   @click="openDeletePopup(webHookItem, index)"
                 >
-                </c1chat-button>
+                </wooh-button>
               </td>
             </tr>
           </tbody>
@@ -82,20 +82,20 @@
       </div>
     </div>
 
-    <c1chat-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
+    <wooh-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
       <new-webhook :on-close="hideAddPopup" />
-    </c1chat-modal>
+    </wooh-modal>
 
-    <c1chat-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
+    <wooh-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
       <edit-webhook
         v-if="showEditPopup"
         :id="selectedWebHook.id"
         :url="selectedWebHook.url"
         :on-close="hideEditPopup"
       />
-    </c1chat-modal>
+    </wooh-modal>
 
-    <c1chat-delete-modal
+    <wooh-delete-modal
       :show.sync="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"
