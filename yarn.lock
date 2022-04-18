@@ -1113,7 +1113,7 @@
 
 "@cyber1s/utils@https://github.com/cyber1s/utils.git#968aae9488ed85511e43f4f995fb457a24f2e118":
   version "0.0.6"
-  resolved "hhttps://github.com/cyber1s/utils.git#968aae9488ed85511e43f4f995fb457a24f2e118"
+  resolved "https://github.com/cyber1s/utils.git#968aae9488ed85511e43f4f995fb457a24f2e118"
    dependencies:
     date-fns "^2.22.1"
 
