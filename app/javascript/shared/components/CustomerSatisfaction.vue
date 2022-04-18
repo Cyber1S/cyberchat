@@ -150,7 +150,7 @@ export default {
 
   border-bottom-left-radius: $space-smaller;
   border-radius: $space-small;
-  border-top: $space-micro solid $color-c1chat;
+  border-top: $space-micro solid $color-wooh;
   color: $color-body;
   display: inline-block;
   line-height: 1.5;

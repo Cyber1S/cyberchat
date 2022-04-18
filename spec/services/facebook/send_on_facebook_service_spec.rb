@@ -46,13 +46,13 @@ describe Facebook::SendOnFacebookService do
     end
 
     context 'with reply' do
-      it 'if message is sent from cyber1schat and is outgoing' do
+      it 'if message is sent from cyberchat and is outgoing' do
         message = create(:message, message_type: 'outgoing', inbox: facebook_inbox, account: account, conversation: conversation)
         ::Facebook::SendOnFacebookService.new(message: message).perform
         expect(bot).to have_received(:deliver)
       end
 
-      it 'if message with attachment is sent from cyber1schat and is outgoing' do
+      it 'if message with attachment is sent from cyberchat and is outgoing' do
         message = build(:message, message_type: 'outgoing', inbox: facebook_inbox, account: account, conversation: conversation)
         attachment = message.attachments.new(account_id: message.account_id, file_type: :image)
         attachment.file.attach(io: File.open(Rails.root.join('spec/assets/avatar.png')), filename: 'avatar.png', content_type: 'image/png')

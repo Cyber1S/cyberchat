@@ -1,6 +1,6 @@
 <template>
   <div class="notifications-link">
-    <c1chat-button
+    <wooh-button
       class-names="notifications-link--button"
       variant="clear"
       color-scheme="secondary"
@@ -9,7 +9,7 @@
     >
       <fluent-icon icon="alert" />
       <span v-if="unreadCount" class="badge warning">{{ unreadCount }}</span>
-    </c1chat-button>
+    </wooh-button>
   </div>
 </template>
 <script>

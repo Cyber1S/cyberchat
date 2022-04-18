@@ -6,7 +6,7 @@ json.confirmed resource.confirmed?
 json.display_name resource.display_name
 json.message_signature resource.message_signature
 json.email resource.email
-json.hmac_identifier resource.hmac_identifier if GlobalConfig.get('CYBER1SCHAT_INBOX_HMAC_KEY')['CYBER1SCHAT_INBOX_HMAC_KEY'].present?
+json.hmac_identifier resource.hmac_identifier if GlobalConfig.get('CYBERCHAT_INBOX_HMAC_KEY')['CYBERCHAT_INBOX_HMAC_KEY'].present?
 json.id resource.id
 json.inviter_id resource.active_account_user&.inviter_id
 json.name resource.name

@@ -13,19 +13,19 @@
           </router-link>
         </p>
 
-        <table v-if="inboxesList.length" class="c1chat-table">
+        <table v-if="inboxesList.length" class="wooh-table">
           <tbody>
             <tr v-for="item in inboxesList" :key="item.id">
               <td>
                 <img
                   v-if="item.avatar_url"
-                  class="c1chat-thumbnail"
+                  class="wooh-thumbnail"
                   :src="item.avatar_url"
                   alt="No Page Image"
                 />
                 <img
                   v-else
-                  class="c1chat-thumbnail"
+                  class="wooh-thumbnail"
                   src="~dashboard/assets/images/flag.svg"
                   alt="No Page Image"
                 />
@@ -69,7 +69,7 @@
                   <router-link
                     :to="addAccountScoping(`settings/inboxes/${item.id}`)"
                   >
-                    <c1chat-button
+                    <wooh-button
                       v-if="isAdmin"
                       v-tooltip.top="$t('INBOX_MGMT.SETTINGS')"
                       variant="smooth"
@@ -78,10 +78,10 @@
                       color-scheme="secondary"
                       class-names="grey-btn"
                     >
-                    </c1chat-button>
+                    </wooh-button>
                   </router-link>
 
-                  <c1chat-button
+                  <wooh-button
                     v-if="isAdmin"
                     v-tooltip.top="$t('INBOX_MGMT.DELETE.BUTTON_TEXT')"
                     variant="smooth"
@@ -92,7 +92,7 @@
                     icon="dismiss-circle"
                     @click="openDelete(item)"
                   >
-                  </c1chat-button>
+                  </wooh-button>
                 </div>
               </td>
             </tr>
@@ -118,7 +118,7 @@
       :inbox="selectedInbox"
     />
 
-    <c1chat-confirm-delete-modal
+    <wooh-confirm-delete-modal
       v-if="showDeletePopup"
       :show.sync="showDeletePopup"
       :title="$t('INBOX_MGMT.DELETE.CONFIRM.TITLE')"

@@ -12,8 +12,8 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Survey updated successfully",
-      "ERROR_MESSAGE": "Kan geen verbinding maken met CYBER1SChat Server, probeer het later opnieuw"
+      "ERROR_MESSAGE": "Kan geen verbinding maken met CyberChat, probeer het later opnieuw"
     }
   },
-  "POWERED_BY": "Mogelijk gemaakt door Cyber1SChat"
+  "POWERED_BY": "Mogelijk gemaakt door Cyberchat"
 }

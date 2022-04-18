@@ -1,7 +1,7 @@
 /* eslint no-plusplus: 0 */
 import AvatarUploader from './widgets/forms/AvatarUploader.vue';
 import Bar from './widgets/chart/BarChart';
-import Button from './ui/c1chatButton';
+import Button from './ui/WoohButton';
 import Code from './Code';
 import ColorPicker from './widgets/ColorPicker';
 import ConfirmDeleteModal from './widgets/modal/ConfirmDeleteModal.vue';
@@ -23,7 +23,7 @@ import TabsItem from './ui/Tabs/TabsItem';
 import Thumbnail from './widgets/Thumbnail.vue';
 import ConfirmModal from './widgets/modal/ConfirmationModal.vue';
 
-const c1chatUIKit = {
+const WoohUIKit = {
   AvatarUploader,
   Bar,
   Button,
@@ -52,13 +52,13 @@ const c1chatUIKit = {
     keys.pop(); // remove 'install' from keys
     let i = keys.length;
     while (i--) {
-      Vue.component(`c1chat${keys[i]}`, this[keys[i]]);
+      Vue.component(`wooh${keys[i]}`, this[keys[i]]);
     }
   },
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(c1chatUIKit);
+  window.Vue.use(WoohUIKit);
 }
 
-export default c1chatUIKit;
+export default WoohUIKit;

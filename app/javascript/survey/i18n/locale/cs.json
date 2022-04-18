@@ -12,8 +12,8 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Survey updated successfully",
-      "ERROR_MESSAGE": "Nelze se připojit k CYBER1SChat serveru, opakujte akci později"
+      "ERROR_MESSAGE": "Nelze se připojit k CyberChat serveru, opakujte akci později"
     }
   },
-  "POWERED_BY": "Powered by Cyber1SChat"
+  "POWERED_BY": "Powered by Cyberchat"
 }

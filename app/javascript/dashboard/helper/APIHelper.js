@@ -3,8 +3,8 @@ import Auth from '../api/auth';
 const parseErrorCode = error => Promise.reject(error);
 
 export default axios => {
-  const { apiHost = '' } = window.cyber1schatConfig || {};
-  const c1chatApi = axios.create({ baseURL: `${apiHost}/` });
+  const { apiHost = '' } = window.cyberchatConfig || {};
+  const woohApi = axios.create({ baseURL: `${apiHost}/` });
   // Add Auth Headers to requests if logged in
   if (Auth.hasAuthCookie()) {
     const {
@@ -14,7 +14,7 @@ export default axios => {
       expiry,
       uid,
     } = Auth.getAuthData();
-    Object.assign(c1chatApi.defaults.headers.common, {
+    Object.assign(woohApi.defaults.headers.common, {
       'access-token': accessToken,
       'token-type': tokenType,
       client,
@@ -23,9 +23,9 @@ export default axios => {
     });
   }
   // Response parsing interceptor
-  c1chatApi.interceptors.response.use(
+  woohApi.interceptors.response.use(
     response => response,
     error => parseErrorCode(error)
   );
-  return c1chatApi;
+  return woohApi;
 };

@@ -33,7 +33,7 @@
           </label>
         </div>
         <div class="medium-12 columns">
-          <c1chat-submit-button
+          <wooh-submit-button
             :button-text="$t('INBOX_MGMT.AGENTS.BUTTON_TEXT')"
             :loading="isCreating"
           />

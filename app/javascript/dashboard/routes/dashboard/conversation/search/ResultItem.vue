@@ -8,7 +8,7 @@
             <div class="name-wrap">
               <span class="sub-block-title">{{ userName }}</span>
             </div>
-            <c1chat-label
+            <wooh-label
               :title="conversationsId"
               :small="true"
               color-scheme="secondary"

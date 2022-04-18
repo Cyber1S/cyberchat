@@ -43,7 +43,7 @@ class Integrations::Facebook::MessageParser
   end
 
   # TODO : does this work ?
-  def sent_from_cyber1schat_app?
+  def sent_from_cyberchat_app?
     app_id && app_id == GlobalConfigService.load('FB_APP_ID', '').to_i
   end
 end

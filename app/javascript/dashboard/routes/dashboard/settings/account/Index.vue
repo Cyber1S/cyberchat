@@ -89,29 +89,29 @@
           </p>
         </div>
         <div class="columns small-9 medium-5">
-          <c1chat-code :script="getAccountId"></c1chat-code>
+          <wooh-code :script="getAccountId"></wooh-code>
         </div>
       </div>
       <div class="current-version">
         <div>{{ `v${globalConfig.appVersion}` }}</div>
         <div v-if="hasAnUpdateAvailable && globalConfig.displayManifest">
           {{
-            $t('GENERAL_SETTINGS.UPDATE_CYBER1SCHAT', {
-              latestCyber1SChatVersion: latestCyber1SChatVersion,
+            $t('GENERAL_SETTINGS.UPDATE_CYBERCHAT', {
+              latestCyberchatVersion: latestCyberchatVersion,
             })
           }}
         </div>
       </div>
 
-      <c1chat-submit-button
+      <wooh-submit-button
         class="button nice success button--fixed-right-top"
         :button-text="$t('GENERAL_SETTINGS.SUBMIT')"
         :loading="isUpdating"
       >
-      </c1chat-submit-button>
+      </wooh-submit-button>
     </form>
 
-    <c1chat-loading-state v-if="uiFlags.isFetchingItem" />
+    <wooh-loading-state v-if="uiFlags.isFetchingItem" />
   </div>
 </template>
 
@@ -134,7 +134,7 @@ export default {
       supportEmail: '',
       features: {},
       autoResolveDuration: null,
-      latestCyber1SChatVersion: null,
+      latestCyberchatVersion: null,
     };
   },
   validations: {
@@ -156,13 +156,13 @@ export default {
       uiFlags: 'accounts/getUIFlags',
     }),
     hasAnUpdateAvailable() {
-      if (!semver.valid(this.latestCyber1SChatVersion)) {
+      if (!semver.valid(this.latestCyberchatVersion)) {
         return false;
       }
 
       return semver.lt(
         this.globalConfig.appVersion,
-        this.latestCyber1SChatVersion
+        this.latestCyberchatVersion
       );
     },
     languagesSortedByCode() {
@@ -205,7 +205,7 @@ export default {
           custom_email_domain_enabled,
           features,
           auto_resolve_duration,
-          latest_cyber1schat_version: latestCyber1SChatVersion,
+          latest_cyberchat_version: latestCyberchatVersion,
         } = this.getAccount(this.accountId);
 
         this.$root.$i18n.locale = locale;
@@ -217,7 +217,7 @@ export default {
         this.customEmailDomainEnabled = custom_email_domain_enabled;
         this.features = features;
         this.autoResolveDuration = auto_resolve_duration;
-        this.latestCyber1SChatVersion = latestCyber1SChatVersion;
+        this.latestCyberchatVersion = latestCyberchatVersion;
       } catch (error) {
         // Ignore error
       }

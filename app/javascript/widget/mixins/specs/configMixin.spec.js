@@ -2,14 +2,14 @@ import { createWrapper } from '@vue/test-utils';
 import configMixin from '../configMixin';
 import Vue from 'vue';
 
-global.cyber1schatWebChannel = {
+global.cyberchatWebChannel = {
   avatarUrl: 'https://test.url',
   hasAConnectedAgentBot: 'AgentBot',
   enabledFeatures: ['emoji_picker', 'attachments', 'end_conversation'],
   preChatFormOptions: { require_email: false, pre_chat_message: '' },
 };
 
-global.cyber1schatWidgetDefaults = {
+global.cyberchatWidgetDefaults = {
   useInboxAvatarForBot: true,
 };
 

@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     colors: {
       white: colors.white,
-      c1chat: {
+      wooh: {
         50: '#E3F2FF',
         100: '#BBDDFF',
         200: '#8FC9FF',

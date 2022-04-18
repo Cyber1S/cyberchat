@@ -6,7 +6,7 @@ class Telegram::IncomingMessageService
   pattr_initialize [:inbox!, :params!]
 
   def perform
-    # cyber1schat doesn't support group conversations at the moment
+    # cyberchat doesn't support group conversations at the moment
     return unless private_message?
 
     set_contact

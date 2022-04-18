@@ -1,2 +1,2 @@
-export const CYBER1SCHAT_ERROR = 'cyber1schat:error';
-export const CYBER1SCHAT_READY = 'cyber1schat:ready';
+export const CYBERCHAT_ERROR = 'cyberchat:error';
+export const CYBERCHAT_READY = 'cyberchat:ready';

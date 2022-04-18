@@ -31,7 +31,7 @@ describe ::ContactIdentifyAction do
     end
 
     it 'enques avatar job when avatar url parameter is passed' do
-      params = { name: 'test', avatar_url: 'https://cyber1schat-assets.local/sample.png' }
+      params = { name: 'test', avatar_url: 'https://cyberchat-assets.local/sample.png' }
       expect(ContactAvatarJob).to receive(:perform_later).with(contact, params[:avatar_url]).once
       described_class.new(contact: contact, params: params).perform
     end

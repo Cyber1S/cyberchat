@@ -12,7 +12,7 @@
         v-if="totalCount"
         class="primary button-group pagination-button-group"
       >
-        <c1chat-button
+        <wooh-button
           size="small"
           variant="clear"
           color-scheme="secondary"
@@ -26,8 +26,8 @@
             size="18"
             class="margin-left-minus-slab"
           />
-        </c1chat-button>
-        <c1chat-button
+        </wooh-button>
+        <wooh-button
           size="small"
           variant="clear"
           color-scheme="secondary"
@@ -35,16 +35,16 @@
           @click="onPrevPage"
         >
           <fluent-icon icon="chevron-left" size="18" />
-        </c1chat-button>
-        <c1chat-button
+        </wooh-button>
+        <wooh-button
           size="small"
           variant="clear"
           color-scheme="secondary"
           @click.prevent
         >
           {{ currentPage }}
-        </c1chat-button>
-        <c1chat-button
+        </wooh-button>
+        <wooh-button
           size="small"
           variant="clear"
           color-scheme="secondary"
@@ -52,8 +52,8 @@
           @click="onNextPage"
         >
           <fluent-icon icon="chevron-right" size="18" />
-        </c1chat-button>
-        <c1chat-button
+        </wooh-button>
+        <wooh-button
           size="small"
           variant="clear"
           color-scheme="secondary"
@@ -67,7 +67,7 @@
             size="18"
             class="margin-left-minus-slab"
           />
-        </c1chat-button>
+        </wooh-button>
       </div>
     </div>
   </footer>

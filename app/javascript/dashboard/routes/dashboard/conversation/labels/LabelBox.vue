@@ -10,7 +10,7 @@
         @keyup.esc="closeDropdownLabel"
       >
         <add-label @add="toggleLabels" />
-        <c1chat-label
+        <wooh-label
           v-for="label in activeLabels"
           :key="label.id"
           :title="label.title"

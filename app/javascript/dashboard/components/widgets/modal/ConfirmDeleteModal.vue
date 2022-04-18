@@ -1,8 +1,8 @@
 <template>
   <modal :show.sync="show" :on-close="closeModal">
-    <c1chat-modal-header :header-title="title" :header-content="message" />
+    <wooh-modal-header :header-title="title" :header-content="message" />
     <form @submit.prevent="onConfirm">
-      <c1chat-input
+      <wooh-input
         v-model="value"
         type="text"
         :class="{ error: $v.value.$error }"
@@ -10,12 +10,12 @@
         @blur="$v.value.$touch"
       />
       <div class="button-wrapper">
-        <c1chat-button color-scheme="alert" :is-disabled="$v.value.$invalid">
+        <wooh-button color-scheme="alert" :is-disabled="$v.value.$invalid">
           {{ confirmText }}
-        </c1chat-button>
-        <c1chat-button class="clear" @click.prevent="closeModal">
+        </wooh-button>
+        <wooh-button class="clear" @click.prevent="closeModal">
           {{ rejectText }}
-        </c1chat-button>
+        </wooh-button>
       </div>
     </form>
   </modal>

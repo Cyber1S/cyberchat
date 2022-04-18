@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Teraz môžete prijímať e-maily vo vlastnej doméne."
       }
     },
-    "UPDATE_CYBER1SCHAT": "K dispozícii je aktualizácia %{latestCyber1SChatVersion} pre Cyber1SChat. Prosím, aktualizujte svoju inštanciu.",
+    "UPDATE_CYBERCHAT": "K dispozícii je aktualizácia %{latestCyberchatVersion} pre Cyberchat. Prosím, aktualizujte svoju inštanciu.",
     "LEARN_MORE": "Learn more"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Cyber1SChat je odpojený"
+      "TEXT": "Cyberchat je odpojený"
     },
     "BUTTON": {
       "REFRESH": "Obnoviť"

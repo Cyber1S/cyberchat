@@ -4,20 +4,20 @@ RSpec.describe 'Installation::Onboarding API', type: :request do
   let(:super_admin) { create(:super_admin) }
 
   describe 'GET /installation/onboarding' do
-    context 'when CYBER1SCHAT_INSTALLATION_ONBOARDING redis key is not set' do
+    context 'when CYBERCHAT_INSTALLATION_ONBOARDING redis key is not set' do
       it 'redirects back' do
-        expect(::Redis::Alfred.get(::Redis::Alfred::CYBER1SCHAT_INSTALLATION_ONBOARDING)).to eq nil
+        expect(::Redis::Alfred.get(::Redis::Alfred::CYBERCHAT_INSTALLATION_ONBOARDING)).to eq nil
         get '/installation/onboarding'
         expect(response).to have_http_status(:redirect)
       end
     end
 
-    context 'when CYBER1SCHAT_INSTALLATION_ONBOARDING redis key is set' do
+    context 'when CYBERCHAT_INSTALLATION_ONBOARDING redis key is set' do
       it 'returns onboarding page' do
-        ::Redis::Alfred.set(::Redis::Alfred::CYBER1SCHAT_INSTALLATION_ONBOARDING, true)
+        ::Redis::Alfred.set(::Redis::Alfred::CYBERCHAT_INSTALLATION_ONBOARDING, true)
         get '/installation/onboarding'
         expect(response).to have_http_status(:success)
-        ::Redis::Alfred.delete(::Redis::Alfred::CYBER1SCHAT_INSTALLATION_ONBOARDING)
+        ::Redis::Alfred.delete(::Redis::Alfred::CYBERCHAT_INSTALLATION_ONBOARDING)
       end
     end
   end
@@ -28,28 +28,28 @@ RSpec.describe 'Installation::Onboarding API', type: :request do
     before do
       allow(AccountBuilder).to receive(:new).and_return(account_builder)
       allow(account_builder).to receive(:perform).and_return(true)
-      allow(Cyber1SChatHub).to receive(:register_instance).and_return(true)
-      ::Redis::Alfred.set(::Redis::Alfred::CYBER1SCHAT_INSTALLATION_ONBOARDING, true)
+      allow(CyberchatHub).to receive(:register_instance).and_return(true)
+      ::Redis::Alfred.set(::Redis::Alfred::CYBERCHAT_INSTALLATION_ONBOARDING, true)
     end
 
     after do
-      ::Redis::Alfred.delete(::Redis::Alfred::CYBER1SCHAT_INSTALLATION_ONBOARDING)
+      ::Redis::Alfred.delete(::Redis::Alfred::CYBERCHAT_INSTALLATION_ONBOARDING)
     end
 
     context 'when onboarding successfull' do
       it 'deletes the redis key' do
         post '/installation/onboarding', params: { user: {} }
-        expect(::Redis::Alfred.get(::Redis::Alfred::CYBER1SCHAT_INSTALLATION_ONBOARDING)).to eq nil
+        expect(::Redis::Alfred.get(::Redis::Alfred::CYBERCHAT_INSTALLATION_ONBOARDING)).to eq nil
       end
 
       it 'will not call register instance when checkboxes are unchecked' do
         post '/installation/onboarding', params: { user: {} }
-        expect(Cyber1SChatHub).not_to have_received(:register_instance)
+        expect(CyberchatHub).not_to have_received(:register_instance)
       end
 
       it 'will call register instance when checkboxes are checked' do
         post '/installation/onboarding', params: { user: {}, subscribe_to_updates: 1 }
-        expect(Cyber1SChatHub).to have_received(:register_instance)
+        expect(CyberchatHub).to have_received(:register_instance)
       end
     end
 
@@ -57,7 +57,7 @@ RSpec.describe 'Installation::Onboarding API', type: :request do
       it 'does not deletes the redis key' do
         allow(AccountBuilder).to receive(:new).and_raise('error')
         post '/installation/onboarding', params: { user: {} }
-        expect(::Redis::Alfred.get(::Redis::Alfred::CYBER1SCHAT_INSTALLATION_ONBOARDING)).not_to eq nil
+        expect(::Redis::Alfred.get(::Redis::Alfred::CYBERCHAT_INSTALLATION_ONBOARDING)).not_to eq nil
       end
     end
   end

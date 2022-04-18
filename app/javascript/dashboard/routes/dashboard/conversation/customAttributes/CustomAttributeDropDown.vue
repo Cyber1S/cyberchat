@@ -15,25 +15,25 @@
     </div>
     <div class="list-wrap">
       <div class="list">
-        <c1chat-dropdown-menu>
+        <wooh-dropdown-menu>
           <custom-attribute-drop-down-item
             v-for="attribute in filteredAttributes"
             :key="attribute.attribute_display_name"
             :title="attribute.attribute_display_name"
             @click="onAddAttribute(attribute)"
           />
-        </c1chat-dropdown-menu>
+        </wooh-dropdown-menu>
         <div v-if="noResult" class="no-result">
           {{ $t('CUSTOM_ATTRIBUTES.FORM.ATTRIBUTE_SELECT.NO_RESULT') }}
         </div>
-        <c1chat-button
+        <wooh-button
           class="add"
           icon="add"
           size="tiny"
           @click="addNewAttribute"
         >
           {{ $t('CUSTOM_ATTRIBUTES.FORM.ADD.TITLE') }}
-        </c1chat-button>
+        </wooh-button>
       </div>
     </div>
   </div>

@@ -3,13 +3,13 @@ import types from '../../mutation-types';
 import getters, { getSelectedChatConversation } from './getters';
 import actions from './actions';
 import { findPendingMessageIndex } from './helpers';
-import c1chatConstants from '../../../constants';
+import woohConstants from '../../../constants';
 import { BUS_EVENTS } from '../../../../shared/constants/busEvents';
 
 const state = {
   allConversations: [],
   listLoadingStatus: true,
-  chatStatusFilter: c1chatConstants.STATUS_TYPE.OPEN,
+  chatStatusFilter: woohConstants.STATUS_TYPE.OPEN,
   currentInbox: null,
   selectedChatId: null,
   appliedFilters: [],

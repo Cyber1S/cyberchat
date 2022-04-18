@@ -17,7 +17,7 @@
           >
             {{ label }}
           </span>
-          <c1chat-button
+          <wooh-button
             v-if="showActions"
             v-tooltip.left="$t('CUSTOM_ATTRIBUTES.ACTIONS.DELETE')"
             variant="link"
@@ -44,7 +44,7 @@
             @keyup.enter="onUpdate"
           />
           <div class="input-group-button">
-            <c1chat-button size="small" icon="checkmark" @click="onUpdate" />
+            <wooh-button size="small" icon="checkmark" @click="onUpdate" />
           </div>
         </div>
         <span v-if="shouldShowErrorMessage" class="error-message">
@@ -69,7 +69,7 @@
           {{ displayValue || '---' }}
         </p>
         <div class="action-buttons__wrap">
-          <c1chat-button
+          <wooh-button
             v-if="showActions"
             v-tooltip="$t('CUSTOM_ATTRIBUTES.ACTIONS.COPY')"
             variant="link"
@@ -79,7 +79,7 @@
             class-names="edit-button"
             @click="onCopy"
           />
-          <c1chat-button
+          <wooh-button
             v-if="showActions"
             v-tooltip.right="$t('CUSTOM_ATTRIBUTES.ACTIONS.EDIT')"
             variant="link"

@@ -161,7 +161,7 @@ export default {
       if (window.fbSDKLoaded === undefined) {
         window.fbAsyncInit = () => {
           FB.init({
-            appId: window.cyber1schatConfig.fbAppId,
+            appId: window.cyberchatConfig.fbAppId,
             xfbml: true,
             version: 'v12.0',
             status: true,

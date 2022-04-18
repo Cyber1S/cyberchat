@@ -186,13 +186,13 @@
     "BETA": "Beta"
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any CYBER1SChat accounts. Please create a new account to continue.",
+    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any Cyberchat accounts. Please create a new account to continue.",
     "NEW_ACCOUNT": "Uusi tili",
     "SELECTOR_SUBTITLE": "Luo uusi tili",
     "API": {
       "SUCCESS_MESSAGE": "Tilin luominen onnistui",
       "EXIST_MESSAGE": "Tili on jo olemassa",
-      "ERROR_MESSAGE": "Yhteyden muodostaminen Cyber1SChat-palvelimelle ei onnistunut, yritä myöhemmin uudelleen"
+      "ERROR_MESSAGE": "Yhteyden muodostaminen CyberChat-palvelimelle ei onnistunut, yritä myöhemmin uudelleen"
     },
     "FORM": {
       "NAME": {

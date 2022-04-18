@@ -1,7 +1,7 @@
 @mixin bubble-with-types {
   @include padding($space-small $space-normal);
   @include margin($zero);
-  background: $color-c1chat;
+  background: $color-wooh;
   border-radius: $space-one;
   color: var(--white);
   font-size: $font-size-small;
@@ -145,7 +145,7 @@
     span {
       @include elegant-card;
       @include round-corner;
-      background: $color-c1chat;
+      background: $color-wooh;
       color: var(--white);
       font-size: $font-size-mini;
       font-weight: $font-weight-medium;
@@ -191,7 +191,7 @@
         }
 
         .icon-wrap {
-          color: $color-c1chat;
+          color: $color-wooh;
         }
 
         .download {
@@ -382,7 +382,7 @@
   }
 
   a {
-    color: var(--color-c1chat);
+    color: var(--color-wooh);
     text-decoration: underline;
   }
 

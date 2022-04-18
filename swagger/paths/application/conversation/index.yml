@@ -56,7 +56,7 @@ post:
     - Conversations
   operationId: newConversation
   summary: Create New Conversation
-  description: "Creating a conversation in cyber1schat requires a source id. \n\n Learn more about source_id: https://github.com/cyber1s/cyber1schat/wiki/Building-on-Top-of-Cyber1SChat:-Importing-Existing-Contacts-and-Creating-Conversations"
+  description: "Creating a conversation in cyberchat requires a source id. \n\n Learn more about source_id: https://github.com/cyber1s/cyberchat/wiki/Building-on-Top-of-Cyberchat:-Importing-Existing-Contacts-and-Creating-Conversations"
   security:
     - userApiKey: []
     - agentBotApiKey: []

@@ -118,7 +118,7 @@ export default {
           sortBy: this.sortConfig.name || '',
           width: 300,
           renderBodyCell: ({ row }) => (
-            <c1chat-button
+            <wooh-button
               variant="clear"
               onClick={() => this.onClickContact(row.id)}
             >
@@ -143,7 +143,7 @@ export default {
                   </button>
                 </div>
               </div>
-            </c1chat-button>
+            </wooh-button>
           ),
         },
         {

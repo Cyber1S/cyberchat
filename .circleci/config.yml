@@ -40,21 +40,21 @@ jobs:
 
       - restore_cache:
           keys:
-            - cyber1schat-bundle-{{ .Environment.CACHE_VERSION }}-{{ checksum "Gemfile.lock" }}
-            - cyber1schat-bundle
+            - cyberchat-bundle-{{ .Environment.CACHE_VERSION }}-{{ checksum "Gemfile.lock" }}
+            - cyberchat-bundle
 
       - run: bundle install --frozen --path ~/.bundle
       - save_cache:
           paths:
             - ~/.bundle
-          key: cyber1schat-bundle-{{ .Environment.CACHE_VERSION }}-{{ checksum "Gemfile.lock" }}
+          key: cyberchat-bundle-{{ .Environment.CACHE_VERSION }}-{{ checksum "Gemfile.lock" }}
 
 
       # Only necessary if app uses webpacker or yarn in some other way
       - restore_cache:
           keys:
-            - cyber1schat-yarn-{{ .Environment.CACHE_VERSION }}-{{ checksum "yarn.lock" }}
-            - cyber1schat-yarn-
+            - cyberchat-yarn-{{ .Environment.CACHE_VERSION }}-{{ checksum "yarn.lock" }}
+            - cyberchat-yarn-
 
       - run:
           name: yarn
@@ -62,7 +62,7 @@ jobs:
 
       # Store yarn / webpacker cache
       - save_cache:
-          key: cyber1schat-yarn-{{ .Environment.CACHE_VERSION }}-{{ checksum "yarn.lock" }}
+          key: cyberchat-yarn-{{ .Environment.CACHE_VERSION }}-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
 

@@ -1,6 +1,6 @@
 <template>
   <div class="row content-box full-height">
-    <c1chat-wizard
+    <wooh-wizard
       class="hide-for-small-only medium-3 columns"
       :global-config="globalConfig"
       :items="items"

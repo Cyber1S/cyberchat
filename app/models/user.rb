@@ -117,9 +117,9 @@ class User < ApplicationRecord
     self[:display_name].presence || name
   end
 
-  # Used internally for CYBER1SChat in Cyber1SChat
+  # Used internally for Cyberchat in Cyberchat
   def hmac_identifier
-    hmac_key = GlobalConfig.get('CYBER1SCHAT_INBOX_HMAC_KEY')['CYBER1SCHAT_INBOX_HMAC_KEY']
+    hmac_key = GlobalConfig.get('CYBERCHAT_INBOX_HMAC_KEY')['CYBERCHAT_INBOX_HMAC_KEY']
     return OpenSSL::HMAC.hexdigest('sha256', hmac_key, email) if hmac_key.present?
 
     ''

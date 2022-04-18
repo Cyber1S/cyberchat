@@ -1,7 +1,7 @@
-# This class creates both outgoing messages from cyber1schat and echo outgoing messages based on the flag `outgoing_echo`
+# This class creates both outgoing messages from cyberchat and echo outgoing messages based on the flag `outgoing_echo`
 # Assumptions
 # 1. Incase of an outgoing message which is echo, source_id will NOT be nil,
-#    based on this we are showing "not sent from cyber1schat" message in frontend
+#    based on this we are showing "not sent from cyberchat" message in frontend
 #    Hence there is no need to set user_id in message for outgoing echo messages.
 
 class Messages::Facebook::MessageBuilder < Messages::Messenger::MessageBuilder

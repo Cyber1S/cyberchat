@@ -5,7 +5,7 @@ ConfigLoader.new.process
 ## Seeds productions
 if Rails.env.production?
   # Setup Onboarding flow
-  ::Redis::Alfred.set(::Redis::Alfred::CYBER1SCHAT_INSTALLATION_ONBOARDING, true)
+  ::Redis::Alfred.set(::Redis::Alfred::CYBERCHAT_INSTALLATION_ONBOARDING, true)
 end
 
 ## Seeds for Local Development
@@ -74,5 +74,5 @@ unless Rails.env.production?
   # csat
   Seeders::MessageSeeder.create_sample_csat_collect_message conversation
 
-  CannedResponse.create!(account: account, short_code: 'start', content: 'Hello welcome to cyber1schat.')
+  CannedResponse.create!(account: account, short_code: 'start', content: 'Hello welcome to cyberchat.')
 end

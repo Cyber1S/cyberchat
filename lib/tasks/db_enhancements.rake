@@ -14,7 +14,7 @@ end
 # ref: https://github.com/rails/rails/blob/main/activerecord/lib/active_record/railties/databases.rake#L356
 db_namespace = namespace :db do
   desc 'Runs setup if database does not exist, or runs migrations if it does'
-  task cyber1schat_prepare: :load_config do
+  task cyberchat_prepare: :load_config do
     ActiveRecord::Base.configurations.configs_for(env_name: Rails.env).each do |db_config|
       ActiveRecord::Base.establish_connection(db_config.config)
       # handling case where database was created by the provider, with out running db:setup

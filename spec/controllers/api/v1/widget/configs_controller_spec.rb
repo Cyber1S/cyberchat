@@ -10,7 +10,7 @@ RSpec.describe '/api/v1/widget/config', type: :request do
 
   describe 'POST /api/v1/widget/config' do
     let(:params) { { website_token: web_widget.website_token } }
-    let(:response_keys) { %w[cyber1schat_website_channel cyber1schat_widget_defaults contact auth_token global_config] }
+    let(:response_keys) { %w[cyberchat_website_channel cyberchat_widget_defaults contact auth_token global_config] }
 
     context 'with invalid website token' do
       it 'returns not found' do

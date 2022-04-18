@@ -1,5 +1,5 @@
 # ref: https://github.com/jgorset/facebook-messenger#make-a-configuration-provider
-class Cyber1SChatFbProvider < Facebook::Messenger::Configuration::Providers::Base
+class CyberchatFbProvider < Facebook::Messenger::Configuration::Providers::Base
   def valid_verify_token?(_verify_token)
     GlobalConfigService.load('FB_VERIFY_TOKEN', '')
   end
@@ -15,13 +15,13 @@ class Cyber1SChatFbProvider < Facebook::Messenger::Configuration::Providers::Bas
   private
 
   def bot
-    Cyber1SChat::Bot
+    Cyberchat::Bot
   end
 end
 
 Rails.application.reloader.to_prepare do
   Facebook::Messenger.configure do |config|
-    config.provider = Cyber1SChatFbProvider.new
+    config.provider = CyberchatFbProvider.new
   end
 
   Facebook::Messenger::Bot.on :message do |message|

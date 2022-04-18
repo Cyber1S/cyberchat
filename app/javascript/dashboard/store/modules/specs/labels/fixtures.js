@@ -9,7 +9,7 @@ export default [
   {
     id: 4,
     title: 'saas-customer',
-    description: 'Customers who have account on chat.cyber1s.com',
+    description: 'Customers who have account on mychat.cyber1s.com',
     color: '#A8DBCB',
     show_on_sidebar: false,
   },

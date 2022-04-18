@@ -1,9 +1,9 @@
 {
-  "name": "Cyber1SChat",
-  "description": "Cyber1SChat is a customer support tool for instant messaging channels",
+  "name": "Cyberchat",
+  "description": "Cyberchat is a customer support tool for instant messaging channels",
   "website": "https://chat.cyber1s.com/",
-  "repository": "https://github.com/cyber1s/cyber1schat",
-  "logo": "https://chat.cyber1s.com/brand-assets/logo_thumbnail.svg",
+  "repository": "https://github.com/cyber1s/cyberchat",
+  "logo": "https://mychat.cyber1s.com/brand-assets/logo_thumbnail.svg",
   "keywords": [
     "live chat",
     "customer support",
@@ -26,11 +26,11 @@
       "value": "production"
     },
     "FRONTEND_URL": {
-      "description": "Public root URL of the CYBER1SChat installation. This will be used in the emails.",
+      "description": "Public root URL of the Cyberchat installation. This will be used in the emails.",
       "value": "https://CHANGE.herokuapp.com"
     },
     "INSTALLATION_ENV": {
-      "description": "Installation method used for Cyber1SChat.",
+      "description": "Installation method used for Cyberchat.",
       "value": "heroku"
     },
     "REDIS_OPENSSL_VERIFY_MODE":{

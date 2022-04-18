@@ -1,6 +1,6 @@
 <template>
   <div :class="emptyClassName">
-    <c1chat-loading-state
+    <wooh-loading-state
       v-if="uiFlags.isFetching || loadingChatList"
       :message="loadingIndicatorMessage"
     />

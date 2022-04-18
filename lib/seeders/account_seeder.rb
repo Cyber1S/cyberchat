@@ -1,4 +1,4 @@
-## Class to generate sample data for a cyber1schat test Account.
+## Class to generate sample data for a cyberchat test Account.
 ############################################################
 ### Usage #####
 #

@@ -4,7 +4,7 @@
     class="update-banner"
     color-scheme="primary"
     :banner-message="bannerMessage"
-    href-link="https://chat.cyber1s.com/docs/releases"
+    href-link="https://github.com/cyber1s/cyberchat/releases"
     :href-link-text="$t('GENERAL_SETTINGS.LEARN_MORE')"
     has-close-button
     @close="dismissUpdateBanner"
@@ -25,7 +25,7 @@ export default {
   },
   mixins: [adminMixin],
   props: {
-    latestCyber1SChatVersion: {
+    latestCyberchatVersion: {
       type: String,
       default: '',
     },
@@ -33,24 +33,24 @@ export default {
   computed: {
     ...mapGetters({ globalConfig: 'globalConfig/get' }),
     hasAnUpdateAvailable() {
-      if (!semver.valid(this.latestCyber1SChatVersion)) {
+      if (!semver.valid(this.latestCyberchatVersion)) {
         return false;
       }
       return semver.lt(
         this.globalConfig.appVersion,
-        this.latestCyber1SChatVersion
+        this.latestCyberchatVersion
       );
     },
     bannerMessage() {
-      return this.$t('GENERAL_SETTINGS.UPDATE_CYBER1SCHAT', {
-        latestCyber1SChatVersion: this.latestCyber1SChatVersion,
+      return this.$t('GENERAL_SETTINGS.UPDATE_CYBERCHAT', {
+        latestCyberchatVersion: this.latestCyberchatVersion,
       });
     },
     shouldShowBanner() {
       return (
         this.globalConfig.displayManifest &&
         this.hasAnUpdateAvailable &&
-        !this.isVersionNotificationDismissed(this.latestCyber1SChatVersion) &&
+        !this.isVersionNotificationDismissed(this.latestCyberchatVersion) &&
         this.isAdmin
       );
     },
@@ -62,12 +62,12 @@ export default {
     dismissUpdateBanner() {
       let updatedDismissedItems = dismissedUpdates.get();
       if (updatedDismissedItems instanceof Array) {
-        updatedDismissedItems.push(this.latestCyber1SChatVersion);
+        updatedDismissedItems.push(this.latestCyberchatVersion);
       } else {
-        updatedDismissedItems = [this.latestCyber1SChatVersion];
+        updatedDismissedItems = [this.latestCyberchatVersion];
       }
       dismissedUpdates.store(updatedDismissedItems);
-      this.latestCyber1SChatVersion = this.globalConfig.appVersion;
+      this.latestCyberchatVersion = this.globalConfig.appVersion;
     },
   },
 };

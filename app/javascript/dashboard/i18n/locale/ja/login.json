@@ -1,6 +1,6 @@
 {
   "LOGIN": {
-    "TITLE": "Cyber1SChatにログイン",
+    "TITLE": "Cyberchatにログイン",
     "EMAIL": {
       "LABEL": "Eメール",
       "PLACEHOLDER": "Eメール　例：someone@example.com"
@@ -11,7 +11,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "ログインしました",
-      "ERROR_MESSAGE": "Cyber1SChat Serverに接続できませんでした。後でもう一度お試しください。",
+      "ERROR_MESSAGE": "CyberChatに接続できませんでした。後でもう一度お試しください。",
       "UNAUTH": "ユーザー名/パスワードが正しくありません。もう一度やり直してください"
     },
     "FORGOT_PASSWORD": "パスワードをお忘れですか?",

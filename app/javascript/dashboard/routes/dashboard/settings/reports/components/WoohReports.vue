@@ -1,13 +1,13 @@
 <template>
   <div class="column content-box">
-    <c1chat-button
+    <wooh-button
       color-scheme="success"
       class-names="button--fixed-right-top"
       icon="arrow-download"
       @click="downloadReports"
     >
       {{ downloadButtonLabel }}
-    </c1chat-button>
+    </wooh-button>
     <report-filters
       v-if="filterItemsList"
       :type="type"
@@ -21,7 +21,7 @@
     />
     <div>
       <div v-if="filterItemsList.length" class="row">
-        <c1chat-report-stats-card
+        <wooh-report-stats-card
           v-for="(metric, index) in metrics"
           :key="metric.NAME"
           :desc="metric.DESC"
@@ -35,12 +35,12 @@
         />
       </div>
       <div class="report-bar">
-        <c1chat-loading-state
+        <wooh-loading-state
           v-if="accountReport.isFetching"
           :message="$t('REPORT.LOADING_CHART')"
         />
         <div v-else class="chart-container">
-          <c1chat-bar
+          <wooh-bar
             v-if="accountReport.data.length && filterItemsList.length"
             :collection="collection"
             :chart-options="chartOptions"

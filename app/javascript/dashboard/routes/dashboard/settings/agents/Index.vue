@@ -1,18 +1,18 @@
 <template>
   <div class="column content-box">
-    <c1chat-button
+    <wooh-button
       color-scheme="success"
       class-names="button--fixed-right-top"
       icon="add-circle"
       @click="openAddPopup()"
     >
       {{ $t('AGENT_MGMT.HEADER_BTN_TXT') }}
-    </c1chat-button>
+    </wooh-button>
 
     <!-- List Agents -->
     <div class="row">
       <div class="small-8 columns with-right-space ">
-        <c1chat-loading-state
+        <wooh-loading-state
           v-if="uiFlags.isFetching"
           :message="$t('AGENT_MGMT.LOADING')"
         />
@@ -20,7 +20,7 @@
           <p v-if="!agentList.length">
             {{ $t('AGENT_MGMT.LIST.404') }}
           </p>
-          <table v-else class="c1chat-table">
+          <table v-else class="wooh-table">
             <tbody>
               <tr v-for="(agent, index) in agentList" :key="agent.email">
                 <!-- Gravtar Image -->
@@ -57,7 +57,7 @@
                 <!-- Actions -->
                 <td>
                   <div class="button-wrapper">
-                    <c1chat-button
+                    <wooh-button
                       v-if="showEditAction(agent)"
                       v-tooltip.top="$t('AGENT_MGMT.EDIT.BUTTON_TEXT')"
                       variant="smooth"
@@ -67,8 +67,8 @@
                       class-names="grey-btn"
                       @click="openEditPopup(agent)"
                     >
-                    </c1chat-button>
-                    <c1chat-button
+                    </wooh-button>
+                    <wooh-button
                       v-if="showDeleteAction(agent)"
                       v-tooltip.top="$t('AGENT_MGMT.DELETE.BUTTON_TEXT')"
                       variant="smooth"
@@ -79,7 +79,7 @@
                       :is-loading="loading[agent.id]"
                       @click="openDeletePopup(agent, index)"
                     >
-                    </c1chat-button>
+                    </wooh-button>
                   </div>
                 </td>
               </tr>
@@ -99,11 +99,11 @@
       </div>
     </div>
     <!-- Add Agent -->
-    <c1chat-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
+    <wooh-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
       <add-agent :on-close="hideAddPopup" />
-    </c1chat-modal>
+    </wooh-modal>
     <!-- Edit Agent -->
-    <c1chat-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
+    <wooh-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
       <edit-agent
         v-if="showEditPopup"
         :id="currentAgent.id"
@@ -112,9 +112,9 @@
         :email="currentAgent.email"
         :on-close="hideEditPopup"
       />
-    </c1chat-modal>
+    </wooh-modal>
     <!-- Delete Agent -->
-    <c1chat-delete-modal
+    <wooh-delete-modal
       :show.sync="showDeletePopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

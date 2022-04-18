@@ -11,7 +11,7 @@
   //logo
   .logo {
     img {
-      @include padding($c1chat-logo-padding);
+      @include padding($wooh-logo-padding);
       max-height: 108px;
     }
   }

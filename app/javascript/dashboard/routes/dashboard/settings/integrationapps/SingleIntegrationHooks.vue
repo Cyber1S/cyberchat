@@ -17,15 +17,15 @@
           <div class="small-2 column button-wrap">
             <div v-if="hasConnectedHooks">
               <div @click="$emit('delete', integration.hooks[0])">
-                <c1chat-button class="nice alert">
+                <wooh-button class="nice alert">
                   {{ $t('INTEGRATION_APPS.DISCONNECT.BUTTON_TEXT') }}
-                </c1chat-button>
+                </wooh-button>
               </div>
             </div>
             <div v-else>
-              <c1chat-button class="button nice" @click="$emit('add')">
+              <wooh-button class="button nice" @click="$emit('add')">
                 {{ $t('INTEGRATION_APPS.CONNECT.BUTTON_TEXT') }}
-              </c1chat-button>
+              </wooh-button>
             </div>
           </div>
         </div>

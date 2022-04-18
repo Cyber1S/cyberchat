@@ -1,6 +1,6 @@
 {
   "REGISTER": {
-    "TRY_C1CHAT": "Registrera ett konto",
+    "TRY_WOOH": "Registrera ett konto",
     "TITLE": "Registrera",
     "TERMS_ACCEPT": "Genom att registrera dig godkänner du våra <a href=\"https://chat.cyber1s.com/terms\">användarvillkor</a> och vår <a href=\"https://chat.cyber1s.com/privacy-policy\">sekretesspolicy</a>",
     "ACCOUNT_NAME": {
@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Registreringen lyckades",
-      "ERROR_MESSAGE": "Kunde inte ansluta till CYBER1SChat Server, försök igen senare"
+      "ERROR_MESSAGE": "Kunde inte ansluta till CyberChat, försök igen senare"
     },
     "SUBMIT": "Skicka",
     "HAVE_AN_ACCOUNT": "Har du redan ett konto?"

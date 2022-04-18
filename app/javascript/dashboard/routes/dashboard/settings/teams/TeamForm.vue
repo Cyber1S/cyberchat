@@ -2,7 +2,7 @@
   <div class="row">
     <div class="small-12 medium-8 columns">
       <form class="row" @submit.prevent="handleSubmit">
-        <c1chat-input
+        <wooh-input
           v-model.trim="title"
           :class="{ error: $v.title.$error }"
           class="medium-12 columns"
@@ -11,7 +11,7 @@
           @input="$v.title.$touch"
         />
 
-        <c1chat-input
+        <wooh-input
           v-model.trim="description"
           :class="{ error: $v.description.$error }"
           class="medium-12 columns"
@@ -28,7 +28,7 @@
         </div>
         <div class="modal-footer">
           <div class="medium-12 columns">
-            <c1chat-submit-button
+            <wooh-submit-button
               :disabled="$v.title.$invalid || submitInProgress"
               :button-text="submitButtonText"
               :loading="submitInProgress"
@@ -41,12 +41,12 @@
 </template>
 
 <script>
-import c1chatSubmitButton from '../../../../components/buttons/FormSubmitButton';
+import WoohSubmitButton from '../../../../components/buttons/FormSubmitButton';
 import validations from './helpers/validations';
 
 export default {
   components: {
-    c1chatSubmitButton,
+    WoohSubmitButton,
   },
 
   props: {

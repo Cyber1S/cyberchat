@@ -35,8 +35,8 @@ $font-weight-bold: 600;
 $font-weight-black: 700;
 
 // Colors
-$color-c1chat: #1f93ff;
-$color-primary: $color-c1chat;
+$color-wooh: #1f93ff;
+$color-primary: $color-wooh;
 $color-gray: #6e6f73;
 $color-light-gray: #999a9b;
 $color-border: #e0e6ed;
@@ -54,7 +54,7 @@ $color-success: #44ce4b;
 // Color-palettes
 
 $color-primary-light: #c7e3ff;
-$color-primary-dark: darken($color-c1chat, 20%);
+$color-primary-dark: darken($color-wooh, 20%);
 
 // Spinner
 $spinkit-spinner-color: $color-white !default;
@@ -62,8 +62,8 @@ $spinkit-spinner-margin: 0 0 0 1.6rem !default;
 $spinkit-size: 1.6rem !default;
 
 // Snackbar default
-$c1chat-snackbar-bg: #323232;
-$c1chat-snackbar-button: #ffeb3b;
+$wooh-snackbar-bg: #323232;
+$wooh-snackbar-button: #ffeb3b;
 
 $swift-ease-out-duration: .4s !default;
 $swift-ease-out-timing-function: cubic-bezier(.25, .8, .25, 1) !default;

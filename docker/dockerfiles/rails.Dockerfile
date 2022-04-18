@@ -1,4 +1,4 @@
-FROM cyber1schat:development
+FROM cyberchat:development
 
 RUN chmod +x docker/entrypoints/rails.sh
 

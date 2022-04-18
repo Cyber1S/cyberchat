@@ -1,8 +1,8 @@
 <template>
   <div class="column">
-    <c1chat-modal-header :header-title="$t('CONTACTS_FILTER.TITLE')">
+    <wooh-modal-header :header-title="$t('CONTACTS_FILTER.TITLE')">
       <p>{{ $t('CONTACTS_FILTER.SUBTITLE') }}</p>
-    </c1chat-modal-header>
+    </wooh-modal-header>
     <div class="row modal-content">
       <div class="medium-12 columns filters-wrap">
         <filter-input-box
@@ -26,7 +26,7 @@
           @removeFilter="removeFilter(i)"
         />
         <div class="filter-actions">
-          <c1chat-button
+          <wooh-button
             icon="add"
             color-scheme="success"
             variant="smooth"
@@ -34,8 +34,8 @@
             @click="appendNewFilter"
           >
             {{ $t('CONTACTS_FILTER.ADD_NEW_FILTER') }}
-          </c1chat-button>
-          <c1chat-button
+          </wooh-button>
+          <wooh-button
             v-if="hasAppliedFilters"
             icon="subtract"
             color-scheme="alert"
@@ -44,17 +44,17 @@
             @click="clearFilters"
           >
             {{ $t('CONTACTS_FILTER.CLEAR_ALL_FILTERS') }}
-          </c1chat-button>
+          </wooh-button>
         </div>
       </div>
       <div class="medium-12 columns">
         <div class="modal-footer justify-content-end w-full">
-          <c1chat-button class="button clear" @click.prevent="onClose">
+          <wooh-button class="button clear" @click.prevent="onClose">
             {{ $t('CONTACTS_FILTER.CANCEL_BUTTON_LABEL') }}
-          </c1chat-button>
-          <c1chat-button @click="submitFilterQuery">
+          </wooh-button>
+          <wooh-button @click="submitFilterQuery">
             {{ $t('CONTACTS_FILTER.SUBMIT_BUTTON_LABEL') }}
-          </c1chat-button>
+          </wooh-button>
         </div>
       </div>
     </div>

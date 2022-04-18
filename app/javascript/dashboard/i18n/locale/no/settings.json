@@ -186,13 +186,13 @@
     "BETA": "Beta"
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any CYBER1SChat accounts. Please create a new account to continue.",
+    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any Cyberchat accounts. Please create a new account to continue.",
     "NEW_ACCOUNT": "Ny konto",
     "SELECTOR_SUBTITLE": "Opprett ny konto",
     "API": {
       "SUCCESS_MESSAGE": "Kontoen ble opprettet",
       "EXIST_MESSAGE": "Kontoen eksisterer allerede",
-      "ERROR_MESSAGE": "Kunne ikke koble til CYBER1SChat Server, vennligst prøv igjen senere"
+      "ERROR_MESSAGE": "Kunne ikke koble til CyberChat, vennligst prøv igjen senere"
     },
     "FORM": {
       "NAME": {

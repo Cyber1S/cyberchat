@@ -48,7 +48,7 @@
             @update="data => onSlotUpdate(timeSlot.day, data)"
           />
         </div>
-        <c1chat-submit-button
+        <wooh-submit-button
           :button-text="$t('INBOX_MGMT.BUSINESS_HOURS.UPDATE')"
           :loading="uiFlags.isUpdatingInbox"
           :disabled="hasError"

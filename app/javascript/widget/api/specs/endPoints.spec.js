@@ -7,7 +7,7 @@ describe('#sendMessage', () => {
     }));
     const windowSpy = jest.spyOn(window, 'window', 'get');
     windowSpy.mockImplementation(() => ({
-      C1CHAT_WIDGET: {
+      WOOH_WIDGET: {
         $root: {
           $i18n: {
             locale: 'ar',

@@ -1,6 +1,6 @@
 {
   "REGISTER": {
-    "TRY_C1CHAT": "Register an account",
+    "TRY_WOOH": "Register an account",
     "TITLE": "Register",
     "TERMS_ACCEPT": "By signing up, you agree to our <a href=\"https://chat.cyber1s.com/terms\">T & C</a> and <a href=\"https://chat.cyber1s.com/privacy-policy\">Privacy policy</a>",
     "ACCOUNT_NAME": {
@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Registration Successfull",
-      "ERROR_MESSAGE": "Nije moguće se povezati sa CYBER1SChat serverom, pokušajte ponovo kasnije"
+      "ERROR_MESSAGE": "Nije moguće se povezati sa CyberChat serverom, pokušajte ponovo kasnije"
     },
     "SUBMIT": "Pošalji",
     "HAVE_AN_ACCOUNT": "Already have an account?"

@@ -1,6 +1,6 @@
 <template>
   <div v-if="!authUIFlags.isFetching" id="app" class="app-wrapper app-root">
-    <update-banner :latest-cyber1schat-version="latestCyber1SChatVersion" />
+    <update-banner :latest-cyberchat-version="latestCyberchatVersion" />
     <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
@@ -8,7 +8,7 @@
       :show="showAddAccountModal"
       :has-accounts="hasAccounts"
     />
-    <c1chat-snackbar-box />
+    <wooh-snackbar-box />
     <network-notification />
   </div>
   <loading-state v-else />
@@ -21,7 +21,7 @@ import LoadingState from './components/widgets/LoadingState.vue';
 import NetworkNotification from './components/NetworkNotification';
 import UpdateBanner from './components/app/UpdateBanner.vue';
 import vueActionCable from './helper/actionCable';
-import c1chatSnackbarBox from './components/SnackbarContainer';
+import WoohSnackbarBox from './components/SnackbarContainer';
 import {
   registerSubscription,
   verifyServiceWorkerExistence,
@@ -35,13 +35,13 @@ export default {
     LoadingState,
     NetworkNotification,
     UpdateBanner,
-    c1chatSnackbarBox,
+    WoohSnackbarBox,
   },
 
   data() {
     return {
       showAddAccountModal: false,
-      latestCyber1SChatVersion: null,
+      latestCyberchatVersion: null,
     };
   },
 
@@ -79,7 +79,7 @@ export default {
     },
   },
   mounted() {
-    this.setLocale(window.cyber1schatConfig.selectedLocale);
+    this.setLocale(window.cyberchatConfig.selectedLocale);
   },
   methods: {
     setLocale(locale) {
@@ -89,11 +89,11 @@ export default {
       await this.$store.dispatch('accounts/get');
       const {
         locale,
-        latest_cyber1schat_version: latestCyber1SChatVersion,
+        latest_cyberchat_version: latestCyberchatVersion,
       } = this.getAccount(this.currentAccountId);
       const { pubsub_token: pubsubToken } = this.currentUser || {};
       this.setLocale(locale);
-      this.latestCyber1SChatVersion = latestCyber1SChatVersion;
+      this.latestCyberchatVersion = latestCyberchatVersion;
       vueActionCable.init(pubsubToken);
     },
   },

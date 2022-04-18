@@ -1,9 +1,9 @@
 <template>
   <div class="image message-text__wrap">
     <img :src="url" @click="onClick" @error="onImgError()" />
-    <c1chat-modal :full-width="true" :show.sync="show" :on-close="onClose">
+    <wooh-modal :full-width="true" :show.sync="show" :on-close="onClose">
       <img :src="url" class="modal-image" />
-    </c1chat-modal>
+    </wooh-modal>
   </div>
 </template>
 

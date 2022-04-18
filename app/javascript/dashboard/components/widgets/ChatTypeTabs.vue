@@ -1,15 +1,15 @@
 <template>
-  <c1chat-tabs :index="activeTabIndex" @change="onTabChange">
-    <c1chat-tabs-item
+  <wooh-tabs :index="activeTabIndex" @change="onTabChange">
+    <wooh-tabs-item
       v-for="item in items"
       :key="item.key"
       :name="item.name"
       :count="item.count"
     />
-  </c1chat-tabs>
+  </wooh-tabs>
 </template>
 <script>
-import c1chatConstants from '../../constants';
+import woohConstants from '../../constants';
 import eventListenerMixins from 'shared/mixins/eventListenerMixins';
 import { hasPressedAltAndNKey } from 'shared/helpers/KeyboardHelpers';
 
@@ -22,7 +22,7 @@ export default {
     },
     activeTab: {
       type: String,
-      default: c1chatConstants.ASSIGNEE_TYPE.ME,
+      default: woohConstants.ASSIGNEE_TYPE.ME,
     },
   },
   computed: {
@@ -33,7 +33,7 @@ export default {
   methods: {
     handleKeyEvents(e) {
       if (hasPressedAltAndNKey(e)) {
-        if (this.activeTab === c1chatConstants.ASSIGNEE_TYPE.ALL) {
+        if (this.activeTab === woohConstants.ASSIGNEE_TYPE.ALL) {
           this.onTabChange(0);
         } else {
           this.onTabChange(this.activeTabIndex + 1);

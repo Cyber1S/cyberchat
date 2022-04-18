@@ -77,7 +77,7 @@ export default {
     },
   },
   mounted() {
-    const { websiteToken, locale, widgetColor } = window.cyber1schatWebChannel;
+    const { websiteToken, locale, widgetColor } = window.cyberchatWebChannel;
     this.setLocale(locale);
     this.setWidgetColor(widgetColor);
     if (this.isIFrame) {
@@ -132,7 +132,7 @@ export default {
       });
     },
     setLocale(locale) {
-      const { enabledLanguages } = window.cyber1schatWebChannel;
+      const { enabledLanguages } = window.cyberchatWebChannel;
       if (enabledLanguages.some(lang => lang.iso_639_1_code === locale)) {
         this.$root.$i18n.locale = locale;
       }
@@ -163,7 +163,7 @@ export default {
         this.unsetUnreadView();
       });
       bus.$on('execute-campaign', campaignId => {
-        const { websiteToken } = window.cyber1schatWebChannel;
+        const { websiteToken } = window.cyberchatWebChannel;
         this.executeCampaign({ campaignId, websiteToken });
         this.replaceRoute('messages');
       });
@@ -218,7 +218,7 @@ export default {
       this.$store.dispatch('events/create', { name: eventName });
     },
     registerListeners() {
-      const { websiteToken } = window.cyber1schatWebChannel;
+      const { websiteToken } = window.cyberchatWebChannel;
       window.addEventListener('message', e => {
         if (!IFrameHelper.isAValidEvent(e)) {
           return;
@@ -301,5 +301,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~widget/assets/scss/c1chat.scss';
+@import '~widget/assets/scss/wooh.scss';
 </style>

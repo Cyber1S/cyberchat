@@ -1,7 +1,7 @@
 /* eslint no-console: 0 */
 /* eslint no-param-reassign: 0 */
 export default Vuex => {
-  const c1chatState = new Vuex.Store({
+  const woohState = new Vuex.Store({
     state: {
       authenticated: false,
       currentChat: null,
@@ -26,5 +26,5 @@ export default Vuex => {
       },
     },
   });
-  return c1chatState;
+  return woohState;
 };

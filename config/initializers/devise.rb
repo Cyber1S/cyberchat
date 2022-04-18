@@ -12,7 +12,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = ENV.fetch('MAILER_SENDER_EMAIL', 'Cyber1SChat <accounts@cyber1s.com>')
+  config.mailer_sender = ENV.fetch('MAILER_SENDER_EMAIL', 'Cyberchat <accounts@cyber1s.com>')
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'

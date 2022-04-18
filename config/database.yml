@@ -7,18 +7,18 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV.fetch('POSTGRES_DATABASE', 'cyber1schat_dev') %>
+  database: <%= ENV.fetch('POSTGRES_DATABASE', 'cyberchat_dev') %>
   username: <%= ENV.fetch('POSTGRES_USERNAME', 'postgres') %>
   password: <%= ENV.fetch('POSTGRES_PASSWORD', '') %>
 
 test:
   <<: *default
-  database: <%= ENV.fetch('POSTGRES_DATABASE', 'cyber1schat_test') %>
+  database: <%= ENV.fetch('POSTGRES_DATABASE', 'cyberchat_test') %>
   username: <%= ENV.fetch('POSTGRES_USERNAME', 'postgres') %>
   password: <%= ENV.fetch('POSTGRES_PASSWORD', '') %>
 
 production:
   <<: *default
-  database: <%= ENV.fetch('POSTGRES_DATABASE', 'cyber1schat_production') %>
-  username: <%= ENV.fetch('POSTGRES_USERNAME', 'cyber1schat_prod') %>
-  password: <%= ENV.fetch('POSTGRES_PASSWORD', 'cyber1schat_prod') %>
+  database: <%= ENV.fetch('POSTGRES_DATABASE', 'cyberchat_production') %>
+  username: <%= ENV.fetch('POSTGRES_USERNAME', 'cyberchat_prod') %>
+  password: <%= ENV.fetch('POSTGRES_PASSWORD', 'cyberchat_prod') %>

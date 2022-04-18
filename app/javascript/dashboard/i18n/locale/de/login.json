@@ -1,6 +1,6 @@
 {
   "LOGIN": {
-    "TITLE": "Melden Sie sich bei CYBER1SChat an",
+    "TITLE": "Melden Sie sich bei Cyberchat an",
     "EMAIL": {
       "LABEL": "E-Mail",
       "PLACEHOLDER": "E-Mail zB: jemand@example.com"
@@ -11,7 +11,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Anmeldung erfolgreich",
-      "ERROR_MESSAGE": "Es konnte keine Verbindung zum CYBER1SChat Server hergestellt werden. Bitte versuchen Sie es später erneut",
+      "ERROR_MESSAGE": "Es konnte keine Verbindung zum CyberChat hergestellt werden. Bitte versuchen Sie es später erneut",
       "UNAUTH": "Benutzername / Passwort falsch. Bitte versuche es erneut"
     },
     "FORGOT_PASSWORD": "Haben Sie Ihr Passwort vergessen?",

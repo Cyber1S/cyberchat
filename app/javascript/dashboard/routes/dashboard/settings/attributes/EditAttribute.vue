@@ -1,9 +1,9 @@
 <template>
   <div class="column content-box">
-    <c1chat-modal-header :header-title="pageTitle" />
+    <wooh-modal-header :header-title="pageTitle" />
     <form class="row" @submit.prevent="editAttributes">
       <div class="medium-12 columns">
-        <c1chat-input
+        <wooh-input
           v-model.trim="displayName"
           :label="$t('ATTRIBUTES_MGMT.ADD.FORM.NAME.LABEL')"
           type="text"
@@ -16,7 +16,7 @@
           :placeholder="$t('ATTRIBUTES_MGMT.ADD.FORM.NAME.PLACEHOLDER')"
           @blur="$v.displayName.$touch"
         />
-        <c1chat-input
+        <wooh-input
           v-model.trim="attributeKey"
           :label="$t('ATTRIBUTES_MGMT.ADD.FORM.KEY.LABEL')"
           type="text"
@@ -72,12 +72,12 @@
         </div>
       </div>
       <div class="modal-footer">
-        <c1chat-button :is-loading="isUpdating" :disabled="isButtonDisabled">
+        <wooh-button :is-loading="isUpdating" :disabled="isButtonDisabled">
           {{ $t('ATTRIBUTES_MGMT.EDIT.UPDATE_BUTTON_TEXT') }}
-        </c1chat-button>
-        <c1chat-button variant="clear" @click.prevent="onClose">
+        </wooh-button>
+        <wooh-button variant="clear" @click.prevent="onClose">
           {{ $t('ATTRIBUTES_MGMT.ADD.CANCEL_BUTTON_TEXT') }}
-        </c1chat-button>
+        </wooh-button>
       </div>
     </form>
   </div>

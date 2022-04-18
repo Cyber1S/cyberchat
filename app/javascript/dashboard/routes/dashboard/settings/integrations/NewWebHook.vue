@@ -1,7 +1,7 @@
 <template>
   <modal :show.sync="show" :on-close="onClose" :close-on-backdrop-click="false">
     <div class="column content-box">
-      <c1chat-modal-header
+      <wooh-modal-header
         :header-title="$t('INTEGRATION_SETTINGS.WEBHOOK.ADD.TITLE')"
         :header-content="
           useInstallationName(
@@ -33,15 +33,15 @@
 
         <div class="modal-footer">
           <div class="medium-12 columns">
-            <c1chat-button
+            <wooh-button
               :disabled="$v.endPoint.$invalid || addWebHook.showLoading"
               :is-loading="addWebHook.showLoading"
             >
               {{ $t('INTEGRATION_SETTINGS.WEBHOOK.ADD.FORM.SUBMIT') }}
-            </c1chat-button>
-            <c1chat-button class="button clear" @click.prevent="onClose">
+            </wooh-button>
+            <wooh-button class="button clear" @click.prevent="onClose">
               {{ $t('INTEGRATION_SETTINGS.WEBHOOK.ADD.CANCEL') }}
-            </c1chat-button>
+            </wooh-button>
           </div>
         </div>
       </form>

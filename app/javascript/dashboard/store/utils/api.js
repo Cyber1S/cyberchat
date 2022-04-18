@@ -4,8 +4,8 @@ import Cookies from 'js-cookie';
 import {
   ANALYTICS_IDENTITY,
   ANALYTICS_RESET,
-  CYBER1SCHAT_RESET,
-  CYBER1SCHAT_SET_USER,
+  CYBERCHAT_RESET,
+  CYBERCHAT_SET_USER,
 } from '../../helper/scriptHelpers';
 
 Cookies.defaults = { sameSite: 'Lax' };
@@ -16,7 +16,7 @@ export const setLoadingStatus = (state, status) => {
 };
 
 export const setUser = user => {
-  window.bus.$emit(CYBER1SCHAT_SET_USER, { user });
+  window.bus.$emit(CYBERCHAT_SET_USER, { user });
   window.bus.$emit(ANALYTICS_IDENTITY, { user });
 };
 
@@ -38,7 +38,7 @@ export const clearBrowserSessionCookies = () => {
 };
 
 export const clearCookiesOnLogout = () => {
-  window.bus.$emit(CYBER1SCHAT_RESET);
+  window.bus.$emit(CYBERCHAT_RESET);
   window.bus.$emit(ANALYTICS_RESET);
   clearBrowserSessionCookies();
   const globalConfig = window.globalConfig || {};

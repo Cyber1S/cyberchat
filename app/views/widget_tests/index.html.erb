@@ -12,7 +12,7 @@
 %>
 <script>
 
-window.cyber1schatSettings = {
+window.cyberchatSettings = {
   hideMessageBubble: false,
   position: '<%= @widget_position %>',
   locale: 'en',
@@ -30,17 +30,17 @@ window.cyber1schatSettings = {
   g.async = true;
   s.parentNode.insertBefore(g,s);
   g.onload=function(){
-    window.cyber1schatSDK.run({
+    window.cyberchatSDK.run({
       websiteToken: '<%= @web_widget.website_token %>',
       baseUrl: BASE_URL
     })
   }
 })(document,"script");
 
-window.addEventListener('cyber1schat:ready', function() {
-  console.log('cyber1schat:ready', window.$cyber1schat);
+window.addEventListener('cyberchat:ready', function() {
+  console.log('cyberchat:ready', window.$cyberchat);
   if (window.location.search.includes('setUser')) {
-    window.$cyber1schat.setUser('<%= user_id %>', {
+    window.$cyberchat.setUser('<%= user_id %>', {
       identifier_hash: '<%= user_hash %>',
       email: 'jane@example.com',
       name: 'Jane Doe',
@@ -49,7 +49,7 @@ window.addEventListener('cyber1schat:ready', function() {
   }
 })
 
-window.addEventListener('cyber1schat:error', function(e) {
-  console.log('cyber1schat:error', e.detail)
+window.addEventListener('cyberchat:error', function(e) {
+  console.log('cyberchat:error', e.detail)
 })
 </script>

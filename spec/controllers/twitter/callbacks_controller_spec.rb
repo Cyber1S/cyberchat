@@ -4,7 +4,7 @@ RSpec.describe 'Twitter::CallbacksController', type: :request do
   let(:twitter_client) { instance_double(::Twitty::Facade) }
   let(:twitter_response) { instance_double(::Twitty::Response, status: '200', body: { message: 'Valid' }) }
   let(:raw_response) do
-    object_double('raw_response', body: 'oauth_token=1&oauth_token_secret=1&user_id=100&screen_name=cyber1schat')
+    object_double('raw_response', body: 'oauth_token=1&oauth_token_secret=1&user_id=100&screen_name=cyberchat')
   end
   let(:account) { create(:account) }
   let(:webhook_service) { double }
@@ -25,7 +25,7 @@ RSpec.describe 'Twitter::CallbacksController', type: :request do
       account.reload
       expect(response).to redirect_to app_twitter_inbox_agents_url(account_id: account.id, inbox_id: account.inboxes.last.id)
       expect(account.inboxes.count).to be 1
-      expect(account.twitter_profiles.last.inbox.name).to eq 'cyber1schat'
+      expect(account.twitter_profiles.last.inbox.name).to eq 'cyberchat'
       expect(account.twitter_profiles.last.profile_id).to eq '100'
     end
 

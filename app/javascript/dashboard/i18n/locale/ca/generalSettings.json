@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Ara podeu rebre correus electrònics al vostre domini personalitzat."
       }
     },
-    "UPDATE_CYBER1SCHAT": "L'actualització %{latestCyber1SChatVersion} per CYBER1SChat està disponible. Si us plau, actualitza l'instancia.",
+    "UPDATE_CYBERCHAT": "L'actualització %{latestCyberchatVersion} per Cyberchat està disponible. Si us plau, actualitza l'instancia.",
     "LEARN_MORE": "Learn more"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Disconnected from Cyber1SChat"
+      "TEXT": "Disconnected from Cyberchat"
     },
     "BUTTON": {
       "REFRESH": "Refresh"

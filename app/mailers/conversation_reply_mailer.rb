@@ -1,6 +1,6 @@
 class ConversationReplyMailer < ApplicationMailer
   include ConversationReplyMailerHelper
-  default from: ENV.fetch('MAILER_SENDER_EMAIL', 'Cyber1SChat <accounts@cyber1s.com>')
+  default from: ENV.fetch('MAILER_SENDER_EMAIL', 'Cyberchat <accounts@cyber1s.com>')
   layout :choose_layout
 
   def reply_with_summary(conversation, last_queued_id)

@@ -62,7 +62,7 @@ RSpec.describe 'Api::V1::Accounts::AutomationRulesController', type: :request do
           actions: [
             {
               action_name: :send_message,
-              action_params: ['Welcome to the cyber1schat platform.']
+              action_params: ['Welcome to the cyberchat platform.']
             },
             {
               action_name: :assign_team,
@@ -137,7 +137,7 @@ RSpec.describe 'Api::V1::Accounts::AutomationRulesController', type: :request do
         params[:actions] = [
           {
             action_name: :send_message,
-            action_params: ['Welcome to the cyber1schat platform.']
+            action_params: ['Welcome to the cyberchat platform.']
           },
           {
             action_name: :update_additional_attributes,
@@ -168,7 +168,7 @@ RSpec.describe 'Api::V1::Accounts::AutomationRulesController', type: :request do
         params[:actions] = [
           {
             action_name: :send_message,
-            action_params: ['Welcome to the cyber1schat platform.']
+            action_params: ['Welcome to the cyberchat platform.']
           },
           {
             action_name: :update_additional_attributes,

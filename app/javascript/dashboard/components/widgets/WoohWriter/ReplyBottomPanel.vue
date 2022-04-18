@@ -1,7 +1,7 @@
 <template>
   <div class="bottom-box" :class="wrapClass">
     <div class="left-wrap">
-      <c1chat-button
+      <wooh-button
         v-tooltip.top-end="$t('CONVERSATION.REPLYBOX.TIP_EMOJI_ICON')"
         :title="$t('CONVERSATION.REPLYBOX.TIP_EMOJI_ICON')"
         icon="emoji"
@@ -26,7 +26,7 @@
         }"
         @input-file="onFileUpload"
       >
-        <c1chat-button
+        <wooh-button
           v-if="showAttachButton"
           class-names="button--upload"
           :title="$t('CONVERSATION.REPLYBOX.TIP_ATTACH_ICON')"
@@ -37,7 +37,7 @@
           size="small"
         />
       </file-upload>
-      <c1chat-button
+      <wooh-button
         v-if="enableRichEditor && !isOnPrivateNote"
         v-tooltip.top-end="$t('CONVERSATION.REPLYBOX.TIP_FORMAT_ICON')"
         icon="quote"
@@ -48,7 +48,7 @@
         :title="$t('CONVERSATION.REPLYBOX.TIP_FORMAT_ICON')"
         @click="toggleFormatMode"
       />
-      <c1chat-button
+      <wooh-button
         v-if="showAudioRecorderButton"
         :icon="!isRecordingAudio ? 'microphone' : 'microphone-off'"
         emoji="🎤"
@@ -58,7 +58,7 @@
         :title="$t('CONVERSATION.REPLYBOX.TIP_AUDIORECORDER_ICON')"
         @click="toggleAudioRecorder"
       />
-      <c1chat-button
+      <wooh-button
         v-if="showAudioPlayStopButton"
         :icon="audioRecorderPlayStopIcon"
         emoji="🎤"
@@ -68,8 +68,8 @@
         @click="toggleAudioRecorderPlayPause"
       >
         <span>{{ recordingAudioDurationText }}</span>
-      </c1chat-button>
-      <c1chat-button
+      </wooh-button>
+      <wooh-button
         v-if="showMessageSignatureButton"
         v-tooltip.top-end="signatureToggleTooltip"
         icon="signature"
@@ -103,14 +103,14 @@
           {{ $t('CONVERSATION.REPLYBOX.ENTER_TO_SEND') }}
         </label>
       </div>
-      <c1chat-button
+      <wooh-button
         size="small"
         :class-names="buttonClass"
         :is-disabled="isSendDisabled"
         @click="onSend"
       >
         {{ sendButtonText }}
-      </c1chat-button>
+      </wooh-button>
     </div>
   </div>
 </template>

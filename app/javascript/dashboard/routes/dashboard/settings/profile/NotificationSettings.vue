@@ -155,7 +155,7 @@
           }}
         </p>
         <div v-else>
-          <c1chat-submit-button
+          <wooh-submit-button
             :button-text="
               $t(
                 'PROFILE_SETTINGS.FORM.PUSH_NOTIFICATIONS_SECTION.REQUEST_PUSH'

@@ -1,5 +1,5 @@
 export const buildSearchParamsWithLocale = search => {
-  const locale = window.C1CHAT_WIDGET.$root.$i18n.locale;
+  const locale = window.WOOH_WIDGET.$root.$i18n.locale;
   if (search) {
     search = `${search}&locale=${locale}`;
   } else {

@@ -1,6 +1,6 @@
 {
   "REGISTER": {
-    "TRY_C1CHAT": "Luo tili",
+    "TRY_WOOH": "Luo tili",
     "TITLE": "Rekisteröidy",
     "TERMS_ACCEPT": "Rekisteröitymällä hyväksyt <a href=\"https://chat.cyber1s.com/terms\">käyttöehdot & säännöt</a> sekä <a href=\"https://chat.cyber1s.com/privacy-policy\">yksityisyydensuojan</a>",
     "ACCOUNT_NAME": {
@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Rekisteröinti onnistui",
-      "ERROR_MESSAGE": "Yhteyden muodostaminen Cyber1SChat-palvelimelle ei onnistunut, yritä myöhemmin uudelleen"
+      "ERROR_MESSAGE": "Yhteyden muodostaminen CyberChat-palvelimelle ei onnistunut, yritä myöhemmin uudelleen"
     },
     "SUBMIT": "Lähetä",
     "HAVE_AN_ACCOUNT": "Onko sinulla jo tili?"

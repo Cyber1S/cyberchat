@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Most már goadhatsz e-maileket az egyedi domaineden."
       }
     },
-    "UPDATE_CYBER1SCHAT": "Egy frissítés elérhető a Cyber1SChathoz %{latestCyber1SChatVersion}. Kérjük frissítsd a telepítésed.",
+    "UPDATE_CYBERCHAT": "Egy frissítés elérhető a Cyberchathoz %{latestCyberchatVersion}. Kérjük frissítsd a telepítésed.",
     "LEARN_MORE": "Learn more"
   },
   "FORMS": {
@@ -79,7 +79,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Disconnected from Cyber1SChat"
+      "TEXT": "Disconnected from Cyberchat"
     },
     "BUTTON": {
       "REFRESH": "Refresh"

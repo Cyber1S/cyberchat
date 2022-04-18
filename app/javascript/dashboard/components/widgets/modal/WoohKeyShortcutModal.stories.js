@@ -1,16 +1,16 @@
-import c1chatKeyboardShortcutModal from './c1chatKeyShortcutModal.vue';
+import WoohKeyboardShortcutModal from './WoohKeyShortcutModal.vue';
 
 export default {
   title: 'Components/Shortcuts/Keyboard Shortcut',
-  component: c1chatKeyboardShortcutModal,
+  component: WoohKeyboardShortcutModal,
   argTypes: {},
 };
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { c1chatKeyboardShortcutModal },
+  components: { WoohKeyboardShortcutModal },
   template:
-    '<c1chat-keyboard-shortcut-modal v-bind="$props"></c1chat-keyboard-shortcut-modal>',
+    '<wooh-keyboard-shortcut-modal v-bind="$props"></wooh-keyboard-shortcut-modal>',
 });
 
 export const KeyboardShortcut = Template.bind({});

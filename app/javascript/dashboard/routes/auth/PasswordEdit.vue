@@ -29,7 +29,7 @@
           {{ $t('SET_NEW_PASSWORD.CONFIRM_PASSWORD.ERROR') }}
         </span>
       </label>
-      <c1chat-submit-button
+      <wooh-submit-button
         :disabled="
           $v.credentials.password.$invalid ||
             $v.credentials.confirmPassword.$invalid ||
@@ -39,7 +39,7 @@
         :loading="newPasswordAPI.showLoading"
         button-class="expanded"
       >
-      </c1chat-submit-button>
+      </wooh-submit-button>
       <!-- <input type="submit" class="button " v-on:click.prevent="login()" v-bind:value="" > -->
     </div>
   </form>
@@ -49,12 +49,12 @@
 import { required, minLength } from 'vuelidate/lib/validators';
 import Auth from '../../api/auth';
 
-import c1chatSubmitButton from '../../components/buttons/FormSubmitButton';
+import WoohSubmitButton from '../../components/buttons/FormSubmitButton';
 import { DEFAULT_REDIRECT_URL } from '../../constants';
 
 export default {
   components: {
-    c1chatSubmitButton,
+    WoohSubmitButton,
   },
   props: {
     resetPasswordToken: { type: String, default: '' },

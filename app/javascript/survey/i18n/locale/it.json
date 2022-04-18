@@ -12,8 +12,8 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Sondaggio aggiornato con successo",
-      "ERROR_MESSAGE": "Impossibile connettersi al server Cyber1SChat, riprova più tardi"
+      "ERROR_MESSAGE": "Impossibile connettersi al server CyberChat, riprova più tardi"
     }
   },
-  "POWERED_BY": "Offerto da Cyber1SChat"
+  "POWERED_BY": "Offerto da Cyberchat"
 }

@@ -12,8 +12,8 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Survey updated successfully",
-      "ERROR_MESSAGE": "Не можа да се свърже с CYBER1SChat сървър. Моля, опитайте отново по-късно"
+      "ERROR_MESSAGE": "Не можа да се свърже с CyberChat сървър. Моля, опитайте отново по-късно"
     }
   },
-  "POWERED_BY": "Осъществено от Cyber1SChat"
+  "POWERED_BY": "Осъществено от Cyberchat"
 }

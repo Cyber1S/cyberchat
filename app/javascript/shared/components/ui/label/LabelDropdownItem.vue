@@ -1,7 +1,7 @@
 <template>
-  <c1chat-dropdown-item>
+  <wooh-dropdown-item>
     <div class="item-wrap">
-      <c1chat-button variant="clear" @click="onClick">
+      <wooh-button variant="clear" @click="onClick">
         <div class="button-wrap">
           <div class="name-label-wrap">
             <div
@@ -15,9 +15,9 @@
             <i v-if="selected" class="icon ion-checkmark-round" />
           </div>
         </div>
-      </c1chat-button>
+      </wooh-button>
     </div>
-  </c1chat-dropdown-item>
+  </wooh-dropdown-item>
 </template>
 
 <script>

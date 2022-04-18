@@ -12,25 +12,25 @@ import {
 } from '../sdk/cookieHelpers';
 
 const runSDK = ({ baseUrl, websiteToken }) => {
-  if (window.$cyber1schat) {
+  if (window.$cyberchat) {
     return;
   }
 
-  const cyber1schatSettings = window.cyber1schatSettings || {};
-  window.$cyber1schat = {
+  const cyberchatSettings = window.cyberchatSettings || {};
+  window.$cyberchat = {
     baseUrl,
     hasLoaded: false,
-    hideMessageBubble: cyber1schatSettings.hideMessageBubble || false,
+    hideMessageBubble: cyberchatSettings.hideMessageBubble || false,
     isOpen: false,
-    position: cyber1schatSettings.position === 'left' ? 'left' : 'right',
+    position: cyberchatSettings.position === 'left' ? 'left' : 'right',
     websiteToken,
-    locale: cyber1schatSettings.locale,
-    type: getBubbleView(cyber1schatSettings.type),
-    launcherTitle: cyber1schatSettings.launcherTitle || '',
-    showPopoutButton: cyber1schatSettings.showPopoutButton || false,
-    widgetStyle: getWidgetStyle(cyber1schatSettings.widgetStyle) || 'standard',
+    locale: cyberchatSettings.locale,
+    type: getBubbleView(cyberchatSettings.type),
+    launcherTitle: cyberchatSettings.launcherTitle || '',
+    showPopoutButton: cyberchatSettings.showPopoutButton || false,
+    widgetStyle: getWidgetStyle(cyberchatSettings.widgetStyle) || 'standard',
     resetTriggered: false,
-    darkMode: getDarkMode(cyber1schatSettings.darkMode),
+    darkMode: getDarkMode(cyberchatSettings.darkMode),
 
     toggle(state) {
       IFrameHelper.events.toggleBubble(state);
@@ -38,9 +38,9 @@ const runSDK = ({ baseUrl, websiteToken }) => {
 
     popoutChatWindow() {
       IFrameHelper.events.popoutChatWindow({
-        baseUrl: window.$cyber1schat.baseUrl,
-        websiteToken: window.$cyber1schat.websiteToken,
-        locale: window.$cyber1schat.locale,
+        baseUrl: window.$cyberchat.baseUrl,
+        websiteToken: window.$cyberchat.websiteToken,
+        locale: window.$cyberchat.locale,
       });
     },
 
@@ -62,8 +62,8 @@ const runSDK = ({ baseUrl, websiteToken }) => {
         return;
       }
 
-      window.$cyber1schat.identifier = identifier;
-      window.$cyber1schat.user = user;
+      window.$cyberchat.identifier = identifier;
+      window.$cyberchat.user = user;
       IFrameHelper.sendMessage('set-user', { identifier, user });
       Cookies.set(userCookieName, hashToBeStored, {
         expires: 365,
@@ -102,7 +102,7 @@ const runSDK = ({ baseUrl, websiteToken }) => {
     },
 
     reset() {
-      if (window.$cyber1schat.isOpen) {
+      if (window.$cyberchat.isOpen) {
         IFrameHelper.events.toggleBubble();
       }
 
@@ -111,11 +111,11 @@ const runSDK = ({ baseUrl, websiteToken }) => {
 
       const iframe = IFrameHelper.getAppFrame();
       iframe.src = IFrameHelper.getUrl({
-        baseUrl: window.$cyber1schat.baseUrl,
-        websiteToken: window.$cyber1schat.websiteToken,
+        baseUrl: window.$cyberchat.baseUrl,
+        websiteToken: window.$cyberchat.websiteToken,
       });
 
-      window.$cyber1schat.resetTriggered = true;
+      window.$cyberchat.resetTriggered = true;
     },
   };
 
@@ -125,6 +125,6 @@ const runSDK = ({ baseUrl, websiteToken }) => {
   });
 };
 
-window.cyber1schatSDK = {
+window.cyberchatSDK = {
   run: runSDK,
 };

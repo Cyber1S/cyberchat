@@ -35,7 +35,7 @@
         <span>
           {{ $t('INBOX_MGMT.ADD.WHATSAPP.API_KEY.LABEL') }}
           <a
-            v-if="globalConfig.installationName === 'Cyber1SChat'"
+            v-if="globalConfig.installationName === 'Cyberchat'"
             href="https://hub.360dialog.com/lp/whatsapp/L9dj7aPA"
             target="_blank"
             rel="noopener noreferrer nofollow"
@@ -56,7 +56,7 @@
     </div>
 
     <div class="medium-12 columns">
-      <c1chat-submit-button
+      <wooh-submit-button
         :loading="uiFlags.isCreating"
         :button-text="$t('INBOX_MGMT.ADD.WHATSAPP.SUBMIT_BUTTON')"
       />

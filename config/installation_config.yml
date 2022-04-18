@@ -1,7 +1,7 @@
 # if you dont specify locked attribute, the default value will be true
 # which means the particular config will be locked
 - name: INSTALLATION_NAME
-  value: 'Cyber1SChat'
+  value: 'Cyberchat'
 - name: LOGO_THUMBNAIL
   value: '/brand-assets/logo_thumbnail.svg'
 - name: LOGO
@@ -11,7 +11,7 @@
 - name: WIDGET_BRAND_URL
   value: 'https://chat.cyber1s.com'
 - name: BRAND_NAME
-  value: 'Cyber1SChat'
+  value: 'Cyberchat'
 - name: TERMS_URL
   value: 'https://chat.cyber1s.com/terms-of-service'
 - name: PRIVACY_URL
@@ -30,10 +30,10 @@
 - name: INSTALLATION_EVENTS_WEBHOOK_URL
   value:
   locked: false
-- name: CYBER1SCHAT_INBOX_TOKEN
+- name: CYBERCHAT_INBOX_TOKEN
   value:
   locked: false
-- name: CYBER1SCHAT_INBOX_HMAC_KEY
+- name: CYBERCHAT_INBOX_HMAC_KEY
   value:
   locked: false
 - name: API_CHANNEL_NAME

@@ -98,7 +98,7 @@ describe('#getters', () => {
             currentUser: {
               accounts: [
                 {
-                  name: 'Cyber1SChat',
+                  name: 'Cyberchat',
                   id: 1,
                 },
               ],
@@ -108,7 +108,7 @@ describe('#getters', () => {
           { getCurrentAccountId: 1 }
         )
       ).toEqual({
-        name: 'Cyber1SChat',
+        name: 'Cyberchat',
         id: 1,
       });
     });
@@ -126,7 +126,7 @@ describe('#getters', () => {
           currentUser: {
             accounts: [
               {
-                name: 'Cyber1SChat',
+                name: 'Cyberchat',
                 id: 1,
               },
             ],
@@ -134,7 +134,7 @@ describe('#getters', () => {
         })
       ).toEqual([
         {
-          name: 'Cyber1SChat',
+          name: 'Cyberchat',
           id: 1,
         },
       ]);

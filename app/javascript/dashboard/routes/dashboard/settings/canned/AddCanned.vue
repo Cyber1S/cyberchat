@@ -1,7 +1,7 @@
 <template>
   <modal :show.sync="show" :on-close="onClose">
     <div class="column content-box">
-      <c1chat-modal-header
+      <wooh-modal-header
         :header-title="$t('CANNED_MGMT.ADD.TITLE')"
         :header-content="$t('CANNED_MGMT.ADD.DESC')"
       />
@@ -32,7 +32,7 @@
         </div>
         <div class="modal-footer">
           <div class="medium-12 columns">
-            <c1chat-submit-button
+            <wooh-submit-button
               :disabled="
                 $v.content.$invalid ||
                   $v.shortCode.$invalid ||
@@ -54,13 +54,13 @@
 <script>
 import { required, minLength } from 'vuelidate/lib/validators';
 
-import c1chatSubmitButton from '../../../../components/buttons/FormSubmitButton';
+import WoohSubmitButton from '../../../../components/buttons/FormSubmitButton';
 import Modal from '../../../../components/Modal';
 import alertMixin from 'shared/mixins/alertMixin';
 
 export default {
   components: {
-    c1chatSubmitButton,
+    WoohSubmitButton,
     Modal,
   },
   mixins: [alertMixin],

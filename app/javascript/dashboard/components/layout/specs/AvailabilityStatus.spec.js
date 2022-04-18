@@ -3,21 +3,21 @@ import { createLocalVue, mount } from '@vue/test-utils';
 import Vuex from 'vuex';
 import VueI18n from 'vue-i18n';
 
-import c1chatButton from 'dashboard/components/ui/c1chatButton';
-import c1chatDropdownItem from 'shared/components/ui/dropdown/DropdownItem';
-import c1chatDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu';
-import c1chatDropdownHeader from 'shared/components/ui/dropdown/DropdownHeader';
-import c1chatDropdownDivider from 'shared/components/ui/dropdown/DropdownDivider';
+import WoohButton from 'dashboard/components/ui/WoohButton';
+import WoohDropdownItem from 'shared/components/ui/dropdown/DropdownItem';
+import WoohDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu';
+import WoohDropdownHeader from 'shared/components/ui/dropdown/DropdownHeader';
+import WoohDropdownDivider from 'shared/components/ui/dropdown/DropdownDivider';
 import i18n from 'dashboard/i18n';
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
 localVue.use(VueI18n);
-localVue.component('c1chat-button', c1chatButton);
-localVue.component('c1chat-dropdown-header', c1chatDropdownHeader);
-localVue.component('c1chat-dropdown-menu', c1chatDropdownMenu);
-localVue.component('c1chat-dropdown-divider', c1chatDropdownDivider);
-localVue.component('c1chat-dropdown-item', c1chatDropdownItem);
+localVue.component('wooh-button', WoohButton);
+localVue.component('wooh-dropdown-header', WoohDropdownHeader);
+localVue.component('wooh-dropdown-menu', WoohDropdownMenu);
+localVue.component('wooh-dropdown-divider', WoohDropdownDivider);
+localVue.component('wooh-dropdown-item', WoohDropdownItem);
 
 const i18nConfig = new VueI18n({
   locale: 'en',

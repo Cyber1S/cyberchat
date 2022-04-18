@@ -1,9 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "This is the API documentation for CYBER1SChat server.",
+    "description": "This is the API documentation for Cyberchat server.",
     "version": "1.0.0",
-    "title": "Cyber1SChat",
+    "title": "Cyberchat",
     "termsOfService": "https://chat.cyber1s.com/terms-of-service/",
     "contact": {
       "email": "hello@cyber1s.com"
@@ -13,7 +13,7 @@
       "url": "https://opensource.org/licenses/MIT"
     }
   },
-  "host": "chat.cyber1s.com",
+  "host": "mychat.cyber1s.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -2315,7 +2315,7 @@
         ],
         "operationId": "newConversation",
         "summary": "Create New Conversation",
-        "description": "Creating a conversation in cyber1schat requires a source id. \n\n Learn more about source_id: https://github.com/cyber1s/cyber1schat/wiki/Building-on-Top-of-Cyber1SChat:-Importing-Existing-Contacts-and-Creating-Conversations",
+        "description": "Creating a conversation in cyberchat requires a source id. \n\n Learn more about source_id: https://github.com/cyber1s/cyberchat/wiki/Building-on-Top-of-Cyberchat:-Importing-Existing-Contacts-and-Creating-Conversations",
         "security": [
           {
             "userApiKey": [
@@ -4618,7 +4618,7 @@
             "busy",
             "offline"
           ],
-          "description": "The availability status of the agent computed by Cyber1SChat."
+          "description": "The availability status of the agent computed by Cyberchat."
         },
         "auto_offline": {
           "type": "boolean",
@@ -4925,7 +4925,7 @@
         },
         "pubsub_token": {
           "type": "string",
-          "description": "The token to be used to connect to cyber1schat websocket"
+          "description": "The token to be used to connect to cyberchat websocket"
         }
       }
     },
@@ -5698,7 +5698,7 @@
       "name": "source_id",
       "required": true,
       "type": "string",
-      "description": "Id of the session for which the conversation is created.\n\n\n\n Source Ids can be obtained through contactable inboxes API or via generated.<br/><br/>Website: CYBER1SChat generated string which can be obtained from webhook events. <br/> Phone Channels(Twilio): Phone number in e164 format <br/> Email Channels: Contact Email address <br/> API Channel: Any Random String"
+      "description": "Id of the session for which the conversation is created.\n\n\n\n Source Ids can be obtained through contactable inboxes API or via generated.<br/><br/>Website: Cyberchat generated string which can be obtained from webhook events. <br/> Phone Channels(Twilio): Phone number in e164 format <br/> Email Channels: Contact Email address <br/> API Channel: Any Random String"
     },
     "contact_sort_param": {
       "in": "query",
@@ -5755,7 +5755,7 @@
     },
     "report_type": {
       "in": "query",
-      "name": "report_type",
+      "name": "type",
       "type": "string",
       "enum": [
         "account",

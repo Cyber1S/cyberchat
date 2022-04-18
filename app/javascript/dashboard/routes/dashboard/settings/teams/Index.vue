@@ -12,7 +12,7 @@
           </router-link>
         </p>
 
-        <table v-if="teamsList.length" class="c1chat-table">
+        <table v-if="teamsList.length" class="wooh-table">
           <tbody>
             <tr v-for="item in teamsList" :key="item.id">
               <td>
@@ -25,7 +25,7 @@
                   <router-link
                     :to="addAccountScoping(`settings/teams/${item.id}/edit`)"
                   >
-                    <c1chat-button
+                    <wooh-button
                       v-if="isAdmin"
                       v-tooltip.top="$t('TEAMS_SETTINGS.LIST.EDIT_TEAM')"
                       variant="smooth"
@@ -34,9 +34,9 @@
                       class-names="grey-btn"
                       icon="settings"
                     >
-                    </c1chat-button>
+                    </wooh-button>
                   </router-link>
-                  <c1chat-button
+                  <wooh-button
                     v-if="isAdmin"
                     v-tooltip.top="$t('TEAMS_SETTINGS.DELETE.BUTTON_TEXT')"
                     variant="smooth"
@@ -47,7 +47,7 @@
                     :is-loading="loading[item.id]"
                     @click="openDelete(item)"
                   >
-                  </c1chat-button>
+                  </wooh-button>
                 </div>
               </td>
             </tr>
@@ -65,7 +65,7 @@
         />
       </div>
     </div>
-    <c1chat-confirm-delete-modal
+    <wooh-confirm-delete-modal
       v-if="showDeletePopup"
       :show.sync="showDeletePopup"
       :title="confirmDeleteTitle"

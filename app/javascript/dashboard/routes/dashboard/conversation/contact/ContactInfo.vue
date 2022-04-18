@@ -20,7 +20,7 @@
             target="_blank"
             rel="noopener nofollow noreferrer"
           >
-            <c1chat-button
+            <wooh-button
               size="tiny"
               icon="open"
               variant="clear"
@@ -64,7 +64,7 @@
         </div>
       </div>
       <div class="contact-actions">
-        <c1chat-button
+        <wooh-button
           v-if="showNewMessage"
           v-tooltip="$t('CONTACT_PANEL.NEW_MESSAGE')"
           title="$t('CONTACT_PANEL.NEW_MESSAGE')"
@@ -73,7 +73,7 @@
           size="small"
           @click="toggleConversationModal"
         />
-        <c1chat-button
+        <wooh-button
           v-tooltip="$t('EDIT_CONTACT.BUTTON_LABEL')"
           title="$t('EDIT_CONTACT.BUTTON_LABEL')"
           class="edit-contact"
@@ -82,7 +82,7 @@
           size="small"
           @click="toggleEditModal"
         />
-        <c1chat-button
+        <wooh-button
           v-if="isAdmin"
           v-tooltip="$t('CONTACT_PANEL.MERGE_CONTACT')"
           title="$t('CONTACT_PANEL.MERGE_CONTACT')"
@@ -94,7 +94,7 @@
           :disabled="uiFlags.isMerging"
           @click="openMergeModal"
         />
-        <c1chat-button
+        <wooh-button
           v-if="isAdmin"
           v-tooltip="$t('DELETE_CONTACT.BUTTON_LABEL')"
           title="$t('DELETE_CONTACT.BUTTON_LABEL')"
@@ -126,7 +126,7 @@
         @close="toggleMergeModal"
       />
     </div>
-    <c1chat-delete-modal
+    <wooh-delete-modal
       v-if="showDeleteModal"
       :show.sync="showDeleteModal"
       :on-close="closeDelete"

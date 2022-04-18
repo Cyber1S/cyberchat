@@ -1,5 +1,5 @@
 export default {
-  name: 'c1chatTabs',
+  name: 'WoohTabs',
   props: {
     index: {
       type: Number,
@@ -11,7 +11,7 @@ export default {
       .filter(
         node =>
           node.componentOptions &&
-          node.componentOptions.tag === 'c1chat-tabs-item'
+          node.componentOptions.tag === 'wooh-tabs-item'
       )
       .map((node, index) => {
         const data = node.componentOptions.propsData;

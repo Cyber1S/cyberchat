@@ -1,9 +1,9 @@
 <template>
   <div class="column">
-    <c1chat-modal-header :header-title="$t('AUTOMATION.ADD.TITLE')" />
+    <wooh-modal-header :header-title="$t('AUTOMATION.ADD.TITLE')" />
     <div class="row modal-content">
       <div class="medium-12 columns">
-        <c1chat-input
+        <wooh-input
           v-model="automation.name"
           :label="$t('AUTOMATION.ADD.FORM.NAME.LABEL')"
           type="text"
@@ -16,7 +16,7 @@
           :placeholder="$t('AUTOMATION.ADD.FORM.NAME.PLACEHOLDER')"
           @blur="$v.automation.name.$touch"
         />
-        <c1chat-input
+        <wooh-input
           v-model="automation.description"
           :label="$t('AUTOMATION.ADD.FORM.DESC.LABEL')"
           type="text"
@@ -73,7 +73,7 @@
               @removeFilter="removeFilter(i)"
             />
             <div class="filter-actions">
-              <c1chat-button
+              <wooh-button
                 icon="add"
                 color-scheme="success"
                 variant="smooth"
@@ -81,7 +81,7 @@
                 @click="appendNewCondition"
               >
                 {{ $t('AUTOMATION.ADD.CONDITION_BUTTON_LABEL') }}
-              </c1chat-button>
+              </wooh-button>
             </div>
           </div>
         </section>
@@ -108,7 +108,7 @@
               @removeAction="removeAction(i)"
             />
             <div class="filter-actions">
-              <c1chat-button
+              <wooh-button
                 icon="add"
                 color-scheme="success"
                 variant="smooth"
@@ -116,19 +116,19 @@
                 @click="appendNewAction"
               >
                 {{ $t('AUTOMATION.ADD.ACTION_BUTTON_LABEL') }}
-              </c1chat-button>
+              </wooh-button>
             </div>
           </div>
         </section>
         <!-- // Actions End -->
         <div class="medium-12 columns">
           <div class="modal-footer justify-content-end w-full">
-            <c1chat-button class="button clear" @click.prevent="onClose">
+            <wooh-button class="button clear" @click.prevent="onClose">
               {{ $t('AUTOMATION.ADD.CANCEL_BUTTON_TEXT') }}
-            </c1chat-button>
-            <c1chat-button @click="submitAutomation">
+            </wooh-button>
+            <wooh-button @click="submitAutomation">
               {{ $t('AUTOMATION.ADD.SUBMIT') }}
-            </c1chat-button>
+            </wooh-button>
           </div>
         </div>
       </div>

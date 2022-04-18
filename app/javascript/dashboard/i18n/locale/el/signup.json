@@ -1,6 +1,6 @@
 {
   "REGISTER": {
-    "TRY_C1CHAT": "Καταχωρήστε ένα λογαριασμό",
+    "TRY_WOOH": "Καταχωρήστε ένα λογαριασμό",
     "TITLE": "Καταχώρηση",
     "TERMS_ACCEPT": "Με την καταχώρηση, έχετε συμφωνήσει με τους όρους μας <a href=\"https://chat.cyber1s.com/terms\">T & C</a> και <a href=\"https://chat.cyber1s.com/privacy-policy\">την πολιτική ιδιωτικών δεδομένων</a>",
     "ACCOUNT_NAME": {
@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Επιτυχής καταχώρηση",
-      "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον CYBER1SChat Server, Παρακαλώ προσπαθήστε αργότερα"
+      "ERROR_MESSAGE": "Αδυναμία σύνδεσης με τον CyberChat, Παρακαλώ προσπαθήστε αργότερα"
     },
     "SUBMIT": "Καταχώρηση",
     "HAVE_AN_ACCOUNT": "Έχετε ήδη ένα λογαριασμό?"

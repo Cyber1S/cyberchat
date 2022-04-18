@@ -1,11 +1,11 @@
 <template>
-  <c1chat-button variant="link" class="label--add" @click="addLabel">
-    <c1chat-label
+  <wooh-button variant="link" class="label--add" @click="addLabel">
+    <wooh-label
       color-scheme="secondary"
       :title="$t('CONTACT_PANEL.LABELS.CONVERSATION.ADD_BUTTON')"
       icon="add-circle"
     />
-  </c1chat-button>
+  </wooh-button>
 </template>
 
 <script>

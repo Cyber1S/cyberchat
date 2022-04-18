@@ -4,7 +4,7 @@ FactoryBot.define do
   factory :bot_message_card, class: Hash do
     title { Faker::Book.name }
     description { Faker::Movie.quote }
-    media_url { 'https://cyber1schat-assets.local/sample.png' }
+    media_url { 'https://cyberchat-assets.local/sample.png' }
     actions do
       [{
         text: 'Select',

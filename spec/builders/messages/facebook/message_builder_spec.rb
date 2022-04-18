@@ -20,7 +20,7 @@ describe  ::Messages::Facebook::MessageBuilder do
           first_name: 'Jane',
           last_name: 'Dae',
           account_id: facebook_channel.inbox.account_id,
-          profile_pic: 'https://cyber1schat-assets.local/sample.png'
+          profile_pic: 'https://cyberchat-assets.local/sample.png'
         }.with_indifferent_access
       )
       message_builder

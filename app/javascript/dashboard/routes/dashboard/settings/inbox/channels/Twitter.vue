@@ -2,7 +2,7 @@
   <div class="wizard-body columns content-box small-9">
     <div class="login-init full-height text-center">
       <form @submit.prevent="requestAuthorization">
-        <c1chat-submit-button
+        <wooh-submit-button
           icon="brand-twitter"
           button-text="Sign in with Twitter"
           type="submit"

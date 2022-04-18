@@ -104,7 +104,7 @@ export default {
     },
     emojiIconColor() {
       return this.showEmojiPicker
-        ? `text-c1chat-500 ${this.$dm('text-black-900', 'dark:text-slate-100')}`
+        ? `text-wooh-500 ${this.$dm('text-black-900', 'dark:text-slate-100')}`
         : `${this.$dm('text-black-900', 'dark:text-slate-100')}`;
     },
   },
@@ -184,7 +184,7 @@ export default {
   border-radius: 7px;
 
   &.is-focused {
-    box-shadow: 0 0 0 1px $color-c1chat, 0 0 2px 3px $color-primary-light;
+    box-shadow: 0 0 0 1px $color-wooh, 0 0 2px 3px $color-primary-light;
   }
 }
 

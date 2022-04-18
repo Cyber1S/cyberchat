@@ -130,7 +130,7 @@ export default {
     },
     avatarUrl() {
       // eslint-disable-next-line
-      const BotImage = require('dashboard/assets/images/cyber1schat_bot.png');
+      const BotImage = require('dashboard/assets/images/cyberchat_bot.png');
       const displayImage = this.useInboxAvatarForBot
         ? this.inboxAvatarUrl
         : BotImage;

@@ -60,12 +60,12 @@ FactoryBot.define do
         '1' => {
           id: '1',
           name: 'person 1',
-          profile_image_url: 'https://cyber1schat-assets.local/sample.png'
+          profile_image_url: 'https://cyberchat-assets.local/sample.png'
         },
         '2' => {
           id: '1',
           name: 'person 1',
-          profile_image_url: 'https://cyber1schat-assets.local/sample.png'
+          profile_image_url: 'https://cyberchat-assets.local/sample.png'
         }
       }
     end

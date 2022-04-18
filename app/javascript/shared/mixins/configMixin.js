@@ -1,13 +1,13 @@
 export default {
   computed: {
     hostURL() {
-      return window.cyber1schatConfig.hostURL;
+      return window.cyberchatConfig.hostURL;
     },
     vapidPublicKey() {
-      return window.cyber1schatConfig.vapidPublicKey;
+      return window.cyberchatConfig.vapidPublicKey;
     },
     enabledLanguages() {
-      return window.cyber1schatConfig.enabledLanguages;
+      return window.cyberchatConfig.enabledLanguages;
     },
   },
 };

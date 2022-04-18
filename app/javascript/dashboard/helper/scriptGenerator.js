@@ -2,7 +2,7 @@ export const createMessengerScript = pageId => `
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId: "${window.cyber1schatConfig.fbAppId}",
+      appId: "${window.cyberchatConfig.fbAppId}",
       xfbml: true,
       version: "v4.0"
     });
@@ -17,7 +17,7 @@ export const createMessengerScript = pageId => `
 
 </script>
 <div class="fb-messengermessageus"
-  messenger_app_id="${window.cyber1schatConfig.fbAppId}"
+  messenger_app_id="${window.cyberchatConfig.fbAppId}"
   page_id="${pageId}"
   color="blue"
   size="standard" >

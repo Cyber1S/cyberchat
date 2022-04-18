@@ -186,13 +186,13 @@
     "BETA": "Beta"
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any CYBER1SChat accounts. Please create a new account to continue.",
+    "NO_ACCOUNT_WARNING": "Uh oh! We could not find any Cyberchat accounts. Please create a new account to continue.",
     "NEW_ACCOUNT": "新規アカウント",
     "SELECTOR_SUBTITLE": "新しいアカウントを作成",
     "API": {
       "SUCCESS_MESSAGE": "アカウントが正常に作成されました",
       "EXIST_MESSAGE": "アカウントはすでに存在します",
-      "ERROR_MESSAGE": "Cyber1SChat Serverに接続できませんでした。後でもう一度お試しください。"
+      "ERROR_MESSAGE": "CyberChatに接続できませんでした。後でもう一度お試しください。"
     },
     "FORM": {
       "NAME": {

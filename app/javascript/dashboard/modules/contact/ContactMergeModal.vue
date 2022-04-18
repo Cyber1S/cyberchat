@@ -1,6 +1,6 @@
 <template>
-  <c1chat-modal :show.sync="show" :on-close="onClose">
-    <c1chat-modal-header
+  <wooh-modal :show.sync="show" :on-close="onClose">
+    <wooh-modal-header
       :header-title="$t('MERGE_CONTACTS.TITLE')"
       :header-content="$t('MERGE_CONTACTS.DESCRIPTION')"
     />
@@ -14,7 +14,7 @@
       @cancel="onClose"
       @submit="onMergeContacts"
     />
-  </c1chat-modal>
+  </wooh-modal>
 </template>
 
 <script>

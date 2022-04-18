@@ -1,13 +1,13 @@
 <template>
   <div class="column content-box">
-    <c1chat-button
+    <wooh-button
       color-scheme="success"
       class-names="button--fixed-right-top"
       icon="add-circle"
       @click="openAddPopup()"
     >
       {{ $t('CANNED_MGMT.HEADER_BTN_TXT') }}
-    </c1chat-button>
+    </wooh-button>
 
     <!-- List Canned Response -->
     <div class="row">
@@ -18,14 +18,14 @@
         >
           {{ $t('CANNED_MGMT.LIST.404') }}
         </p>
-        <c1chat-loading-state
+        <wooh-loading-state
           v-if="uiFlags.fetchingList"
           :message="$t('CANNED_MGMT.LOADING')"
         />
 
         <table
           v-if="!uiFlags.fetchingList && records.length"
-          class="c1chat-table"
+          class="wooh-table"
         >
           <thead>
             <!-- Header -->
@@ -49,7 +49,7 @@
               <td>{{ cannedItem.content }}</td>
               <!-- Action Buttons -->
               <td class="button-wrapper">
-                <c1chat-button
+                <wooh-button
                   v-tooltip.top="$t('CANNED_MGMT.EDIT.BUTTON_TEXT')"
                   variant="smooth"
                   size="tiny"
@@ -57,8 +57,8 @@
                   icon="edit"
                   @click="openEditPopup(cannedItem)"
                 >
-                </c1chat-button>
-                <c1chat-button
+                </wooh-button>
+                <wooh-button
                   v-tooltip.top="$t('CANNED_MGMT.DELETE.BUTTON_TEXT')"
                   variant="smooth"
                   color-scheme="alert"
@@ -68,7 +68,7 @@
                   :is-loading="loading[cannedItem.id]"
                   @click="openDeletePopup(cannedItem, index)"
                 >
-                </c1chat-button>
+                </wooh-button>
               </td>
             </tr>
           </tbody>
@@ -80,12 +80,12 @@
       </div>
     </div>
     <!-- Add Agent -->
-    <c1chat-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
+    <wooh-modal :show.sync="showAddPopup" :on-close="hideAddPopup">
       <add-canned :on-close="hideAddPopup" />
-    </c1chat-modal>
+    </wooh-modal>
 
     <!-- Edit Canned Response -->
-    <c1chat-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
+    <wooh-modal :show.sync="showEditPopup" :on-close="hideEditPopup">
       <edit-canned
         v-if="showEditPopup"
         :id="selectedResponse.id"
@@ -93,10 +93,10 @@
         :edcontent="selectedResponse.content"
         :on-close="hideEditPopup"
       />
-    </c1chat-modal>
+    </wooh-modal>
 
     <!-- Delete Canned Response -->
-    <c1chat-delete-modal
+    <wooh-delete-modal
       :show.sync="showDeleteConfirmationPopup"
       :on-close="closeDeletePopup"
       :on-confirm="confirmDeletion"

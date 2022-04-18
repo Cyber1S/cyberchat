@@ -1,15 +1,15 @@
 swagger: "2.0"
 info:
-  description: This is the API documentation for CYBER1SChat server.
+  description: This is the API documentation for Cyberchat server.
   version: 1.0.0
-  title: Cyber1SChat
+  title: Cyberchat
   termsOfService:	https://chat.cyber1s.com/terms-of-service/
   contact:
     email: hello@cyber1s.com
   license:
     name: MIT License
     url: https://opensource.org/licenses/MIT
-host: chat.cyber1s.com
+host: mychat.cyber1s.com
 basePath: /
 schemes:
   - https

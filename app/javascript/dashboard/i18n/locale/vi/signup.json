@@ -1,6 +1,6 @@
 {
   "REGISTER": {
-    "TRY_C1CHAT": "Đăng kí tài khoản",
+    "TRY_WOOH": "Đăng kí tài khoản",
     "TITLE": "Đăng kí",
     "TERMS_ACCEPT": "Bằng cách đăng ký, bạn đồng ý với <a href=\"https://chat.cyber1s.com/terms\">T & C</a> và <a href=\"https://chat.cyber1s.com/privacy-policy\">Chính sách bảo mật</a>",
     "ACCOUNT_NAME": {
@@ -30,7 +30,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Đăng Kí Thành Công",
-      "ERROR_MESSAGE": "Không thể kết nối với Máy chủ Cyber1SChat, Vui lòng thử lại sau."
+      "ERROR_MESSAGE": "Không thể kết nối với Máy chủ CyberChat, Vui lòng thử lại sau."
     },
     "SUBMIT": "Gửi",
     "HAVE_AN_ACCOUNT": "Đã có tài khoản?"

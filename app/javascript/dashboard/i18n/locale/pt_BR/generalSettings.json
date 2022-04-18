@@ -47,7 +47,7 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Você pode receber e-mails em seu domínio personalizado agora."
       }
     },
-    "UPDATE_CYBER1SCHAT": "Uma atualização %{latestCyber1SChatVersion} para o CYBER1SChat está disponível. Por favor, atualize sua instância.",
+    "UPDATE_CYBERCHAT": "Uma atualização %{latestCyberchatVersion} para o Cyberchat está disponível. Por favor, atualize sua instância.",
     "LEARN_MORE": "Learn more"
   },
   "FORMS": {

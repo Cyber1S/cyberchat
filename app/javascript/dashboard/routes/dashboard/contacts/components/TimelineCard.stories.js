@@ -12,7 +12,7 @@ export default {
       },
     },
     eventPath: {
-      defaultValue: 'cyber1s/cyber1schat',
+      defaultValue: 'cyberchat/cyberchat',
       control: {
         type: 'text',
       },

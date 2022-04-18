@@ -7,8 +7,8 @@ class SupportMailbox < ApplicationMailbox
                     :decorate_mail
 
   def process
-    # prevent loop from cyber1schat notification emails
-    return if notification_email_from_cyber1schat?
+    # prevent loop from cyberchat notification emails
+    return if notification_email_from_cyberchat?
 
     ActiveRecord::Base.transaction do
       find_or_create_contact

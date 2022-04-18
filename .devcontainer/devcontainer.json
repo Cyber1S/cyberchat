@@ -1,5 +1,5 @@
 {
-  "name": "Cyber1SChat Development Codespace",
+  "name": "Cyberchat Development Codespace",
   "service": "app",
   "dockerComposeFile": "docker-compose.yml",
 
@@ -27,7 +27,7 @@
   //your application may need to listen on all interfaces (0.0.0.0) not just localhost for it to be available externally. Defaults to []
   "appPort": [3000, 3035],
 
-  "postCreateCommand": ".devcontainer/scripts/setup.sh && bundle exec rake db:cyber1schat_prepare && yarn",
+  "postCreateCommand": ".devcontainer/scripts/setup.sh && bundle exec rake db:cyberchat_prepare && yarn",
   "portsAttributes": {
     "3000": {
       "label": "Rails Server"

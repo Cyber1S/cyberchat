@@ -19,7 +19,7 @@ describe('#actions', () => {
       });
       let windowSpy = jest.spyOn(window, 'window', 'get');
       windowSpy.mockImplementation(() => ({
-        C1CHAT_WIDGET: {
+        WOOH_WIDGET: {
           $root: {
             $i18n: {
               locale: 'el',
@@ -99,7 +99,7 @@ describe('#actions', () => {
       const spy = jest.spyOn(global, 'Date').mockImplementation(() => mockDate);
       const windowSpy = jest.spyOn(window, 'window', 'get');
       windowSpy.mockImplementation(() => ({
-        C1CHAT_WIDGET: {
+        WOOH_WIDGET: {
           $root: {
             $i18n: {
               locale: 'ar',

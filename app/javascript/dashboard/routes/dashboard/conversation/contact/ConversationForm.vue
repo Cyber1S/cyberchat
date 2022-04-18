@@ -68,7 +68,7 @@
                 :bcc-emails.sync="bccEmails"
               />
               <label class="editor-wrap">
-                <c1chat-message-editor
+                <wooh-message-editor
                   v-model="message"
                   class="message-editor"
                   :class="{ editor_warning: $v.message.$error }"
@@ -101,9 +101,9 @@
       <button class="button clear" @click.prevent="onCancel">
         {{ $t('NEW_CONVERSATION.FORM.CANCEL') }}
       </button>
-      <c1chat-button type="submit" :is-loading="conversationsUiFlags.isCreating">
+      <wooh-button type="submit" :is-loading="conversationsUiFlags.isCreating">
         {{ $t('NEW_CONVERSATION.FORM.SUBMIT') }}
-      </c1chat-button>
+      </wooh-button>
     </div>
   </form>
 </template>
@@ -111,7 +111,7 @@
 <script>
 import { mapGetters } from 'vuex';
 import Thumbnail from 'dashboard/components/widgets/Thumbnail';
-import c1chatMessageEditor from 'dashboard/components/widgets/c1chatWriter/Editor';
+import WoohMessageEditor from 'dashboard/components/widgets/WoohWriter/Editor';
 import ReplyEmailHead from 'dashboard/components/widgets/conversation/ReplyEmailHead';
 
 import alertMixin from 'shared/mixins/alertMixin';
@@ -122,7 +122,7 @@ import { required, requiredIf } from 'vuelidate/lib/validators';
 export default {
   components: {
     Thumbnail,
-    c1chatMessageEditor,
+    WoohMessageEditor,
     ReplyEmailHead,
   },
   mixins: [alertMixin],

@@ -1,6 +1,6 @@
 <template>
   <div class="column content-box">
-    <c1chat-modal-header
+    <wooh-modal-header
       :header-title="integration.name"
       :header-content="integration.description"
     />
@@ -25,12 +25,12 @@
         validation-name="Inbox"
       />
       <div class="modal-footer">
-        <c1chat-button :disabled="hasErrors" :loading="uiFlags.isCreatingHook">
+        <wooh-button :disabled="hasErrors" :loading="uiFlags.isCreatingHook">
           {{ $t('INTEGRATION_APPS.ADD.FORM.SUBMIT') }}
-        </c1chat-button>
-        <c1chat-button class="button clear" @click.prevent="onClose">
+        </wooh-button>
+        <wooh-button class="button clear" @click.prevent="onClose">
           {{ $t('INTEGRATION_APPS.ADD.FORM.CANCEL') }}
-        </c1chat-button>
+        </wooh-button>
       </div>
     </formulate-form>
   </div>

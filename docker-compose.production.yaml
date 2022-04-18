@@ -2,7 +2,7 @@ version: '3'
 
 services:
   base: &base
-    image: cyber1s/cyber1schat:latest
+    image: cyberchat/cyberchat:latest
     env_file: .env ## Change this file for customized env variables
     volumes:
       - /data/storage:/app/storage
@@ -40,7 +40,7 @@ services:
     volumes:
       - /data/postgres:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=cyber1schat
+      - POSTGRES_DB=cyberchat
       - POSTGRES_USER=postgres
       # Please provide your own password.
       - POSTGRES_PASSWORD=

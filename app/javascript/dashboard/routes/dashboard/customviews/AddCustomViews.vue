@@ -1,9 +1,9 @@
 <template>
-  <c1chat-modal :show.sync="show" :on-close="onClose">
-    <c1chat-modal-header :header-title="$t('FILTER.CUSTOM_VIEWS.ADD.TITLE')" />
+  <wooh-modal :show.sync="show" :on-close="onClose">
+    <wooh-modal-header :header-title="$t('FILTER.CUSTOM_VIEWS.ADD.TITLE')" />
     <form class="row" @submit.prevent="saveCustomViews">
       <div class="medium-12 columns">
-        <c1chat-input
+        <wooh-input
           v-model="name"
           :label="$t('FILTER.CUSTOM_VIEWS.ADD.LABEL')"
           type="text"
@@ -16,16 +16,16 @@
         />
 
         <div class="modal-footer">
-          <c1chat-button :disabled="isButtonDisabled">
+          <wooh-button :disabled="isButtonDisabled">
             {{ $t('FILTER.CUSTOM_VIEWS.ADD.SAVE_BUTTON') }}
-          </c1chat-button>
-          <c1chat-button variant="clear" @click.prevent="onClose">
+          </wooh-button>
+          <wooh-button variant="clear" @click.prevent="onClose">
             {{ $t('FILTER.CUSTOM_VIEWS.ADD.CANCEL_BUTTON') }}
-          </c1chat-button>
+          </wooh-button>
         </div>
       </div>
     </form>
-  </c1chat-modal>
+  </wooh-modal>
 </template>
 
 <script>

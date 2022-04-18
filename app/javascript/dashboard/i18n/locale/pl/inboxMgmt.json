@@ -1,7 +1,7 @@
 {
   "INBOX_MGMT": {
     "HEADER": "Skrzynki",
-    "SIDEBAR_TXT": "<p><b>Skrzynka odbiorcza</b></p> <p> Gdy podłączysz stronę internetową lub stronę z facebookiem do cyber1schata, jest nazywany <b>skrzynką odbiorczą</b>. Możesz mieć nieograniczone skrzynki odbiorcze na swoim koncie Cyber1SChat. </p><p> Kliknij <b>Dodaj skrzynkę odbiorczą</b>, aby połączyć stronę internetową lub stronę na Facebooku. </p><p> W Panelu, możesz zobaczyć wszystkie rozmowy ze wszystkich swoich skrzynek odbiorczych w jednym miejscu i odpowiedzieć na nie w zakładce `Konwersacje`. </p><p> Możesz również zobaczyć rozmowy specyficzne dla skrzynki odbiorczej, klikając na nazwę skrzynki odbiorczej na lewym panelu nawigacyjnym. </p>",
+    "SIDEBAR_TXT": "<p><b>Skrzynka odbiorcza</b></p> <p> Gdy podłączysz stronę internetową lub stronę z facebookiem do cyberchata, jest nazywany <b>skrzynką odbiorczą</b>. Możesz mieć nieograniczone skrzynki odbiorcze na swoim koncie Cyberchat. </p><p> Kliknij <b>Dodaj skrzynkę odbiorczą</b>, aby połączyć stronę internetową lub stronę na Facebooku. </p><p> W Panelu, możesz zobaczyć wszystkie rozmowy ze wszystkich swoich skrzynek odbiorczych w jednym miejscu i odpowiedzieć na nie w zakładce `Konwersacje`. </p><p> Możesz również zobaczyć rozmowy specyficzne dla skrzynki odbiorczej, klikając na nazwę skrzynki odbiorczej na lewym panelu nawigacyjnym. </p>",
     "LIST": {
       "404": "Nie ma żadnych skrzynek dołączonych do tego konta."
     },
@@ -9,7 +9,7 @@
       {
         "title": "Wybierz kanał",
         "route": "settings_inbox_new",
-        "body": "Wybierz dostawcę, który chcesz zintegrować z cyber1schatem."
+        "body": "Wybierz dostawcę, który chcesz zintegrować z cyberchatem."
       },
       {
         "title": "Utwórz skrzynkę odbiorczą",
@@ -37,7 +37,7 @@
         "PLACEHOLDER": "Wprowadź nazwę swojej strony (np. Acme Inc)"
       },
       "FB": {
-        "HELP": "PS: Logując się, uzyskujemy dostęp tylko do wiadomości Twojej strony. CYBER1SChat nigdy nie może uzyskać dostępu do prywatnych wiadomości.",
+        "HELP": "PS: Logując się, uzyskujemy dostęp tylko do wiadomości Twojej strony. Cyberchat nigdy nie może uzyskać dostępu do prywatnych wiadomości.",
         "CHOOSE_PAGE": "Wybierz stronę",
         "CHOOSE_PLACEHOLDER": "Wybierz stronę z listy",
         "INBOX_NAME": "Nazwa skrzynki odbiorczej",
@@ -298,7 +298,7 @@
       },
       "AUTH": {
         "TITLE": "Choose a channel",
-        "DESC": "Cyber1SChat supports live-chat widget, Facebook page, Twitter profile, WhatsApp, Email etc., as channels. If you want to build a custom channel, you can create it using the API channel. Select one channel from the options below to proceed."
+        "DESC": "Cyberchat supports live-chat widget, Facebook page, Twitter profile, WhatsApp, Email etc., as channels. If you want to build a custom channel, you can create it using the API channel. Select one channel from the options below to proceed."
       },
       "AGENTS": {
         "TITLE": "Agenci",
@@ -308,11 +308,11 @@
       },
       "DETAILS": {
         "TITLE": "Szczegóły skrzynki odbiorczej",
-        "DESC": "Z listy rozwijanej poniżej wybierz stronę na Facebooku, którą chcesz połączyć z czatc1chatem. Możesz również podać własną nazwę swojej skrzynki odbiorczej w celu lepszej identyfikacji."
+        "DESC": "Z listy rozwijanej poniżej wybierz stronę na Facebooku, którą chcesz połączyć z czatwoohem. Możesz również podać własną nazwę swojej skrzynki odbiorczej w celu lepszej identyfikacji."
       },
       "FINISH": {
         "TITLE": "Zgadzony!",
-        "DESC": "Pomyślnie zakończyłeś integrację strony na Facebooku z czatc1chatem. Następnym razem, gdy klient komunikuje Twoją stronę, konwersacja pojawi się automatycznie na twojej skrzynce odbiorczej.<br>Dostarczamy również skrypt widżetu, który można łatwo dodać do swojej witryny. Gdy tylko będzie on dostępny na Twojej stronie internetowej, klienci mogą wysyłać Ci wiadomości bezpośrednio z Twojej strony bez pomocy żadnego zewnętrznego narzędzia, a konwersacja pojawi się tutaj w Cyber1SChat.<br>Coś, co? Cóż, na pewno spróbujemy być :)"
+        "DESC": "Pomyślnie zakończyłeś integrację strony na Facebooku z czatwoohem. Następnym razem, gdy klient komunikuje Twoją stronę, konwersacja pojawi się automatycznie na twojej skrzynce odbiorczej.<br>Dostarczamy również skrypt widżetu, który można łatwo dodać do swojej witryny. Gdy tylko będzie on dostępny na Twojej stronie internetowej, klienci mogą wysyłać Ci wiadomości bezpośrednio z Twojej strony bez pomocy żadnego zewnętrznego narzędzia, a konwersacja pojawi się tutaj w Cyberchat.<br>Coś, co? Cóż, na pewno spróbujemy być :)"
       }
     },
     "DETAILS": {
@@ -415,7 +415,7 @@
       "HMAC_VERIFICATION": "Weryfikacja tożsamości użytkownika",
       "HMAC_DESCRIPTION": "Polecenie weryfikacji tożsamości użytkownika, SDK pozwala na przekazanie pliku `identifier_hash` dla każdego użytkownika. Możesz wygenerować HMAC używając 'sha256' z kluczem pokazanym tutaj.",
       "HMAC_MANDATORY_VERIFICATION": "Wymuś sprawdzanie tożsamości użytkownika",
-      "HMAC_MANDATORY_DESCRIPTION": "Jeśli włączone, cyber1schat SDKs setUser nie będzie działać, chyba że `identifier_hash` jest dostarczony dla każdego użytkownika.",
+      "HMAC_MANDATORY_DESCRIPTION": "Jeśli włączone, cyberchat SDKs setUser nie będzie działać, chyba że `identifier_hash` jest dostarczony dla każdego użytkownika.",
       "INBOX_IDENTIFIER": "Identyfikator skrzynki odbiorczej",
       "INBOX_IDENTIFIER_SUB_TEXT": "Use the `inbox_identifier` token shown here to authentication your API clients.",
       "FORWARD_EMAIL_TITLE": "Przekaż do wiadomości e-mail",
